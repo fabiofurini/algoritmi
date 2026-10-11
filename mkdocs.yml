@@ -1,0 +1,169 @@
+# Modello di mkdocs.yml (italiano): lo usa genera_sito.py, che scrive mkdocs.yml.
+# Non modificare mkdocs.yml a mano.
+site_name: Algoritmi · Fabio Furini
+site_description: >-
+  Algoritmi: le dispense del corso online, con pseudocodice e codice C++,
+  definizioni, teoremi e dimostrazioni, esempi svolti ed esercizi con le soluzioni.
+site_author: Fabio Furini
+site_url: https://fabiofurini.github.io/algoritmi/
+repo_url: https://github.com/fabiofurini/algoritmi
+copyright: >-
+  &copy; 2026 Fabio Furini — testi e figure con licenza
+  <a href="https://creativecommons.org/licenses/by/4.0/deed.it">CC BY 4.0</a>,
+  codice con licenza
+  <a href="https://github.com/fabiofurini/algoritmi/blob/main/LICENSE-CODE">MIT</a>
+
+theme:
+  name: material
+  language: it
+  icon:
+    logo: material/code-braces
+  font:
+    text: Source Sans 3
+    code: JetBrains Mono
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      toggle:
+        icon: material/weather-night
+        name: Tema scuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Tema chiaro
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - navigation.tracking
+    - toc.follow
+    - content.code.copy
+    - search.suggest
+    - search.highlight
+
+plugins:
+  - search:
+      lang: it
+
+extra:
+  social:
+    - icon: material/web
+      link: https://fabiofurini.github.io/
+      name: Fabio Furini — sito personale
+    - icon: material/school
+      link: https://www.diag.uniroma1.it/
+      name: DIAG — Sapienza Università di Roma
+    - icon: fontawesome/brands/github
+      link: https://github.com/fabiofurini
+      name: GitHub
+    - icon: material/chart-timeline-variant
+      link: https://fabiofurini.github.io/laboratorio-ricerca-operativa/
+      name: Laboratorio di Ricerca Operativa
+    - icon: material/vector-polygon
+      link: https://fabiofurini.github.io/modellazione-mip/
+      name: Modellazione MIP
+    - icon: material/math-integral
+      link: https://fabiofurini.github.io/analisi-matematica-1/
+      name: Analisi Matematica 1
+    - icon: material/matrix
+      link: https://fabiofurini.github.io/algebra-lineare/
+      name: Algebra lineare
+    - icon: material/chart-bell-curve
+      link: https://fabiofurini.github.io/ottimizzazione-convessa/
+      name: Ottimizzazione convessa
+    - icon: material/vector-triangle
+      link: https://fabiofurini.github.io/programmazione-lineare/
+      name: Programmazione lineare
+  alternate:
+    - name: Italiano
+      link: https://fabiofurini.github.io/algoritmi/
+      lang: it
+    - name: English
+      link: https://fabiofurini.github.io/algorithms/
+      lang: en
+
+extra_css:
+  - stylesheets/extra.css?v=68f743ff1a
+  - https://cdn.jsdelivr.net/npm/jsxgraph@1.10.1/distrib/jsxgraph.css
+  - stylesheets/interattivi.css?v=c4336c2fb4
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - tables
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+      title: In questa pagina
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra_javascript:
+  - javascripts/cloudflare-analytics.js?v=bff73345a1
+  - javascripts/mathjax.js?v=630f96bc3b
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js
+  # grafici interattivi: JSXGraph, il motore, poi le ricette (gi-*.js, le aggiunge genera_sito.py)
+  - https://cdn.jsdelivr.net/npm/jsxgraph@1.10.1/distrib/jsxgraphcore.js
+  - javascripts/interattivi.js?v=6e596bae66
+  - javascripts/gi-cap1-6.js?v=1513f12a39
+  - javascripts/gi-cap10-14.js?v=217296d127
+  - javascripts/gi-cap7-9.js?v=fdde5b1a77
+
+nav:
+  - Home: index.md
+  - Fondamenti:
+      - fondamenti/index.md
+      - "1. Rappresentazione dei numeri": fondamenti/01-rappresentazione-numeri.md
+      - "2. Pseudocodice": fondamenti/02-pseudocodice.md
+      - "3. Introduzione a C++": fondamenti/03-introduzione-cpp.md
+      - "4. Algoritmi di ordinamento": fondamenti/04-ordinamento.md
+      - "5. Ricerca lineare e binaria": fondamenti/05-ricerca.md
+      - "6. Algoritmi numerici": fondamenti/06-algoritmi-numerici.md
+  - Analisi e ricorsione:
+      - analisi-ricorsione/index.md
+      - "7. Dimensione dell'input": analisi-ricorsione/07-dimensione-input.md
+      - "8. Tempo di esecuzione": analisi-ricorsione/08-tempo-esecuzione.md
+      - "9. Correttezza": analisi-ricorsione/09-correttezza.md
+      - "10. Ricorsione": analisi-ricorsione/10-ricorsione.md
+      - "11. Equazioni di ricorrenza": analisi-ricorsione/11-ricorrenze.md
+      - "12. Il Master theorem": analisi-ricorsione/12-master-theorem.md
+      - "13. Algoritmi ricorsivi": analisi-ricorsione/13-algoritmi-ricorsivi.md
+      - "14. Algoritmi ricorsivi e iterativi a confronto": analisi-ricorsione/14-ricorsivo-iterativo.md
+  - Esercizi:
+      - esercizi/index.md
+      - "1. Rappresentazione dei numeri": esercizi/es-01-rappresentazione-numeri.md
+      - "2. Pseudocodice": esercizi/es-02-pseudocodice.md
+      - "3. Introduzione a C++": esercizi/es-03-introduzione-cpp.md
+      - "4. Algoritmi di ordinamento": esercizi/es-04-ordinamento.md
+      - "5. Ricerca lineare e binaria": esercizi/es-05-ricerca.md
+      - "6. Algoritmi numerici": esercizi/es-06-algoritmi-numerici.md
+      - "7. Dimensione dell'input": esercizi/es-07-dimensione-input.md
+      - "8. Tempo di esecuzione": esercizi/es-08-tempo-esecuzione.md
+      - "9. Correttezza": esercizi/es-09-correttezza.md
+      - "10. Ricorsione": esercizi/es-10-ricorsione.md
+      - "11. Equazioni di ricorrenza": esercizi/es-11-ricorrenze.md
+      - "12. Il Master theorem": esercizi/es-12-master-theorem.md
+      - "13. Algoritmi ricorsivi": esercizi/es-13-algoritmi-ricorsivi.md
+      - "14. Algoritmi ricorsivi e iterativi a confronto": esercizi/es-14-ricorsivo-iterativo.md
+  - Laboratorio:
+      - laboratorio/index.md
+  - Materiale: materiale.md
+  - Indice: indice.md

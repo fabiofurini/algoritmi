@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "Se usi questo materiale, per favore citalo come segue."
+title: "Algoritmi: dispense online con esercizi svolti"
+abstract: >-
+  Le dispense del corso di Algoritmi — rappresentazione dei numeri,
+  pseudocodice, introduzione a C++, algoritmi di ordinamento, ricerca e
+  numerici, dimensione dell'input, tempo di esecuzione, correttezza,
+  ricorsione, equazioni di ricorrenza, Master theorem, algoritmi ricorsivi —
+  con definizioni, teoremi e dimostrazioni, pseudocodice, codice C++, esempi
+  svolti ed esercizi con soluzioni. Versione italiana in costruzione.
+authors:
+  - family-names: Furini
+    given-names: Fabio
+    email: fabio.furini@uniroma1.it
+    affiliation: "DIAG, Sapienza Università di Roma"
+url: "https://fabiofurini.github.io/algoritmi/"
+repository-code: "https://github.com/fabiofurini/algoritmi"
+license:
+  - CC-BY-4.0
+  - MIT
+date-released: 2026-10-11
+keywords:
+  - algoritmi
+  - pseudocodice
+  - C++
+  - ordinamento
+  - tempo di esecuzione
+  - correttezza
+  - ricorsione
+  - Master theorem
+  - materiale didattico
