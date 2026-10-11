@@ -1,3 +1,8 @@
+---
+hide:
+  - navigation
+---
+
 # Laboratorio interattivo
 
 Qui gli algoritmi si vedono lavorare. Scegli un'app: si apre a tutta pagina, con **cursori** e pulsanti.
