@@ -5,7 +5,7 @@ hide:
 title: "L'invariante di ciclo"
 ---
 
-[← Laboratorio](index.md) · Capitolo 13: [Correttezza](../analisi-ricorsione/13-correttezza.md)
+[← Laboratorio](index.md) · Capitolo 13: [Correttezza](../analisi/13-correttezza.md)
 
 # L'invariante di ciclo
 

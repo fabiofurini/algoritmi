@@ -5,7 +5,7 @@ hide:
 title: "Alberi delle chiamate ricorsive"
 ---
 
-[← Laboratorio](index.md) · Capitolo 14: [Ricorsione](../analisi-ricorsione/14-ricorsione.md)
+[← Laboratorio](index.md) · Capitolo 14: [Ricorsione](../ricorsione/14-ricorsione.md)
 
 # Alberi delle chiamate ricorsive
 

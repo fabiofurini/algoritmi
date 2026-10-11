@@ -6,7 +6,7 @@ title: "Il Master theorem"
 
 <div class="info-capitolo" markdown>
 
-**Parte 4 · Analisi e ricorsione · Capitolo 16** · [:material-file-pdf-box: Dispensa, volume 4 (PDF)](../pdf/dispensa-4-analisi-ricorsione.pdf) · [:material-pencil: Esercizi](../esercizi/es-16-master-theorem.md)
+**Parte 5 · Ricorsione · Capitolo 16** · [:material-file-pdf-box: Dispensa, volume 5 (PDF)](../pdf/dispensa-5-ricorsione.pdf) · [:material-pencil: Esercizi](../esercizi/es-16-master-theorem.md)
 
 </div>
 

@@ -5,7 +5,7 @@ hide:
 title: "Il Master theorem"
 ---
 
-[← Laboratorio](index.md) · Capitolo 16: [Il Master theorem](../analisi-ricorsione/16-master-theorem.md)
+[← Laboratorio](index.md) · Capitolo 16: [Il Master theorem](../ricorsione/16-master-theorem.md)
 
 # Il Master theorem
 

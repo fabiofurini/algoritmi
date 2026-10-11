@@ -34,13 +34,21 @@ Le dispense e gli eserciziari in PDF, aggiornati a ogni pubblicazione del sito, 
 
     [:octicons-download-24: dispensa-3-notazione-asintotica.pdf](pdf/dispensa-3-notazione-asintotica.pdf)
 
--   :material-book-open-variant: **Dispensa, volume 4 · Analisi e ricorsione**
+-   :material-book-open-variant: **Dispensa, volume 4 · Analisi degli algoritmi**
 
     ---
 
-    L'analisi degli algoritmi: dimensione dell'input, tempo di esecuzione, correttezza con le invarianti di ciclo. La ricorsione: equazioni di ricorrenza, il Master theorem, algoritmi ricorsivi (somma di un array, merge sort, ricerca binaria, sotto-array di somma massima) e il confronto fra versioni ricorsive e iterative.
+    L'analisi degli algoritmi: la dimensione dell'input, il tempo di esecuzione nel caso migliore, peggiore e medio, e la correttezza dimostrata con le invarianti di ciclo.
 
-    [:octicons-download-24: dispensa-4-analisi-ricorsione.pdf](pdf/dispensa-4-analisi-ricorsione.pdf)
+    [:octicons-download-24: dispensa-4-analisi.pdf](pdf/dispensa-4-analisi.pdf)
+
+-   :material-book-open-variant: **Dispensa, volume 5 · Ricorsione**
+
+    ---
+
+    La ricorsione: algoritmi ricorsivi classici, equazioni di ricorrenza, il Master theorem, algoritmi ricorsivi (somma di un array, merge sort, ricerca binaria, sotto-array di somma massima) e il confronto fra versioni ricorsive e iterative.
+
+    [:octicons-download-24: dispensa-5-ricorsione.pdf](pdf/dispensa-5-ricorsione.pdf)
 
 </div>
 
@@ -72,12 +80,20 @@ Le dispense e gli eserciziari in PDF, aggiornati a ogni pubblicazione del sito, 
 
     [:octicons-download-24: esercizi-3-notazione-asintotica.pdf](pdf/esercizi-3-notazione-asintotica.pdf)
 
--   :material-pencil-box-multiple: **Esercizi, volume 4 · Analisi e ricorsione**
+-   :material-pencil-box-multiple: **Esercizi, volume 4 · Analisi degli algoritmi**
 
     ---
 
-    Esercizi svolti sui capitoli 11--18: dimensione dell'input, tempo di esecuzione, correttezza, ricorsione, equazioni di ricorrenza, Master theorem, algoritmi ricorsivi. Ogni esercizio ha la soluzione completa.
+    Esercizi svolti sui capitoli 11--13: dimensione dell'input, tempo di esecuzione, correttezza. Ogni esercizio ha la soluzione completa.
 
-    [:octicons-download-24: esercizi-4-analisi-ricorsione.pdf](pdf/esercizi-4-analisi-ricorsione.pdf)
+    [:octicons-download-24: esercizi-4-analisi.pdf](pdf/esercizi-4-analisi.pdf)
+
+-   :material-pencil-box-multiple: **Esercizi, volume 5 · Ricorsione**
+
+    ---
+
+    Esercizi svolti sui capitoli 14--18: ricorsione, equazioni di ricorrenza, Master theorem, algoritmi ricorsivi, ricorsivo e iterativo a confronto. Ogni esercizio ha la soluzione completa.
+
+    [:octicons-download-24: esercizi-5-ricorsione.pdf](pdf/esercizi-5-ricorsione.pdf)
 
 </div>

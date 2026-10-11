@@ -97,15 +97,25 @@ dispensa: sul sito e nel PDF trovi tutto allo stesso posto.
 
     [:octicons-arrow-right-24: I capitoli](notazione-asintotica/index.md)
 
--   :material-file-tree: **4 · Analisi e ricorsione**
+-   :material-timer-sand: **4 · Analisi degli algoritmi**
 
     ---
 
-    L'analisi degli algoritmi: dimensione dell'input, tempo di esecuzione, correttezza con le invarianti di ciclo. La ricorsione: equazioni di ricorrenza, il Master theorem, algoritmi ricorsivi (somma di un array, merge sort, ricerca binaria, sotto-array di somma massima) e il confronto fra versioni ricorsive e iterative.
+    L'analisi degli algoritmi: la dimensione dell'input, il tempo di esecuzione nel caso migliore, peggiore e medio, e la correttezza dimostrata con le invarianti di ciclo.
 
-    11\. Dimensione dell'input · 12\. Tempo di esecuzione · 13\. Correttezza · 14\. Ricorsione · 15\. Equazioni di ricorrenza · 16\. Il Master theorem · 17\. Algoritmi ricorsivi · 18\. Algoritmi ricorsivi e iterativi a confronto
+    11\. Dimensione dell'input · 12\. Tempo di esecuzione · 13\. Correttezza
 
-    [:octicons-arrow-right-24: I capitoli](analisi-ricorsione/index.md)
+    [:octicons-arrow-right-24: I capitoli](analisi/index.md)
+
+-   :material-file-tree: **5 · Ricorsione**
+
+    ---
+
+    La ricorsione: algoritmi ricorsivi classici, equazioni di ricorrenza, il Master theorem, algoritmi ricorsivi (somma di un array, merge sort, ricerca binaria, sotto-array di somma massima) e il confronto fra versioni ricorsive e iterative.
+
+    14\. Ricorsione · 15\. Equazioni di ricorrenza · 16\. Il Master theorem · 17\. Algoritmi ricorsivi · 18\. Algoritmi ricorsivi e iterativi a confronto
+
+    [:octicons-arrow-right-24: I capitoli](ricorsione/index.md)
 
 </div>
 
@@ -142,7 +152,7 @@ dispensa: sul sito e nel PDF trovi tutto allo stesso posto.
 
     ---
 
-    Quattro volumi di dispense e quattro eserciziari, con la stessa numerazione del sito.
+    Cinque volumi di dispense e cinque eserciziari, con la stessa numerazione del sito.
 
     [:octicons-arrow-right-24: Il materiale](materiale.md)
 

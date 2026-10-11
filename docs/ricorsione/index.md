@@ -1,34 +1,10 @@
-# Analisi e ricorsione
+# Ricorsione
 
-*Parte 4 del corso, volume 4 delle dispense.* L'analisi degli algoritmi: dimensione dell'input, tempo di esecuzione, correttezza con le invarianti di ciclo. La ricorsione: equazioni di ricorrenza, il Master theorem, algoritmi ricorsivi (somma di un array, merge sort, ricerca binaria, sotto-array di somma massima) e il confronto fra versioni ricorsive e iterative.
+*Parte 5 del corso, volume 5 delle dispense.* La ricorsione: algoritmi ricorsivi classici, equazioni di ricorrenza, il Master theorem, algoritmi ricorsivi (somma di un array, merge sort, ricerca binaria, sotto-array di somma massima) e il confronto fra versioni ricorsive e iterative.
 
-[:material-file-pdf-box: Dispensa, volume 4 (PDF)](../pdf/dispensa-4-analisi-ricorsione.pdf){ .md-button }
+[:material-file-pdf-box: Dispensa, volume 5 (PDF)](../pdf/dispensa-5-ricorsione.pdf){ .md-button }
 
 <div class="grid cards" markdown>
-
--   **11. Dimensione dell'input**
-
-    ---
-
-    Dimensione dell'input · Notazione asintotica: un richiamo · Istanza di input costituita da un numero naturale · Istanza di input costituita da due numeri naturali · …
-
-    [:octicons-arrow-right-24: Leggi il capitolo](11-dimensione-input.md) · [Esercizi](../esercizi/es-11-dimensione-input.md)
-
--   **12. Tempo di esecuzione**
-
-    ---
-
-    Tempo di esecuzione di un algoritmo · Ricerca del massimo · Insertion sort · Cambio di base · …
-
-    [:octicons-arrow-right-24: Leggi il capitolo](12-tempo-esecuzione.md) · [Esercizi](../esercizi/es-12-tempo-esecuzione.md)
-
--   **13. Correttezza**
-
-    ---
-
-    Correttezza di un algoritmo · Correttezza di Find Maximum · Correttezza di Insertion Sort · Correttezza di Binary Search · …
-
-    [:octicons-arrow-right-24: Leggi il capitolo](13-correttezza.md) · [Esercizi](../esercizi/es-13-correttezza.md)
 
 -   **14. Ricorsione**
 

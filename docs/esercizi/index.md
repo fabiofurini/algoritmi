@@ -29,13 +29,18 @@ Esercizi con le **soluzioni svolte**, capitolo per capitolo, come negli esercizi
     - [9. Notazione asintotica](es-09-notazione-asintotica.md) · 16 esercizi
     - [10. Crescita asintotica](es-10-crescita-asintotica.md) · 4 esercizi
 
--   **Analisi e ricorsione**
+-   **Analisi degli algoritmi**
 
     ---
 
     - [11. Dimensione dell'input](es-11-dimensione-input.md) · 4 esercizi
     - [12. Tempo di esecuzione](es-12-tempo-esecuzione.md) · 11 esercizi
     - [13. Correttezza](es-13-correttezza.md) · 5 esercizi
+
+-   **Ricorsione**
+
+    ---
+
     - [14. Ricorsione](es-14-ricorsione.md) · 6 esercizi
     - [15. Equazioni di ricorrenza](es-15-ricorrenze.md) · 6 esercizi
     - [16. Il Master theorem](es-16-master-theorem.md) · 6 esercizi

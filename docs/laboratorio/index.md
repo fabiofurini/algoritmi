@@ -61,7 +61,7 @@ Trascina i cursori, oppure premi ▶ per eseguire un passo alla volta e «Esegui
 
 </div>
 
-## Analisi e ricorsione
+## Analisi degli algoritmi
 
 <div class="grid cards" markdown>
 
@@ -72,6 +72,12 @@ Trascina i cursori, oppure premi ▶ per eseguire un passo alla volta e «Esegui
     FindMaximum iterazione per iterazione: verifica che l'invariante valga all'inizio, a ogni passo e alla fine.
 
     [Apri l'app →](invariante.md)
+
+</div>
+
+## Ricorsione
+
+<div class="grid cards" markdown>
 
 -   :material-file-tree: **Alberi delle chiamate ricorsive**
 

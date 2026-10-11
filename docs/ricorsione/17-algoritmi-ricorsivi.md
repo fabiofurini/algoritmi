@@ -6,7 +6,7 @@ title: "Algoritmi ricorsivi"
 
 <div class="info-capitolo" markdown>
 
-**Parte 4 · Analisi e ricorsione · Capitolo 17** · [:material-file-pdf-box: Dispensa, volume 4 (PDF)](../pdf/dispensa-4-analisi-ricorsione.pdf) · [:material-pencil: Esercizi](../esercizi/es-17-algoritmi-ricorsivi.md)
+**Parte 5 · Ricorsione · Capitolo 17** · [:material-file-pdf-box: Dispensa, volume 5 (PDF)](../pdf/dispensa-5-ricorsione.pdf) · [:material-pencil: Esercizi](../esercizi/es-17-algoritmi-ricorsivi.md)
 
 </div>
 

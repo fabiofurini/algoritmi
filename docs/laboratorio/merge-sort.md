@@ -5,7 +5,7 @@ hide:
 title: "Merge sort"
 ---
 
-[← Laboratorio](index.md) · Capitolo 17: [Algoritmi ricorsivi](../analisi-ricorsione/17-algoritmi-ricorsivi.md)
+[← Laboratorio](index.md) · Capitolo 17: [Algoritmi ricorsivi](../ricorsione/17-algoritmi-ricorsivi.md)
 
 # Merge sort
 

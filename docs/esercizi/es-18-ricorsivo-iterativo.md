@@ -6,7 +6,7 @@ title: "Esercizi · Algoritmi ricorsivi e iterativi a confronto"
 
 <div class="info-capitolo" markdown>
 
-**Esercizi · Capitolo 18** · ogni soluzione si apre con un clic · [:material-book-open-variant: Capitolo 18](../analisi-ricorsione/18-ricorsivo-iterativo.md) · [:material-file-pdf-box: Eserciziario, volume 4 (PDF)](../pdf/esercizi-4-analisi-ricorsione.pdf)
+**Esercizi · Capitolo 18** · ogni soluzione si apre con un clic · [:material-book-open-variant: Capitolo 18](../ricorsione/18-ricorsivo-iterativo.md) · [:material-file-pdf-box: Eserciziario, volume 5 (PDF)](../pdf/esercizi-5-ricorsione.pdf)
 
 </div>
 

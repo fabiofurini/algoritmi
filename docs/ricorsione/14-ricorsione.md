@@ -6,7 +6,7 @@ title: "Ricorsione"
 
 <div class="info-capitolo" markdown>
 
-**Parte 4 · Analisi e ricorsione · Capitolo 14** · [:material-file-pdf-box: Dispensa, volume 4 (PDF)](../pdf/dispensa-4-analisi-ricorsione.pdf) · [:material-pencil: Esercizi](../esercizi/es-14-ricorsione.md)
+**Parte 5 · Ricorsione · Capitolo 14** · [:material-file-pdf-box: Dispensa, volume 5 (PDF)](../pdf/dispensa-5-ricorsione.pdf) · [:material-pencil: Esercizi](../esercizi/es-14-ricorsione.md)
 
 </div>
 

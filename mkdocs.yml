@@ -149,16 +149,18 @@ nav:
       - notazione-asintotica/index.md
       - "9. Notazione asintotica": notazione-asintotica/09-notazione-asintotica.md
       - "10. Crescita asintotica": notazione-asintotica/10-crescita-asintotica.md
-  - Analisi e ricorsione:
-      - analisi-ricorsione/index.md
-      - "11. Dimensione dell'input": analisi-ricorsione/11-dimensione-input.md
-      - "12. Tempo di esecuzione": analisi-ricorsione/12-tempo-esecuzione.md
-      - "13. Correttezza": analisi-ricorsione/13-correttezza.md
-      - "14. Ricorsione": analisi-ricorsione/14-ricorsione.md
-      - "15. Equazioni di ricorrenza": analisi-ricorsione/15-ricorrenze.md
-      - "16. Il Master theorem": analisi-ricorsione/16-master-theorem.md
-      - "17. Algoritmi ricorsivi": analisi-ricorsione/17-algoritmi-ricorsivi.md
-      - "18. Algoritmi ricorsivi e iterativi a confronto": analisi-ricorsione/18-ricorsivo-iterativo.md
+  - Analisi:
+      - analisi/index.md
+      - "11. Dimensione dell'input": analisi/11-dimensione-input.md
+      - "12. Tempo di esecuzione": analisi/12-tempo-esecuzione.md
+      - "13. Correttezza": analisi/13-correttezza.md
+  - Ricorsione:
+      - ricorsione/index.md
+      - "14. Ricorsione": ricorsione/14-ricorsione.md
+      - "15. Equazioni di ricorrenza": ricorsione/15-ricorrenze.md
+      - "16. Il Master theorem": ricorsione/16-master-theorem.md
+      - "17. Algoritmi ricorsivi": ricorsione/17-algoritmi-ricorsivi.md
+      - "18. Algoritmi ricorsivi e iterativi a confronto": ricorsione/18-ricorsivo-iterativo.md
   - Esercizi:
       - esercizi/index.md
       - "1. Rappresentazione dei numeri": esercizi/es-01-rappresentazione-numeri.md

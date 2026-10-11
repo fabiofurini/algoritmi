@@ -6,7 +6,7 @@ title: "Esercizi · Il Master theorem"
 
 <div class="info-capitolo" markdown>
 
-**Esercizi · Capitolo 16** · ogni soluzione si apre con un clic · [:material-book-open-variant: Capitolo 16](../analisi-ricorsione/16-master-theorem.md) · [:material-file-pdf-box: Eserciziario, volume 4 (PDF)](../pdf/esercizi-4-analisi-ricorsione.pdf)
+**Esercizi · Capitolo 16** · ogni soluzione si apre con un clic · [:material-book-open-variant: Capitolo 16](../ricorsione/16-master-theorem.md) · [:material-file-pdf-box: Eserciziario, volume 5 (PDF)](../pdf/esercizi-5-ricorsione.pdf)
 
 </div>
 

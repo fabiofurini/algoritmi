@@ -82,30 +82,33 @@
     - 10.2 La gerarchia degli infiniti
     - 10.3 Confronto fra ordini di crescita
 
-## [Analisi e ricorsione](analisi-ricorsione/index.md)
+## [Analisi degli algoritmi](analisi/index.md)
 
-11. [Dimensione dell'input](analisi-ricorsione/11-dimensione-input.md)
+11. [Dimensione dell'input](analisi/11-dimensione-input.md)
     - 11.1 Dimensione dell'input
     - 11.2 Notazione asintotica: un richiamo
     - 11.3 Istanza di input costituita da un numero naturale
     - 11.4 Istanza di input costituita da due numeri naturali
     - 11.5 Istanza di input costituita da un array di numeri naturali
     - 11.6 Dimensione dell'input e numero di passi
-12. [Tempo di esecuzione](analisi-ricorsione/12-tempo-esecuzione.md)
+12. [Tempo di esecuzione](analisi/12-tempo-esecuzione.md)
     - 12.1 Tempo di esecuzione di un algoritmo
     - 12.2 Ricerca del massimo
     - 12.3 Insertion sort
     - 12.4 Cambio di base
     - 12.5 Test di primalità
     - 12.6 Riepilogo
-13. [Correttezza](analisi-ricorsione/13-correttezza.md)
+13. [Correttezza](analisi/13-correttezza.md)
     - 13.1 Correttezza di un algoritmo
     - 13.2 Correttezza di Find Maximum
     - 13.3 Correttezza di Insertion Sort
     - 13.4 Correttezza di Binary Search
     - 13.5 Correttezza dell'algoritmo di Euclide
     - 13.6 Correttezza degli algoritmi ricorsivi
-14. [Ricorsione](analisi-ricorsione/14-ricorsione.md)
+
+## [Ricorsione](ricorsione/index.md)
+
+14. [Ricorsione](ricorsione/14-ricorsione.md)
     - 14.1 Algoritmi ricorsivi
     - 14.2 Albero delle chiamate ricorsive e call stack
     - 14.3 Correttezza degli algoritmi ricorsivi
@@ -115,27 +118,27 @@
     - 14.7 Elevamento a potenza veloce
     - 14.8 Torri di Hanoi
     - 14.9 Riepilogo
-15. [Equazioni di ricorrenza](analisi-ricorsione/15-ricorrenze.md)
+15. [Equazioni di ricorrenza](ricorsione/15-ricorrenze.md)
     - 15.1 Equazioni di ricorrenza
     - 15.2 Il metodo di espansione
     - 15.3 Il metodo di sostituzione
     - 15.4 Il metodo dell'albero di ricorsione
     - 15.5 Verso il Master theorem
     - 15.6 Riepilogo: quale metodo quando
-16. [Il Master theorem](analisi-ricorsione/16-master-theorem.md)
+16. [Il Master theorem](ricorsione/16-master-theorem.md)
     - 16.1 Ricorrenze in forma standard
     - 16.2 Il Master theorem
     - 16.3 Applicare il Master theorem
     - 16.4 Quando il Master theorem non si applica
     - 16.5 Dimostrazione del Master theorem
     - 16.6 Riepilogo
-17. [Algoritmi ricorsivi](analisi-ricorsione/17-algoritmi-ricorsivi.md)
+17. [Algoritmi ricorsivi](ricorsione/17-algoritmi-ricorsivi.md)
     - 17.1 La somma degli elementi di un array
     - 17.2 Merge Sort
     - 17.3 Ricerca binaria ricorsiva
     - 17.4 Il problema del sotto-array di somma massima
     - 17.5 Riepilogo
-18. [Algoritmi ricorsivi e iterativi a confronto](analisi-ricorsione/18-ricorsivo-iterativo.md)
+18. [Algoritmi ricorsivi e iterativi a confronto](ricorsione/18-ricorsivo-iterativo.md)
     - 18.1 Ricorsione e iterazione
     - 18.2 Confronto in sintesi
     - 18.3 Il divide et impera dà il guadagno, non la ricorsione in sé
