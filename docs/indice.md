@@ -141,6 +141,5 @@
     - 18.3 Il divide et impera dà il guadagno, non la ricorsione in sé
     - 18.4 Quando i sottoproblemi si sovrappongono
     - 18.5 Spazio
-    - 18.6 Implementazione in <code>C++</code>
     - 18.7 Esperimento
     - 18.8 Linee guida

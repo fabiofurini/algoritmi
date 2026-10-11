@@ -1285,6 +1285,8 @@ Nel resto di queste note ogni algoritmo è scritto come una funzione, dentro un 
         <div class="pc-riga"><span class="pc-n">9</span><span class="pc-corpo"><span class="pc-t"><strong>end</strong></span></span></div>
         </div>
 
+    <div class="colab-pulsanti" markdown="0"><span class="colab-etichetta">Esegui in Colab:</span><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap02_pseudocodice_python.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Python del capitolo">Python</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap02_pseudocodice_cpp.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook C++ del capitolo">C++</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap02_pseudocodice_java.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Java del capitolo">Java</a></div>
+
     <strong>Esecuzione passo per passo:</strong>
 
     <strong>Istanza 1:</strong> $a = [9, 12, 3, 16, 19, 11, 12]$, $n=7$
@@ -1409,6 +1411,8 @@ Nel resto di queste note ogni algoritmo è scritto come una funzione, dentro un 
         <div class="pc-riga"><span class="pc-n">9</span><span class="pc-corpo"><span class="pc-t"><strong>end</strong></span></span></div>
         </div>
 
+    <div class="colab-pulsanti" markdown="0"><span class="colab-etichetta">Esegui in Colab:</span><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap02_pseudocodice_python.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Python del capitolo">Python</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap02_pseudocodice_cpp.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook C++ del capitolo">C++</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap02_pseudocodice_java.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Java del capitolo">Java</a></div>
+
     <strong>Esecuzione passo per passo:</strong>
 
     <strong>Istanza 1:</strong> $a = [-2, 5, -1, 3, 0]$, $n = 5$
@@ -1526,6 +1530,8 @@ Nel resto di queste note ogni algoritmo è scritto come una funzione, dentro un 
         <div class="pc-riga"><span class="pc-n">8</span><span class="pc-corpo"><span class="pc-t"><strong>end</strong></span></span></div>
         </div>
 
+    <div class="colab-pulsanti" markdown="0"><span class="colab-etichetta">Esegui in Colab:</span><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap02_pseudocodice_python.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Python del capitolo">Python</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap02_pseudocodice_cpp.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook C++ del capitolo">C++</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap02_pseudocodice_java.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Java del capitolo">Java</a></div>
+
     <strong>Esecuzione passo per passo:</strong>
 
     <strong>Istanza 1:</strong> $a = [2, 5, 7, 9]$, $n = 4$
@@ -1599,6 +1605,8 @@ Nel resto di queste note ogni algoritmo è scritto come una funzione, dentro un 
         <div class="pc-riga"><span class="pc-n">6</span><span class="pc-corpo"><span class="pc-l"></span><span class="pc-t"><strong>return</strong> <span class="arithmatex">&#92;(prod&#92;)</span></span></span></div>
         <div class="pc-riga"><span class="pc-n">7</span><span class="pc-corpo"><span class="pc-t"><strong>end</strong></span></span></div>
         </div>
+
+    <div class="colab-pulsanti" markdown="0"><span class="colab-etichetta">Esegui in Colab:</span><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap02_pseudocodice_python.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Python del capitolo">Python</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap02_pseudocodice_cpp.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook C++ del capitolo">C++</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap02_pseudocodice_java.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Java del capitolo">Java</a></div>
 
     <strong>Esecuzione passo per passo:</strong>
 
@@ -1694,6 +1702,8 @@ Nel resto di queste note ogni algoritmo è scritto come una funzione, dentro un 
         <div class="pc-riga"><span class="pc-n">7</span><span class="pc-corpo"><span class="pc-l"></span><span class="pc-t"><strong>return</strong> <span class="arithmatex">&#92;(a&#92;)</span></span></span></div>
         <div class="pc-riga"><span class="pc-n">8</span><span class="pc-corpo"><span class="pc-t"><strong>end</strong></span></span></div>
         </div>
+
+    <div class="colab-pulsanti" markdown="0"><span class="colab-etichetta">Esegui in Colab:</span><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap02_pseudocodice_python.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Python del capitolo">Python</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap02_pseudocodice_cpp.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook C++ del capitolo">C++</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap02_pseudocodice_java.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Java del capitolo">Java</a></div>
 
     <strong>Esecuzione passo per passo:</strong>
 

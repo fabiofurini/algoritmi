@@ -20,7 +20,7 @@ Il piano del capitolo è il seguente.
 
 - Nella Sezione [14.3](#sez-sec-rec-correct) mostriamo che la correttezza di un algoritmo ricorsivo si dimostra per <strong>induzione forte</strong>.
 
-- Nelle Sezioni [14.4](#sez-sec-factorial)–[14.8](#sez-sec-hanoi) applichiamo questi strumenti a cinque classici algoritmi ricorsivi: il fattoriale, i numeri di Fibonacci, il massimo comun divisore, l'elevamento a potenza veloce e le Torri di Hanoi. Per ciascuno di essi dimostriamo la correttezza, contiamo il numero di passi srotolando un'equazione di ricorrenza e forniamo un'implementazione in <code>C++</code> eseguita passo per passo.
+- Nelle Sezioni [14.4](#sez-sec-factorial)–[14.8](#sez-sec-hanoi) applichiamo questi strumenti a cinque classici algoritmi ricorsivi: il fattoriale, i numeri di Fibonacci, il massimo comun divisore, l'elevamento a potenza veloce e le Torri di Hanoi. Per ciascuno di essi dimostriamo la correttezza, contiamo il numero di passi srotolando un'equazione di ricorrenza; le implementazioni in Python, <code>C++</code> e Java sono nei notebook Colab del capitolo.
 
 ## 14.1 Algoritmi ricorsivi { #sez-sec-rec-def }
 
@@ -298,6 +298,8 @@ Il piano del capitolo è il seguente.
     <div class="pc-riga"><span class="pc-n">6</span><span class="pc-corpo"><span class="pc-t"><strong>end</strong></span></span></div>
     </div>
 
+<div class="colab-pulsanti" markdown="0"><span class="colab-etichetta">Esegui in Colab:</span><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap14_ricorsione_python.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Python del capitolo">Python</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap14_ricorsione_cpp.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook C++ del capitolo">C++</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap14_ricorsione_java.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Java del capitolo">Java</a></div>
+
 - Spiegazione dell'algoritmo:
 
     - Il caso base è $n=0$, per il quale l'algoritmo restituisce $0! = 1$.
@@ -414,52 +416,6 @@ Il piano del capitolo è il seguente.
 
     cioè è lineare nel valore numerico $n$, ma esponenziale nella dimensione dell'input $|I|$.
 
-### 14.4.3 Implementazione in <code>C++</code>
-
-- Questa è un'implementazione in <code>C++</code> dell'algoritmo <code>Factorial</code>. Usiamo il tipo <code>unsigned long long</code> (64 bit): il risultato è corretto solo per $n \le 20$, poiché $21! > 2^{64}-1$.
-
-```cpp
-// Restituisce n! per n >= 0 (corretto per 0 <= n <= 20 con interi a 64 bit)
-unsigned long long Factorial(int n)
-{
-    if (n == 0)
-    {
-        return 1;                     // caso base
-    }
-    return n * Factorial(n - 1);      // passo ricorsivo
-}
-```
-
-<a id="box-10-exFactCpp"></a>
-
-!!! esempio "Esempio 14.5: esecuzione dell'implementazione in <code>C++</code> di Factorial per $n=4$"
-
-    <strong>Chiamate</strong> (lo stack cresce)
-
-    1. <code>Factorial(4)</code>: $4 \ne 0$ $\Rightarrow$ deve calcolare $4 \cdot$ <code>Factorial(3)</code> e attende.  stack: [4]
-
-    2. <code>Factorial(3)</code>: $3 \ne 0$ $\Rightarrow$ deve calcolare $3 \cdot$ <code>Factorial(2)</code> e attende.  stack: [4, 3]
-
-    3. <code>Factorial(2)</code>: $2 \ne 0$ $\Rightarrow$ deve calcolare $2 \cdot$ <code>Factorial(1)</code> e attende.  stack: [4, 3, 2]
-
-    4. <code>Factorial(1)</code>: $1 \ne 0$ $\Rightarrow$ deve calcolare $1 \cdot$ <code>Factorial(0)</code> e attende.  stack: [4, 3, 2, 1]
-
-    5. <code>Factorial(0)</code>: $n = 0$ $\Rightarrow$ caso base.  stack: [4, 3, 2, 1, 0]
-
-    <strong>Ritorni</strong> (lo stack si riduce)
-
-    1. <code>Factorial(0)</code> restituisce $1$.  stack: [4, 3, 2, 1]
-
-    2. <code>Factorial(1)</code> restituisce $1 \cdot 1 = 1$.  stack: [4, 3, 2]
-
-    3. <code>Factorial(2)</code> restituisce $2 \cdot 1 = 2$.  stack: [4, 3]
-
-    4. <code>Factorial(3)</code> restituisce $3 \cdot 2 = 6$.  stack: [4]
-
-    5. <code>Factorial(4)</code> restituisce $4 \cdot 6 = 24$.  stack: [ ]
-
-    L'algoritmo termina con risultato $24 = 4!$, dopo $5$ chiamate.
-
 ## 14.5 Numeri di Fibonacci { #sez-sec-fibonacci }
 
 !!! chiave ""
@@ -523,6 +479,8 @@ unsigned long long Factorial(int n)
     <div class="pc-riga" id="riga-14-ricorsione-line-fib-c"><span class="pc-n">5</span><span class="pc-corpo"><span class="pc-l"></span><span class="pc-t"><strong>return</strong> Fib<span class="arithmatex">&#92;((n-1)&#92;)</span> <span class="arithmatex">&#92;(+&#92;)</span> Fib<span class="arithmatex">&#92;((n-2)&#92;)</span></span><span class="pc-c">// passo ricorsivo</span></span></div>
     <div class="pc-riga"><span class="pc-n">6</span><span class="pc-corpo"><span class="pc-t"><strong>end</strong></span></span></div>
     </div>
+
+<div class="colab-pulsanti" markdown="0"><span class="colab-etichetta">Esegui in Colab:</span><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap14_ricorsione_python.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Python del capitolo">Python</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap14_ricorsione_cpp.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook C++ del capitolo">C++</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap14_ricorsione_java.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Java del capitolo">Java</a></div>
 
 <a id="box-11-obsFibCorrect"></a>
 
@@ -670,6 +628,8 @@ unsigned long long Factorial(int n)
     <div class="pc-riga"><span class="pc-n">15</span><span class="pc-corpo"><span class="pc-t"><strong>end</strong></span></span></div>
     </div>
 
+<div class="colab-pulsanti" markdown="0"><span class="colab-etichetta">Esegui in Colab:</span><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap14_ricorsione_python.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Python del capitolo">Python</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap14_ricorsione_cpp.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook C++ del capitolo">C++</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap14_ricorsione_java.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Java del capitolo">Java</a></div>
+
 - Per $n \ge 2$: le righe [2](#riga-14-ricorsione-line-itfib-a), [5](#riga-14-ricorsione-line-itfib-c), [6](#riga-14-ricorsione-line-itfib-d), [7](#riga-14-ricorsione-line-itfib-e), [14](#riga-14-ricorsione-line-itfib-k) vengono eseguite una volta, la riga [8](#riga-14-ricorsione-line-itfib-f) viene eseguita $n$ volte e le righe [9](#riga-14-ricorsione-line-itfib-g)–[12](#riga-14-ricorsione-line-itfib-j) vengono eseguite $n-1$ volte. Quindi
 
     $$
@@ -717,163 +677,6 @@ unsigned long long Factorial(int n)
 
 - La ricorsione in sé non è il problema: il problema è la <strong>ripetizione di sottoproblemi identici</strong>. Memorizzare la soluzione di ciascun sottoproblema la prima volta che viene risolto, e riutilizzarla in seguito, è l'idea chiave della tecnica chiamata <strong>Programmazione Dinamica</strong>.
 
-### 14.5.3 Implementazione in <code>C++</code>
-
-- Questa è un'implementazione in <code>C++</code> dell'algoritmo ricorsivo ingenuo e dell'algoritmo iterativo:
-
-```cpp
-// Algoritmo ricorsivo ingenuo: numero esponenziale di chiamate
-long long Fib(int n)
-{
-    if (n <= 1)
-    {
-        return n;                     // casi base F(0)=0, F(1)=1
-    }
-    return Fib(n - 1) + Fib(n - 2);   // due chiamate ricorsive
-}
-
-// Algoritmo iterativo: n-1 iterazioni
-long long IterativeFib(int n)
-{
-    if (n <= 1)
-    {
-        return n;
-    }
-    long long prev = 0;   // F(i-2)
-    long long curr = 1;   // F(i-1)
-    for (int i = 2; i <= n; i++)
-    {
-        long long next = prev + curr;
-        prev = curr;
-        curr = next;
-    }
-    return curr;
-}
-```
-
-<a id="box-15-exFibCpp"></a>
-
-!!! esempio "Esempio 14.7: esecuzione delle implementazioni in <code>C++</code> per $n=4$"
-
-    Questa è l'esecuzione passo per passo di <code>Fib(4)</code>. Le chiamate vengono eseguite nell'ordine della visita in profondità dell'albero dell'[Esempio 14.2](#box-4-exCallTreeShapes) (indentazione = profondità nello stack).
-
-    <div class="tabella" markdown="0"><table>
-    <tr>
-    <th>chiamata</th>
-    <th>azione</th>
-    </tr>
-    <tr>
-    <td><code>Fib(4)</code></td>
-    <td>richiama <code>Fib(3)</code></td>
-    </tr>
-    <tr>
-    <td><code>Fib(3)</code></td>
-    <td>richiama <code>Fib(2)</code></td>
-    </tr>
-    <tr>
-    <td><code>Fib(2)</code></td>
-    <td>richiama <code>Fib(1)</code></td>
-    </tr>
-    <tr>
-    <td><code>Fib(1)</code></td>
-    <td>caso base, restituisce <span class="arithmatex">&#92;(1&#92;)</span></td>
-    </tr>
-    <tr>
-    <td><code>Fib(2)</code></td>
-    <td>richiama <code>Fib(0)</code></td>
-    </tr>
-    <tr>
-    <td><code>Fib(0)</code></td>
-    <td>caso base, restituisce <span class="arithmatex">&#92;(0&#92;)</span></td>
-    </tr>
-    <tr>
-    <td><code>Fib(2)</code></td>
-    <td>restituisce <span class="arithmatex">&#92;(1 + 0 = 1&#92;)</span></td>
-    </tr>
-    <tr>
-    <td><code>Fib(3)</code></td>
-    <td>richiama <code>Fib(1)</code></td>
-    </tr>
-    <tr>
-    <td><code>Fib(1)</code></td>
-    <td>caso base, restituisce <span class="arithmatex">&#92;(1&#92;)</span></td>
-    </tr>
-    <tr>
-    <td><code>Fib(3)</code></td>
-    <td>restituisce <span class="arithmatex">&#92;(1 + 1 = 2&#92;)</span></td>
-    </tr>
-    <tr>
-    <td><code>Fib(4)</code></td>
-    <td>richiama <code>Fib(2)</code></td>
-    </tr>
-    <tr>
-    <td><code>Fib(2)</code></td>
-    <td>richiama <code>Fib(1)</code></td>
-    </tr>
-    <tr>
-    <td><code>Fib(1)</code></td>
-    <td>caso base, restituisce <span class="arithmatex">&#92;(1&#92;)</span></td>
-    </tr>
-    <tr>
-    <td><code>Fib(2)</code></td>
-    <td>richiama <code>Fib(0)</code></td>
-    </tr>
-    <tr>
-    <td><code>Fib(0)</code></td>
-    <td>caso base, restituisce <span class="arithmatex">&#92;(0&#92;)</span></td>
-    </tr>
-    <tr>
-    <td><code>Fib(2)</code></td>
-    <td>restituisce <span class="arithmatex">&#92;(1 + 0 = 1&#92;)</span></td>
-    </tr>
-    <tr>
-    <td><code>Fib(4)</code></td>
-    <td>restituisce <span class="arithmatex">&#92;(2 + 1 = 3&#92;)</span></td>
-    </tr>
-    </table></div>
-
-    Il risultato è $F(4) = 3$, dopo $C(4) = 2F(5)-1 = 9$ chiamate. <code>IterativeFib(4)</code>, invece, esegue $3$ iterazioni:
-
-    <div class="tabella" markdown="0"><table>
-    <tr>
-    <th>iterazione</th>
-    <th><span class="arithmatex">&#92;(i&#92;)</span></th>
-    <th><span class="arithmatex">&#92;(next = prev + curr&#92;)</span></th>
-    <th><span class="arithmatex">&#92;(prev&#92;)</span></th>
-    <th><span class="arithmatex">&#92;(curr&#92;)</span></th>
-    </tr>
-    <tr>
-    <td>inizializzazione</td>
-    <td><span class="arithmatex">&#92;(2&#92;)</span></td>
-    <td>–</td>
-    <td><span class="arithmatex">&#92;(0&#92;)</span></td>
-    <td><span class="arithmatex">&#92;(1&#92;)</span></td>
-    </tr>
-    <tr>
-    <td><span class="arithmatex">&#92;(1&#92;)</span></td>
-    <td><span class="arithmatex">&#92;(2 &#92;to 3&#92;)</span></td>
-    <td><span class="arithmatex">&#92;(0 + 1 = 1&#92;)</span></td>
-    <td><span class="arithmatex">&#92;(1&#92;)</span></td>
-    <td><span class="arithmatex">&#92;(1&#92;)</span></td>
-    </tr>
-    <tr>
-    <td><span class="arithmatex">&#92;(2&#92;)</span></td>
-    <td><span class="arithmatex">&#92;(3 &#92;to 4&#92;)</span></td>
-    <td><span class="arithmatex">&#92;(1 + 1 = 2&#92;)</span></td>
-    <td><span class="arithmatex">&#92;(1&#92;)</span></td>
-    <td><span class="arithmatex">&#92;(2&#92;)</span></td>
-    </tr>
-    <tr>
-    <td><span class="arithmatex">&#92;(3&#92;)</span></td>
-    <td><span class="arithmatex">&#92;(4 &#92;to 5&#92;)</span></td>
-    <td><span class="arithmatex">&#92;(1 + 2 = 3&#92;)</span></td>
-    <td><span class="arithmatex">&#92;(2&#92;)</span></td>
-    <td><span class="arithmatex">&#92;(3&#92;)</span></td>
-    </tr>
-    </table></div>
-
-    Il ciclo termina con $i = 5 > 4$ e la funzione restituisce $curr = 3$.
-
 ## 14.6 Massimo comun divisore { #sez-sec-gcd }
 
 !!! chiave ""
@@ -914,6 +717,8 @@ long long IterativeFib(int n)
     <div class="pc-riga" id="riga-14-ricorsione-line-gcd-c"><span class="pc-n">5</span><span class="pc-corpo"><span class="pc-l"></span><span class="pc-t"><strong>return</strong> RecursiveGCD<span class="arithmatex">&#92;((m,&#92; n &#92;bmod m)&#92;)</span></span><span class="pc-c">// passo ricorsivo</span></span></div>
     <div class="pc-riga"><span class="pc-n">6</span><span class="pc-corpo"><span class="pc-t"><strong>end</strong></span></span></div>
     </div>
+
+<div class="colab-pulsanti" markdown="0"><span class="colab-etichetta">Esegui in Colab:</span><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap14_ricorsione_python.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Python del capitolo">Python</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap14_ricorsione_cpp.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook C++ del capitolo">C++</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap14_ricorsione_java.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Java del capitolo">Java</a></div>
 
 - La dimensione dell'input è il secondo argomento $m$. Poiché $0 \le n \bmod m < m$, il secondo argomento diminuisce strettamente a ogni chiamata ricorsiva, quindi il caso base $m = 0$ viene sempre raggiunto.
 
@@ -1029,38 +834,6 @@ long long IterativeFib(int n)
 
     cioè è al più lineare nella dimensione dell'input. (Si può dimostrare che il caso peggiore si verifica per due numeri di Fibonacci consecutivi: per esempio $\gcd(89, 55)$ richiede $10$ chiamate, contro il limite $2\lfloor \log_2 55 \rfloor + 3 = 13$.)
 
-### 14.6.4 Implementazione in <code>C++</code>
-
-```cpp
-// Restituisce gcd(n, m), con n >= 1 e m >= 0
-int RecursiveGCD(int n, int m)
-{
-    if (m == 0)
-    {
-        return n;                        // caso base: gcd(n,0) = n
-    }
-    return RecursiveGCD(m, n % m);       // chiamata in coda
-}
-```
-
-<a id="box-20-exGCDCpp"></a>
-
-!!! esempio "Esempio 14.9: esecuzione dell'implementazione in <code>C++</code> di RecursiveGCD"
-
-    Questa è l'esecuzione passo per passo dell'implementazione in <code>C++</code> per $n = 18$ e $m = 48$ (si noti che $n < m$: la prima chiamata scambia semplicemente i due numeri, poiché $18 \bmod 48 = 18$).
-
-    1. <code>RecursiveGCD(18, 48)</code>: $m \ne 0$, $18 \% 48 = 18$ $\Rightarrow$ richiama <code>RecursiveGCD(48, 18)</code>
-
-    2. <code>RecursiveGCD(48, 18)</code>: $m \ne 0$, $48 \% 18 = 12$ $\Rightarrow$ richiama <code>RecursiveGCD(18, 12)</code>
-
-    3. <code>RecursiveGCD(18, 12)</code>: $m \ne 0$, $18 \% 12 = 6$ $\Rightarrow$ richiama <code>RecursiveGCD(12, 6)</code>
-
-    4. <code>RecursiveGCD(12, 6)</code>: $m \ne 0$, $12 \% 6 = 0$ $\Rightarrow$ richiama <code>RecursiveGCD(6, 0)</code>
-
-    5. <code>RecursiveGCD(6, 0)</code>: $m = 0$ $\Rightarrow$ caso base, restituisce $6$
-
-    Il valore $6$ viene restituito invariato da tutte le chiamate: $\gcd(18, 48) = 6$, dopo $5$ chiamate.
-
 ## 14.7 Elevamento a potenza veloce { #sez-sec-fastpower }
 
 !!! chiave ""
@@ -1107,6 +880,8 @@ int RecursiveGCD(int n, int m)
     <div class="pc-riga"><span class="pc-n">10</span><span class="pc-corpo"><span class="pc-l"></span><span class="pc-t"><strong>end</strong></span></span></div>
     <div class="pc-riga"><span class="pc-n">11</span><span class="pc-corpo"><span class="pc-t"><strong>end</strong></span></span></div>
     </div>
+
+<div class="colab-pulsanti" markdown="0"><span class="colab-etichetta">Esegui in Colab:</span><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap14_ricorsione_python.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Python del capitolo">Python</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap14_ricorsione_cpp.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook C++ del capitolo">C++</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap14_ricorsione_java.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Java del capitolo">Java</a></div>
 
 - Si noti che il risultato della chiamata ricorsiva è memorizzato nella variabile $y$ e usato due volte: scrivere <code>FastPower</code>$(x, \lfloor n/2 \rfloor) \cdot$ <code>FastPower</code>$(x, \lfloor n/2 \rfloor)$ produrrebbe <strong>due</strong> chiamate ricorsive identiche e distruggerebbe l'efficienza dell'algoritmo (questa variante è analizzata negli esercizi del capitolo).
 
@@ -1189,58 +964,6 @@ int RecursiveGCD(int n, int m)
 
     cioè è lineare nella dimensione dell'input. L'algoritmo ingenuo esegue $\Theta(n)$ passi, cioè è esponenziale nella dimensione dell'input.
 
-### 14.7.3 Implementazione in <code>C++</code>
-
-```cpp
-// Restituisce x^n (n >= 0) per quadrati successivi
-long long FastPower(long long x, int n)
-{
-    if (n == 0)
-    {
-        return 1;                       // caso base: x^0 = 1
-    }
-    long long y = FastPower(x, n / 2);  // divisione intera = floor(n/2)
-    if (n % 2 == 0)
-    {
-        return y * y;                   // n pari
-    }
-    else
-    {
-        return x * y * y;               // n dispari
-    }
-}
-```
-
-<a id="box-23-exPowCpp"></a>
-
-!!! esempio "Esempio 14.11: esecuzione dell'implementazione in <code>C++</code> di FastPower"
-
-    Questa è l'esecuzione passo per passo dell'implementazione in <code>C++</code> per $x = 3$ e $n = 13$.
-
-    <strong>Chiamate</strong>
-
-    1. <code>FastPower(3, 13)</code>: $13 \ne 0$ $\Rightarrow$ richiama <code>FastPower(3, 6)</code>  ($13/2 = 6$)
-
-    2. <code>FastPower(3, 6)</code>: $6 \ne 0$ $\Rightarrow$ richiama <code>FastPower(3, 3)</code>  ($6/2 = 3$)
-
-    3. <code>FastPower(3, 3)</code>: $3 \ne 0$ $\Rightarrow$ richiama <code>FastPower(3, 1)</code>  ($3/2 = 1$)
-
-    4. <code>FastPower(3, 1)</code>: $1 \ne 0$ $\Rightarrow$ richiama <code>FastPower(3, 0)</code>  ($1/2 = 0$)
-
-    5. <code>FastPower(3, 0)</code>: caso base, restituisce $1$
-
-    <strong>Ritorni</strong>
-
-    1. <code>FastPower(3, 1)</code>: $y = 1$, $1$ è dispari $\Rightarrow$ restituisce $3 \cdot 1 \cdot 1 = 3$
-
-    2. <code>FastPower(3, 3)</code>: $y = 3$, $3$ è dispari $\Rightarrow$ restituisce $3 \cdot 3 \cdot 3 = 27$
-
-    3. <code>FastPower(3, 6)</code>: $y = 27$, $6$ è pari $\Rightarrow$ restituisce $27 \cdot 27 = 729$
-
-    4. <code>FastPower(3, 13)</code>: $y = 729$, $13$ è dispari $\Rightarrow$ restituisce $3 \cdot 729 \cdot 729 = 1594323$
-
-    L'algoritmo termina con risultato $1594323 = 3^{13}$, dopo $5$ chiamate e $7$ moltiplicazioni.
-
 ## 14.8 Torri di Hanoi { #sez-sec-hanoi }
 
 !!! chiave ""
@@ -1280,6 +1003,8 @@ long long FastPower(long long x, int n)
     <div class="pc-riga"><span class="pc-n">8</span><span class="pc-corpo"><span class="pc-l"></span><span class="pc-t"><strong>end</strong></span></span></div>
     <div class="pc-riga"><span class="pc-n">9</span><span class="pc-corpo"><span class="pc-t"><strong>end</strong></span></span></div>
     </div>
+
+<div class="colab-pulsanti" markdown="0"><span class="colab-etichetta">Esegui in Colab:</span><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap14_ricorsione_python.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Python del capitolo">Python</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap14_ricorsione_cpp.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook C++ del capitolo">C++</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap14_ricorsione_java.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Java del capitolo">Java</a></div>
 
 - La chiamata iniziale è <code>Hanoi</code>$(n, A, C, B)$.
 
@@ -1445,99 +1170,6 @@ long long FastPower(long long x, int n)
     L'algoritmo <code>Hanoi</code> esegue $M(n) = 2^n - 1$ mosse e $S(n) = 3 \cdot 2^n - 4 = \Theta(2^n)$ passi, con profondità di ricorsione $n$. Il numero di mosse è <strong>ottimo</strong>: ogni algoritmo deve produrre in output $2^n - 1$ mosse, quindi il tempo di esecuzione di qualunque algoritmo per questo problema è esponenziale in $n$ (e quindi doppiamente esponenziale nella dimensione dell'input $|I| = \Theta(\log_2 n)$).
 
 - Con $n = 64$ dischi (la leggenda originale) e una mossa al secondo, $2^{64} - 1$ secondi sono più di $5.8 \cdot 10^{11}$ anni.
-
-### 14.8.3 Implementazione in <code>C++</code>
-
-```cpp
-#include <iostream>
-using namespace std;
-
-// Stampa le mosse che spostano i dischi 1..n dal piolo from al piolo to
-void Hanoi(int n, char from, char to, char aux)
-{
-    if (n == 1)
-    {
-        cout << "sposta il disco 1 da " << from << " a " << to << endl;
-        return;
-    }
-    Hanoi(n - 1, from, aux, to);
-    cout << "sposta il disco " << n << " da " << from << " a " << to << endl;
-    Hanoi(n - 1, aux, to, from);
-}
-
-int main()
-{
-    Hanoi(3, 'A', 'C', 'B');
-    return 0;
-}
-```
-
-<a id="box-28-exHanoiCpp"></a>
-
-!!! esempio "Esempio 14.13: esecuzione dell'implementazione in <code>C++</code> di Hanoi per $n=3$"
-
-    Questa è l'esecuzione passo per passo per $n = 3$ (indentazione = profondità nello stack; le righe stampate sono le mosse dell'[Esempio 14.12](#box-25-exHanoiTree)).
-
-    <div class="tabella" markdown="0"><table>
-    <tr>
-    <th>chiamata</th>
-    <th>azione</th>
-    </tr>
-    <tr>
-    <td><code>Hanoi(3,A,C,B)</code></td>
-    <td>richiama <code>Hanoi(2,A,B,C)</code></td>
-    </tr>
-    <tr>
-    <td><code>Hanoi(2,A,B,C)</code></td>
-    <td>richiama <code>Hanoi(1,A,C,B)</code></td>
-    </tr>
-    <tr>
-    <td><code>Hanoi(1,A,C,B)</code></td>
-    <td>stampa <strong>sposta il disco 1 da A a C</strong>, termina</td>
-    </tr>
-    <tr>
-    <td><code>Hanoi(2,A,B,C)</code></td>
-    <td>stampa <strong>sposta il disco 2 da A a B</strong>, richiama <code>Hanoi(1,C,B,A)</code></td>
-    </tr>
-    <tr>
-    <td><code>Hanoi(1,C,B,A)</code></td>
-    <td>stampa <strong>sposta il disco 1 da C a B</strong>, termina</td>
-    </tr>
-    <tr>
-    <td><code>Hanoi(2,A,B,C)</code></td>
-    <td>termina</td>
-    </tr>
-    <tr>
-    <td><code>Hanoi(3,A,C,B)</code></td>
-    <td>stampa <strong>sposta il disco 3 da A a C</strong>, richiama <code>Hanoi(2,B,C,A)</code></td>
-    </tr>
-    <tr>
-    <td><code>Hanoi(2,B,C,A)</code></td>
-    <td>richiama <code>Hanoi(1,B,A,C)</code></td>
-    </tr>
-    <tr>
-    <td><code>Hanoi(1,B,A,C)</code></td>
-    <td>stampa <strong>sposta il disco 1 da B a A</strong>, termina</td>
-    </tr>
-    <tr>
-    <td><code>Hanoi(2,B,C,A)</code></td>
-    <td>stampa <strong>sposta il disco 2 da B a C</strong>, richiama <code>Hanoi(1,A,C,B)</code></td>
-    </tr>
-    <tr>
-    <td><code>Hanoi(1,A,C,B)</code></td>
-    <td>stampa <strong>sposta il disco 1 da A a C</strong>, termina</td>
-    </tr>
-    <tr>
-    <td><code>Hanoi(2,B,C,A)</code></td>
-    <td>termina</td>
-    </tr>
-    <tr>
-    <td><code>Hanoi(3,A,C,B)</code></td>
-    <td>termina</td>
-    </tr>
-    </table></div>
-
-    Tutte le $7$ mosse vengono stampate e tutti i dischi sono sul piolo $C$.
 
 ## 14.9 Riepilogo
 

@@ -38,7 +38,7 @@ Tutti gli algoritmi sono studiati con lo stesso schema, che è lo schema dell'an
 
     5. misuriamo la <strong>memoria aggiuntiva</strong>, che per un algoritmo ricorsivo comprende la pila delle chiamate;
 
-    6. diamo un'implementazione in <code>C++</code> (array indicizzati da $0$, mentre nello pseudocodice sono indicizzati da $1$).
+    6. lo eseguiamo in Python, <code>C++</code> e Java, nei notebook Colab del capitolo (array indicizzati da $0$, mentre nello pseudocodice sono indicizzati da $1$).
 
 Tre dei quattro algoritmi seguono il paradigma <strong>divide et impera</strong>: il problema su un sotto-array $a[l..r]$ viene suddiviso in sottoproblemi sulle due metà $a[l..m]$ e $a[m+1..r]$ (<em>divide</em>), i sottoproblemi vengono risolti ricorsivamente (<em>impera</em>), e le loro soluzioni vengono messe insieme (<em>combina</em>). La ricerca binaria ricorsiva, invece, effettua una sola chiamata ricorsiva su una metà.
 
@@ -101,6 +101,8 @@ Tre dei quattro algoritmi seguono il paradigma <strong>divide et impera</strong>
     <div class="pc-riga"><span class="pc-n">9</span><span class="pc-corpo"><span class="pc-t"><strong>end</strong></span></span></div>
     </div>
 
+<div class="colab-pulsanti" markdown="0"><span class="colab-etichetta">Esegui in Colab:</span><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap17_algoritmi_ricorsivi_python.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Python del capitolo">Python</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap17_algoritmi_ricorsivi_cpp.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook C++ del capitolo">C++</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap17_algoritmi_ricorsivi_java.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Java del capitolo">Java</a></div>
+
 - Sia $S(n)$ il numero di passi eseguiti da <code>SumIterative</code> su un array di $n$ elementi (non c'è differenza tra caso migliore e caso peggiore: l'algoritmo esegue sempre le stesse operazioni). Il numero di volte che ciascuna riga di codice viene eseguita è:
 
     - La <span style="color:#e03131">riga</span> [2](#riga-17-algoritmi-ricorsivi-line-sumit-a) viene eseguita $1$ volta
@@ -156,6 +158,8 @@ Tre dei quattro algoritmi seguono il paradigma <strong>divide et impera</strong>
     <div class="pc-riga" id="riga-17-algoritmi-ricorsivi-line-rsum-f"><span class="pc-n">8</span><span class="pc-corpo"><span class="pc-l"></span><span class="pc-t"><strong>return</strong> <span class="arithmatex">&#92;(s&#95;1 + s&#95;2&#92;)</span></span><span class="pc-c">// Combina</span></span></div>
     <div class="pc-riga"><span class="pc-n">9</span><span class="pc-corpo"><span class="pc-t"><strong>end</strong></span></span></div>
     </div>
+
+<div class="colab-pulsanti" markdown="0"><span class="colab-etichetta">Esegui in Colab:</span><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap17_algoritmi_ricorsivi_python.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Python del capitolo">Python</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap17_algoritmi_ricorsivi_cpp.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook C++ del capitolo">C++</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap17_algoritmi_ricorsivi_java.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Java del capitolo">Java</a></div>
 
 - Sia $k = r-l+1$ il numero di elementi di $a[l..r]$. Se $k\ge 2$, le due metà hanno
 
@@ -470,6 +474,8 @@ Come previsto, il risultato è in accordo con la soluzione esatta $S(n)=7n-5$.
     <div class="pc-riga"><span class="pc-n">7</span><span class="pc-corpo"><span class="pc-t"><strong>end</strong></span></span></div>
     </div>
 
+<div class="colab-pulsanti" markdown="0"><span class="colab-etichetta">Esegui in Colab:</span><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap17_algoritmi_ricorsivi_python.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Python del capitolo">Python</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap17_algoritmi_ricorsivi_cpp.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook C++ del capitolo">C++</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap17_algoritmi_ricorsivi_java.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Java del capitolo">Java</a></div>
+
 - La correttezza segue per induzione (semplice) su $n$: per $n=1$ l'algoritmo restituisce $a[1]$; per $n\ge 2$, per l'ipotesi induttiva $s=a[1]+\cdots+a[n-1]$, e l'algoritmo restituisce $s+a[n]=a[1]+\cdots+a[n]$.
 
 - Se $n=1$, le righe [2](#riga-17-algoritmi-ricorsivi-line-rsuml-a) e [3](#riga-17-algoritmi-ricorsivi-line-rsuml-b) vengono eseguite una volta: $S(1)=2$. Se $n\ge 2$, le righe [2](#riga-17-algoritmi-ricorsivi-line-rsuml-a), [5](#riga-17-algoritmi-ricorsivi-line-rsuml-c) e [6](#riga-17-algoritmi-ricorsivi-line-rsuml-d) vengono eseguite una volta, più i $S(n-1)$ passi della chiamata ricorsiva:
@@ -493,153 +499,6 @@ Come previsto, il risultato è in accordo con la soluzione esatta $S(n)=7n-5$.
 !!! chiave ""
 
     <code>RecursiveSumLinear</code> esegue $S(n)=3n-1=\Theta(n)$ passi, ma la sua profondità di ricorsione è $n$: richiede $\Theta(n)$ di memoria aggiuntiva per la pila delle chiamate (contro $\Theta(\log_2 n)$ di <code>RecursiveSum</code> e $\Theta(1)$ di <code>SumIterative</code>). In pratica, per $n$ grande (ad esempio $n=10^7$) la versione per decremento di uno può esaurire la pila delle chiamate (<em>stack overflow</em>), mentre <code>RecursiveSum</code> richiede solo $\lceil\log_2 10^7\rceil+1=25$ chiamate attive.
-
-### 17.1.9 Implementazione in <code>C++</code>
-
-- Questa è un'implementazione in <code>C++</code> dell'algoritmo iterativo e di quello ricorsivo. In <code>C++</code> gli array sono indicizzati da $0$: la somma dell'intero array si calcola con la chiamata <code>RecursiveSum(a, 0, n-1)</code>.
-
-```cpp
-// Somma iterativa di a[0..n-1]
-int SumIterative(int n, int *a)
-{
-    int s = 0;
-    for (int i = 0; i < n; i++)
-    {
-        s = s + a[i];
-    }
-    return s;
-}
-
-// Somma ricorsiva di a[l..r] (indici da 0, l <= r)
-int RecursiveSum(int *a, int l, int r)
-{
-    if (l == r)
-    {
-        return a[l];  // Caso base: un solo elemento
-    }
-
-    int m = l + (r - l) / 2;  // Equivale a (l + r) / 2
-
-    int s1 = RecursiveSum(a, l, m);      // Somma della metà sinistra
-    int s2 = RecursiveSum(a, m + 1, r);  // Somma della metà destra
-
-    return s1 + s2;
-}
-```
-
-- L'espressione <code>l + (r - l) / 2</code> calcola $\lfloor (l+r)/2 \rfloor$ (per $l,r\ge 0$) senza il rischio di overflow della somma <code>l + r</code>, come nell'algoritmo di ricerca binaria.
-
-<a id="box-6-exSumCpp"></a>
-
-!!! esempio "Esempio 17.3: esecuzione dell'implementazione in C++ di RecursiveSum"
-
-    Eseguiamo la chiamata <code>RecursiveSum(a, 0, 4)</code> sull'array $a = [9, 8, 12, 3, 5]$ ($n=5$):
-
-    $$
-    \begin{array}{c|c|c|c|c|c|}
-    {a[j]} & {j=0} & {j=1} & {j=2} & {j=3} & {j=4} \\
-    & 9 & 8 & 12 & 3 & 5
-    \end{array}
-    $$
-
-    $l=0 \qquad r=4$
-
-    La colonna <em>pila</em> riporta le chiamate attive, dalla prima a quella corrente (scriviamo $(l,r)$ per <code>RecursiveSum(a, l, r)</code>).
-
-    <div class="tabella" markdown="0"><table>
-    <tr>
-    <th>\#</th>
-    <th>pila</th>
-    <th>azione</th>
-    </tr>
-    <tr>
-    <td>1</td>
-    <td><span class="arithmatex">&#92;((0,4)&#92;)</span></td>
-    <td><span class="arithmatex">&#92;(l&#92;ne r&#92;)</span>, <span class="arithmatex">&#92;(m=0+(4-0)/2=2&#92;)</span>; chiamata <span class="arithmatex">&#92;((0,2)&#92;)</span></td>
-    </tr>
-    <tr>
-    <td>2</td>
-    <td><span class="arithmatex">&#92;((0,4),(0,2)&#92;)</span></td>
-    <td><span class="arithmatex">&#92;(l&#92;ne r&#92;)</span>, <span class="arithmatex">&#92;(m=0+(2-0)/2=1&#92;)</span>; chiamata <span class="arithmatex">&#92;((0,1)&#92;)</span></td>
-    </tr>
-    <tr>
-    <td>3</td>
-    <td><span class="arithmatex">&#92;((0,4),(0,2),(0,1)&#92;)</span></td>
-    <td><span class="arithmatex">&#92;(l&#92;ne r&#92;)</span>, <span class="arithmatex">&#92;(m=0+(1-0)/2=0&#92;)</span>; chiamata <span class="arithmatex">&#92;((0,0)&#92;)</span></td>
-    </tr>
-    <tr>
-    <td>4</td>
-    <td><span class="arithmatex">&#92;((0,4),(0,2),(0,1),(0,0)&#92;)</span></td>
-    <td><span class="arithmatex">&#92;(l=r&#92;)</span> <span class="arithmatex">&#92;(&#92;Rightarrow&#92;)</span> restituisce <span class="arithmatex">&#92;(a&#91;0&#93;=9&#92;)</span></td>
-    </tr>
-    <tr>
-    <td>5</td>
-    <td><span class="arithmatex">&#92;((0,4),(0,2),(0,1)&#92;)</span></td>
-    <td><span class="arithmatex">&#92;(s1=9&#92;)</span>; chiamata <span class="arithmatex">&#92;((1,1)&#92;)</span></td>
-    </tr>
-    <tr>
-    <td>6</td>
-    <td><span class="arithmatex">&#92;((0,4),(0,2),(0,1),(1,1)&#92;)</span></td>
-    <td><span class="arithmatex">&#92;(l=r&#92;)</span> <span class="arithmatex">&#92;(&#92;Rightarrow&#92;)</span> restituisce <span class="arithmatex">&#92;(a&#91;1&#93;=8&#92;)</span></td>
-    </tr>
-    <tr>
-    <td>7</td>
-    <td><span class="arithmatex">&#92;((0,4),(0,2),(0,1)&#92;)</span></td>
-    <td><span class="arithmatex">&#92;(s2=8&#92;)</span>; restituisce <span class="arithmatex">&#92;(9+8=17&#92;)</span></td>
-    </tr>
-    <tr>
-    <td>8</td>
-    <td><span class="arithmatex">&#92;((0,4),(0,2)&#92;)</span></td>
-    <td><span class="arithmatex">&#92;(s1=17&#92;)</span>; chiamata <span class="arithmatex">&#92;((2,2)&#92;)</span></td>
-    </tr>
-    <tr>
-    <td>9</td>
-    <td><span class="arithmatex">&#92;((0,4),(0,2),(2,2)&#92;)</span></td>
-    <td><span class="arithmatex">&#92;(l=r&#92;)</span> <span class="arithmatex">&#92;(&#92;Rightarrow&#92;)</span> restituisce <span class="arithmatex">&#92;(a&#91;2&#93;=12&#92;)</span></td>
-    </tr>
-    <tr>
-    <td>10</td>
-    <td><span class="arithmatex">&#92;((0,4),(0,2)&#92;)</span></td>
-    <td><span class="arithmatex">&#92;(s2=12&#92;)</span>; restituisce <span class="arithmatex">&#92;(17+12=29&#92;)</span></td>
-    </tr>
-    <tr>
-    <td>11</td>
-    <td><span class="arithmatex">&#92;((0,4)&#92;)</span></td>
-    <td><span class="arithmatex">&#92;(s1=29&#92;)</span>; chiamata <span class="arithmatex">&#92;((3,4)&#92;)</span></td>
-    </tr>
-    <tr>
-    <td>12</td>
-    <td><span class="arithmatex">&#92;((0,4),(3,4)&#92;)</span></td>
-    <td><span class="arithmatex">&#92;(l&#92;ne r&#92;)</span>, <span class="arithmatex">&#92;(m=3+(4-3)/2=3&#92;)</span>; chiamata <span class="arithmatex">&#92;((3,3)&#92;)</span></td>
-    </tr>
-    <tr>
-    <td>13</td>
-    <td><span class="arithmatex">&#92;((0,4),(3,4),(3,3)&#92;)</span></td>
-    <td><span class="arithmatex">&#92;(l=r&#92;)</span> <span class="arithmatex">&#92;(&#92;Rightarrow&#92;)</span> restituisce <span class="arithmatex">&#92;(a&#91;3&#93;=3&#92;)</span></td>
-    </tr>
-    <tr>
-    <td>14</td>
-    <td><span class="arithmatex">&#92;((0,4),(3,4)&#92;)</span></td>
-    <td><span class="arithmatex">&#92;(s1=3&#92;)</span>; chiamata <span class="arithmatex">&#92;((4,4)&#92;)</span></td>
-    </tr>
-    <tr>
-    <td>15</td>
-    <td><span class="arithmatex">&#92;((0,4),(3,4),(4,4)&#92;)</span></td>
-    <td><span class="arithmatex">&#92;(l=r&#92;)</span> <span class="arithmatex">&#92;(&#92;Rightarrow&#92;)</span> restituisce <span class="arithmatex">&#92;(a&#91;4&#93;=5&#92;)</span></td>
-    </tr>
-    <tr>
-    <td>16</td>
-    <td><span class="arithmatex">&#92;((0,4),(3,4)&#92;)</span></td>
-    <td><span class="arithmatex">&#92;(s2=5&#92;)</span>; restituisce <span class="arithmatex">&#92;(3+5=8&#92;)</span></td>
-    </tr>
-    <tr>
-    <td>17</td>
-    <td><span class="arithmatex">&#92;((0,4)&#92;)</span></td>
-    <td><span class="arithmatex">&#92;(s2=8&#92;)</span>; restituisce <span class="arithmatex">&#92;(29+8=37&#92;)</span></td>
-    </tr>
-    </table></div>
-
-    L'algoritmo termina con risultato $37 = 9+8+12+3+5$. Ci sono $9=2\cdot 5-1$ chiamate, e il massimo numero di chiamate attive è $4=\lceil \log_2 5\rceil+1$ (righe 4 e 6).
 
 !!! chiave ""
 
@@ -728,6 +587,8 @@ Per la somma di un array, il divide et impera non ha dato alcun guadagno in term
     <div class="pc-riga"><span class="pc-n">8</span><span class="pc-corpo"><span class="pc-t"><strong>end</strong></span></span></div>
     </div>
 
+<div class="colab-pulsanti" markdown="0"><span class="colab-etichetta">Esegui in Colab:</span><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap17_algoritmi_ricorsivi_python.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Python del capitolo">Python</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap17_algoritmi_ricorsivi_cpp.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook C++ del capitolo">C++</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap17_algoritmi_ricorsivi_java.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Java del capitolo">Java</a></div>
+
 - Se $k=r-l+1\ge 2$, le due metà $a[l..m]$ e $a[m+1..r]$ hanno $\lceil k/2\rceil$ e $\lfloor k/2\rfloor$ elementi, entrambi compresi tra $1$ e $k-1$: la ricorsione raggiunge sempre il caso base.
 
 - La procedura <code>Merge</code>$(a,l,m,r)$ suppone che $a[l..m]$ e $a[m+1..r]$ siano ordinati. Li copia in due array ausiliari $L$ e $R$, e poi sposta ripetutamente in $a$ il minore tra i primi due elementi non ancora copiati:
@@ -778,6 +639,8 @@ Per la somma di un array, il divide et impera non ha dato alcun guadagno in term
             <span class="arithmatex">&#92;(k &#92;leftarrow k+1&#92;)</span></span></span></div>
     <div class="pc-riga"><span class="pc-n">30</span><span class="pc-corpo"><span class="pc-t"><strong>end</strong></span></span></div>
     </div>
+
+<div class="colab-pulsanti" markdown="0"><span class="colab-etichetta">Esegui in Colab:</span><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap17_algoritmi_ricorsivi_python.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Python del capitolo">Python</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap17_algoritmi_ricorsivi_cpp.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook C++ del capitolo">C++</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap17_algoritmi_ricorsivi_java.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Java del capitolo">Java</a></div>
 
 - Spiegazione di <code>Merge</code>:
 
@@ -1245,111 +1108,6 @@ La base del logaritmo è irrilevante all'interno di $\Theta$, perché $\log_b n=
 
 - Per array piccoli la differenza è trascurabile (e, a causa delle costanti e del costo delle chiamate ricorsive, <code>InsertionSort</code> può anche essere più veloce). Per array grandi, il Merge Sort è enormemente più veloce: con $n=10^6$ elementi è circa $50\,000$ volte più veloce.
 
-### 17.2.7 Implementazione in <code>C++</code>
-
-- Questa è un'implementazione in <code>C++</code> dell'algoritmo Merge Sort. Gli array sono indicizzati da $0$: l'intero array viene ordinato dalla chiamata <code>MergeSort(a, 0, n-1)</code>. Gli array ausiliari sono <code>std::vector</code>, che vengono rilasciati automaticamente alla fine di <code>Merge</code>.
-
-```cpp
-#include <vector>
-
-// Fonde i sotto-array ordinati a[l..m] e a[m+1..r] (indici da 0)
-void Merge(int *a, int l, int m, int r)
-{
-    int n1 = m - l + 1;  // Dimensione della parte sinistra
-    int n2 = r - m;      // Dimensione della parte destra
-
-    std::vector<int> L(n1), R(n2);  // Array ausiliari
-
-    for (int i = 0; i < n1; i++)
-    {
-        L[i] = a[l + i];
-    }
-    for (int j = 0; j < n2; j++)
-    {
-        R[j] = a[m + 1 + j];
-    }
-
-    int i = 0, j = 0, k = l;
-
-    while (i < n1 && j < n2)  // Fonde L e R di nuovo in a[l..r]
-    {
-        if (L[i] <= R[j])
-        {
-            a[k] = L[i];
-            i++;
-        }
-        else
-        {
-            a[k] = R[j];
-            j++;
-        }
-        k++;
-    }
-
-    while (i < n1)  // Copia gli elementi rimanenti di L
-    {
-        a[k] = L[i];
-        i++;
-        k++;
-    }
-
-    while (j < n2)  // Copia gli elementi rimanenti di R
-    {
-        a[k] = R[j];
-        j++;
-        k++;
-    }
-}
-
-// Ordina a[l..r] in ordine non decrescente (indici da 0)
-void MergeSort(int *a, int l, int r)
-{
-    if (l < r)
-    {
-        int m = l + (r - l) / 2;  // Equivale a (l + r) / 2
-
-        MergeSort(a, l, m);
-        MergeSort(a, m + 1, r);
-        Merge(a, l, m, r);
-    }
-}
-```
-
-<a id="box-13-exMergeCpp"></a>
-
-!!! esempio "Esempio 17.8: esecuzione dell'implementazione in C++ di Merge"
-
-    Eseguiamo la chiamata <code>Merge(a, 0, 1, 3)</code> sull'array $a = [5, 8, 2, 7]$: i sotto-array $a[0..1]=[5,8]$ e $a[2..3]=[2,7]$ sono ordinati.
-
-    $$
-    \begin{array}{c|c|c|c|c|}
-    {a[j]} & {j=0} & {j=1} & {j=2} & {j=3} \\
-    & 5 & 8 & 2 & 7
-    \end{array}
-    $$
-
-    $l=0 \qquad m=1 \qquad r=3$
-
-    Dopo le copie,
-
-    $$
-    n1 = 1-0+1 = 2, \quad n2 = 3-1 = 2, \quad L=[5,8], \quad R=[2,7], \quad i=0, \quad j=0, \quad k=0.
-    $$
-
-    - <strong>Iterazione 1</strong> (primo ciclo while). $L[0]=5 \le R[0]=2$? No $\Rightarrow$ $a[0] = R[0] = 2$, $j=1$, $k=1$; ora $a=[2,8,2,7]$.
-
-    - <strong>Iterazione 2</strong> (primo ciclo while). $L[0]=5 \le R[1]=7$? Sì $\Rightarrow$ $a[1] = L[0] = 5$, $i=1$, $k=2$; ora $a=[2,5,2,7]$.
-
-    - <strong>Iterazione 3</strong> (primo ciclo while). $L[1]=8 \le R[1]=7$? No $\Rightarrow$ $a[2] = R[1] = 7$, $j=2$, $k=3$; ora $a=[2,5,7,7]$.
-
-    - La condizione $j < n2$ è falsa ($j=2$): $R$ è esaurito e il primo ciclo while termina.
-
-    - <strong>Iterazione 1</strong> (copia del resto di $L$). $a[3] = L[1] = 8$, $i=2$, $k=4$; ora $a=[2,5,7,8]$.
-
-    - Le condizioni $i<n1$ e $j<n2$ sono entrambe false: <code>Merge</code> termina.
-
-    L'algoritmo termina con $a=[2,5,7,8]$, dopo $3=n-1$ confronti. Si noti che i valori originali $a[0]=5$ e $a[1]=8$ vengono sovrascritti durante l'esecuzione: ecco perché le copie $L$ e $R$ sono necessarie.
-
 !!! chiave ""
 
     <strong>Punti chiave sul Merge Sort.</strong>
@@ -1437,6 +1195,8 @@ Il Merge Sort effettua due chiamate ricorsive sulle due metà. Il prossimo algor
     <div class="pc-riga" id="riga-17-algoritmi-ricorsivi-line-rbs-h"><span class="pc-n">12</span><span class="pc-corpo"><span class="pc-l"></span><span class="pc-t"><strong>return</strong> RecursiveBinarySearch(<span class="arithmatex">&#92;(a&#92;)</span>, <span class="arithmatex">&#92;(left&#92;)</span>, <span class="arithmatex">&#92;(mid-1&#92;)</span>, <span class="arithmatex">&#92;(m&#92;)</span>)</span></span></div>
     <div class="pc-riga"><span class="pc-n">13</span><span class="pc-corpo"><span class="pc-t"><strong>end</strong></span></span></div>
     </div>
+
+<div class="colab-pulsanti" markdown="0"><span class="colab-etichetta">Esegui in Colab:</span><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap17_algoritmi_ricorsivi_python.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Python del capitolo">Python</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap17_algoritmi_ricorsivi_cpp.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook C++ del capitolo">C++</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap17_algoritmi_ricorsivi_java.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Java del capitolo">Java</a></div>
 
 - Spiegazione dell'algoritmo:
 
@@ -1872,85 +1632,11 @@ Il Merge Sort effettua due chiamate ricorsive sulle due metà. Il prossimo algor
 
     Il risultato di questa trasformazione è <strong>esattamente</strong> l'algoritmo iterativo <code>BinarySearch</code>. Ecco perché i due algoritmi producono la stessa successione di valori di $left$, $right$ e $mid$.
 
-- Molti compilatori eseguono automaticamente questa trasformazione (<strong>eliminazione delle chiamate in coda</strong>, <em>tail-call elimination</em>), in modo che la versione ricorsiva usi solo $\Theta(1)$ di memoria aggiuntiva. Per esempio, il compilatore <code>g++</code> 15.2 elimina le chiamate ricorsive dell'implementazione <code>C++</code> qui sotto con l'opzione <code>-O2</code>, ma non con <code>-O0</code>. Tuttavia, questo non è garantito dallo standard <code>C++</code>.
+- Molti compilatori eseguono automaticamente questa trasformazione (<strong>eliminazione delle chiamate in coda</strong>, <em>tail-call elimination</em>), in modo che la versione ricorsiva usi solo $\Theta(1)$ di memoria aggiuntiva. Per esempio, il compilatore <code>g++</code> 15.2 elimina le chiamate ricorsive di un'implementazione <code>C++</code> dell'algoritmo con l'opzione <code>-O2</code>, ma non con <code>-O0</code>. Tuttavia, questo non è garantito dallo standard <code>C++</code>.
 
 !!! chiave ""
 
     La ricerca binaria ricorsiva e quella iterativa hanno lo stesso tempo di esecuzione nel caso peggiore $\Theta(\log n)$, ma la versione ricorsiva usa $\Theta(\log n)$ di memoria aggiuntiva per la pila delle chiamate, mentre la versione iterativa usa $\Theta(1)$ di memoria aggiuntiva. Ogni algoritmo ricorsivo in coda può essere trasformato in uno iterativo.
-
-### 17.3.6 Implementazione in <code>C++</code>
-
-- Questa è un'implementazione in <code>C++</code> dell'algoritmo di ricerca binaria ricorsiva. Come di consueto in <code>C++</code>, l'array è indicizzato da $0$: per cercare $m$ nell'intero array di $n$ elementi chiamiamo <code>RecursiveBinarySearch(a, 0, n-1, m)</code>.
-
-```cpp
-// Restituisce un indice di m in a[left..right], oppure -1 se m non c'è
-// L'array a deve essere ordinato in ordine non decrescente
-
-int RecursiveBinarySearch(int *a, int left, int right, int m)
-{
-    if (left > right)
-    {
-        return -1;  // Intervallo vuoto: elemento non trovato
-    }
-
-    int mid = left + (right - left) / 2;
-
-    if (a[mid] == m)
-    {
-        return mid;  // Elemento trovato all'indice mid
-    }
-
-    if (a[mid] < m)
-    {
-        return RecursiveBinarySearch(a, mid + 1, right, m);  // Metà destra
-    }
-
-    return RecursiveBinarySearch(a, left, mid - 1, m);  // Metà sinistra
-}
-
-int main()
-{
-    int a[] = {3, 9, 11, 12, 12, 16, 19};
-    int n = 7;
-    int result = RecursiveBinarySearch(a, 0, n - 1, 10);  // result = -1
-    return 0;
-}
-```
-
-<a id="box-18-exRbsCpp"></a>
-
-!!! esempio "Esempio 17.10: esecuzione dell'implementazione in C++ di RecursiveBinarySearch"
-
-    Cerchiamo $m = 10$ e $m=19$ nell'array ordinato $a = [3, 9, 11, 12, 12, 16, 19]$:
-
-    $$
-    \begin{array}{c|c|c|c|c|c|c|c|}
-    {a[j]} & {j=0} & {j=1} & {j=2} & {j=3} & {j=4} & {j=5} & {j=6} \\
-    & 3 & 9 & 11 & 12 & 12 & 16 & 19
-    \end{array}
-    $$
-
-    <strong>Ricerca di $m=10$.</strong>
-
-    - <strong>Chiamata 1</strong>, <code>RecursiveBinarySearch(a, 0, 6, 10)</code>: $left = 0 \le right = 6$; $mid = 0 + (6 - 0) / 2 = 3$; $a[3] = 12 > 10$ $\Rightarrow$ chiamata <code>RecursiveBinarySearch(a, 0, 2, 10)</code>.
-
-    - <strong>Chiamata 2</strong>, <code>RecursiveBinarySearch(a, 0, 2, 10)</code>: $left = 0 \le right = 2$; $mid = 0 + (2 - 0) / 2 = 1$; $a[1] = 9 < 10$ $\Rightarrow$ chiamata <code>RecursiveBinarySearch(a, 2, 2, 10)</code>.
-
-    - <strong>Chiamata 3</strong>, <code>RecursiveBinarySearch(a, 2, 2, 10)</code>: $left = 2 \le right = 2$; $mid = 2 + (2 - 2) / 2 = 2$; $a[2] = 11 > 10$ $\Rightarrow$ chiamata <code>RecursiveBinarySearch(a, 2, 1, 10)</code>.
-
-    - <strong>Chiamata 4</strong>, <code>RecursiveBinarySearch(a, 2, 1, 10)</code>: $left = 2 > right = 1$: l'intervallo è vuoto $\Rightarrow$ restituisce $-1$.
-
-    Il valore $-1$ viene restituito alla chiamata 3, che lo restituisce alla chiamata 2, che lo restituisce alla chiamata 1, che lo restituisce a <code>main</code>. Nel momento della chiamata più profonda, $4$ chiamate sono contemporaneamente nella pila delle chiamate.
-
-    <strong>Ricerca di $m=19$.</strong>
-
-    - <strong>Chiamata 1</strong>, <code>RecursiveBinarySearch(a, 0, 6, 19)</code>: $mid = 3$; $a[3] = 12 < 19$ $\Rightarrow$ chiamata <code>RecursiveBinarySearch(a, 4, 6, 19)</code>.
-
-    - <strong>Chiamata 2</strong>, <code>RecursiveBinarySearch(a, 4, 6, 19)</code>: $mid = 4 + (6 - 4) / 2 = 5$; $a[5] = 16 < 19$ $\Rightarrow$ chiamata <code>RecursiveBinarySearch(a, 6, 6, 19)</code>.
-
-    - <strong>Chiamata 3</strong>, <code>RecursiveBinarySearch(a, 6, 6, 19)</code>: $mid = 6$; $a[6] = 19 = m$ $\Rightarrow$ restituisce $6$.
-
-    Il valore $6$ viene restituito alla chiamata 2, che lo restituisce alla chiamata 1, che lo restituisce a <code>main</code>. L'elemento viene trovato all'indice $6$ (posizione $7$ nello pseudocodice, dove l'array è indicizzato da $1$).
 
 !!! chiave ""
 
@@ -2108,6 +1794,8 @@ L'ultimo problema del capitolo mostra il divide et impera al lavoro su un proble
     <div class="pc-riga" id="riga-17-algoritmi-ricorsivi-line-bf-p"><span class="pc-n">20</span><span class="pc-corpo"><span class="pc-l"></span><span class="pc-t"><strong>return</strong> <span class="arithmatex">&#92;((bl, br, best)&#92;)</span></span></span></div>
     <div class="pc-riga"><span class="pc-n">21</span><span class="pc-corpo"><span class="pc-t"><strong>end</strong></span></span></div>
     </div>
+
+<div class="colab-pulsanti" markdown="0"><span class="colab-etichetta">Esegui in Colab:</span><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap17_algoritmi_ricorsivi_python.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Python del capitolo">Python</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap17_algoritmi_ricorsivi_cpp.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook C++ del capitolo">C++</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap17_algoritmi_ricorsivi_java.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Java del capitolo">Java</a></div>
 
 <a id="box-19-exMaxSubBruteForce"></a>
 
@@ -2331,6 +2019,8 @@ L'ultimo problema del capitolo mostra il divide et impera al lavoro su un proble
     <div class="pc-riga"><span class="pc-n">21</span><span class="pc-corpo"><span class="pc-t"><strong>end</strong></span></span></div>
     </div>
 
+<div class="colab-pulsanti" markdown="0"><span class="colab-etichetta">Esegui in Colab:</span><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap17_algoritmi_ricorsivi_python.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Python del capitolo">Python</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap17_algoritmi_ricorsivi_cpp.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook C++ del capitolo">C++</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap17_algoritmi_ricorsivi_java.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Java del capitolo">Java</a></div>
+
 <a id="box-20-lemMaxCrossingSubarray"></a>
 
 !!! teorema "Lemma 17.9: sotto-array che attraversa il punto medio"
@@ -2398,6 +2088,8 @@ L'ultimo problema del capitolo mostra il divide et impera al lavoro su un proble
     <div class="pc-riga" id="riga-17-algoritmi-ricorsivi-line-fms-k"><span class="pc-n">15</span><span class="pc-corpo"><span class="pc-l"></span><span class="pc-t"><strong>return</strong> <span class="arithmatex">&#92;((cl, cr, csum)&#92;)</span></span></span></div>
     <div class="pc-riga"><span class="pc-n">16</span><span class="pc-corpo"><span class="pc-t"><strong>end</strong></span></span></div>
     </div>
+
+<div class="colab-pulsanti" markdown="0"><span class="colab-etichetta">Esegui in Colab:</span><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap17_algoritmi_ricorsivi_python.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Python del capitolo">Python</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap17_algoritmi_ricorsivi_cpp.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook C++ del capitolo">C++</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap17_algoritmi_ricorsivi_java.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Java del capitolo">Java</a></div>
 
 - Spiegazione dell'algoritmo:
 
@@ -3023,6 +2715,8 @@ L'ultimo problema del capitolo mostra il divide et impera al lavoro su un proble
     <div class="pc-riga"><span class="pc-n">17</span><span class="pc-corpo"><span class="pc-t"><strong>end</strong></span></span></div>
     </div>
 
+<div class="colab-pulsanti" markdown="0"><span class="colab-etichetta">Esegui in Colab:</span><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap17_algoritmi_ricorsivi_python.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Python del capitolo">Python</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap17_algoritmi_ricorsivi_cpp.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook C++ del capitolo">C++</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap17_algoritmi_ricorsivi_java.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Java del capitolo">Java</a></div>
+
 <a id="box-23-lemKadaneInvariant"></a>
 
 !!! teorema "Lemma 17.11: invariante di ciclo di Kadane"
@@ -3208,118 +2902,6 @@ L'ultimo problema del capitolo mostra il divide et impera al lavoro su un proble
     </table></div>
 
     L'algoritmo restituisce $(8,11,43)$, lo stesso sotto-array di somma massima trovato dall'algoritmo divide et impera, dopo un'unica scansione dell'array.
-
-### 17.4.8 Implementazione in <code>C++</code>
-
-- Questa è un'implementazione in <code>C++</code> dell'algoritmo divide et impera. L'array è indicizzato da $0$, e le tre quantità restituite dalle funzioni sono memorizzate in una <code>struct</code>. Il valore $-\infty$ è sostituito da <code>INT\_MIN</code>, il più piccolo <code>int</code>. Per risolvere il problema su un array di $n$ elementi chiamiamo <code>FindMaximumSubarray(a, 0, n-1)</code>.
-
-```cpp
-#include <climits>
-
-struct Subarray
-{
-    int low;   // primo indice
-    int high;  // ultimo indice
-    int sum;   // somma di a[low..high]
-};
-
-Subarray FindMaxCrossingSubarray(int *a, int l, int mid, int r)
-{
-    int leftSum = INT_MIN, sum = 0, maxLeft = mid;
-    for (int i = mid; i >= l; i--)
-    {
-        sum = sum + a[i];
-        if (sum > leftSum)
-        {
-            leftSum = sum;
-            maxLeft = i;
-        }
-    }
-
-    int rightSum = INT_MIN, maxRight = mid + 1;
-    sum = 0;
-    for (int j = mid + 1; j <= r; j++)
-    {
-        sum = sum + a[j];
-        if (sum > rightSum)
-        {
-            rightSum = sum;
-            maxRight = j;
-        }
-    }
-
-    Subarray result = {maxLeft, maxRight, leftSum + rightSum};
-    return result;
-}
-
-Subarray FindMaximumSubarray(int *a, int l, int r)
-{
-    if (l == r)
-    {
-        Subarray result = {l, r, a[l]};  // Caso base: un solo elemento
-        return result;
-    }
-
-    int mid = (l + r) / 2;
-
-    Subarray left  = FindMaximumSubarray(a, l, mid);
-    Subarray right = FindMaximumSubarray(a, mid + 1, r);
-    Subarray cross = FindMaxCrossingSubarray(a, l, mid, r);
-
-    if (left.sum >= right.sum && left.sum >= cross.sum)
-    {
-        return left;
-    }
-    if (right.sum >= left.sum && right.sum >= cross.sum)
-    {
-        return right;
-    }
-    return cross;
-}
-```
-
-<a id="box-25-exMaxSubCpp"></a>
-
-!!! esempio "Esempio 17.14: esecuzione dell'implementazione in C++ di FindMaximumSubarray"
-
-    Eseguiamo la prima chiamata <code>FindMaximumSubarray(a, 0, 3)</code> sull'array $a = [-2, 5, -1, 3]$:
-
-    $$
-    \begin{array}{c|c|c|c|c|}
-    {a[j]} & {j=0} & {j=1} & {j=2} & {j=3} \\
-    & {-2} & 5 & {-1} & 3
-    \end{array}
-    $$
-
-    - <strong>Chiamata <code>FindMaximumSubarray(a, 0, 3)</code></strong>: $l=0 \neq r=3$, $mid = (0+3)/2 = 1$. Chiamata sulla metà sinistra.
-
-    - <strong>Chiamata <code>FindMaximumSubarray(a, 0, 1)</code></strong>: $l=0 \neq r=1$, $mid = (0+1)/2 = 0$.
-
-        - <code>FindMaximumSubarray(a, 0, 0)</code> restituisce $\{0,0,-2\}$ (caso base)
-
-        - <code>FindMaximumSubarray(a, 1, 1)</code> restituisce $\{1,1,5\}$ (caso base)
-
-        - <code>FindMaxCrossingSubarray(a, 0, 0, 1)</code>: ciclo sinistro $i=0$: $sum=-2$, $leftSum=-2$, $maxLeft=0$; ciclo destro $j=1$: $sum = 5$, $rightSum = 5$, $maxRight = 1$. Restituisce $\{0,1,3\}$
-
-        - Confronto: $left.sum = -2$, $right.sum = 5$, $cross.sum = 3$ $\Rightarrow$ <strong>restituisce</strong> $\{1,1,5\}$
-
-    - <strong>Chiamata <code>FindMaximumSubarray(a, 2, 3)</code></strong>: $l=2 \neq r=3$, $mid = (2+3)/2 = 2$.
-
-        - <code>FindMaximumSubarray(a, 2, 2)</code> restituisce $\{2,2,-1\}$ (caso base)
-
-        - <code>FindMaximumSubarray(a, 3, 3)</code> restituisce $\{3,3,3\}$ (caso base)
-
-        - <code>FindMaxCrossingSubarray(a, 2, 2, 3)</code>: ciclo sinistro $i=2$: $sum=-1$, $leftSum=-1$, $maxLeft=2$; ciclo destro $j=3$: $sum = 3$, $rightSum = 3$, $maxRight = 3$. Restituisce $\{2,3,2\}$
-
-        - Confronto: $left.sum = -1$, $right.sum = 3$, $cross.sum = 2$ $\Rightarrow$ <strong>restituisce</strong> $\{3,3,3\}$
-
-    - <strong>Ritorno alla chiamata <code>FindMaximumSubarray(a, 0, 3)</code></strong>: $left = \{1,1,5\}$, $right = \{3,3,3\}$.
-
-        - <code>FindMaxCrossingSubarray(a, 0, 1, 3)</code>: ciclo sinistro $i=1$: $sum = 5$, $leftSum = 5$, $maxLeft = 1$; $i = 0$: $sum = 3 \le 5$, nessun aggiornamento; ciclo destro $j=2$: $sum = -1$, $rightSum = -1$, $maxRight = 2$; $j = 3$: $sum = 2 > -1$, $rightSum = 2$, $maxRight = 3$. Restituisce $\{1, 3, 5+2\} = \{1,3,7\}$
-
-        - Confronto: $left.sum = 5$, $right.sum = 3$, $cross.sum = 7$ $\Rightarrow$ <strong>restituisce</strong> $\{1,3,7\}$
-
-    L'algoritmo termina con risultato $\{1,3,7\}$: il sotto-array di somma massima è $a[1..3] = [5,-1,3]$ (indici $2..4$ nello pseudocodice, dove l'array è indicizzato da $1$), con somma $7$. In totale vengono eseguite $2n - 1 = 7$ chiamate di <code>FindMaximumSubarray</code>.
 
 !!! chiave ""
 

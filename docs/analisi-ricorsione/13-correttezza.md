@@ -100,6 +100,8 @@ title: "Correttezza"
     <div class="pc-riga"><span class="pc-n">11</span><span class="pc-corpo"><span class="pc-t"><strong>end</strong></span></span></div>
     </div>
 
+<div class="colab-pulsanti" markdown="0"><span class="colab-etichetta">Esegui in Colab:</span><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap13_correttezza_python.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Python del capitolo">Python</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap13_correttezza_cpp.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook C++ del capitolo">C++</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap13_correttezza_java.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Java del capitolo">Java</a></div>
+
 - L'<strong>invariante di ciclo</strong> del ciclo while di <code>FindMaximum</code> è:
 
 !!! chiave ""
@@ -247,7 +249,9 @@ title: "Correttezza"
     <div class="pc-riga"><span class="pc-n">13</span><span class="pc-corpo"><span class="pc-t"><strong>end</strong></span></span></div>
     </div>
 
-- La condizione alla riga [6](#riga-13-correttezza-line-is-e) è valutata da sinistra a destra, e la seconda parte è valutata solo se la prima è vera: quando $j=0$ la condizione è falsa e l'elemento inesistente $a[0]$ non viene mai acceduto. La condizione <code>C++</code> <code>i &gt; -1 and a[i] &gt; key</code> si comporta allo stesso modo.
+<div class="colab-pulsanti" markdown="0"><span class="colab-etichetta">Esegui in Colab:</span><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap13_correttezza_python.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Python del capitolo">Python</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap13_correttezza_cpp.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook C++ del capitolo">C++</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap13_correttezza_java.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Java del capitolo">Java</a></div>
+
+- La condizione alla riga [6](#riga-13-correttezza-line-is-e) è valutata da sinistra a destra, e la seconda parte è valutata solo se la prima è vera: quando $j=0$ la condizione è falsa e l'elemento inesistente $a[0]$ non viene mai acceduto.
 
 - L'algoritmo contiene due cicli annidati. Dimostriamo prima che cosa fa una singola esecuzione del ciclo while <strong>interno</strong> (righe [6](#riga-13-correttezza-line-is-e)–[8](#riga-13-correttezza-line-is-g)), e poi usiamo questo risultato per dimostrare la correttezza del ciclo while <strong>esterno</strong> (righe [3](#riga-13-correttezza-line-is-b)–[11](#riga-13-correttezza-line-is-i)).
 
@@ -501,6 +505,8 @@ title: "Correttezza"
     <div class="pc-riga"><span class="pc-n">17</span><span class="pc-corpo"><span class="pc-t"><strong>end</strong></span></span></div>
     </div>
 
+<div class="colab-pulsanti" markdown="0"><span class="colab-etichetta">Esegui in Colab:</span><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap13_correttezza_python.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Python del capitolo">Python</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap13_correttezza_cpp.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook C++ del capitolo">C++</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap13_correttezza_java.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Java del capitolo">Java</a></div>
+
 - L'<strong>invariante di ciclo</strong> del ciclo while di <code>BinarySearch</code> è:
 
 !!! chiave ""
@@ -621,6 +627,8 @@ title: "Correttezza"
     <div class="pc-riga" id="riga-13-correttezza-line-eu-e"><span class="pc-n">7</span><span class="pc-corpo"><span class="pc-l"></span><span class="pc-t"><strong>return</strong> <span class="arithmatex">&#92;(n&#92;)</span></span><span class="pc-c">// <span class="arithmatex">&#92;(m = 0&#92;)</span>: <span class="arithmatex">&#92;(n&#92;)</span> è il MCD</span></span></div>
     <div class="pc-riga"><span class="pc-n">8</span><span class="pc-corpo"><span class="pc-t"><strong>end</strong></span></span></div>
     </div>
+
+<div class="colab-pulsanti" markdown="0"><span class="colab-etichetta">Esegui in Colab:</span><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap13_correttezza_python.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Python del capitolo">Python</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap13_correttezza_cpp.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook C++ del capitolo">C++</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap13_correttezza_java.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Java del capitolo">Java</a></div>
 
 - La dimostrazione si basa sulla seguente proprietà del massimo comune divisore, dimostrata nel capitolo «Algoritmi numerici»:
 

@@ -941,6 +941,8 @@ Quando un numero di passi è limitato da esponenziali con fattori costanti, i fa
         <div class="pc-riga"><span class="pc-n">9</span><span class="pc-corpo"><span class="pc-t"><strong>end</strong></span></span></div>
         </div>
 
+    <div class="colab-pulsanti" markdown="0"><span class="colab-etichetta">Esegui in Colab:</span><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap11_dimensione_input_python.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Python del capitolo">Python</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap11_dimensione_input_cpp.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook C++ del capitolo">C++</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap11_dimensione_input_java.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Java del capitolo">Java</a></div>
+
     - <strong>Passo 1: numero di passi.</strong> Le righe [2](#riga-11-dimensione-input-is-sa1), [3](#riga-11-dimensione-input-is-sa2) e [8](#riga-11-dimensione-input-is-sa6) sono eseguite $1$ volta ciascuna; la condizione alla riga [4](#riga-11-dimensione-input-is-sa3) è valutata $n+1$ volte (l'ultima volta è falsa); le righe [5](#riga-11-dimensione-input-is-sa4) e [6](#riga-11-dimensione-input-is-sa5) sono eseguite $n$ volte ciascuna. Quindi
 
         $$

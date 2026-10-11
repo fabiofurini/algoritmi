@@ -103,6 +103,8 @@ Il capitolo spiega innanzitutto i costi che ogni chiamata ricorsiva comporta, po
     <div class="pc-riga"><span class="pc-n">16</span><span class="pc-corpo"><span class="pc-t"><strong>end</strong></span></span></div>
     </div>
 
+<div class="colab-pulsanti" markdown="0"><span class="colab-etichetta">Esegui in Colab:</span><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap18_ricorsivo_iterativo_python.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Python del capitolo">Python</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap18_ricorsivo_iterativo_cpp.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook C++ del capitolo">C++</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap18_ricorsivo_iterativo_java.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Java del capitolo">Java</a></div>
+
 - La pila $P$ svolge esattamente il ruolo della pila delle chiamate: contiene i sotto-array ancora da sommare. La sua dimensione massima è dello stesso ordine della profondità della ricorsione, cioè $\Theta(\log_2 n)$.
 
 <a id="box-2-exRviExplicitStack"></a>
@@ -344,6 +346,8 @@ Il capitolo spiega innanzitutto i costi che ogni chiamata ricorsiva comporta, po
     <div class="pc-riga"><span class="pc-n">13</span><span class="pc-corpo"><span class="pc-t"><strong>end</strong></span></span></div>
     </div>
 
+<div class="colab-pulsanti" markdown="0"><span class="colab-etichetta">Esegui in Colab:</span><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap18_ricorsivo_iterativo_python.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Python del capitolo">Python</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap18_ricorsivo_iterativo_cpp.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook C++ del capitolo">C++</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap18_ricorsivo_iterativo_java.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Java del capitolo">Java</a></div>
+
 <a id="box-4-exRviBottomUp"></a>
 
 !!! esempio "Esempio 18.3: Merge Sort bottom-up"
@@ -414,6 +418,8 @@ Il capitolo spiega innanzitutto i costi che ogni chiamata ricorsiva comporta, po
     <div class="pc-riga"><span class="pc-n">13</span><span class="pc-corpo"><span class="pc-t"><strong>end</strong></span></span></div>
     </div>
 
+<div class="colab-pulsanti" markdown="0"><span class="colab-etichetta">Esegui in Colab:</span><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap18_ricorsivo_iterativo_python.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Python del capitolo">Python</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap18_ricorsivo_iterativo_cpp.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook C++ del capitolo">C++</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap18_ricorsivo_iterativo_java.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Java del capitolo">Java</a></div>
+
 - All'inizio di ogni iterazione si ha $p\cdot y^{k}=x^n$ (vale all'inizio con $p=1$, $y=x$, $k=n$, ed è preservata da ogni iterazione); quando $k=0$ si ottiene $p=x^n$.
 
 <a id="box-6-exRviPowerIt"></a>
@@ -468,6 +474,8 @@ Il capitolo spiega innanzitutto i costi che ogni chiamata ricorsiva comporta, po
     <div class="pc-riga"><span class="pc-n">11</span><span class="pc-corpo"><span class="pc-t"><strong>end</strong></span></span></div>
     </div>
 
+<div class="colab-pulsanti" markdown="0"><span class="colab-etichetta">Esegui in Colab:</span><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap18_ricorsivo_iterativo_python.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Python del capitolo">Python</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap18_ricorsivo_iterativo_cpp.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook C++ del capitolo">C++</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap18_ricorsivo_iterativo_java.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Java del capitolo">Java</a></div>
+
 - Il ciclo viene eseguito $n-1$ volte con un numero costante di passi: $S(n)=\Theta(n)$, con $\Theta(1)$ di memoria aggiuntiva.
 
 - Il divide et impera è una potente <strong>tecnica di progetto</strong>, ma non è sempre la migliore: un guadagno rispetto alla forza bruta non significa che l'algoritmo ricorsivo sia ottimo.
@@ -508,6 +516,8 @@ Il capitolo spiega innanzitutto i costi che ogni chiamata ricorsiva comporta, po
     <div class="pc-riga"><span class="pc-n">5</span><span class="pc-corpo"><span class="pc-l"></span><span class="pc-t"><strong>return</strong> <span class="arithmatex">&#92;(&#92;texttt{FibRec}(n-1) + &#92;texttt{FibRec}(n-2)&#92;)</span></span></span></div>
     <div class="pc-riga"><span class="pc-n">6</span><span class="pc-corpo"><span class="pc-t"><strong>end</strong></span></span></div>
     </div>
+
+<div class="colab-pulsanti" markdown="0"><span class="colab-etichetta">Esegui in Colab:</span><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap18_ricorsivo_iterativo_python.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Python del capitolo">Python</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap18_ricorsivo_iterativo_cpp.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook C++ del capitolo">C++</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap18_ricorsivo_iterativo_java.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Java del capitolo">Java</a></div>
 
 <a id="box-8-exRviFibTree"></a>
 
@@ -585,6 +595,8 @@ Il capitolo spiega innanzitutto i costi che ogni chiamata ricorsiva comporta, po
     <div class="pc-riga"><span class="pc-n">9</span><span class="pc-corpo"><span class="pc-t"><strong>end</strong></span></span></div>
     </div>
 
+<div class="colab-pulsanti" markdown="0"><span class="colab-etichetta">Esegui in Colab:</span><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap18_ricorsivo_iterativo_python.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Python del capitolo">Python</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap18_ricorsivo_iterativo_cpp.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook C++ del capitolo">C++</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap18_ricorsivo_iterativo_java.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Java del capitolo">Java</a></div>
+
 <a id="box-11-obsRviFibMemo"></a>
 
 !!! teorema "Osservazione 18.6: numero di chiamate di FibMemo"
@@ -622,6 +634,8 @@ Il capitolo spiega innanzitutto i costi che ogni chiamata ricorsiva comporta, po
     <div class="pc-riga"><span class="pc-n">14</span><span class="pc-corpo"><span class="pc-l"></span><span class="pc-t"><strong>return</strong> <span class="arithmatex">&#92;(curr&#92;)</span></span></span></div>
     <div class="pc-riga"><span class="pc-n">15</span><span class="pc-corpo"><span class="pc-t"><strong>end</strong></span></span></div>
     </div>
+
+<div class="colab-pulsanti" markdown="0"><span class="colab-etichetta">Esegui in Colab:</span><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap18_ricorsivo_iterativo_python.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Python del capitolo">Python</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap18_ricorsivo_iterativo_cpp.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook C++ del capitolo">C++</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap18_ricorsivo_iterativo_java.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Java del capitolo">Java</a></div>
 
 - Il ciclo viene eseguito $n-1$ volte: $S(n)=\Theta(n)$, con $\Theta(1)$ di memoria aggiuntiva.
 
@@ -762,6 +776,8 @@ Le sezioni precedenti hanno confrontato i numeri di passi. Passiamo ora alla sec
     <div class="pc-riga"><span class="pc-n">6</span><span class="pc-corpo"><span class="pc-t"><strong>end</strong></span></span></div>
     </div>
 
+    <div class="colab-pulsanti" markdown="0"><span class="colab-etichetta">Esegui in Colab:</span><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap18_ricorsivo_iterativo_python.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Python del capitolo">Python</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap18_ricorsivo_iterativo_cpp.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook C++ del capitolo">C++</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap18_ricorsivo_iterativo_java.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Java del capitolo">Java</a></div>
+
     </div>
 
     <div class="minipage" style="width:47%" markdown>
@@ -776,6 +792,8 @@ Le sezioni precedenti hanno confrontato i numeri di passi. Passiamo ora alla sec
     <div class="pc-riga"><span class="pc-n">7</span><span class="pc-corpo"><span class="pc-l"></span><span class="pc-t"><strong>return</strong> <span class="arithmatex">&#92;(a&#92;)</span></span></span></div>
     <div class="pc-riga"><span class="pc-n">8</span><span class="pc-corpo"><span class="pc-t"><strong>end</strong></span></span></div>
     </div>
+
+    <div class="colab-pulsanti" markdown="0"><span class="colab-etichetta">Esegui in Colab:</span><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap18_ricorsivo_iterativo_python.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Python del capitolo">Python</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap18_ricorsivo_iterativo_cpp.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook C++ del capitolo">C++</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap18_ricorsivo_iterativo_java.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Java del capitolo">Java</a></div>
 
     </div>
 
@@ -808,6 +826,8 @@ Le sezioni precedenti hanno confrontato i numeri di passi. Passiamo ora alla sec
     <div class="pc-riga"><span class="pc-n">14</span><span class="pc-corpo"><span class="pc-t"><strong>end</strong></span></span></div>
     </div>
 
+    <div class="colab-pulsanti" markdown="0"><span class="colab-etichetta">Esegui in Colab:</span><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap18_ricorsivo_iterativo_python.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Python del capitolo">Python</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap18_ricorsivo_iterativo_cpp.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook C++ del capitolo">C++</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap18_ricorsivo_iterativo_java.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Java del capitolo">Java</a></div>
+
     </div>
 
     <div class="minipage" style="width:47%" markdown>
@@ -828,6 +848,8 @@ Le sezioni precedenti hanno confrontato i numeri di passi. Passiamo ora alla sec
     <div class="pc-riga"><span class="pc-n">13</span><span class="pc-corpo"><span class="pc-l"></span><span class="pc-t"><strong>return</strong> <span class="arithmatex">&#92;(-1&#92;)</span></span></span></div>
     <div class="pc-riga"><span class="pc-n">14</span><span class="pc-corpo"><span class="pc-t"><strong>end</strong></span></span></div>
     </div>
+
+    <div class="colab-pulsanti" markdown="0"><span class="colab-etichetta">Esegui in Colab:</span><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap18_ricorsivo_iterativo_python.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Python del capitolo">Python</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap18_ricorsivo_iterativo_cpp.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook C++ del capitolo">C++</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap18_ricorsivo_iterativo_java.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Java del capitolo">Java</a></div>
 
     </div>
 
@@ -856,147 +878,6 @@ Le sezioni precedenti hanno confrontato i numeri di passi. Passiamo ora alla sec
 !!! chiave ""
 
     <strong>Punti chiave sullo spazio.</strong> La pila delle chiamate usa una memoria proporzionale alla profondità della ricorsione, non al numero di chiamate. Una profondità logaritmica è innocua; una profondità lineare (decremento di uno) rischia lo stack overflow. La ricorsione in coda può essere eliminata meccanicamente, ottenendo un ciclo con $\Theta(1)$ di memoria aggiuntiva.
-
-## 18.6 Implementazione in <code>C++</code> { #sez-sec-cpp }
-
-- Tutti gli algoritmi di questo capitolo sono implementati nel codice del corso, nel file <code>Recursion.cpp</code> (con <code>Recursion.h</code>); gli esperimenti della sezione successiva sono nel file <code>Experiments.cpp</code>, e gli algoritmi di ordinamento <code>insertionSort</code> e <code>mergeSort</code> sono nel file <code>Sortings.cpp</code>. Gli array sono indicizzati da $0$.
-
-- Queste sono le tre implementazioni della somma di un array:
-
-```cpp
-long long sumIt(int *a, int n)
-{
-    long long s = 0;
-    for (int i = 0; i < n; i++)
-    {
-        s = s + a[i];
-    }
-    return s;
-}
-
-// somma di a[l..r] per dimezzamento: profondità Theta(log n)
-long long sumRecHalving(int *a, int l, int r)
-{
-    if (l == r)
-    {
-        return a[l];
-    }
-    int mid = l + (r - l) / 2;
-    return sumRecHalving(a, l, mid) + sumRecHalving(a, mid + 1, r);
-}
-
-// somma di a[0..n-1] per decremento di uno: profondità Theta(n)
-long long sumRecDecrease(int *a, int n)
-{
-    if (n == 0)
-    {
-        return 0;
-    }
-    return sumRecDecrease(a, n - 1) + a[n - 1];
-}
-```
-
-<a id="box-17-exRviCallStack"></a>
-
-!!! esempio "Esempio 18.8: la pila delle chiamate di sumRecDecrease"
-
-    Questa è l'esecuzione passo per passo di <code>sumRecDecrease(a, 3)</code> sull'array $a=[4,7,1]$, che mostra il contenuto della pila delle chiamate (la cima della pila è a destra; <code>s</code> sta per <code>sumRecDecrease</code> con l'array <code>a</code> omesso).
-
-    $$
-    \begin{array}{c|c|c|c|}
-    {a[j]} & {j=0} & {j=1} & {j=2} \\
-    & 4 & 7 & 1
-    \end{array}
-    $$
-
-    <div class="tabella" markdown="0"><table>
-    <tr>
-    <th>passo</th>
-    <th>pila delle chiamate (chiamate attive)</th>
-    <th>azione</th>
-    </tr>
-    <tr>
-    <td>1</td>
-    <td><code>s(3)</code></td>
-    <td><span class="arithmatex">&#92;(n=3&#92;neq 0&#92;)</span>: chiama <code>s(2)</code>, poi somma <span class="arithmatex">&#92;(a&#91;2&#93;&#92;)</span></td>
-    </tr>
-    <tr>
-    <td>2</td>
-    <td><code>s(3)</code> <code>s(2)</code></td>
-    <td><span class="arithmatex">&#92;(n=2&#92;neq 0&#92;)</span>: chiama <code>s(1)</code>, poi somma <span class="arithmatex">&#92;(a&#91;1&#93;&#92;)</span></td>
-    </tr>
-    <tr>
-    <td>3</td>
-    <td><code>s(3)</code> <code>s(2)</code> <code>s(1)</code></td>
-    <td><span class="arithmatex">&#92;(n=1&#92;neq 0&#92;)</span>: chiama <code>s(0)</code>, poi somma <span class="arithmatex">&#92;(a&#91;0&#93;&#92;)</span></td>
-    </tr>
-    <tr>
-    <td>4</td>
-    <td><code>s(3)</code> <code>s(2)</code> <code>s(1)</code> <code>s(0)</code></td>
-    <td><span class="arithmatex">&#92;(n=0&#92;)</span>: restituisce <span class="arithmatex">&#92;(0&#92;)</span></td>
-    </tr>
-    <tr>
-    <td>5</td>
-    <td><code>s(3)</code> <code>s(2)</code> <code>s(1)</code></td>
-    <td>restituisce <span class="arithmatex">&#92;(0+a&#91;0&#93;=4&#92;)</span></td>
-    </tr>
-    <tr>
-    <td>6</td>
-    <td><code>s(3)</code> <code>s(2)</code></td>
-    <td>restituisce <span class="arithmatex">&#92;(4+a&#91;1&#93;=11&#92;)</span></td>
-    </tr>
-    <tr>
-    <td>7</td>
-    <td><code>s(3)</code></td>
-    <td>restituisce <span class="arithmatex">&#92;(11+a&#91;2&#93;=12&#92;)</span></td>
-    </tr>
-    </table></div>
-
-    Al passo 4 ci sono $4=n+1$ chiamate attive: la profondità della ricorsione è $n+1$. Le addizioni vengono eseguite solo <strong>dopo</strong> che si è raggiunto il caso base, mentre la pila si svuota. Per confronto, <code>sumIt(a, 3)</code> usa solo le due variabili <code>s</code> e <code>i</code>: $s=0\to 4\to 11\to 12$.
-
-- Queste sono le tre implementazioni dei numeri di Fibonacci:
-
-```cpp
-long long fibonacciRec(int n)
-{
-    if (n <= 1)
-    {
-        return n;
-    }
-    return fibonacciRec(n - 1) + fibonacciRec(n - 2);
-}
-
-// memo deve avere n+1 posizioni, tutte inizializzate a -1
-long long fibonacciMemo(int n, long long *memo)
-{
-    if (n <= 1)
-    {
-        return n;
-    }
-    if (memo[n] == -1)
-    {
-        memo[n] = fibonacciMemo(n - 1, memo) + fibonacciMemo(n - 2, memo);
-    }
-    return memo[n];
-}
-
-long long fibonacciIt(int n)
-{
-    if (n <= 1)
-    {
-        return n;
-    }
-    long long prev = 0;  // F(i-2)
-    long long curr = 1;  // F(i-1)
-    for (int i = 2; i <= n; i++)
-    {
-        long long next = prev + curr;
-        prev = curr;
-        curr = next;
-    }
-    return curr;
-}
-```
 
 ## 18.7 Esperimento { #sez-sec-experiment }
 

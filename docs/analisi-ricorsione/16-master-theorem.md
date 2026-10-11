@@ -345,23 +345,11 @@ Cominciamo con tre ricorrenze, una per ciascun caso, e poi risolviamo le ricorre
 
     5. $T(n)=\Theta(n)$.
 
-    La funzione C++ <code>sumRecHalving</code> del codice del corso è un algoritmo di questo tipo: somma il sotto-array <code>a[l..r]</code> (indici a partire da $0$) dividendolo in due metà.
+    La somma ricorsiva di un array che divide l'array in due metà (l'algoritmo <code>RecursiveSum</code> del capitolo «Algoritmi ricorsivi») è un algoritmo di questo tipo.
 
-    ```cpp
-    long long sumRecHalving(int *a, int l, int r)
-    {
-    	if (l == r)
-    	{
-    		return a[l];
-    	}
+    Ogni chiamata esegue una quantità costante di lavoro al di fuori delle chiamate ricorsive, e il numero totale di chiamate è $\Theta(n)$: contandole (nei notebook Colab del capitolo), su $n=8$, $1000$ e $2^{20}=1\,048\,576$ elementi otteniamo $15$, $1\,999$ e $2\,097\,151$ chiamate, cioè esattamente $2n-1$.
 
-    	int mid = l + (r - l) / 2;
-
-    	return sumRecHalving(a, l, mid) + sumRecHalving(a, mid + 1, r);
-    }
-    ```
-
-    Ogni chiamata esegue una quantità costante di lavoro al di fuori delle chiamate ricorsive, e il numero totale di chiamate è $\Theta(n)$: contandole con una copia strumentata della funzione, su $n=8$, $1000$ e $2^{20}=1\,048\,576$ elementi otteniamo $15$, $1\,999$ e $2\,097\,151$ chiamate, cioè esattamente $2n-1$.
+    <div class="colab-pulsanti" markdown="0"><span class="colab-etichetta">Esegui in Colab:</span><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap16_master_theorem_python.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Python del capitolo">Python</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap16_master_theorem_cpp.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook C++ del capitolo">C++</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap16_master_theorem_java.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Java del capitolo">Java</a></div>
 
 <a id="box-8-exMasterKaratsuba"></a>
 

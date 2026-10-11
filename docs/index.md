@@ -21,7 +21,8 @@ associato al [DIAG](https://www.diag.uniroma1.it/), Sapienza Università di Roma
 pseudocodice, ordinamento, ricerca, algoritmi numerici), linguaggi di programmazione (C++, Python
 e Java), crescita e notazione asintotica, analisi e ricorsione (tempo di esecuzione, correttezza,
 equazioni di ricorrenza, Master theorem), con definizioni, teoremi con le loro dimostrazioni,
-pseudocodice, codice, esempi eseguiti passo per passo ed esercizi con le soluzioni.
+pseudocodice, esempi eseguiti passo per passo, notebook Colab in Python, C++ e Java ed esercizi
+con le soluzioni.
 
 [Comincia dagli algoritmi di base :material-arrow-right:](algoritmi-di-base/index.md){ .md-button .md-button--primary }
 [Gli esercizi](esercizi/index.md){ .md-button }
@@ -53,7 +54,8 @@ dispensa: sul sito e nel PDF trovi tutto allo stesso posto.
     Lo pseudocodice, con le righe numerate come nella dispensa.
 
 !!! codice "Codice"
-    I programmi in C++, Python e Java, con la sintassi evidenziata.
+    I programmi in C++, Python e Java nei capitoli dei linguaggi; gli algoritmi si eseguono
+    nei notebook Colab, con i pulsanti sotto lo pseudocodice.
 
 </div>
 
@@ -127,6 +129,14 @@ dispensa: sul sito e nel PDF trovi tutto allo stesso posto.
     bit dei numeri, crescita delle funzioni, alberi di ricorsione e Master theorem.
 
     [:octicons-arrow-right-24: I grafici](laboratorio/index.md)
+
+-   :simple-googlecolab: **Notebook in Python, C++ e Java**
+
+    ---
+
+    Gli algoritmi di ogni capitolo da eseguire in Google Colab, nel linguaggio che preferisci.
+
+    [:octicons-arrow-right-24: I notebook](notebook.md)
 
 -   :material-download: **Dispense ed eserciziari in PDF**
 

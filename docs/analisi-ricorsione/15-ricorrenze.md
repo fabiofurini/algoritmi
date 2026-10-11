@@ -94,6 +94,8 @@ Infine (Sezione [15.5](#sez-sec-towardsMaster)) disegniamo l'albero di ricorsio
     <div class="pc-riga"><span class="pc-n">7</span><span class="pc-corpo"><span class="pc-t"><strong>end</strong></span></span></div>
     </div>
 
+<div class="colab-pulsanti" markdown="0"><span class="colab-etichetta">Esegui in Colab:</span><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap15_ricorrenze_python.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Python del capitolo">Python</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap15_ricorrenze_cpp.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook C++ del capitolo">C++</a><a class="colab-pulsante" href="https://colab.research.google.com/github/fabiofurini/algoritmi/blob/main/notebooks/cap15_ricorrenze_java.ipynb" target="_blank" rel="noopener" title="Apri in Google Colab il notebook Java del capitolo">Java</a></div>
+
 <a id="box-3-exRecSumSteps"></a>
 
 !!! esempio "Esempio 15.2: La ricorrenza di <code>RecursiveSum</code>"
@@ -115,23 +117,6 @@ Infine (Sezione [15.5](#sez-sec-towardsMaster)) disegniamo l'albero di ricorsio
     $$
 
     Per esempio, $S(2)=2+3=5$, $S(3)=5+3=8$ e $S(4)=8+3=11$. Nell'[Esempio 15.3](#box-6-exRecExpLinear) mostriamo che $S(n)=3n-1=\Theta(n)$.
-
-- Lo stesso algoritmo, scritto in C++, è la seguente funzione del codice del corso. In C++ l'array è indicizzato a partire da $0$, quindi i suoi elementi sono <code>a[0]</code>, …, <code>a[n-1]</code>, e l'ultimo elemento è <code>a[n-1]</code>.
-
-```cpp
-// somma di a[0..n-1] per decremento di uno: profondità della ricorsione Theta(n)
-long long sumRecDecrease(int *a, int n)
-{
-	if (n == 0)
-	{
-		return 0;
-	}
-
-	return sumRecDecrease(a, n - 1) + a[n - 1];
-}
-```
-
-- La funzione C++ si ferma sull'array <strong>vuoto</strong> ($n=0$, somma $0$) invece che a $n=1$: accetta anche $n=0$, ed esegue una chiamata in più rispetto allo pseudocodice. La ricorrenza ha la stessa forma $S(n)=S(n-1)+\text{costante}$, e l'ordine di grandezza non cambia. Sull'array $3,1,4,1,5,9,2,6$ la funzione restituisce $31$.
 
 ### 15.1.2 Diverse forme di ricorrenze
 
