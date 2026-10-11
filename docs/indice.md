@@ -1,12 +1,12 @@
 # Indice completo
 
-## [Fondamenti e algoritmi di base](fondamenti/index.md)
+## [Algoritmi di base](algoritmi-di-base/index.md)
 
-1. [Rappresentazione dei numeri](fondamenti/01-rappresentazione-numeri.md)
+1. [Rappresentazione dei numeri](algoritmi-di-base/01-rappresentazione-numeri.md)
     - 1.1 Rappresentazione dei numeri naturali
     - 1.2 Rappresentazione dei numeri interi
     - 1.3 Rappresentazione dei numeri reali
-2. [Pseudocodice](fondamenti/02-pseudocodice.md)
+2. [Pseudocodice](algoritmi-di-base/02-pseudocodice.md)
     - 2.1 Introduzione allo pseudocodice
     - 2.2 Variabili e assegnamenti
     - 2.3 Operazioni di base
@@ -15,92 +15,133 @@
     - 2.6 Funzioni
     - 2.7 Insiemi
     - 2.8 Convenzioni di stile
-3. [Introduzione a C++](fondamenti/03-introduzione-cpp.md)
-    - 3.1 Caratteristiche principali del linguaggio di programmazione
-    - 3.2 Variabili e tipi di dato
-    - 3.3 Flusso di ingresso e uscita
-    - 3.4 Operatori
-    - 3.5 Istruzioni condizionali
-    - 3.6 Cicli
-    - 3.7 Array
-    - 3.8 La funzione <code>main</code> e le funzioni definite dall'utente
-    - 3.9 Un algoritmo completo: il valore massimo in un array
-    - 3.10 Operatori bit a bit
-4. [Algoritmi di ordinamento](fondamenti/04-ordinamento.md)
-    - 4.1 Il problema dell'ordinamento
-    - 4.2 Insertion Sort
-    - 4.3 Exchange Sort
-    - 4.4 Selection Sort
-    - 4.5 Confronto dei tre algoritmi
-5. [Ricerca lineare e binaria](fondamenti/05-ricerca.md)
-    - 5.1 Il problema della ricerca
-    - 5.2 Ricerca lineare
-    - 5.3 Ricerca binaria
-6. [Algoritmi numerici](fondamenti/06-algoritmi-numerici.md)
-    - 6.1 Cambio di base
-    - 6.2 Test di primalità
-    - 6.3 Crivello di Eratostene
-    - 6.4 Massimo comun divisore
+3. [Algoritmi di ordinamento](algoritmi-di-base/03-ordinamento.md)
+    - 3.1 Il problema dell'ordinamento
+    - 3.2 Insertion Sort
+    - 3.3 Exchange Sort
+    - 3.4 Selection Sort
+    - 3.5 Confronto dei tre algoritmi
+4. [Ricerca lineare e binaria](algoritmi-di-base/04-ricerca.md)
+    - 4.1 Il problema della ricerca
+    - 4.2 Ricerca lineare
+    - 4.3 Ricerca binaria
+5. [Algoritmi numerici](algoritmi-di-base/05-algoritmi-numerici.md)
+    - 5.1 Cambio di base
+    - 5.2 Test di primalità
+    - 5.3 Crivello di Eratostene
+    - 5.4 Massimo comun divisore
+
+## [Linguaggi di programmazione](linguaggi/index.md)
+
+6. [Introduzione a C++](linguaggi/06-introduzione-cpp.md)
+    - 6.1 Caratteristiche principali del linguaggio di programmazione
+    - 6.2 Variabili e tipi di dato
+    - 6.3 Flusso di ingresso e uscita
+    - 6.4 Operatori
+    - 6.5 Istruzioni condizionali
+    - 6.6 Cicli
+    - 6.7 Array
+    - 6.8 La funzione <code>main</code> e le funzioni definite dall'utente
+    - 6.9 Un algoritmo completo: il valore massimo in un array
+    - 6.10 Operatori bit a bit
+7. [Introduzione a Python](linguaggi/07-introduzione-python.md)
+    - 7.1 Caratteristiche principali del linguaggio di programmazione
+    - 7.2 Variabili e tipi di dato
+    - 7.3 Ingresso e uscita
+    - 7.4 Operatori
+    - 7.5 Istruzioni condizionali
+    - 7.6 Cicli
+    - 7.7 Liste
+    - 7.8 Funzioni
+    - 7.9 Un algoritmo completo: il valore massimo in un array
+    - 7.10 Operatori bit a bit
+    - 7.11 <code>Python</code> e <code>C++</code> a confronto
+8. [Introduzione a Java](linguaggi/08-introduzione-java.md)
+    - 8.1 Caratteristiche principali del linguaggio di programmazione
+    - 8.2 Variabili e tipi di dato
+    - 8.3 Ingresso e uscita
+    - 8.4 Operatori
+    - 8.5 Istruzioni condizionali
+    - 8.6 Cicli
+    - 8.7 Array
+    - 8.8 Metodi (funzioni)
+    - 8.9 Un algoritmo completo: il valore massimo in un array
+    - 8.10 Operatori bit a bit
+    - 8.11 <code>Java</code>, <code>C++</code> e <code>Python</code> a confronto
+
+## [Crescita e notazione asintotica](notazione-asintotica/index.md)
+
+9. [Crescita asintotica](notazione-asintotica/09-crescita-asintotica.md)
+    - 9.1 Famiglie di funzioni crescenti di variabile naturale
+    - 9.2 La gerarchia degli infiniti
+    - 9.3 Confronto fra ordini di crescita
+10. [Notazione asintotica](notazione-asintotica/10-notazione-asintotica.md)
+    - 10.1 Notazioni $\Theta$, $\bigO$ e $\Omega$
+    - 10.2 Notazioni $o$ e $\omega$
+    - 10.3 Limiti e notazioni asintotiche
+    - 10.4 Proprietà relazionali delle notazioni asintotiche
+    - 10.5 Notazione asintotica e ordini di crescita
+    - 10.6 Notazione asintotica nell'analisi degli algoritmi
 
 ## [Analisi e ricorsione](analisi-ricorsione/index.md)
 
-7. [Dimensione dell'input](analisi-ricorsione/07-dimensione-input.md)
-    - 7.1 Dimensione dell'input
-    - 7.2 Notazione asintotica
-    - 7.3 Istanza di input costituita da un numero naturale
-    - 7.4 Istanza di input costituita da due numeri naturali
-    - 7.5 Istanza di input costituita da un array di numeri naturali
-    - 7.6 Dimensione dell'input e numero di passi
-8. [Tempo di esecuzione](analisi-ricorsione/08-tempo-esecuzione.md)
-    - 8.1 Tempo di esecuzione di un algoritmo
-    - 8.2 Ricerca del massimo
-    - 8.3 Insertion sort
-    - 8.4 Cambio di base
-    - 8.5 Test di primalità
-    - 8.6 Riepilogo
-9. [Correttezza](analisi-ricorsione/09-correttezza.md)
-    - 9.1 Correttezza di un algoritmo
-    - 9.2 Correttezza di Find Maximum
-    - 9.3 Correttezza di Insertion Sort
-    - 9.4 Correttezza di Binary Search
-    - 9.5 Correttezza dell'algoritmo di Euclide
-    - 9.6 Correttezza degli algoritmi ricorsivi
-10. [Ricorsione](analisi-ricorsione/10-ricorsione.md)
-    - 10.1 Algoritmi ricorsivi
-    - 10.2 Albero delle chiamate ricorsive e call stack
-    - 10.3 Correttezza degli algoritmi ricorsivi
-    - 10.4 Fattoriale
-    - 10.5 Numeri di Fibonacci
-    - 10.6 Massimo comun divisore
-    - 10.7 Elevamento a potenza veloce
-    - 10.8 Torri di Hanoi
-    - 10.9 Riepilogo
-11. [Equazioni di ricorrenza](analisi-ricorsione/11-ricorrenze.md)
-    - 11.1 Equazioni di ricorrenza
-    - 11.2 Il metodo di espansione
-    - 11.3 Il metodo di sostituzione
-    - 11.4 Il metodo dell'albero di ricorsione
-    - 11.5 Verso il Master theorem
-    - 11.6 Riepilogo: quale metodo quando
-12. [Il Master theorem](analisi-ricorsione/12-master-theorem.md)
-    - 12.1 Ricorrenze in forma standard
-    - 12.2 Il Master theorem
-    - 12.3 Applicare il Master theorem
-    - 12.4 Quando il Master theorem non si applica
-    - 12.5 Dimostrazione del Master theorem
+11. [Dimensione dell'input](analisi-ricorsione/11-dimensione-input.md)
+    - 11.1 Dimensione dell'input
+    - 11.2 Notazione asintotica: un richiamo
+    - 11.3 Istanza di input costituita da un numero naturale
+    - 11.4 Istanza di input costituita da due numeri naturali
+    - 11.5 Istanza di input costituita da un array di numeri naturali
+    - 11.6 Dimensione dell'input e numero di passi
+12. [Tempo di esecuzione](analisi-ricorsione/12-tempo-esecuzione.md)
+    - 12.1 Tempo di esecuzione di un algoritmo
+    - 12.2 Ricerca del massimo
+    - 12.3 Insertion sort
+    - 12.4 Cambio di base
+    - 12.5 Test di primalità
     - 12.6 Riepilogo
-13. [Algoritmi ricorsivi](analisi-ricorsione/13-algoritmi-ricorsivi.md)
-    - 13.1 La somma degli elementi di un array
-    - 13.2 Merge Sort
-    - 13.3 Ricerca binaria ricorsiva
-    - 13.4 Il problema del sotto-array di somma massima
-    - 13.5 Riepilogo
-14. [Algoritmi ricorsivi e iterativi a confronto](analisi-ricorsione/14-ricorsivo-iterativo.md)
-    - 14.1 Ricorsione e iterazione
-    - 14.2 Confronto in sintesi
-    - 14.3 Il divide et impera dà il guadagno, non la ricorsione in sé
-    - 14.4 Quando i sottoproblemi si sovrappongono
-    - 14.5 Spazio
-    - 14.6 Implementazione in <code>C++</code>
-    - 14.7 Esperimento
-    - 14.8 Linee guida
+13. [Correttezza](analisi-ricorsione/13-correttezza.md)
+    - 13.1 Correttezza di un algoritmo
+    - 13.2 Correttezza di Find Maximum
+    - 13.3 Correttezza di Insertion Sort
+    - 13.4 Correttezza di Binary Search
+    - 13.5 Correttezza dell'algoritmo di Euclide
+    - 13.6 Correttezza degli algoritmi ricorsivi
+14. [Ricorsione](analisi-ricorsione/14-ricorsione.md)
+    - 14.1 Algoritmi ricorsivi
+    - 14.2 Albero delle chiamate ricorsive e call stack
+    - 14.3 Correttezza degli algoritmi ricorsivi
+    - 14.4 Fattoriale
+    - 14.5 Numeri di Fibonacci
+    - 14.6 Massimo comun divisore
+    - 14.7 Elevamento a potenza veloce
+    - 14.8 Torri di Hanoi
+    - 14.9 Riepilogo
+15. [Equazioni di ricorrenza](analisi-ricorsione/15-ricorrenze.md)
+    - 15.1 Equazioni di ricorrenza
+    - 15.2 Il metodo di espansione
+    - 15.3 Il metodo di sostituzione
+    - 15.4 Il metodo dell'albero di ricorsione
+    - 15.5 Verso il Master theorem
+    - 15.6 Riepilogo: quale metodo quando
+16. [Il Master theorem](analisi-ricorsione/16-master-theorem.md)
+    - 16.1 Ricorrenze in forma standard
+    - 16.2 Il Master theorem
+    - 16.3 Applicare il Master theorem
+    - 16.4 Quando il Master theorem non si applica
+    - 16.5 Dimostrazione del Master theorem
+    - 16.6 Riepilogo
+17. [Algoritmi ricorsivi](analisi-ricorsione/17-algoritmi-ricorsivi.md)
+    - 17.1 La somma degli elementi di un array
+    - 17.2 Merge Sort
+    - 17.3 Ricerca binaria ricorsiva
+    - 17.4 Il problema del sotto-array di somma massima
+    - 17.5 Riepilogo
+18. [Algoritmi ricorsivi e iterativi a confronto](analisi-ricorsione/18-ricorsivo-iterativo.md)
+    - 18.1 Ricorsione e iterazione
+    - 18.2 Confronto in sintesi
+    - 18.3 Il divide et impera dà il guadagno, non la ricorsione in sé
+    - 18.4 Quando i sottoproblemi si sovrappongono
+    - 18.5 Spazio
+    - 18.6 Implementazione in <code>C++</code>
+    - 18.7 Esperimento
+    - 18.8 Linee guida

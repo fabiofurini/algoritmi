@@ -6,7 +6,7 @@ title: "Esercizi · Pseudocodice"
 
 <div class="info-capitolo" markdown>
 
-**Esercizi · Capitolo 2** · ogni soluzione si apre con un clic · [:material-book-open-variant: Capitolo 2](../fondamenti/02-pseudocodice.md) · [:material-file-pdf-box: Eserciziario, volume 1 (PDF)](../pdf/esercizi-1-fondamenti.pdf)
+**Esercizi · Capitolo 2** · ogni soluzione si apre con un clic · [:material-book-open-variant: Capitolo 2](../algoritmi-di-base/02-pseudocodice.md) · [:material-file-pdf-box: Eserciziario, volume 1 (PDF)](../pdf/esercizi-1-algoritmi-di-base.pdf)
 
 </div>
 

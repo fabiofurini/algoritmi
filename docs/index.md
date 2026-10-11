@@ -17,12 +17,13 @@ avanti; il laboratorio interattivo è già aperto e crescerà.
 Materiale didattico ideato e sviluppato da **[Fabio Furini](https://fabiofurini.github.io/)**, professore
 associato al [DIAG](https://www.diag.uniroma1.it/), Sapienza Università di Roma.
 
-**Le dispense del corso, online**: rappresentazione dei numeri, pseudocodice e C++, algoritmi di
-ordinamento, ricerca e numerici, analisi del tempo di esecuzione e della correttezza, ricorsione,
-equazioni di ricorrenza e Master theorem, con definizioni, teoremi con le loro dimostrazioni,
-pseudocodice, codice C++, esempi eseguiti passo per passo ed esercizi con le soluzioni.
+**Le dispense del corso, online**, in quattro parti: algoritmi di base (rappresentazione dei numeri,
+pseudocodice, ordinamento, ricerca, algoritmi numerici), linguaggi di programmazione (C++, Python
+e Java), crescita e notazione asintotica, analisi e ricorsione (tempo di esecuzione, correttezza,
+equazioni di ricorrenza, Master theorem), con definizioni, teoremi con le loro dimostrazioni,
+pseudocodice, codice, esempi eseguiti passo per passo ed esercizi con le soluzioni.
 
-[Comincia dai fondamenti :material-arrow-right:](fondamenti/index.md){ .md-button .md-button--primary }
+[Comincia dagli algoritmi di base :material-arrow-right:](algoritmi-di-base/index.md){ .md-button .md-button--primary }
 [Gli esercizi](esercizi/index.md){ .md-button }
 [Prova un grafico interattivo](laboratorio/index.md){ .md-button }
 [:material-download: Scarica le dispense (PDF)](materiale.md){ .md-button }
@@ -51,8 +52,8 @@ dispensa: sul sito e nel PDF trovi tutto allo stesso posto.
 !!! algoritmo "Algoritmo"
     Lo pseudocodice, con le righe numerate come nella dispensa.
 
-!!! codice "Codice C++"
-    Le implementazioni in C++, con la sintassi evidenziata.
+!!! codice "Codice"
+    I programmi in C++, Python e Java, con la sintassi evidenziata.
 
 </div>
 
@@ -64,23 +65,43 @@ dispensa: sul sito e nel PDF trovi tutto allo stesso posto.
 
 <div class="grid cards" markdown>
 
--   :material-code-braces: **1 · Fondamenti e algoritmi di base**
+-   :material-code-braces: **1 · Algoritmi di base**
 
     ---
 
-    La rappresentazione dei numeri, lo pseudocodice e un'introduzione a C++; i primi algoritmi: ordinamento (insertion, exchange e selection sort), ricerca lineare e binaria, algoritmi numerici (cambio di base, test di primalità, crivello di Eratostene, massimo comune divisore). Ogni algoritmo con lo pseudocodice, esempi eseguiti passo per passo e il codice C++.
+    La rappresentazione dei numeri e lo pseudocodice, il linguaggio in cui sono scritti tutti gli algoritmi del corso; i primi algoritmi: ordinamento (insertion, exchange e selection sort), ricerca lineare e binaria, algoritmi numerici (cambio di base, test di primalità, crivello di Eratostene, massimo comune divisore). Ogni algoritmo con lo pseudocodice ed esempi eseguiti passo per passo.
 
-    1\. Rappresentazione dei numeri · 2\. Pseudocodice · 3\. Introduzione a C++ · 4\. Algoritmi di ordinamento · 5\. Ricerca lineare e binaria · 6\. Algoritmi numerici
+    1\. Rappresentazione dei numeri · 2\. Pseudocodice · 3\. Algoritmi di ordinamento · 4\. Ricerca lineare e binaria · 5\. Algoritmi numerici
 
-    [:octicons-arrow-right-24: I capitoli](fondamenti/index.md)
+    [:octicons-arrow-right-24: I capitoli](algoritmi-di-base/index.md)
 
--   :material-file-tree: **2 · Analisi e ricorsione**
+-   :material-console: **2 · Linguaggi di programmazione**
 
     ---
 
-    L'analisi degli algoritmi: dimensione dell'input, tempo di esecuzione e notazione asintotica, correttezza con le invarianti di ciclo. La ricorsione: equazioni di ricorrenza, il Master theorem, algoritmi ricorsivi (somma di un array, merge sort, ricerca binaria, sotto-array di somma massima) e il confronto fra versioni ricorsive e iterative.
+    Dallo pseudocodice ai programmi: tre linguaggi di programmazione, C++ (compilato), Python (interpretato) e Java (compilato in bytecode ed eseguito da una macchina virtuale). Per ciascuno: variabili e tipi di dato, input e output, operatori, istruzioni condizionali, cicli, array e liste, funzioni, operatori bit a bit e un algoritmo completo, con il confronto fra i tre linguaggi.
 
-    7\. Dimensione dell'input · 8\. Tempo di esecuzione · 9\. Correttezza · 10\. Ricorsione · 11\. Equazioni di ricorrenza · 12\. Il Master theorem · 13\. Algoritmi ricorsivi · 14\. Algoritmi ricorsivi e iterativi a confronto
+    6\. Introduzione a C++ · 7\. Introduzione a Python · 8\. Introduzione a Java
+
+    [:octicons-arrow-right-24: I capitoli](linguaggi/index.md)
+
+-   :material-chart-line: **3 · Crescita e notazione asintotica**
+
+    ---
+
+    Come crescono le funzioni di variabile naturale che contano i passi di un algoritmo: le famiglie di funzioni crescenti (logaritmi, potenze, esponenziali, fattoriale), la gerarchia degli infiniti e il confronto degli ordini di crescita; le notazioni asintotiche Theta, O grande, Omega, o piccolo e omega, le loro proprietà e il loro uso nell'analisi degli algoritmi. Limiti e funzioni di variabile naturale si danno per noti dal corso di Analisi Matematica 1.
+
+    9\. Crescita asintotica · 10\. Notazione asintotica
+
+    [:octicons-arrow-right-24: I capitoli](notazione-asintotica/index.md)
+
+-   :material-file-tree: **4 · Analisi e ricorsione**
+
+    ---
+
+    L'analisi degli algoritmi: dimensione dell'input, tempo di esecuzione, correttezza con le invarianti di ciclo. La ricorsione: equazioni di ricorrenza, il Master theorem, algoritmi ricorsivi (somma di un array, merge sort, ricerca binaria, sotto-array di somma massima) e il confronto fra versioni ricorsive e iterative.
+
+    11\. Dimensione dell'input · 12\. Tempo di esecuzione · 13\. Correttezza · 14\. Ricorsione · 15\. Equazioni di ricorrenza · 16\. Il Master theorem · 17\. Algoritmi ricorsivi · 18\. Algoritmi ricorsivi e iterativi a confronto
 
     [:octicons-arrow-right-24: I capitoli](analisi-ricorsione/index.md)
 
@@ -111,7 +132,7 @@ dispensa: sul sito e nel PDF trovi tutto allo stesso posto.
 
     ---
 
-    Due volumi di dispense e due eserciziari, con la stessa numerazione del sito.
+    Quattro volumi di dispense e quattro eserciziari, con la stessa numerazione del sito.
 
     [:octicons-arrow-right-24: Il materiale](materiale.md)
 

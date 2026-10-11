@@ -12,65 +12,68 @@ e delle variabili. Ogni parametro ha il suo colore, lo stesso nel cursore e nell
 
 <div class="grid cards" markdown>
 
--   :material-code-braces: **[Fondamenti e algoritmi di base](#parte-1)** — un intero in binario: complemento a due, modulo e segno, IEEE 754 · insertion, exchange e selection sort passo per passo · ricerca lineare e binaria · algoritmo di Euclide e crivello di Eratostene
--   :material-file-tree: **[Analisi e ricorsione](#parte-2)** — ordini di crescita delle funzioni · l'invariante di ciclo di FindMaximum · alberi delle chiamate ricorsive e pila · il Master theorem livello per livello · merge sort passo per passo
+-   :material-code-braces: **[Algoritmi di base](#parte-1)** — un intero in binario: complemento a due, modulo e segno, IEEE 754 · insertion, exchange e selection sort passo per passo · ricerca lineare e binaria · algoritmo di Euclide e crivello di Eratostene
+-   :material-chart-line: **[Crescita e notazione asintotica](#parte-3)** — ordini di crescita delle funzioni
+-   :material-file-tree: **[Analisi e ricorsione](#parte-4)** — l'invariante di ciclo di FindMaximum · alberi delle chiamate ricorsive e pila · il Master theorem livello per livello · merge sort passo per passo
 
 </div>
 
-## Fondamenti e algoritmi di base { #parte-1 }
+## Algoritmi di base { #parte-1 }
 
 ### 1. Rappresentazione dei numeri { #cap-1 }
 
 <div class="gi" data-grafico="rappresentazione"></div>
 
-Il capitolo: [Rappresentazione dei numeri](../fondamenti/01-rappresentazione-numeri.md).
+Il capitolo: [Rappresentazione dei numeri](../algoritmi-di-base/01-rappresentazione-numeri.md).
 
-### 4. Algoritmi di ordinamento { #cap-4 }
+### 3. Algoritmi di ordinamento { #cap-3 }
 
 <div class="gi" data-grafico="ordinamento"></div>
 
-Il capitolo: [Algoritmi di ordinamento](../fondamenti/04-ordinamento.md).
+Il capitolo: [Algoritmi di ordinamento](../algoritmi-di-base/03-ordinamento.md).
 
-### 5. Ricerca lineare e binaria { #cap-5 }
+### 4. Ricerca lineare e binaria { #cap-4 }
 
 <div class="gi" data-grafico="ricerca"></div>
 
-Il capitolo: [Ricerca lineare e binaria](../fondamenti/05-ricerca.md).
+Il capitolo: [Ricerca lineare e binaria](../algoritmi-di-base/04-ricerca.md).
 
-### 6. Algoritmi numerici { #cap-6 }
+### 5. Algoritmi numerici { #cap-5 }
 
 <div class="gi" data-grafico="euclide-crivello"></div>
 
-Il capitolo: [Algoritmi numerici](../fondamenti/06-algoritmi-numerici.md).
+Il capitolo: [Algoritmi numerici](../algoritmi-di-base/05-algoritmi-numerici.md).
 
-## Analisi e ricorsione { #parte-2 }
+## Crescita e notazione asintotica { #parte-3 }
 
-### 8. Tempo di esecuzione { #cap-8 }
+### 9. Crescita asintotica { #cap-9 }
 
 <div class="gi" data-grafico="crescita"></div>
 
-Il capitolo: [Tempo di esecuzione](../analisi-ricorsione/08-tempo-esecuzione.md).
+Il capitolo: [Crescita asintotica](../notazione-asintotica/09-crescita-asintotica.md).
 
-### 9. Correttezza { #cap-9 }
+## Analisi e ricorsione { #parte-4 }
+
+### 13. Correttezza { #cap-13 }
 
 <div class="gi" data-grafico="invariante"></div>
 
-Il capitolo: [Correttezza](../analisi-ricorsione/09-correttezza.md).
+Il capitolo: [Correttezza](../analisi-ricorsione/13-correttezza.md).
 
-### 10. Ricorsione { #cap-10 }
+### 14. Ricorsione { #cap-14 }
 
 <div class="gi" data-grafico="albero-ricorsione"></div>
 
-Il capitolo: [Ricorsione](../analisi-ricorsione/10-ricorsione.md).
+Il capitolo: [Ricorsione](../analisi-ricorsione/14-ricorsione.md).
 
-### 12. Il Master theorem { #cap-12 }
+### 16. Il Master theorem { #cap-16 }
 
 <div class="gi" data-grafico="master"></div>
 
-Il capitolo: [Il Master theorem](../analisi-ricorsione/12-master-theorem.md).
+Il capitolo: [Il Master theorem](../analisi-ricorsione/16-master-theorem.md).
 
-### 13. Algoritmi ricorsivi { #cap-13 }
+### 17. Algoritmi ricorsivi { #cap-17 }
 
 <div class="gi" data-grafico="merge-sort"></div>
 
-Il capitolo: [Algoritmi ricorsivi](../analisi-ricorsione/13-algoritmi-ricorsivi.md).
+Il capitolo: [Algoritmi ricorsivi](../analisi-ricorsione/17-algoritmi-ricorsivi.md).

@@ -123,46 +123,58 @@ extra_javascript:
   # grafici interattivi: JSXGraph, il motore, poi le ricette (gi-*.js, le aggiunge genera_sito.py)
   - https://cdn.jsdelivr.net/npm/jsxgraph@1.10.1/distrib/jsxgraphcore.js
   - javascripts/interattivi.js?v=6e596bae66
-  - javascripts/gi-cap1-6.js?v=1513f12a39
-  - javascripts/gi-cap10-14.js?v=217296d127
-  - javascripts/gi-cap7-9.js?v=fdde5b1a77
+  - javascripts/gi-cap1-5.js?v=f2d03ace72
+  - javascripts/gi-cap14-17.js?v=c75fa22fac
+  - javascripts/gi-cap9-13.js?v=ec8b167001
 
 nav:
   - Home: index.md
-  - Fondamenti:
-      - fondamenti/index.md
-      - "1. Rappresentazione dei numeri": fondamenti/01-rappresentazione-numeri.md
-      - "2. Pseudocodice": fondamenti/02-pseudocodice.md
-      - "3. Introduzione a C++": fondamenti/03-introduzione-cpp.md
-      - "4. Algoritmi di ordinamento": fondamenti/04-ordinamento.md
-      - "5. Ricerca lineare e binaria": fondamenti/05-ricerca.md
-      - "6. Algoritmi numerici": fondamenti/06-algoritmi-numerici.md
+  - Algoritmi di base:
+      - algoritmi-di-base/index.md
+      - "1. Rappresentazione dei numeri": algoritmi-di-base/01-rappresentazione-numeri.md
+      - "2. Pseudocodice": algoritmi-di-base/02-pseudocodice.md
+      - "3. Algoritmi di ordinamento": algoritmi-di-base/03-ordinamento.md
+      - "4. Ricerca lineare e binaria": algoritmi-di-base/04-ricerca.md
+      - "5. Algoritmi numerici": algoritmi-di-base/05-algoritmi-numerici.md
+  - Linguaggi:
+      - linguaggi/index.md
+      - "6. Introduzione a C++": linguaggi/06-introduzione-cpp.md
+      - "7. Introduzione a Python": linguaggi/07-introduzione-python.md
+      - "8. Introduzione a Java": linguaggi/08-introduzione-java.md
+  - Notazione asintotica:
+      - notazione-asintotica/index.md
+      - "9. Crescita asintotica": notazione-asintotica/09-crescita-asintotica.md
+      - "10. Notazione asintotica": notazione-asintotica/10-notazione-asintotica.md
   - Analisi e ricorsione:
       - analisi-ricorsione/index.md
-      - "7. Dimensione dell'input": analisi-ricorsione/07-dimensione-input.md
-      - "8. Tempo di esecuzione": analisi-ricorsione/08-tempo-esecuzione.md
-      - "9. Correttezza": analisi-ricorsione/09-correttezza.md
-      - "10. Ricorsione": analisi-ricorsione/10-ricorsione.md
-      - "11. Equazioni di ricorrenza": analisi-ricorsione/11-ricorrenze.md
-      - "12. Il Master theorem": analisi-ricorsione/12-master-theorem.md
-      - "13. Algoritmi ricorsivi": analisi-ricorsione/13-algoritmi-ricorsivi.md
-      - "14. Algoritmi ricorsivi e iterativi a confronto": analisi-ricorsione/14-ricorsivo-iterativo.md
+      - "11. Dimensione dell'input": analisi-ricorsione/11-dimensione-input.md
+      - "12. Tempo di esecuzione": analisi-ricorsione/12-tempo-esecuzione.md
+      - "13. Correttezza": analisi-ricorsione/13-correttezza.md
+      - "14. Ricorsione": analisi-ricorsione/14-ricorsione.md
+      - "15. Equazioni di ricorrenza": analisi-ricorsione/15-ricorrenze.md
+      - "16. Il Master theorem": analisi-ricorsione/16-master-theorem.md
+      - "17. Algoritmi ricorsivi": analisi-ricorsione/17-algoritmi-ricorsivi.md
+      - "18. Algoritmi ricorsivi e iterativi a confronto": analisi-ricorsione/18-ricorsivo-iterativo.md
   - Esercizi:
       - esercizi/index.md
       - "1. Rappresentazione dei numeri": esercizi/es-01-rappresentazione-numeri.md
       - "2. Pseudocodice": esercizi/es-02-pseudocodice.md
-      - "3. Introduzione a C++": esercizi/es-03-introduzione-cpp.md
-      - "4. Algoritmi di ordinamento": esercizi/es-04-ordinamento.md
-      - "5. Ricerca lineare e binaria": esercizi/es-05-ricerca.md
-      - "6. Algoritmi numerici": esercizi/es-06-algoritmi-numerici.md
-      - "7. Dimensione dell'input": esercizi/es-07-dimensione-input.md
-      - "8. Tempo di esecuzione": esercizi/es-08-tempo-esecuzione.md
-      - "9. Correttezza": esercizi/es-09-correttezza.md
-      - "10. Ricorsione": esercizi/es-10-ricorsione.md
-      - "11. Equazioni di ricorrenza": esercizi/es-11-ricorrenze.md
-      - "12. Il Master theorem": esercizi/es-12-master-theorem.md
-      - "13. Algoritmi ricorsivi": esercizi/es-13-algoritmi-ricorsivi.md
-      - "14. Algoritmi ricorsivi e iterativi a confronto": esercizi/es-14-ricorsivo-iterativo.md
+      - "3. Algoritmi di ordinamento": esercizi/es-03-ordinamento.md
+      - "4. Ricerca lineare e binaria": esercizi/es-04-ricerca.md
+      - "5. Algoritmi numerici": esercizi/es-05-algoritmi-numerici.md
+      - "6. Introduzione a C++": esercizi/es-06-introduzione-cpp.md
+      - "7. Introduzione a Python": esercizi/es-07-introduzione-python.md
+      - "8. Introduzione a Java": esercizi/es-08-introduzione-java.md
+      - "9. Crescita asintotica": esercizi/es-09-crescita-asintotica.md
+      - "10. Notazione asintotica": esercizi/es-10-notazione-asintotica.md
+      - "11. Dimensione dell'input": esercizi/es-11-dimensione-input.md
+      - "12. Tempo di esecuzione": esercizi/es-12-tempo-esecuzione.md
+      - "13. Correttezza": esercizi/es-13-correttezza.md
+      - "14. Ricorsione": esercizi/es-14-ricorsione.md
+      - "15. Equazioni di ricorrenza": esercizi/es-15-ricorrenze.md
+      - "16. Il Master theorem": esercizi/es-16-master-theorem.md
+      - "17. Algoritmi ricorsivi": esercizi/es-17-algoritmi-ricorsivi.md
+      - "18. Algoritmi ricorsivi e iterativi a confronto": esercizi/es-18-ricorsivo-iterativo.md
   - Laboratorio:
       - laboratorio/index.md
   - Materiale: materiale.md
