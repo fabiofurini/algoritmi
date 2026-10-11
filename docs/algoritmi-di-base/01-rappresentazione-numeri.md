@@ -1486,6 +1486,6 @@ L'epsilon macchina misura la <strong>precisione relativa</strong> del formato: l
 ## Laboratorio interattivo { #laboratorio-interattivo }
 
 L'algoritmo del capitolo, un passo alla volta: muovi i cursori e premi ▶.
-Tutti i grafici del corso sono nel [laboratorio interattivo](../laboratorio/index.md#cap-1).
+Lo stesso grafico a tutta pagina, con gli altri del corso, è nel [laboratorio interattivo](../laboratorio/rappresentazione-numeri.md).
 
 <div class="gi" data-grafico="rappresentazione"></div>

@@ -28,7 +28,7 @@ Il piano del capitolo è il seguente.
 
     Il <strong>tempo di esecuzione</strong> di un algoritmo è una stima del tempo necessario per eseguirlo, in funzione della <strong>dimensione dell'input</strong> $|I|$.
 
-- Non ci interessa il tempo esatto in secondi, che dipende dal calcolatore, dal compilatore e da molti altri dettagli, ma l'<strong>ordine di crescita</strong> del tempo di esecuzione, espresso con la notazione asintotica $O$, $\Omega$ e $\Theta$ (capitolo 10 «Notazione asintotica», richiamata nel capitolo «Dimensione dell'input»).
+- Non ci interessa il tempo esatto in secondi, che dipende dal calcolatore, dal compilatore e da molti altri dettagli, ma l'<strong>ordine di crescita</strong> del tempo di esecuzione, espresso con la notazione asintotica $O$, $\Omega$ e $\Theta$ (capitolo 9 «Notazione asintotica», richiamata nel capitolo «Dimensione dell'input»).
 
 - Il tempo di esecuzione di un algoritmo dipende dal numero di <strong>operazioni elementari</strong> che l'algoritmo esegue su un input di una data dimensione.
 

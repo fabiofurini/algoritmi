@@ -2375,6 +2375,6 @@ int EuclideanAlgorithm(int n, int m)
 ## Laboratorio interattivo { #laboratorio-interattivo }
 
 L'algoritmo del capitolo, un passo alla volta: muovi i cursori e premi ▶.
-Tutti i grafici del corso sono nel [laboratorio interattivo](../laboratorio/index.md#cap-5).
+Lo stesso grafico a tutta pagina, con gli altri del corso, è nel [laboratorio interattivo](../laboratorio/euclide-crivello.md).
 
 <div class="gi" data-grafico="euclide-crivello"></div>

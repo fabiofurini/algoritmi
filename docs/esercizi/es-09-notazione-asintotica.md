@@ -6,11 +6,11 @@ title: "Esercizi · Notazione asintotica"
 
 <div class="info-capitolo" markdown>
 
-**Esercizi · Capitolo 10** · ogni soluzione si apre con un clic · [:material-book-open-variant: Capitolo 10](../notazione-asintotica/10-notazione-asintotica.md) · [:material-file-pdf-box: Eserciziario, volume 3 (PDF)](../pdf/esercizi-3-notazione-asintotica.pdf)
+**Esercizi · Capitolo 9** · ogni soluzione si apre con un clic · [:material-book-open-variant: Capitolo 9](../notazione-asintotica/09-notazione-asintotica.md) · [:material-file-pdf-box: Eserciziario, volume 3 (PDF)](../pdf/esercizi-3-notazione-asintotica.pdf)
 
 </div>
 
-Negli esercizi di questo capitolo le notazioni asintotiche si usano con le definizioni e i criteri del limite del capitolo «Notazione asintotica», riassunti qui sotto. I limiti si calcolano con le regole di Analisi Matematica 1.
+Negli esercizi di questo capitolo le notazioni asintotiche si usano con le definizioni e i criteri del limite del capitolo «Notazione asintotica», riassunti qui sotto. I limiti di funzioni di variabile naturale (successioni) si calcolano con i risultati del corso di <em>Analisi Matematica 1</em> ([fabiofurini.github.io/analisi-matematica-1/](https://fabiofurini.github.io/analisi-matematica-1/)).
 
 !!! nota ""
 
@@ -48,21 +48,21 @@ Negli esercizi di questo capitolo le notazioni asintotiche si usano con le defin
 
 !!! nota ""
 
-    Date due funzioni $f$ e $g$ di variabile naturale asintoticamente positive, si ha
+    Criterio del limite: date due funzioni $f$ e $g$ di variabile naturale asintoticamente positive tali che il limite di $\frac{f(n)}{g(n)}$ esista, si ha
 
     \begin{align*}
     &\lim_{n \rr +\infty} \frac{f(n)}{g(n)} =0^+ ~~\Longleftrightarrow~~ f(n)= o\big(g(n)\big),\\
-    &\lim_{n \rr +\infty} \frac{f(n)}{g(n)} = \ell \in \R_{> 0} \text{ oppure } 0^+ ~~\Longrightarrow~~ f(n)= \bigO\big(g(n)\big),\\
-    &\lim_{n \rr +\infty} \frac{f(n)}{g(n)} = \ell \in \R_{> 0} ~~\Longrightarrow~~ f(n)= \Theta\big(g(n)\big),\\
-    &\lim_{n \rr +\infty} \frac{f(n)}{g(n)} = \ell \in \R_{>0} \text{ oppure } +\infty ~~\Longrightarrow~~ f(n)= \Omega\big(g(n)\big),\\
+    &\lim_{n \rr +\infty} \frac{f(n)}{g(n)} = \ell \in \R_{> 0} \text{ oppure } 0^+ ~~\Longleftrightarrow~~ f(n)= \bigO\big(g(n)\big),\\
+    &\lim_{n \rr +\infty} \frac{f(n)}{g(n)} = \ell \in \R_{> 0} ~~\Longleftrightarrow~~ f(n)= \Theta\big(g(n)\big),\\
+    &\lim_{n \rr +\infty} \frac{f(n)}{g(n)} = \ell \in \R_{>0} \text{ oppure } +\infty ~~\Longleftrightarrow~~ f(n)= \Omega\big(g(n)\big),\\
     &\lim_{n \rr +\infty} \frac{f(n)}{g(n)} =+\infty ~~\Longleftrightarrow~~ f(n)= \omega\big(g(n)\big).
     \end{align*}
 
     Quando il rapporto $\frac{f(n)}{g(n)}$ non ha limite (per esempio quando contiene $\sin n$ o $\cos n$), questi criteri non si possono applicare e si usano le definizioni.
 
-<a id="esercizio-10-1"></a>
+<a id="esercizio-9-1"></a>
 
-!!! esercizio "Esercizio 10.1: Notazione asintotica (E1)"
+!!! esercizio "Esercizio 9.1: Notazione asintotica (E1)"
 
     Consideriamo la seguente funzione di variabile naturale asintoticamente non negativa:
 
@@ -214,9 +214,9 @@ Negli esercizi di questo capitolo le notazioni asintotiche si usano con le defin
 
             In alternativa, il limite calcolato nella parte (b) è uguale a $0^+$, quindi $f(n) = o(n^6)$ per il criterio del limite. Allora, con la costante $c = c_1$ nella definizione di $o$, avremmo $f(n) < c_1\,n^6$ per ogni $n$ sufficientemente grande, contro la limitazione inferiore $c_1\,n^6 \le f(n)$.
 
-<a id="esercizio-10-2"></a>
+<a id="esercizio-9-2"></a>
 
-!!! esercizio "Esercizio 10.2: Notazione asintotica (E2)"
+!!! esercizio "Esercizio 9.2: Notazione asintotica (E2)"
 
     Consideriamo la seguente funzione di variabile naturale asintoticamente non negativa:
 
@@ -312,9 +312,9 @@ Negli esercizi di questo capitolo le notazioni asintotiche si usano con le defin
 
             Equivalentemente, il rapporto è limitato dall'alto da $6$ e non può divergere a $+\infty$.
 
-<a id="esercizio-10-3"></a>
+<a id="esercizio-9-3"></a>
 
-!!! esercizio "Esercizio 10.3: Notazione asintotica (E3)"
+!!! esercizio "Esercizio 9.3: Notazione asintotica (E3)"
 
     Consideriamo la seguente funzione di variabile naturale asintoticamente non negativa:
 
@@ -466,9 +466,9 @@ Negli esercizi di questo capitolo le notazioni asintotiche si usano con le defin
 
             In alternativa, il limite calcolato nella parte (b) è uguale a $0^+$, quindi $f(n) = o(n^5)$ per il criterio del limite. Allora, con la costante $c = c_1$ nella definizione di $o$, avremmo $f(n) < c_1\,n^5$ per ogni $n$ sufficientemente grande, contro la limitazione inferiore $c_1\,n^5 \le f(n)$.
 
-<a id="esercizio-10-4"></a>
+<a id="esercizio-9-4"></a>
 
-!!! esercizio "Esercizio 10.4: Notazione asintotica (E4)"
+!!! esercizio "Esercizio 9.4: Notazione asintotica (E4)"
 
     Consideriamo la seguente funzione di variabile naturale asintoticamente non negativa:
 
@@ -564,9 +564,9 @@ Negli esercizi di questo capitolo le notazioni asintotiche si usano con le defin
 
             Equivalentemente, il rapporto è limitato dall'alto da $4$ e non può divergere a $+\infty$.
 
-<a id="esercizio-10-5"></a>
+<a id="esercizio-9-5"></a>
 
-!!! esercizio "Esercizio 10.5: Notazione asintotica (E5)"
+!!! esercizio "Esercizio 9.5: Notazione asintotica (E5)"
 
     Consideriamo la seguente funzione di variabile naturale asintoticamente non negativa:
 
@@ -688,9 +688,9 @@ Negli esercizi di questo capitolo le notazioni asintotiche si usano con le defin
 
             quindi $f(n) = \omega(n^3)$ per il criterio del limite. Allora, con la costante $c = c_2$ nella definizione di $\omega$, avremmo $f(n) > c_2\,n^3$ per ogni $n$ sufficientemente grande, contro la limitazione superiore $f(n) \le c_2\,n^3$. Quindi $f(n) \neq \Theta(n^3)$.
 
-<a id="esercizio-10-6"></a>
+<a id="esercizio-9-6"></a>
 
-!!! esercizio "Esercizio 10.6: Notazione asintotica (E6)"
+!!! esercizio "Esercizio 9.6: Notazione asintotica (E6)"
 
     Consideriamo la seguente funzione di variabile naturale asintoticamente non negativa:
 
@@ -786,9 +786,9 @@ Negli esercizi di questo capitolo le notazioni asintotiche si usano con le defin
 
             Equivalentemente, il rapporto è limitato dall'alto da $10$ e non può divergere a $+\infty$.
 
-<a id="esercizio-10-7"></a>
+<a id="esercizio-9-7"></a>
 
-!!! esercizio "Esercizio 10.7: Notazione asintotica (E7)"
+!!! esercizio "Esercizio 9.7: Notazione asintotica (E7)"
 
     Consideriamo la seguente funzione di variabile naturale asintoticamente non negativa:
 
@@ -910,9 +910,9 @@ Negli esercizi di questo capitolo le notazioni asintotiche si usano con le defin
 
             quindi $f(n) = \omega(n^2)$ per il criterio del limite. Allora, con la costante $c = c_2$ nella definizione di $\omega$, avremmo $f(n) > c_2\,n^2$ per ogni $n$ sufficientemente grande, contro la limitazione superiore $f(n) \le c_2\,n^2$. Quindi $f(n) \neq \Theta(n^2)$.
 
-<a id="esercizio-10-8"></a>
+<a id="esercizio-9-8"></a>
 
-!!! esercizio "Esercizio 10.8: Notazione asintotica (E8)"
+!!! esercizio "Esercizio 9.8: Notazione asintotica (E8)"
 
     Consideriamo la seguente funzione di variabile naturale asintoticamente non negativa:
 
@@ -1008,9 +1008,9 @@ Negli esercizi di questo capitolo le notazioni asintotiche si usano con le defin
 
             Equivalentemente, il rapporto è limitato dall'alto da $2$ e non può divergere a $+\infty$.
 
-<a id="esercizio-10-9"></a>
+<a id="esercizio-9-9"></a>
 
-!!! esercizio "Esercizio 10.9: Notazione asintotica (E9)"
+!!! esercizio "Esercizio 9.9: Notazione asintotica (E9)"
 
     Consideriamo la seguente funzione di variabile naturale asintoticamente non negativa:
 
@@ -1162,9 +1162,9 @@ Negli esercizi di questo capitolo le notazioni asintotiche si usano con le defin
 
             In alternativa, il limite calcolato nella parte (b) è uguale a $0^+$, quindi $f(n) = o(n^4)$ per il criterio del limite. Allora, con la costante $c = c_1$ nella definizione di $o$, avremmo $f(n) < c_1\,n^4$ per ogni $n$ sufficientemente grande, contro la limitazione inferiore $c_1\,n^4 \le f(n)$.
 
-<a id="esercizio-10-10"></a>
+<a id="esercizio-9-10"></a>
 
-!!! esercizio "Esercizio 10.10: Notazione asintotica (E10)"
+!!! esercizio "Esercizio 9.10: Notazione asintotica (E10)"
 
     Consideriamo la seguente funzione di variabile naturale asintoticamente non negativa:
 
@@ -1260,9 +1260,9 @@ Negli esercizi di questo capitolo le notazioni asintotiche si usano con le defin
 
             Equivalentemente, il rapporto è limitato dall'alto da $3$ e non può divergere a $+\infty$.
 
-<a id="esercizio-10-11"></a>
+<a id="esercizio-9-11"></a>
 
-!!! esercizio "Esercizio 10.11: Notazione asintotica (E11)"
+!!! esercizio "Esercizio 9.11: Notazione asintotica (E11)"
 
     Dati $a \in \R_{>0}$ e $b \in \R$, consideriamo la seguente funzione di variabile naturale asintoticamente non negativa:
 
@@ -1376,9 +1376,9 @@ Negli esercizi di questo capitolo le notazioni asintotiche si usano con le defin
 
             Passando al limite per $n \to +\infty$, otteniamo $0 < c_1 \le 0$, il che è impossibile: la disuguaglianza non può valere per $n$ arbitrariamente grande, poiché $c_1$ è una costante positiva.
 
-<a id="esercizio-10-12"></a>
+<a id="esercizio-9-12"></a>
 
-!!! esercizio "Esercizio 10.12: Notazione asintotica (E12)"
+!!! esercizio "Esercizio 9.12: Notazione asintotica (E12)"
 
     Dati $a \in \R_{>0}$, $b \in \R$ e $c \in \R$, consideriamo la seguente funzione di variabile naturale asintoticamente non negativa:
 
@@ -1452,20 +1452,20 @@ Negli esercizi di questo capitolo le notazioni asintotiche si usano con le defin
 
             Passando al limite per $n \to +\infty$, otteniamo $0 < c_1 \le 0$, il che è impossibile: la disuguaglianza non può valere per $n$ arbitrariamente grande, poiché $c_1$ è una costante positiva.
 
-<a id="esercizio-10-13"></a>
+<a id="esercizio-9-13"></a>
 
-!!! esercizio "Esercizio 10.13: Notazione asintotica (E13)"
+!!! esercizio "Esercizio 9.13: Notazione asintotica (E13)"
 
     Consideriamo quattro funzioni $f$, $g$, $p$ e $q$ di variabile naturale asintoticamente positive e le seguenti implicazioni:
 
     \begin{equation*}
     \label{eq:n13-prod}
-    f(n)=\Theta\big(p(n)\big) \ \text{ e } \ g(n)=\Theta\big(q(n)\big) ~~\Longrightarrow~~ f(n) \cdot g(n) = \Theta\big( p(n) \cdot q(n) \big), \tag{10.1}
+    f(n)=\Theta\big(p(n)\big) \ \text{ e } \ g(n)=\Theta\big(q(n)\big) ~~\Longrightarrow~~ f(n) \cdot g(n) = \Theta\big( p(n) \cdot q(n) \big), \tag{9.1}
     \end{equation*}
 
     \begin{equation*}
     \label{eq:n13-sum}
-    f(n)=\Theta\big(p(n)\big) \ \text{ e } \ g(n)=\Theta\big(q(n)\big) ~~\Longrightarrow~~ f(n) + g(n) = \Theta\big( p(n) + q(n) \big). \tag{10.2}
+    f(n)=\Theta\big(p(n)\big) \ \text{ e } \ g(n)=\Theta\big(q(n)\big) ~~\Longrightarrow~~ f(n) + g(n) = \Theta\big( p(n) + q(n) \big). \tag{9.2}
     \end{equation*}
 
     **Domande**
@@ -1584,21 +1584,21 @@ Negli esercizi di questo capitolo le notazioni asintotiche si usano con le defin
 
         quindi $7\;n = o(n^2)$ e perciò $7\;n \neq \Theta(n^2)$.
 
-<a id="esercizio-10-14"></a>
+<a id="esercizio-9-14"></a>
 
-!!! esercizio "Esercizio 10.14: Notazione asintotica (E14)"
+!!! esercizio "Esercizio 9.14: Notazione asintotica (E14)"
 
     Consideriamo due funzioni $f$ e $g$ di variabile naturale asintoticamente non negative e le seguenti equivalenze:
 
     \begin{align*}
     \label{eq:n14-a}
-    &f(n)= \Theta\big(g(n)\big) ~~\Longleftrightarrow~~ f(n)= \bigO\big(g(n)\big) \ \text{ e } \ f(n)= \Omega\big(g(n)\big), \tag{10.3}\\[1ex]
+    &f(n)= \Theta\big(g(n)\big) ~~\Longleftrightarrow~~ f(n)= \bigO\big(g(n)\big) \ \text{ e } \ f(n)= \Omega\big(g(n)\big), \tag{9.3}\\[1ex]
     \label{eq:n14-b}
-    &f(n)= \bigO\big(g(n)\big) ~~\Longleftrightarrow~~ g(n)= \Omega\big(f(n)\big), \tag{10.4}\\[1ex]
+    &f(n)= \bigO\big(g(n)\big) ~~\Longleftrightarrow~~ g(n)= \Omega\big(f(n)\big), \tag{9.4}\\[1ex]
     \label{eq:n14-c}
-    &f(n)= o\big(g(n)\big) ~~\Longleftrightarrow~~ g(n)= \omega\big(f(n)\big), \tag{10.5}\\[1ex]
+    &f(n)= o\big(g(n)\big) ~~\Longleftrightarrow~~ g(n)= \omega\big(f(n)\big), \tag{9.5}\\[1ex]
     \label{eq:n14-d}
-    &f(n)= \Theta\big(g(n)\big) ~~\Longleftrightarrow~~ g(n)= \Theta\big(f(n)\big). \tag{10.6}
+    &f(n)= \Theta\big(g(n)\big) ~~\Longleftrightarrow~~ g(n)= \Theta\big(f(n)\big). \tag{9.6}
     \end{align*}
 
     **Domande**
@@ -1689,23 +1689,23 @@ Negli esercizi di questo capitolo le notazioni asintotiche si usano con le defin
 
         Ne segue che «$f(n)= \Theta\big(g(n)\big)$» è una condizione necessaria e sufficiente per «$g(n)= \Theta\big(f(n)\big)$».
 
-<a id="esercizio-10-15"></a>
+<a id="esercizio-9-15"></a>
 
-!!! esercizio "Esercizio 10.15: Notazione asintotica (E15)"
+!!! esercizio "Esercizio 9.15: Notazione asintotica (E15)"
 
     Consideriamo tre funzioni $f$, $g$ e $h$ di variabile naturale asintoticamente non negative e le seguenti implicazioni (<strong>transitività</strong>):
 
     \begin{align*}
     \label{eq:n15-1}
-    &f(n)= \Theta\big(g(n)\big) \ \text{ e } \ g(n) = \Theta\big(h(n)\big) ~~\Longrightarrow~~ f(n)= \Theta\big(h(n)\big), \tag{10.7}\\[1ex]
+    &f(n)= \Theta\big(g(n)\big) \ \text{ e } \ g(n) = \Theta\big(h(n)\big) ~~\Longrightarrow~~ f(n)= \Theta\big(h(n)\big), \tag{9.7}\\[1ex]
     \label{eq:n15-2}
-    &f(n)= \bigO\big(g(n)\big) \ \text{ e } \ g(n) = \bigO\big(h(n)\big) ~~\Longrightarrow~~ f(n)= \bigO\big(h(n)\big), \tag{10.8}\\[1ex]
+    &f(n)= \bigO\big(g(n)\big) \ \text{ e } \ g(n) = \bigO\big(h(n)\big) ~~\Longrightarrow~~ f(n)= \bigO\big(h(n)\big), \tag{9.8}\\[1ex]
     \label{eq:n15-3}
-    &f(n)= \Omega\big(g(n)\big) \ \text{ e } \ g(n) = \Omega\big(h(n)\big) ~~\Longrightarrow~~ f(n)= \Omega\big(h(n)\big), \tag{10.9}\\[1ex]
+    &f(n)= \Omega\big(g(n)\big) \ \text{ e } \ g(n) = \Omega\big(h(n)\big) ~~\Longrightarrow~~ f(n)= \Omega\big(h(n)\big), \tag{9.9}\\[1ex]
     \label{eq:n15-4}
-    &f(n)= o\big(g(n)\big) \ \text{ e } \ g(n) = o\big(h(n)\big) ~~\Longrightarrow~~ f(n)= o\big(h(n)\big), \tag{10.10}\\[1ex]
+    &f(n)= o\big(g(n)\big) \ \text{ e } \ g(n) = o\big(h(n)\big) ~~\Longrightarrow~~ f(n)= o\big(h(n)\big), \tag{9.10}\\[1ex]
     \label{eq:n15-5}
-    &f(n)= \omega\big(g(n)\big) \ \text{ e } \ g(n) = \omega\big(h(n)\big) ~~\Longrightarrow~~ f(n)= \omega\big(h(n)\big). \tag{10.11}
+    &f(n)= \omega\big(g(n)\big) \ \text{ e } \ g(n) = \omega\big(h(n)\big) ~~\Longrightarrow~~ f(n)= \omega\big(h(n)\big). \tag{9.11}
     \end{align*}
 
     **Domande**
@@ -1830,19 +1830,19 @@ Negli esercizi di questo capitolo le notazioni asintotiche si usano con le defin
         f(n) \neq \omega\big(h(n)\big) ~~\Longrightarrow~~ f(n)\neq\omega\big(g(n)\big) \ \text{ oppure } \ g(n)\neq\omega\big(h(n)\big).
         $$
 
-<a id="esercizio-10-16"></a>
+<a id="esercizio-9-16"></a>
 
-!!! esercizio "Esercizio 10.16: Notazione asintotica (E16)"
+!!! esercizio "Esercizio 9.16: Notazione asintotica (E16)"
 
     Consideriamo una funzione $f$ di variabile naturale asintoticamente non negativa e le seguenti proprietà di <strong>riflessività</strong>:
 
     \begin{align*}
     \label{eq:n16-1}
-    &f(n)= \Theta\big(f(n)\big), \tag{10.12}\\[1ex]
+    &f(n)= \Theta\big(f(n)\big), \tag{9.12}\\[1ex]
     \label{eq:n16-2}
-    &f(n)= \bigO\big(f(n)\big), \tag{10.13}\\[1ex]
+    &f(n)= \bigO\big(f(n)\big), \tag{9.13}\\[1ex]
     \label{eq:n16-3}
-    &f(n)= \Omega\big(f(n)\big). \tag{10.14}
+    &f(n)= \Omega\big(f(n)\big). \tag{9.14}
     \end{align*}
 
     **Domande**

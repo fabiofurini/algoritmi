@@ -16,7 +16,7 @@ Per confrontare due algoritmi che risolvono lo stesso problema contiamo quante o
 
 In questo capitolo fissiamo questa misura: la <strong>dimensione dell'input</strong> è il numero di bit necessari per scrivere l'input in binario, come nel capitolo «Rappresentazione dei numeri». Procediamo così:
 
-- definiamo la dimensione dell'input e richiamiamo la notazione asintotica usata per descriverne l'ordine di crescita (capitolo 10 «Notazione asintotica»);
+- definiamo la dimensione dell'input e richiamiamo la notazione asintotica usata per descriverne l'ordine di crescita (capitolo 9 «Notazione asintotica»);
 
 - calcoliamo la dimensione dell'input, e il suo ordine di crescita, quando l'input è un numero naturale, due numeri naturali, oppure un array di numeri naturali;
 
@@ -66,7 +66,7 @@ La dimensione esatta dell'input dipende dai valori specifici dell'istanza. Nell'
 
 ## 11.2 Notazione asintotica: un richiamo
 
-La notazione asintotica è definita e studiata nel capitolo 10 «Notazione asintotica». Qui richiamiamo soltanto le definizioni e i due fatti che si usano in questo capitolo. Come là, $f$ e $g$ sono funzioni definite sui numeri naturali $n \ge 1$ e a valori reali non negativi, e la notazione confronta i loro ordini di crescita per tutti gli $n$ sufficientemente grandi.
+La notazione asintotica è definita e studiata nel capitolo 9 «Notazione asintotica». Qui richiamiamo soltanto le definizioni e i due fatti che si usano in questo capitolo. Come là, $f$ e $g$ sono funzioni definite sui numeri naturali $n \ge 1$ e a valori reali non negativi, e la notazione confronta i loro ordini di crescita per tutti gli $n$ sufficientemente grandi.
 
 !!! chiave ""
 
@@ -92,7 +92,7 @@ La notazione asintotica è definita e studiata nel capitolo 10 «Notazione asint
 
 - Per funzioni di due parametri, come $f(n,m)$, le definizioni sono le stesse, con le disuguaglianze richieste per ogni $n \ge n_1$ e ogni $m \ge m_1$.
 
-- I due fatti seguenti sono dimostrati nel capitolo 10 «Notazione asintotica».
+- I due fatti seguenti sono dimostrati nel capitolo 9 «Notazione asintotica».
 
 <a id="box-3-obsThetaOOmega"></a>
 

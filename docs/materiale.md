@@ -26,11 +26,11 @@ Le dispense e gli eserciziari in PDF, aggiornati a ogni pubblicazione del sito, 
 
     [:octicons-download-24: dispensa-2-linguaggi-di-programmazione.pdf](pdf/dispensa-2-linguaggi-di-programmazione.pdf)
 
--   :material-book-open-variant: **Dispensa, volume 3 · Crescita e notazione asintotica**
+-   :material-book-open-variant: **Dispensa, volume 3 · Notazione e crescita asintotica**
 
     ---
 
-    Come crescono le funzioni di variabile naturale che contano i passi di un algoritmo: le famiglie di funzioni crescenti (logaritmi, potenze, esponenziali, fattoriale), la gerarchia degli infiniti e il confronto degli ordini di crescita; le notazioni asintotiche Theta, O grande, Omega, o piccolo e omega, le loro proprietà e il loro uso nell'analisi degli algoritmi. Limiti e funzioni di variabile naturale si danno per noti dal corso di Analisi Matematica 1.
+    Come si confrontano le funzioni di variabile naturale che contano i passi di un algoritmo: le notazioni asintotiche Theta, O grande, Omega, o piccolo e omega, le loro proprietà e il criterio del limite; poi le famiglie di funzioni crescenti (logaritmi, potenze, esponenziali, fattoriale), la gerarchia degli infiniti e il confronto degli ordini di crescita scritto con i simboli. Limiti e funzioni di variabile naturale si danno per noti dal corso di Analisi Matematica 1.
 
     [:octicons-download-24: dispensa-3-notazione-asintotica.pdf](pdf/dispensa-3-notazione-asintotica.pdf)
 
@@ -64,11 +64,11 @@ Le dispense e gli eserciziari in PDF, aggiornati a ogni pubblicazione del sito, 
 
     [:octicons-download-24: esercizi-2-linguaggi-di-programmazione.pdf](pdf/esercizi-2-linguaggi-di-programmazione.pdf)
 
--   :material-pencil-box-multiple: **Esercizi, volume 3 · Crescita e notazione asintotica**
+-   :material-pencil-box-multiple: **Esercizi, volume 3 · Notazione e crescita asintotica**
 
     ---
 
-    Esercizi svolti sui capitoli 9--10: confronto degli ordini di crescita e notazioni asintotiche Theta, O grande, Omega, o piccolo e omega. Ogni esercizio ha la soluzione completa.
+    Esercizi svolti sui capitoli 9--10: notazioni asintotiche Theta, O grande, Omega, o piccolo e omega, e confronto degli ordini di crescita. Ogni esercizio ha la soluzione completa.
 
     [:octicons-download-24: esercizi-3-notazione-asintotica.pdf](pdf/esercizi-3-notazione-asintotica.pdf)
 

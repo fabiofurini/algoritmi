@@ -69,19 +69,18 @@
     - 8.10 Operatori bit a bit
     - 8.11 <code>Java</code>, <code>C++</code> e <code>Python</code> a confronto
 
-## [Crescita e notazione asintotica](notazione-asintotica/index.md)
+## [Notazione e crescita asintotica](notazione-asintotica/index.md)
 
-9. [Crescita asintotica](notazione-asintotica/09-crescita-asintotica.md)
-    - 9.1 Famiglie di funzioni crescenti di variabile naturale
-    - 9.2 La gerarchia degli infiniti
-    - 9.3 Confronto fra ordini di crescita
-10. [Notazione asintotica](notazione-asintotica/10-notazione-asintotica.md)
-    - 10.1 Notazioni $\Theta$, $\bigO$ e $\Omega$
-    - 10.2 Notazioni $o$ e $\omega$
-    - 10.3 Limiti e notazioni asintotiche
-    - 10.4 Proprietà relazionali delle notazioni asintotiche
-    - 10.5 Notazione asintotica e ordini di crescita
-    - 10.6 Notazione asintotica nell'analisi degli algoritmi
+9. [Notazione asintotica](notazione-asintotica/09-notazione-asintotica.md)
+    - 9.1 Notazioni $\Theta$, $\bigO$ e $\Omega$
+    - 9.2 Notazioni $o$ e $\omega$
+    - 9.3 Limiti e notazioni asintotiche
+    - 9.4 Proprietà relazionali delle notazioni asintotiche
+    - 9.5 Notazione asintotica nell'analisi degli algoritmi
+10. [Crescita asintotica](notazione-asintotica/10-crescita-asintotica.md)
+    - 10.1 Famiglie di funzioni crescenti di variabile naturale
+    - 10.2 La gerarchia degli infiniti
+    - 10.3 Confronto fra ordini di crescita
 
 ## [Analisi e ricorsione](analisi-ricorsione/index.md)
 

@@ -1,79 +1,95 @@
 # Laboratorio interattivo
 
-Qui gli algoritmi si vedono lavorare. Ogni grafico ha dei **cursori** e dei pulsanti:
-◀ e ▶ eseguono un passo alla volta, «Esegui» va avanti da solo fino alla fine, e accanto al
-disegno trovi i valori delle variabili e la riga di pseudocodice in esecuzione. La notazione
-è quella delle dispense: array \(a[1..n]\) con gli indici da 1, gli stessi nomi degli algoritmi
-e delle variabili. Ogni parametro ha il suo colore, lo stesso nel cursore e nella formula.
+Qui gli algoritmi si vedono lavorare. Scegli un'app: si apre a tutta pagina, con **cursori** e pulsanti.
+Trascina i cursori, oppure premi ▶ per eseguire un passo alla volta e «Esegui» per l'animazione. La notazione
+è quella delle dispense: array \(a[1..n]\) con gli indici da 1, gli stessi nomi di algoritmi e variabili.
 
-!!! tip "Come si usa"
-    Trascina i cursori, oppure clicca ▶ per l'animazione. Ogni grafico si ritrova anche
-    in fondo al capitolo delle dispense a cui si riferisce.
+## Algoritmi di base
 
 <div class="grid cards" markdown>
 
--   :material-code-braces: **[Algoritmi di base](#parte-1)** — un intero in binario: complemento a due, modulo e segno, IEEE 754 · insertion, exchange e selection sort passo per passo · ricerca lineare e binaria · algoritmo di Euclide e crivello di Eratostene
--   :material-chart-line: **[Crescita e notazione asintotica](#parte-3)** — ordini di crescita delle funzioni
--   :material-file-tree: **[Analisi e ricorsione](#parte-4)** — l'invariante di ciclo di FindMaximum · alberi delle chiamate ricorsive e pila · il Master theorem livello per livello · merge sort passo per passo
+-   :material-numeric: **Rappresentazione dei numeri**
+
+    ---
+
+    Lo stesso intero in binario, in complemento a due, in modulo e segno e in IEEE 754: cambia il numero e guarda i bit.
+
+    [Apri l'app →](rappresentazione-numeri.md)
+
+-   :material-sort-ascending: **Ordinamento passo per passo**
+
+    ---
+
+    Insertion, exchange e selection sort: confronti e spostamenti, un passo alla volta, con la riga di pseudocodice in esecuzione.
+
+    [Apri l'app →](ordinamento.md)
+
+-   :material-magnify: **Ricerca lineare e binaria**
+
+    ---
+
+    Lo stesso array ordinato, cercato in due modi: conta quanti confronti servono alla ricerca lineare e a quella binaria.
+
+    [Apri l'app →](ricerca.md)
+
+-   :material-grid: **Euclide e crivello di Eratostene**
+
+    ---
+
+    Il massimo comun divisore con i resti successivi e i numeri primi che emergono cancellando i multipli.
+
+    [Apri l'app →](euclide-crivello.md)
 
 </div>
 
-## Algoritmi di base { #parte-1 }
+## Notazione e crescita asintotica
 
-### 1. Rappresentazione dei numeri { #cap-1 }
+<div class="grid cards" markdown>
 
-<div class="gi" data-grafico="rappresentazione"></div>
+-   :material-chart-line: **Ordini di crescita**
 
-Il capitolo: [Rappresentazione dei numeri](../algoritmi-di-base/01-rappresentazione-numeri.md).
+    ---
 
-### 3. Algoritmi di ordinamento { #cap-3 }
+    Logaritmo, polinomi, esponenziale: quanti passi (e quanto tempo) servono al crescere di n, confrontando le funzioni.
 
-<div class="gi" data-grafico="ordinamento"></div>
+    [Apri l'app →](crescita.md)
 
-Il capitolo: [Algoritmi di ordinamento](../algoritmi-di-base/03-ordinamento.md).
+</div>
 
-### 4. Ricerca lineare e binaria { #cap-4 }
+## Analisi e ricorsione
 
-<div class="gi" data-grafico="ricerca"></div>
+<div class="grid cards" markdown>
 
-Il capitolo: [Ricerca lineare e binaria](../algoritmi-di-base/04-ricerca.md).
+-   :material-check-decagram: **L'invariante di ciclo**
 
-### 5. Algoritmi numerici { #cap-5 }
+    ---
 
-<div class="gi" data-grafico="euclide-crivello"></div>
+    FindMaximum iterazione per iterazione: verifica che l'invariante valga all'inizio, a ogni passo e alla fine.
 
-Il capitolo: [Algoritmi numerici](../algoritmi-di-base/05-algoritmi-numerici.md).
+    [Apri l'app →](invariante.md)
 
-## Crescita e notazione asintotica { #parte-3 }
+-   :material-file-tree: **Alberi delle chiamate ricorsive**
 
-### 9. Crescita asintotica { #cap-9 }
+    ---
 
-<div class="gi" data-grafico="crescita"></div>
+    L'albero delle chiamate di una funzione ricorsiva e la pila: i nodi contano i passi, la profondità la memoria.
 
-Il capitolo: [Crescita asintotica](../notazione-asintotica/09-crescita-asintotica.md).
+    [Apri l'app →](alberi-ricorsione.md)
 
-## Analisi e ricorsione { #parte-4 }
+-   :material-layers-triple: **Il Master theorem**
 
-### 13. Correttezza { #cap-13 }
+    ---
 
-<div class="gi" data-grafico="invariante"></div>
+    La ricorrenza T(n) = a T(n/b) + n^d livello per livello: il costo dei livelli è una progressione geometrica e decide l'ordine di T(n).
 
-Il capitolo: [Correttezza](../analisi-ricorsione/13-correttezza.md).
+    [Apri l'app →](master-theorem.md)
 
-### 14. Ricorsione { #cap-14 }
+-   :material-call-merge: **Merge sort**
 
-<div class="gi" data-grafico="albero-ricorsione"></div>
+    ---
 
-Il capitolo: [Ricorsione](../analisi-ricorsione/14-ricorsione.md).
+    Si divide fino a un elemento, poi si fondono le metà ordinate con Merge: guarda le chiamate e le fusioni una alla volta.
 
-### 16. Il Master theorem { #cap-16 }
+    [Apri l'app →](merge-sort.md)
 
-<div class="gi" data-grafico="master"></div>
-
-Il capitolo: [Il Master theorem](../analisi-ricorsione/16-master-theorem.md).
-
-### 17. Algoritmi ricorsivi { #cap-17 }
-
-<div class="gi" data-grafico="merge-sort"></div>
-
-Il capitolo: [Algoritmi ricorsivi](../analisi-ricorsione/17-algoritmi-ricorsivi.md).
+</div>

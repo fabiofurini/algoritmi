@@ -745,6 +745,6 @@ title: "Correttezza"
 ## Laboratorio interattivo { #laboratorio-interattivo }
 
 L'algoritmo del capitolo, un passo alla volta: muovi i cursori e premi ▶.
-Tutti i grafici del corso sono nel [laboratorio interattivo](../laboratorio/index.md#cap-13).
+Lo stesso grafico a tutta pagina, con gli altri del corso, è nel [laboratorio interattivo](../laboratorio/invariante.md).
 
 <div class="gi" data-grafico="invariante"></div>

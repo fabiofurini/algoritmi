@@ -22,12 +22,12 @@ Esercizi con le **soluzioni svolte**, capitolo per capitolo, come negli esercizi
     - [7. Introduzione a Python](es-07-introduzione-python.md) · 5 esercizi
     - [8. Introduzione a Java](es-08-introduzione-java.md) · 5 esercizi
 
--   **Crescita e notazione asintotica**
+-   **Notazione e crescita asintotica**
 
     ---
 
-    - [9. Crescita asintotica](es-09-crescita-asintotica.md) · 4 esercizi
-    - [10. Notazione asintotica](es-10-notazione-asintotica.md) · 16 esercizi
+    - [9. Notazione asintotica](es-09-notazione-asintotica.md) · 16 esercizi
+    - [10. Crescita asintotica](es-10-crescita-asintotica.md) · 4 esercizi
 
 -   **Analisi e ricorsione**
 

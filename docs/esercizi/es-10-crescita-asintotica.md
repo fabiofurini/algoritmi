@@ -6,47 +6,45 @@ title: "Esercizi · Crescita asintotica"
 
 <div class="info-capitolo" markdown>
 
-**Esercizi · Capitolo 9** · ogni soluzione si apre con un clic · [:material-book-open-variant: Capitolo 9](../notazione-asintotica/09-crescita-asintotica.md) · [:material-file-pdf-box: Eserciziario, volume 3 (PDF)](../pdf/esercizi-3-notazione-asintotica.pdf)
+**Esercizi · Capitolo 10** · ogni soluzione si apre con un clic · [:material-book-open-variant: Capitolo 10](../notazione-asintotica/10-crescita-asintotica.md) · [:material-file-pdf-box: Eserciziario, volume 3 (PDF)](../pdf/esercizi-3-notazione-asintotica.pdf)
 
 </div>
 
-Negli esercizi di questo capitolo gli ordini di crescita si confrontano con le definizioni e i risultati del capitolo «Crescita asintotica», riassunti qui sotto. I limiti di funzioni di variabile naturale (successioni) si calcolano con i risultati del corso di <em>Analisi Matematica 1</em> ([fabiofurini.github.io/analisi-matematica-1/](https://fabiofurini.github.io/analisi-matematica-1/)).
+Negli esercizi di questo capitolo gli ordini di crescita si confrontano con la notazione asintotica del capitolo 9 «Notazione asintotica» e con i risultati del capitolo «Crescita asintotica», riassunti qui sotto. I limiti di funzioni di variabile naturale (successioni) si calcolano con i risultati del corso di <em>Analisi Matematica 1</em> ([fabiofurini.github.io/analisi-matematica-1/](https://fabiofurini.github.io/analisi-matematica-1/)).
 
 !!! nota ""
 
-    Date due funzioni di variabile naturale asintoticamente positive $f$ e $g$ tali che il limite $L = \lim_{n \rr \ip} \frac{f(n)}{g(n)}$ esista:
+    <strong>Criterio del limite.</strong> Date due funzioni di variabile naturale asintoticamente positive $f$ e $g$ tali che il limite $L = \lim_{n \rr \ip} \frac{f(n)}{g(n)}$ esista:
 
-    - se $L = 0^+$, $f$ ha un <strong>ordine di crescita strettamente minore</strong> di quello di $g$ ($f$ cresce più lentamente di $g$);
+    - $f(n) = o\big(g(n)\big)$ se e solo se $L = 0^+$: $f$ ha un <strong>ordine di crescita strettamente minore</strong> di quello di $g$ ($f$ cresce più lentamente di $g$);
 
-    - se $L = 0^+$ oppure $L \in \R_{>0}$, $f$ ha un <strong>ordine di crescita minore o uguale</strong> a quello di $g$;
+    - $f(n) = \bigO\big(g(n)\big)$ se e solo se $L = 0^+$ oppure $L \in \R_{>0}$: $f$ ha un <strong>ordine di crescita minore o uguale</strong> a quello di $g$;
 
-    - se $L \in \R_{>0}$, $f$ ha lo <strong>stesso ordine di crescita</strong> di $g$ ($f$ cresce come $g$);
+    - $f(n) = \Theta\big(g(n)\big)$ se e solo se $L \in \R_{>0}$: $f$ ha lo <strong>stesso ordine di crescita</strong> di $g$ ($f$ cresce come $g$);
 
-    - se $L \in \R_{>0}$ oppure $L = \ip$, $f$ ha un <strong>ordine di crescita maggiore o uguale</strong> a quello di $g$;
+    - $f(n) = \Omega\big(g(n)\big)$ se e solo se $L \in \R_{>0}$ oppure $L = \ip$: $f$ ha un <strong>ordine di crescita maggiore o uguale</strong> a quello di $g$;
 
-    - se $L = \ip$, $f$ ha un <strong>ordine di crescita strettamente maggiore</strong> di quello di $g$ ($f$ cresce più velocemente di $g$).
+    - $f(n) = \omega\big(g(n)\big)$ se e solo se $L = \ip$: $f$ ha un <strong>ordine di crescita strettamente maggiore</strong> di quello di $g$ ($f$ cresce più velocemente di $g$).
 
 !!! nota ""
 
-    - <strong>Limitazioni sul rapporto.</strong> Se $f$ e $g$ hanno lo stesso ordine di crescita, esistono $c_1, c_2 \in \R_{>0}$ e $n_1 \in \N$ tali che
+    - <strong>Definizione di $\Theta$.</strong> Si ha $f(n) = \Theta\big(g(n)\big)$ se e solo se esistono $c_1, c_2 \in \R_{>0}$ e $n_1 \in \N$ tali che
 
         $$
-        0 < c_1 \, g(n) \le f(n) \le c_2 \, g(n), \quad \forall n \in \N_{\ge n_1}.
+        0 \le c_1 \, g(n) \le f(n) \le c_2 \, g(n), \quad \forall n \in \N_{\ge n_1}.
         $$
 
-        Di conseguenza, se tali costanti non esistono, $f$ e $g$ non hanno lo stesso ordine di crescita.
+        Di conseguenza, se tali costanti non esistono, $f(n) \neq \Theta\big(g(n)\big)$.
 
-    - <strong>Gerarchia.</strong> Per ogni $a, b \in \R_{>1}$ e $\alpha, \beta \in \R_{>0}$, ogni funzione della catena
+    - <strong>Gerarchia.</strong> Per ogni $a, b \in \R_{>1}$ e $\alpha, \beta \in \R_{>0}$:
 
         $$
-        \log_a^\beta n \qquad n^\alpha \qquad b^n \qquad n! \qquad n^n
+        \log_a^\beta n = o(n^\alpha), \qquad n^\alpha = o(b^n), \qquad b^n = o(n!), \qquad n! = o(n^n).
         $$
 
-        ha un ordine di crescita strettamente minore di quello della successiva.
+<a id="esercizio-10-1"></a>
 
-<a id="esercizio-9-1"></a>
-
-!!! esercizio "Esercizio 9.1: Crescita asintotica (E1)"
+!!! esercizio "Esercizio 10.1: Crescita asintotica (E1)"
 
     Dati $\lambda \in \R_{>0}$ e $\alpha \in \R_{>0}$, consideriamo la seguente funzione di variabile naturale asintoticamente positiva:
 
@@ -78,7 +76,7 @@ Negli esercizi di questo capitolo gli ordini di crescita si confrontano con le d
         0 \le c_1 \, n^{\alpha} \le (n+\lambda)^{\alpha} \le c_2 \, n^{\alpha}, \quad \forall n \in \N_{\ge n_1},
         $$
 
-        e verificare, calcolando il limite del rapporto, che la funzione $n \mapsto (n+\lambda)^{\alpha}$ e la funzione $n \mapsto n^{\alpha}$ hanno lo stesso ordine di crescita.
+        cioè che $(n+\lambda)^{\alpha} = \Theta(n^{\alpha})$, e verificare il risultato con il criterio del limite, calcolando il limite del rapporto.
 
     2. Dimostrare che, per ogni $\lambda \in \R_{>0}$ con $\lambda \neq 1$, non esistono $c_1, c_2 \in \R_{>0}$ e $n_1 \in \N$ tali che
 
@@ -86,7 +84,7 @@ Negli esercizi di questo capitolo gli ordini di crescita si confrontano con le d
         0 \le c_1 \, b^{n} \le b^{\lambda n} \le c_2 \, b^{n}, \quad \forall n \in \N_{\ge n_1},
         $$
 
-        e di conseguenza che la funzione $n \mapsto b^{\lambda n}$ e la funzione $n \mapsto b^{n}$ non hanno lo stesso ordine di crescita.
+        e di conseguenza che $b^{\lambda n} \neq \Theta(b^{n})$.
 
     3. Dimostrare che, per ogni $\alpha \in \R_{>1}$, non esistono $c_1, c_2 \in \R_{>0}$ e $n_1 \in \N_{\ge 1}$ tali che
 
@@ -94,7 +92,7 @@ Negli esercizi di questo capitolo gli ordini di crescita si confrontano con le d
         0 \le c_1 \, n^{\alpha} \le n \log_a n \le c_2 \, n^{\alpha}, \quad \forall n \in \N_{\ge n_1},
         $$
 
-        e di conseguenza che la funzione $n \mapsto n \log_a n$ e la funzione $n \mapsto n^{\alpha}$ non hanno lo stesso ordine di crescita.
+        e di conseguenza che $n \log_a n \neq \Theta(n^{\alpha})$.
 
 ??? soluzione "Soluzione"
 
@@ -132,13 +130,13 @@ Negli esercizi di questo capitolo gli ordini di crescita si confrontano con le d
         0 \le \frac{1}{2^{\alpha}}\, n^{\alpha} \le (n+\lambda)^{\alpha} \le 2^{\alpha}\, n^{\alpha}, \quad \forall n \in \N_{\ge \lceil 2\lambda \rceil}
         $$
 
-        Queste limitazioni da sole non danno il limite del rapporto, che calcoliamo direttamente:
+        Per la definizione di $\Theta$, queste costanti dimostrano che $(n+\lambda)^{\alpha} = \Theta(n^{\alpha})$. Verifichiamo il risultato con il limite del rapporto:
 
         $$
         \lim_{n \rr \ip} \frac{(n+\lambda)^{\alpha}}{n^{\alpha}} = \lim_{n \rr \ip} \Big(1 + \underbrace{\frac{\lambda}{n}}_{\rr\, 0}\Big)^{\alpha} = 1 \in \R_{>0}
         $$
 
-        Quindi le due funzioni hanno lo stesso ordine di crescita.
+        e il criterio del limite dà di nuovo $(n+\lambda)^{\alpha} = \Theta(n^{\alpha})$.
 
     2. Procediamo per assurdo, e supponiamo che esistano $c_1, c_2 \in \R_{>0}$ e $n_1 \in \N$ tali che
 
@@ -158,7 +156,7 @@ Negli esercizi di questo capitolo gli ordini di crescita si confrontano con le d
 
         - se $0 < \lambda < 1$, allora $0 < b^{\lambda - 1} < 1$ e $\lim_{n \rr \ip} \left(b^{\lambda-1}\right)^n = 0^+$, quindi la disuguaglianza di sinistra è violata per $n$ abbastanza grande.
 
-        Ne segue che, per ogni $b \in \R_{>1}$ e ogni $\lambda \in \R_{>0}$ con $\lambda \neq 1$, la funzione $n \mapsto b^{\lambda n}$ e la funzione $n \mapsto b^{n}$ non hanno lo stesso ordine di crescita (altrimenti varrebbero le limitazioni sul rapporto).
+        Ne segue che, per ogni $b \in \R_{>1}$ e ogni $\lambda \in \R_{>0}$ con $\lambda \neq 1$, si ha $b^{\lambda n} \neq \Theta(b^{n})$, poiché le costanti richieste dalla definizione di $\Theta$ non esistono.
 
     3. Procediamo per assurdo, e supponiamo che esistano $c_1, c_2 \in \R_{>0}$ e $n_1 \in \N_{\ge 1}$ tali che
 
@@ -178,11 +176,11 @@ Negli esercizi di questo capitolo gli ordini di crescita si confrontano con le d
         \lim_{n \rr \ip} \frac{\log_a n}{n^{\alpha-1}} = 0^+
         $$
 
-        Ne segue che, per ogni $\alpha \in \R_{>1}$ e ogni $a \in \R_{>1}$, la funzione $n \mapsto n \log_a n$ e la funzione $n \mapsto n^{\alpha}$ non hanno lo stesso ordine di crescita: lo stesso limite mostra che $n \mapsto n \log_a n$ ha un ordine di crescita strettamente minore.
+        Ne segue che, per ogni $\alpha \in \R_{>1}$ e ogni $a \in \R_{>1}$, si ha $n \log_a n \neq \Theta(n^{\alpha})$: lo stesso limite mostra, per il criterio del limite, che $n \log_a n = o(n^{\alpha})$.
 
-<a id="esercizio-9-2"></a>
+<a id="esercizio-10-2"></a>
 
-!!! esercizio "Esercizio 9.2: Crescita asintotica (E2)"
+!!! esercizio "Esercizio 10.2: Crescita asintotica (E2)"
 
     Consideriamo la seguente funzione di variabile naturale:
 
@@ -194,7 +192,7 @@ Negli esercizi di questo capitolo gli ordini di crescita si confrontano con le d
 
     1. Dimostrare che la funzione $f$ è asintoticamente positiva e asintoticamente crescente.
 
-    2. Dimostrare che la funzione $n \mapsto \ln(\ln n)$ ha un ordine di crescita strettamente minore di quello della funzione $n \mapsto \ln n$.
+    2. Dimostrare che $\ln(\ln n) = o(\ln n)$.
 
 ??? soluzione "Soluzione"
 
@@ -236,11 +234,11 @@ Negli esercizi di questo capitolo gli ordini di crescita si confrontano con le d
         \lim_{n \rr \ip} \frac{\ln\big(\ln n\big)}{\ln n} = 0^+,
         $$
 
-        cioè la funzione $n \mapsto \ln(\ln n)$ ha un ordine di crescita strettamente minore di quello della funzione $n \mapsto \ln n$.
+        cioè, per il criterio del limite, $\ln(\ln n) = o(\ln n)$.
 
-<a id="esercizio-9-3"></a>
+<a id="esercizio-10-3"></a>
 
-!!! esercizio "Esercizio 9.3: Crescita asintotica (E3)"
+!!! esercizio "Esercizio 10.3: Crescita asintotica (E3)"
 
     Consideriamo le seguenti dodici funzioni di variabile naturale, definite per $n \in \N_{\ge 1}$:
 
@@ -254,7 +252,7 @@ Negli esercizi di questo capitolo gli ordini di crescita si confrontano con le d
 
     **Domande**
 
-    1. Ordinare le dodici funzioni per ordine di crescita crescente, raggruppando le funzioni che hanno lo stesso ordine di crescita. Giustificare ogni confronto fra due gruppi consecutivi con i risultati del capitolo «Crescita asintotica».
+    1. Ordinare le dodici funzioni per ordine di crescita crescente, raggruppando le funzioni $f_i$ e $f_j$ tali che $f_i(n) = \Theta\big(f_j(n)\big)$. Giustificare ogni confronto fra due gruppi consecutivi con i risultati del capitolo «Crescita asintotica».
 
     2. Classificare ogni funzione: ha un ordine di crescita sub-lineare, lineare o super-lineare? Quali funzioni hanno un ordine di crescita limitato polilogaritmicamente, e quali un ordine di crescita limitato polinomialmente?
 
@@ -262,15 +260,15 @@ Negli esercizi di questo capitolo gli ordini di crescita si confrontano con le d
 
 ??? soluzione "Soluzione"
 
-    1. L'ordine è il seguente (le funzioni dello stesso gruppo hanno lo stesso ordine di crescita):
+    1. L'ordine è il seguente (le funzioni dello stesso gruppo sono ciascuna $\Theta$ dell'altra):
 
         $$
         f_1 \;\prec\; f_2 \;\prec\; f_3 \;\prec\; f_4 \;\prec\; \{f_5, f_6\} \;\prec\; f_7 \;\prec\; f_8 \;\prec\; f_9 \;\prec\; f_{10} \;\prec\; f_{11} \;\prec\; f_{12}
         $$
 
-        dove qui $f \prec g$ è un'abbreviazione di «$f$ ha un ordine di crescita strettamente minore di quello di $g$». Le giustificazioni sono le seguenti.
+        dove qui $f \prec g$ è un'abbreviazione di $f(n) = o\big(g(n)\big)$. Le giustificazioni sono le seguenti.
 
-        - $f_1(n) = \log_2(n^5) = 5\log_2 n$, che ha lo stesso ordine di crescita di $\ln n$ (cambio di base). Inoltre $\frac{f_1(n)}{f_2(n)} = \frac{5 \log_2 n}{\ln^3 n} = \frac{5}{\ln 2} \cdot \frac{1}{\ln^2 n} \rr 0^+$, quindi $f_1 \prec f_2$.
+        - $f_1(n) = \log_2(n^5) = 5\log_2 n = \Theta(\ln n)$ (cambio di base). Inoltre $\frac{f_1(n)}{f_2(n)} = \frac{5 \log_2 n}{\ln^3 n} = \frac{5}{\ln 2} \cdot \frac{1}{\ln^2 n} \rr 0^+$, quindi $f_1 \prec f_2$.
 
         - $f_2 \prec f_3$: polilogaritmi e potenze, con $\beta = 3$ e $\alpha = \frac{1}{2}$.
 
@@ -282,7 +280,7 @@ Negli esercizi di questo capitolo gli ordini di crescita si confrontano con le d
             \frac{n \ln n}{(n+7)^2} = \underbrace{\frac{n \ln n}{n^2}}_{\rr\, 0^+} \cdot \underbrace{\frac{n^2}{(n+7)^2}}_{\rr\, 1} \rr 0^+.
             $$
 
-        - $f_5$ e $f_6$ hanno lo stesso ordine di crescita: entrambe hanno lo stesso ordine di crescita di $n^2$ (traslazione dell'argomento; polinomio con termine di grado massimo $3n^2$), e infatti
+        - $f_5(n) = \Theta\big(f_6(n)\big)$: entrambe sono $\Theta(n^2)$ (traslazione dell'argomento; polinomio con termine di grado massimo $3n^2$), e infatti
 
             $$
             \lim_{n \rr \ip} \frac{(n+7)^2}{3n^2+100\,n} = \lim_{n \rr \ip} \frac{1 + \frac{14}{n} + \frac{49}{n^2}}{3 + \frac{100}{n}} = \frac{1}{3} \in \R_{>0}.
@@ -292,7 +290,7 @@ Negli esercizi di questo capitolo gli ordini di crescita si confrontano con le d
 
         - $f_7 \prec f_8$: potenze ed esponenziali, poiché $2^{n/2} = \big(\sqrt 2\big)^n$ con base $\sqrt 2 > 1$.
 
-        - $f_8 \prec f_9$: $f_9(n) = 2^{n+10}$ ha lo stesso ordine di crescita di $2^n$ (traslazione dell'esponente), e $2^{n/2}$ ha un ordine di crescita strettamente minore di quello di $2^n$ (scalatura dell'esponente con $\lambda = \frac{1}{2}$); direttamente,
+        - $f_8 \prec f_9$: $f_9(n) = 2^{n+10} = \Theta(2^n)$ (traslazione dell'esponente), e $2^{n/2} = o(2^n)$ (scalatura dell'esponente con $\lambda = \frac{1}{2}$); direttamente,
 
             $$
             \frac{2^{n/2}}{2^{n+10}} = \frac{1}{1024} \left(\frac{1}{\sqrt 2}\right)^{n} \rr 0^+.
@@ -304,13 +302,13 @@ Negli esercizi di questo capitolo gli ordini di crescita si confrontano con le d
 
     2. Confrontando ogni funzione con $n$:
 
-        - $f_1$, $f_2$ e $f_3$ hanno un ordine di crescita sub-lineare ($f_1 \prec f_2 \prec f_3$ e $\frac{\sqrt n}{n} \rr 0^+$);
+        - $f_1$, $f_2$ e $f_3$ sono $o(n)$, un ordine di crescita sub-lineare ($f_1 \prec f_2 \prec f_3$ e $\frac{\sqrt n}{n} \rr 0^+$);
 
-        - nessuna funzione dell'elenco ha un ordine di crescita lineare;
+        - nessuna funzione dell'elenco è $\Theta(n)$, un ordine di crescita lineare;
 
-        - $f_4, f_5, \dots, f_{12}$ hanno un ordine di crescita super-lineare ($f_4$ è quasi-lineare, e tutte le altre crescono più velocemente di $f_4$).
+        - $f_4, f_5, \dots, f_{12}$ sono $\omega(n)$, un ordine di crescita super-lineare ($f_4$ è quasi-lineare, e tutte le altre sono $\omega$ di $f_4$).
 
-        Le funzioni $f_1$ (limitata logaritmicamente, con $\beta = 1$) e $f_2$ (con $\beta = 3$) hanno un ordine di crescita limitato polilogaritmicamente; $f_3$ no, poiché cresce più velocemente di ogni funzione polilogaritmica. Le funzioni $f_1, f_2, \dots, f_7$ hanno un ordine di crescita limitato polinomialmente (per esempio $f_4$ con $\alpha = 2$, e $f_7$ con $\alpha = 10$); le funzioni $f_8, f_9, \dots, f_{12}$ no, poiché crescono più velocemente di ogni funzione potenza. Fra queste, $f_8$, $f_9$ e $f_{10}$ hanno un ordine di crescita limitato esponenzialmente.
+        Le funzioni $f_1$ (limitata logaritmicamente, con $\beta = 1$) e $f_2$ (con $\beta = 3$) hanno un ordine di crescita limitato polilogaritmicamente; $f_3$ no, poiché $f_3(n) = \omega(\ln^{\beta} n)$ per ogni $\beta \in \R_{>0}$. Le funzioni $f_1, f_2, \dots, f_7$ hanno un ordine di crescita limitato polinomialmente (per esempio $f_4$ con $\alpha = 2$, e $f_7$ con $\alpha = 10$); le funzioni $f_8, f_9, \dots, f_{12}$ no, poiché sono $\omega(n^{\alpha})$ per ogni $\alpha \in \R_{>0}$. Fra queste, $f_8$, $f_9$ e $f_{10}$ hanno un ordine di crescita limitato esponenzialmente.
 
     3. Per $n = 4$ si ha
 
@@ -326,9 +324,9 @@ Negli esercizi di questo capitolo gli ordini di crescita si confrontano con le d
 
         Ciò non contraddice la prima risposta: il confronto fra gli ordini di crescita riguarda il limite del rapporto, cioè il comportamento per $n$ grande. La disuguaglianza $\ln^3 n \ge \sqrt n$ vale per ogni $n$ da $4$ a $24{,}128{,}091$, e $\ln^3 n < \sqrt n$ per ogni $n \ge 24{,}128{,}092$; analogamente, $n^{10} \ge 2^{n/2}$ vale per ogni $n$ da $2$ a $143$, e $n^{10} < 2^{n/2}$ per ogni $n \ge 144$. Queste soglie sono state calcolate numericamente.
 
-<a id="esercizio-9-4"></a>
+<a id="esercizio-10-4"></a>
 
-!!! esercizio "Esercizio 9.4: Crescita asintotica (E4)"
+!!! esercizio "Esercizio 10.4: Crescita asintotica (E4)"
 
     Consideriamo le seguenti coppie di funzioni di variabile naturale $(f, g)$, definite per $n \in \N_{\ge 1}$:
 
@@ -342,7 +340,7 @@ Negli esercizi di questo capitolo gli ordini di crescita si confrontano con le d
 
     **Domande**
 
-    1. Per ogni coppia, calcolare $\lim_{n \rr \ip} \frac{f(n)}{g(n)}$ (per la coppia (d), considerare $n \in \N_{\ge 2}$, dove $g(n) > 0$) e stabilire se $f$ ha un ordine di crescita strettamente minore, uguale o strettamente maggiore di quello di $g$.
+    1. Per ogni coppia, calcolare $\lim_{n \rr \ip} \frac{f(n)}{g(n)}$ (per la coppia (d), considerare $n \in \N_{\ge 2}$, dove $g(n) > 0$) e stabilire, con il criterio del limite, se $f(n) = o\big(g(n)\big)$, $f(n) = \Theta\big(g(n)\big)$ oppure $f(n) = \omega\big(g(n)\big)$.
 
     2. Per ogni coppia, indicare, quando è possibile, quale proprietà del capitolo «Crescita asintotica» dà la stessa risposta senza calcolare il limite.
 
@@ -350,13 +348,13 @@ Negli esercizi di questo capitolo gli ordini di crescita si confrontano con le d
 
     1. I limiti sono i seguenti.
 
-        - **(a)** $\displaystyle \lim_{n \rr \ip} \frac{2^{n/2}}{2^n} = \lim_{n \rr \ip} \left(\frac{1}{\sqrt 2}\right)^{n} = 0^+$: $f$ ha un ordine di crescita strettamente minore di quello di $g$.
+        - **(a)** $\displaystyle \lim_{n \rr \ip} \frac{2^{n/2}}{2^n} = \lim_{n \rr \ip} \left(\frac{1}{\sqrt 2}\right)^{n} = 0^+$: $f(n) = o\big(g(n)\big)$.
 
-        - **(b)** $\displaystyle \lim_{n \rr \ip} \frac{2^{3n/2}}{2^n} = \lim_{n \rr \ip} \big(\sqrt 2\big)^{n} = \ip$: $f$ ha un ordine di crescita strettamente maggiore di quello di $g$.
+        - **(b)** $\displaystyle \lim_{n \rr \ip} \frac{2^{3n/2}}{2^n} = \lim_{n \rr \ip} \big(\sqrt 2\big)^{n} = \ip$: $f(n) = \omega\big(g(n)\big)$.
 
-        - **(c)** $4^n = \big(2^2\big)^n = 2^{2n}$, quindi $\displaystyle \lim_{n \rr \ip} \frac{4^n}{2^{2n}} = 1$: $f$ e $g$ hanno lo stesso ordine di crescita (sono la stessa funzione).
+        - **(c)** $4^n = \big(2^2\big)^n = 2^{2n}$, quindi $\displaystyle \lim_{n \rr \ip} \frac{4^n}{2^{2n}} = 1$: $f(n) = \Theta\big(g(n)\big)$ (sono la stessa funzione).
 
-        - **(d)** Poiché $\log_2 n = \frac{\log_{10} n}{\log_{10} 2}$, si ha $\displaystyle \lim_{n \rr \ip} \frac{\log_2 n}{\log_{10} n} = \frac{1}{\log_{10} 2} = \log_2 10 \approx 3.32$: $f$ e $g$ hanno lo stesso ordine di crescita.
+        - **(d)** Poiché $\log_2 n = \frac{\log_{10} n}{\log_{10} 2}$, si ha $\displaystyle \lim_{n \rr \ip} \frac{\log_2 n}{\log_{10} n} = \frac{1}{\log_{10} 2} = \log_2 10 \approx 3.32$: $f(n) = \Theta\big(g(n)\big)$.
 
         - **(e)** Poiché $\ln(n^2+1) = \ln\big(n^2 (1 + \frac{1}{n^2})\big) = 2\ln n + \ln\big(1+\frac{1}{n^2}\big)$, si ha
 
@@ -364,18 +362,18 @@ Negli esercizi di questo capitolo gli ordini di crescita si confrontano con le d
             \lim_{n \rr \ip} \frac{\ln(n^2+1)}{\ln n} = \lim_{n \rr \ip} \Bigg( 2 + \frac{\overbrace{\ln\left(1+\frac{1}{n^2}\right)}^{\rr\, 0}}{\ln n} \Bigg) = 2:
             $$
 
-            $f$ e $g$ hanno lo stesso ordine di crescita.
+            $f(n) = \Theta\big(g(n)\big)$.
 
-        - **(f)** $\displaystyle \lim_{n \rr \ip} \frac{n \ln n}{n^{3/2}} = \lim_{n \rr \ip} \frac{\ln n}{n^{1/2}} = 0^+$: $f$ ha un ordine di crescita strettamente minore di quello di $g$.
+        - **(f)** $\displaystyle \lim_{n \rr \ip} \frac{n \ln n}{n^{3/2}} = \lim_{n \rr \ip} \frac{\ln n}{n^{1/2}} = 0^+$: $f(n) = o\big(g(n)\big)$.
 
     2. Le proprietà sono le seguenti.
 
         - **(a), (b)** Scalatura dell'esponente di un esponenziale, con $\lambda = \frac{1}{2} < 1$ e $\lambda = \frac{3}{2} > 1$ (oppure basi diverse, $\sqrt 2 < 2$ e $2\sqrt 2 > 2$).
 
-        - **(c)** La scalatura dell'esponente con $\lambda = 2$ direbbe che $2^{2n}$ cresce più velocemente di $2^n$; qui, invece, la base $4 = 2^2$ assorbe già il fattore $2$, e le due funzioni coincidono.
+        - **(c)** La scalatura dell'esponente con $\lambda = 2$ direbbe che $2^{2n} = \omega(2^n)$; qui, invece, la base $4 = 2^2$ assorbe già il fattore $2$, e le due funzioni coincidono.
 
         - **(d)** Cambio di base di un logaritmo.
 
-        - **(e)** Nessuna proprietà del capitolo si applica direttamente, poiché l'argomento $n^2+1$ non è né della forma $n+\lambda$ né della forma $\lambda\, n$. L'identità $\ln(n^2+1) = 2\ln n + \ln\big(1+\frac{1}{n^2}\big)$ della prima risposta svolge lo stesso ruolo della traslazione dell'argomento: il termine $\ln\big(1+\frac{1}{n^2}\big)$ tende a $0$, e ciò che resta, $2 \ln n$, ha lo stesso ordine di crescita di $\ln n$.
+        - **(e)** Nessuna proprietà del capitolo si applica direttamente, poiché l'argomento $n^2+1$ non è né della forma $n+\lambda$ né della forma $\lambda\, n$. L'identità $\ln(n^2+1) = 2\ln n + \ln\big(1+\frac{1}{n^2}\big)$ della prima risposta svolge lo stesso ruolo della traslazione dell'argomento: il termine $\ln\big(1+\frac{1}{n^2}\big)$ tende a $0$, e ciò che resta, $2 \ln n$, è $\Theta(\ln n)$.
 
         - **(f)** Funzione quasi-lineare e potenze, con $\alpha = \frac{3}{2} > 1$.

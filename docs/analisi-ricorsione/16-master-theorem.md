@@ -139,7 +139,7 @@ Il <strong>Master theorem</strong> trasforma questi tre comportamenti in un risu
 
 - Questo è l'enunciato classico del teorema (come nel libro di testo di Cormen, Leiserson, Rivest e Stein, <em>Introduction to Algorithms</em>), con il <strong>caso 2 esteso</strong>: per $k=0$ si ottiene l'enunciato di base “se $f(n)=\Theta(n^{\log_b a})$ allora $T(n)=\Theta(n^{\log_b a}\log n)$”.
 
-- Le notazioni $O$, $\Omega$ e $\Theta$ dell'enunciato sono quelle definite nel capitolo 10 «Notazione asintotica».
+- Le notazioni $O$, $\Omega$ e $\Theta$ dell'enunciato sono quelle definite nel capitolo 9 «Notazione asintotica».
 
 - La dimostrazione è data nella Sezione [16.5](#sez-sec-proof).
 
@@ -1203,6 +1203,6 @@ Cominciamo con tre ricorrenze, una per ciascun caso, e poi risolviamo le ricorre
 ## Laboratorio interattivo { #laboratorio-interattivo }
 
 L'algoritmo del capitolo, un passo alla volta: muovi i cursori e premi ▶.
-Tutti i grafici del corso sono nel [laboratorio interattivo](../laboratorio/index.md#cap-16).
+Lo stesso grafico a tutta pagina, con gli altri del corso, è nel [laboratorio interattivo](../laboratorio/master-theorem.md).
 
 <div class="gi" data-grafico="master"></div>

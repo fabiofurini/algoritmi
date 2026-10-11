@@ -6,27 +6,29 @@ title: "Notazione asintotica"
 
 <div class="info-capitolo" markdown>
 
-**Parte 3 · Crescita e notazione asintotica · Capitolo 10** · [:material-file-pdf-box: Dispensa, volume 3 (PDF)](../pdf/dispensa-3-notazione-asintotica.pdf) · [:material-pencil: Esercizi](../esercizi/es-10-notazione-asintotica.md)
+**Parte 3 · Notazione e crescita asintotica · Capitolo 9** · [:material-file-pdf-box: Dispensa, volume 3 (PDF)](../pdf/dispensa-3-notazione-asintotica.pdf) · [:material-pencil: Esercizi](../esercizi/es-09-notazione-asintotica.md)
 
 </div>
 
 ## Introduzione
 
-Nel capitolo «Crescita asintotica» abbiamo incontrato le principali famiglie di funzioni crescenti di variabile naturale (logaritmiche, potenza, esponenziali e fattoriale) e abbiamo confrontato la velocità con cui crescono per mezzo dei limiti. In questo capitolo diamo il linguaggio preciso con cui si esprimono questi confronti: le <strong>notazioni asintotiche</strong> $\Theta$, $\bigO$, $\Omega$, $o$ e $\omega$.
+Il numero di passi eseguiti da un algoritmo è una funzione di un numero naturale: la dimensione del suo input. Due algoritmi che risolvono lo stesso problema si confrontano guardando quanto velocemente crescono queste funzioni al crescere dell'input, trascurando i fattori costanti e i valori su poche piccole istanze. In questo capitolo diamo il linguaggio preciso con cui si esprimono questi confronti: le <strong>notazioni asintotiche</strong> $\Theta$, $\bigO$, $\Omega$, $o$ e $\omega$.
 
-Le funzioni di variabile naturale (successioni) e i loro limiti sono studiati nel corso di Analisi Matematica 1, e qui non li ripetiamo: usiamo soltanto la definizione di limite e le regole elementari per calcolare i limiti.
+!!! chiave ""
+
+    <strong>Prerequisiti.</strong> Le funzioni di variabile naturale sono le <strong>successioni</strong> del corso di <em>Analisi Matematica 1</em> ([fabiofurini.github.io/analisi-matematica-1/](https://fabiofurini.github.io/analisi-matematica-1/), versione inglese [fabiofurini.github.io/mathematical-analysis-1/](https://fabiofurini.github.io/mathematical-analysis-1/)). I loro limiti, e i teoremi usati per calcolarli, non vengono rispiegati in questo capitolo: usiamo la definizione di limite e le regole di calcolo dei limiti della parte <em>Limiti di successioni</em> di quel corso.
 
 Il capitolo è organizzato così.
 
-- Nella Sezione [10.1](#sez-sec-an-theta) definiamo le notazioni $\Theta$, $\bigO$ e $\Omega$, le interpretiamo graficamente e dimostriamo che $\Theta$ equivale a $\bigO$ e $\Omega$ insieme. Studiamo anche la somma e il massimo di due funzioni.
+- Nella Sezione [9.1](#sez-sec-an-theta) definiamo le notazioni $\Theta$, $\bigO$ e $\Omega$, le interpretiamo graficamente e dimostriamo che $\Theta$ equivale a $\bigO$ e $\Omega$ insieme. Studiamo anche la somma e il massimo di due funzioni.
 
-- Nella Sezione [10.2](#sez-sec-an-small) definiamo le notazioni $o$ e $\omega$, che esprimono limitazioni che <strong>non</strong> sono asintoticamente strette.
+- Nella Sezione [9.2](#sez-sec-an-small) definiamo le notazioni $o$ e $\omega$, che esprimono limitazioni che <strong>non</strong> sono asintoticamente strette.
 
-- Nella Sezione [10.3](#sez-sec-an-limits) collegiamo le cinque notazioni al limite del rapporto $\frac{f(n)}{g(n)}$. Questo dà un modo rapido per confrontare due funzioni, ma non funziona sempre, perché il limite può non esistere.
+- Nella Sezione [9.3](#sez-sec-an-limits) collegiamo le cinque notazioni al limite del rapporto $\frac{f(n)}{g(n)}$. Quando il limite esiste, il suo valore decide quali delle cinque notazioni valgono ([Proposizione 9.18](#box-33-propLimitCriterion), il <strong>criterio del limite</strong>); quando non esiste, si usano le definizioni.
 
-- Nella Sezione [10.4](#sez-sec-an-relational) dimostriamo le proprietà relazionali delle notazioni (transitività, riflessività, simmetria e simmetria trasposta), che rendono il confronto asintotico di due funzioni simile al confronto di due numeri reali, con una differenza importante.
+- Nella Sezione [9.4](#sez-sec-an-relational) dimostriamo le proprietà relazionali delle notazioni (transitività, riflessività, simmetria e simmetria trasposta), che rendono il confronto asintotico di due funzioni simile al confronto di due numeri reali, con una differenza importante.
 
-- Nelle Sezioni [10.5](#sez-sec-an-growth) e [10.6](#sez-sec-an-algorithms) collegiamo la notazione agli ordini di crescita del capitolo «Crescita asintotica» e all'analisi degli algoritmi dei capitoli «Dimensione dell'input» e «Tempo di esecuzione».
+- Nella Sezione [9.5](#sez-sec-an-algorithms) vediamo come si usa la notazione nell'analisi degli algoritmi dei capitoli «Dimensione dell'input» e «Tempo di esecuzione».
 
 Ogni costante ($c$, $c_1$, $c_2$, $n_1$) usata negli esempi del capitolo è stata controllata numericamente con uno script, per tutti i valori di $n$ dalla soglia $n_1$ fino ad almeno $2 \cdot 10^5$.
 
@@ -34,23 +36,23 @@ In tutto il capitolo usiamo la seguente terminologia.
 
 <a id="box-1-defAsymNonNeg"></a>
 
-!!! definizione "Definizione 10.1: funzioni asintoticamente non negative e asintoticamente positive"
+!!! definizione "Definizione 9.1: funzioni asintoticamente non negative e asintoticamente positive"
 
     Una funzione $f$ di variabile naturale è <strong>asintoticamente non negativa</strong> se esiste $\tilde n \in \N$ tale che $f(n) \ge 0$ per ogni $n \ge \tilde n$. È <strong>asintoticamente positiva</strong> se esiste $\tilde n \in \N$ tale che $f(n) > 0$ per ogni $n \ge \tilde n$.
 
-## 10.1 Notazioni $\Theta$, $\bigO$ e $\Omega$ { #sez-sec-an-theta }
+## 9.1 Notazioni $\Theta$, $\bigO$ e $\Omega$ { #sez-sec-an-theta }
 
-### 10.1.1 Definizioni
+### 9.1.1 Definizioni
 
 <a id="box-2-defTheta"></a>
 
-!!! definizione "Definizione 10.2: notazione $\Theta$"
+!!! definizione "Definizione 9.2: notazione $\Theta$"
 
     Date due funzioni $f$ e $g$ di variabile naturale, scriviamo $f(n)=\Theta\big(g(n)\big)$ se esistono $c_1,c_2 \in \R_{>0}$ e $n_1 \in \N$ tali che
 
     \begin{equation*}
     \label{eq:an-theta}
-    0 \le c_1 \: g(n) \le f(n) \le c_2 \: g(n),\qquad \forall n \ge n_1. \tag{10.1}
+    0 \le c_1 \: g(n) \le f(n) \le c_2 \: g(n),\qquad \forall n \ge n_1. \tag{9.1}
     \end{equation*}
 
 - Se $f(n)= \Theta\big(g(n)\big)$, allora, per valori sufficientemente grandi di $n$, la funzione $f$ è limitata dall'alto e dal basso dalla funzione $g$ moltiplicata per due costanti positive.
@@ -61,13 +63,13 @@ In tutto il capitolo usiamo la seguente terminologia.
 
 <a id="box-3-defBigO"></a>
 
-!!! definizione "Definizione 10.3: notazione $\bigO$"
+!!! definizione "Definizione 9.3: notazione $\bigO$"
 
     Date due funzioni $f$ e $g$ di variabile naturale, scriviamo $f(n)=\bigO\big(g(n)\big)$ se esistono $c \in \R_{>0}$ e $n_1 \in \N$ tali che
 
     \begin{equation*}
     \label{eq:an-bigo}
-    0 \le f(n) \le c \: g(n),\qquad \forall n \ge n_1. \tag{10.2}
+    0 \le f(n) \le c \: g(n),\qquad \forall n \ge n_1. \tag{9.2}
     \end{equation*}
 
 - Se $f(n)= \bigO\big(g(n)\big)$, allora, per valori sufficientemente grandi di $n$, la funzione $f$ è limitata dall'alto dalla funzione $g$ moltiplicata per una costante positiva.
@@ -76,13 +78,13 @@ In tutto il capitolo usiamo la seguente terminologia.
 
 <a id="box-4-defOmega"></a>
 
-!!! definizione "Definizione 10.4: notazione $\Omega$"
+!!! definizione "Definizione 9.4: notazione $\Omega$"
 
     Date due funzioni $f$ e $g$ di variabile naturale, scriviamo $f(n)=\Omega\big(g(n)\big)$ se esistono $c \in \R_{>0}$ e $n_1 \in \N$ tali che
 
     \begin{equation*}
     \label{eq:an-omega}
-    0 \le c \: g(n) \le f(n),\qquad \forall n \ge n_1. \tag{10.3}
+    0 \le c \: g(n) \le f(n),\qquad \forall n \ge n_1. \tag{9.3}
     \end{equation*}
 
 - Se $f(n)= \Omega\big(g(n)\big)$, allora, per valori sufficientemente grandi di $n$, la funzione $f$ è limitata dal basso dalla funzione $g$ moltiplicata per una costante positiva.
@@ -97,11 +99,11 @@ In tutto il capitolo usiamo la seguente terminologia.
 
 - Per dimostrare che un'affermazione è falsa procediamo per assurdo: supponiamo che le costanti esistano e ricaviamo una disuguaglianza che non può valere per $n$ arbitrariamente grande.
 
-### 10.1.2 Esempi di limitazioni asintotiche strette
+### 9.1.2 Esempi di limitazioni asintotiche strette
 
 <a id="box-5-ex-an-tight1"></a>
 
-!!! esempio "Esempio 10.1: limitazione asintotica stretta"
+!!! esempio "Esempio 9.1: limitazione asintotica stretta"
 
     - Per dimostrare che
 
@@ -129,7 +131,7 @@ In tutto il capitolo usiamo la seguente terminologia.
 
         Per $n = 6$ la limitazione inferiore non vale, poiché $-18 + 18 = 0 < \frac{36}{14}$.
 
-        ![Figura 1](../img/10-notazione-asintotica/fig01.svg){ .fig .ovale loading=lazy style="width:75%" }
+        ![Figura 1](../img/09-notazione-asintotica/fig01.svg){ .fig .ovale loading=lazy style="width:75%" }
 
     - La dimostrazione precedente dimostra anche che
 
@@ -139,7 +141,7 @@ In tutto il capitolo usiamo la seguente terminologia.
 
 <a id="box-6-ex-an-tight2"></a>
 
-!!! esempio "Esempio 10.2: limitazione asintotica stretta"
+!!! esempio "Esempio 9.2: limitazione asintotica stretta"
 
     - Per dimostrare che
 
@@ -165,7 +167,7 @@ In tutto il capitolo usiamo la seguente terminologia.
         0 \le \frac{1}{2}\;n^2 \le n^2\; (2 - \sin n) \le \frac{7}{2}\;n^2,\qquad \forall n \ge 1.
         $$
 
-        ![Figura 2](../img/10-notazione-asintotica/fig02.svg){ .fig .ovale loading=lazy style="width:75%" }
+        ![Figura 2](../img/09-notazione-asintotica/fig02.svg){ .fig .ovale loading=lazy style="width:75%" }
 
     - La dimostrazione precedente dimostra anche che
 
@@ -173,27 +175,27 @@ In tutto il capitolo usiamo la seguente terminologia.
         n^2\; (2 - \sin n) = \bigO(n^2) \qquad\text{e}\qquad n^2\; (2 - \sin n) = \Omega(n^2).
         $$
 
-### 10.1.3 Interpretazione grafica
+### 9.1.3 Interpretazione grafica
 
 La figura seguente dà un'interpretazione grafica delle tre notazioni.
 
-![Figura 3](../img/10-notazione-asintotica/fig03.svg){ .fig .ovale loading=lazy style="width:95%" }
+![Figura 3](../img/09-notazione-asintotica/fig03.svg){ .fig .ovale loading=lazy style="width:95%" }
 
 - In (a), da $n_1$ in poi, i valori di $f$ stanno fra $c_1\,g(n)$ e $c_2\,g(n)$; in (b) stanno sotto $c\,g(n)$; in (c) stanno sopra $c\,g(n)$. Prima di $n_1$ non si richiede nulla.
 
 - Nella figura $n_1$ è la soglia più piccola possibile, ma anche qualunque valore più grande andrebbe bene. La figura illustra inoltre una possibile scelta delle costanti $c_1, c_2$ e $c$, ma esistono altre scelte valide.
 
-### 10.1.4 $\Theta$ rispetto a $\bigO$ e $\Omega$
+### 9.1.4 $\Theta$ rispetto a $\bigO$ e $\Omega$
 
 <a id="box-7-obsThetaOOmega"></a>
 
-!!! teorema "Osservazione 10.5: $\Theta$ equivale a $\bigO$ e $\Omega$"
+!!! teorema "Osservazione 9.5: $\Theta$ equivale a $\bigO$ e $\Omega$"
 
     Date due funzioni $f$ e $g$ di variabile naturale, si ha
 
     \begin{equation*}
     \label{eq:an-theta-iff}
-    f(n)= \Theta\big(g(n)\big) \quad\Longleftrightarrow\quad f(n)= \bigO\big(g(n)\big) \ \text{ e } \ f(n)= \Omega\big(g(n)\big). \tag{10.4}
+    f(n)= \Theta\big(g(n)\big) \quad\Longleftrightarrow\quad f(n)= \bigO\big(g(n)\big) \ \text{ e } \ f(n)= \Omega\big(g(n)\big). \tag{9.4}
     \end{equation*}
 
     In particolare,
@@ -202,7 +204,7 @@ La figura seguente dà un'interpretazione grafica delle tre notazioni.
     \label{eq:an-theta-o}
     f(n)= \Theta\big(g(n)\big) ~~\Longrightarrow~~ f(n)= \bigO\big(g(n)\big)
     \qquad\text{e}\qquad
-    f(n)= \Theta\big(g(n)\big) ~~\Longrightarrow~~ f(n)= \Omega\big(g(n)\big). \tag{10.5}
+    f(n)= \Theta\big(g(n)\big) ~~\Longrightarrow~~ f(n)= \Omega\big(g(n)\big). \tag{9.5}
     \end{equation*}
 
 ??? dimostrazione "Dimostrazione"
@@ -243,7 +245,7 @@ La figura seguente dà un'interpretazione grafica delle tre notazioni.
 
 <a id="box-8-ex-an-upper1"></a>
 
-!!! esempio "Esempio 10.3: limitazione superiore asintotica non stretta"
+!!! esempio "Esempio 9.3: limitazione superiore asintotica non stretta"
 
     - Per dimostrare che
 
@@ -271,7 +273,7 @@ La figura seguente dà un'interpretazione grafica delle tre notazioni.
 
         (Per $n=1$ la disuguaglianza non vale, poiché $3 > \frac{3}{2}$.)
 
-        ![Figura 4](../img/10-notazione-asintotica/fig04.svg){ .fig .ovale loading=lazy style="width:65%" }
+        ![Figura 4](../img/09-notazione-asintotica/fig04.svg){ .fig .ovale loading=lazy style="width:65%" }
 
     - Per dimostrare che
 
@@ -295,7 +297,7 @@ La figura seguente dà un'interpretazione grafica delle tre notazioni.
 
 <a id="box-9-ex-an-upper2"></a>
 
-!!! esempio "Esempio 10.4: limitazione superiore asintotica non stretta"
+!!! esempio "Esempio 9.4: limitazione superiore asintotica non stretta"
 
     - Per dimostrare che
 
@@ -321,7 +323,7 @@ La figura seguente dà un'interpretazione grafica delle tre notazioni.
         0 \le n^2\;\sin^2 n\le \frac{3}{2} \;n^2,\qquad \forall n \ge 1.
         $$
 
-        ![Figura 5](../img/10-notazione-asintotica/fig05.svg){ .fig .ovale loading=lazy style="width:65%" }
+        ![Figura 5](../img/09-notazione-asintotica/fig05.svg){ .fig .ovale loading=lazy style="width:65%" }
 
     - Per dimostrare che
 
@@ -345,7 +347,7 @@ La figura seguente dà un'interpretazione grafica delle tre notazioni.
 
 <a id="box-10-ex-an-lower1"></a>
 
-!!! esempio "Esempio 10.5: limitazione inferiore asintotica non stretta"
+!!! esempio "Esempio 9.5: limitazione inferiore asintotica non stretta"
 
     - Per dimostrare che
 
@@ -371,7 +373,7 @@ La figura seguente dà un'interpretazione grafica delle tre notazioni.
         0 \le \frac{3}{2}\;n^2 \le 2\;n^3,\qquad \forall n \ge 1.
         $$
 
-        ![Figura 6](../img/10-notazione-asintotica/fig06.svg){ .fig .ovale loading=lazy style="width:65%" }
+        ![Figura 6](../img/09-notazione-asintotica/fig06.svg){ .fig .ovale loading=lazy style="width:65%" }
 
     - Per dimostrare che
 
@@ -393,17 +395,17 @@ La figura seguente dà un'interpretazione grafica delle tre notazioni.
 
         che non può valere per $n$ arbitrariamente grande, poiché $c_2$ è una costante (non vale per ogni $n > \frac{c_2}{2}$).
 
-### 10.1.5 Somma e massimo di due funzioni
+### 9.1.5 Somma e massimo di due funzioni
 
 <a id="box-11-obsAddBound"></a>
 
-!!! teorema "Osservazione 10.6: aggiungere la limitazione alla funzione"
+!!! teorema "Osservazione 9.6: aggiungere la limitazione alla funzione"
 
     Date due funzioni $f$ e $g$ di variabile naturale, si ha
 
     \begin{equation*}
     \label{eq:an-addbound}
-    f(n)= \Theta\big(g(n)\big) ~~\Longrightarrow~~ f(n) + g(n) = \Theta\big(g(n)\big). \tag{10.6}
+    f(n)= \Theta\big(g(n)\big) ~~\Longrightarrow~~ f(n) + g(n) = \Theta\big(g(n)\big). \tag{9.6}
     \end{equation*}
 
 ??? dimostrazione "Dimostrazione"
@@ -424,9 +426,9 @@ La figura seguente dà un'interpretazione grafica delle tre notazioni.
 
 <a id="box-12-ex-an-addbound"></a>
 
-!!! esempio "Esempio 10.6: limitazione asintotica stretta di una somma"
+!!! esempio "Esempio 9.6: limitazione asintotica stretta di una somma"
 
-    - Nell'[Esempio 10.1](#box-5-ex-an-tight1) abbiamo dimostrato che
+    - Nell'[Esempio 9.1](#box-5-ex-an-tight1) abbiamo dimostrato che
 
         $$
         - 3\: n + \frac{1}{2} \: n^2 = \Theta(n^2)
@@ -440,7 +442,7 @@ La figura seguente dà un'interpretazione grafica delle tre notazioni.
 
         con le costanti $c_1+1=\frac{15}{14}$, $c_2+1=\frac{3}{2}$ e $n_1=7$.
 
-    - Nell'[Esempio 10.2](#box-6-ex-an-tight2) abbiamo dimostrato che
+    - Nell'[Esempio 9.2](#box-6-ex-an-tight2) abbiamo dimostrato che
 
         $$
         n^2\; (2 - \sin n) = \Theta(n^2)
@@ -468,7 +470,7 @@ La figura seguente dà un'interpretazione grafica delle tre notazioni.
 
 <a id="box-13-ex-an-addbound-counter"></a>
 
-!!! esempio "Esempio 10.7: l'inverso dell'[Osservazione 10.6](#box-11-obsAddBound) è falso"
+!!! esempio "Esempio 9.7: l'inverso dell'[Osservazione 9.6](#box-11-obsAddBound) è falso"
 
     Siano $f(n) = 10\:n$ e $g(n) = \frac{1}{10}\:n^2$.
 
@@ -496,7 +498,7 @@ La figura seguente dà un'interpretazione grafica delle tre notazioni.
         0 \le \frac{1}{10} \: n^2 \le 10 \: n + \frac{1}{10}\: n^2 \le \frac{21}{10} \: n^2,\qquad \forall n \ge 5.
         $$
 
-        ![Figura 7](../img/10-notazione-asintotica/fig07.svg){ .fig .ovale loading=lazy style="width:65%" }
+        ![Figura 7](../img/09-notazione-asintotica/fig07.svg){ .fig .ovale loading=lazy style="width:65%" }
 
     - Per dimostrare che
 
@@ -522,7 +524,7 @@ Quando sommiamo due funzioni, il comportamento asintotico della somma è determi
 
 <a id="box-14-obsSumMax1"></a>
 
-!!! teorema "Osservazione 10.7: somma e massimo (1)"
+!!! teorema "Osservazione 9.7: somma e massimo (1)"
 
     Date due funzioni $f$ e $g$ di variabile naturale asintoticamente non negative, si ha
 
@@ -548,7 +550,7 @@ Quando sommiamo due funzioni, il comportamento asintotico della somma è determi
 
 <a id="box-15-obsSumMax2"></a>
 
-!!! teorema "Osservazione 10.8: somma e massimo (2)"
+!!! teorema "Osservazione 9.8: somma e massimo (2)"
 
     Date due funzioni $f$ e $g$ di variabile naturale asintoticamente non negative, si ha
 
@@ -574,9 +576,9 @@ Quando sommiamo due funzioni, il comportamento asintotico della somma è determi
 
 <a id="box-16-ex-an-summax"></a>
 
-!!! esempio "Esempio 10.8: somma e massimo"
+!!! esempio "Esempio 9.8: somma e massimo"
 
-    Per le Osservazioni [10.7](#box-14-obsSumMax1) e [Osservazione 10.8](#box-15-obsSumMax2) si ha
+    Per le Osservazioni [9.7](#box-14-obsSumMax1) e [Osservazione 9.8](#box-15-obsSumMax2) si ha
 
     $$
     \frac{1}{2} \: n^2 + 2^n = \Theta \left( \max \left\{ \frac{1}{2} \: n^2 , 2^n \right\} \right)
@@ -586,13 +588,13 @@ Quando sommiamo due funzioni, il comportamento asintotico della somma è determi
 
     In questo caso $\max\left\{ \frac{1}{2} \: n^2 , 2^n \right\} = 2^n$ per ogni $n \in \N$, così che $\frac{1}{2} \: n^2 + 2^n = \Theta(2^n)$, con $c_1=1$, $c_2=2$ e $n_1=0$.
 
-## 10.2 Notazioni $o$ e $\omega$ { #sez-sec-an-small }
+## 9.2 Notazioni $o$ e $\omega$ { #sez-sec-an-small }
 
 Le limitazioni asintotiche espresse dalle notazioni $\bigO$ e $\Omega$ possono essere o non essere asintoticamente strette. Usiamo la notazione $o$ per indicare una limitazione superiore asintotica che <strong>non è asintoticamente stretta</strong>, e la notazione $\omega$ per indicare una limitazione inferiore asintotica che <strong>non è asintoticamente stretta</strong>.
 
 <a id="box-17-ex-an-tightnontight"></a>
 
-!!! esempio "Esempio 10.9: limitazioni superiori asintoticamente strette e non strette"
+!!! esempio "Esempio 9.9: limitazioni superiori asintoticamente strette e non strette"
 
     - Si ha $3n^3 = \bigO(n^3)$ e $3n^3 = \Theta(n^3)$: $n^3$ è una limitazione superiore asintotica per $3n^3$, ed è anche una limitazione asintoticamente stretta.
 
@@ -600,13 +602,13 @@ Le limitazioni asintotiche espresse dalle notazioni $\bigO$ e $\Omega$ possono e
 
 <a id="box-18-defSmallO"></a>
 
-!!! definizione "Definizione 10.9: notazione $o$"
+!!! definizione "Definizione 9.9: notazione $o$"
 
     Date due funzioni $f$ e $g$ di variabile naturale, scriviamo $f(n)=o\big(g(n)\big)$ se per ogni $c \in \R_{>0}$ esiste $n_1 \in \N$ tale che
 
     \begin{equation*}
     \label{eq:an-smallo}
-    0 \le f(n) < c \: g(n),\qquad \forall n \ge n_1. \tag{10.7}
+    0 \le f(n) < c \: g(n),\qquad \forall n \ge n_1. \tag{9.7}
     \end{equation*}
 
 - Se $f(n)= o\big(g(n)\big)$, allora, per valori sufficientemente grandi di $n$, la funzione $f$ è limitata dall'alto dalla funzione $g$ moltiplicata per <strong>qualunque</strong> costante positiva, cioè la funzione $f$ diventa trascurabile rispetto alla funzione $g$.
@@ -617,13 +619,13 @@ Le limitazioni asintotiche espresse dalle notazioni $\bigO$ e $\Omega$ possono e
 
 <a id="box-19-defSmallOmega"></a>
 
-!!! definizione "Definizione 10.10: notazione $\omega$"
+!!! definizione "Definizione 9.10: notazione $\omega$"
 
     Date due funzioni $f$ e $g$ di variabile naturale, scriviamo $f(n)=\omega\big(g(n)\big)$ se per ogni $c \in \R_{>0}$ esiste $n_1 \in \N$ tale che
 
     \begin{equation*}
     \label{eq:an-smallomega}
-    0 \le c \: g(n) < f(n),\qquad \forall n \ge n_1. \tag{10.8}
+    0 \le c \: g(n) < f(n),\qquad \forall n \ge n_1. \tag{9.8}
     \end{equation*}
 
 - Se $f(n)= \omega\big(g(n)\big)$, allora, per valori sufficientemente grandi di $n$, la funzione $f$ è limitata dal basso dalla funzione $g$ moltiplicata per <strong>qualunque</strong> costante positiva, cioè la funzione $f$ diventa arbitrariamente grande rispetto alla funzione $g$.
@@ -636,7 +638,7 @@ Le limitazioni asintotiche espresse dalle notazioni $\bigO$ e $\Omega$ possono e
 
 <a id="box-20-ex-an-smallo"></a>
 
-!!! esempio "Esempio 10.10: limitazione superiore asintotica non stretta"
+!!! esempio "Esempio 9.10: limitazione superiore asintotica non stretta"
 
     - Per dimostrare che
 
@@ -658,7 +660,7 @@ Le limitazioni asintotiche espresse dalle notazioni $\bigO$ e $\Omega$ possono e
 
         Questo vale ogni volta che $n > \frac{3}{c}$, quindi possiamo scegliere qualunque $n_1 > \frac{3}{c}$, per esempio $n_1 = \big\lfloor \frac{3}{c} \big\rfloor + 1$. Per esempio, $c = 1$ dà $n_1 = 4$, $c = \frac{1}{2}$ dà $n_1 = 7$ e $c = \frac{1}{10}$ dà $n_1 = 31$.
 
-        ![Figura 8](../img/10-notazione-asintotica/fig08.svg){ .fig .ovale loading=lazy style="width:65%" }
+        ![Figura 8](../img/09-notazione-asintotica/fig08.svg){ .fig .ovale loading=lazy style="width:65%" }
 
     - La dimostrazione precedente dimostra anche che
 
@@ -690,7 +692,7 @@ Le limitazioni asintotiche espresse dalle notazioni $\bigO$ e $\Omega$ possono e
 
 <a id="box-21-ex-an-smallomega"></a>
 
-!!! esempio "Esempio 10.11: limitazione inferiore asintotica non stretta"
+!!! esempio "Esempio 9.11: limitazione inferiore asintotica non stretta"
 
     - Per dimostrare che
 
@@ -712,7 +714,7 @@ Le limitazioni asintotiche espresse dalle notazioni $\bigO$ e $\Omega$ possono e
 
         Questo vale ogni volta che $n > 5c$, quindi possiamo scegliere qualunque $n_1 > 5c$, per esempio $n_1 = \lfloor 5c \rfloor + 1$. Per esempio, $c = 1$ dà $n_1 = 6$ e $c = 10$ dà $n_1 = 51$.
 
-        ![Figura 9](../img/10-notazione-asintotica/fig09.svg){ .fig .ovale loading=lazy style="width:60%" }
+        ![Figura 9](../img/09-notazione-asintotica/fig09.svg){ .fig .ovale loading=lazy style="width:60%" }
 
     - La dimostrazione precedente dimostra anche che
 
@@ -740,21 +742,21 @@ Le limitazioni asintotiche espresse dalle notazioni $\bigO$ e $\Omega$ possono e
 
         che non può valere per $n$ arbitrariamente grande, poiché $c_2$ è una costante.
 
-## 10.3 Limiti e notazioni asintotiche { #sez-sec-an-limits }
+## 9.3 Limiti e notazioni asintotiche { #sez-sec-an-limits }
 
 Quando il rapporto $\frac{f(n)}{g(n)}$ ha un limite, il suo valore ci dice subito quali notazioni valgono. In questa sezione le funzioni $f$ e $g$ sono <strong>asintoticamente positive</strong>, così che il rapporto è definito per ogni $n$ sufficientemente grande. I limiti si calcolano con le regole di Analisi Matematica 1.
 
-### 10.3.1 Limiti e notazioni $o$ e $\omega$
+### 9.3.1 Limiti e notazioni $o$ e $\omega$
 
 <a id="box-22-obsLimZero"></a>
 
-!!! teorema "Osservazione 10.11: limite uguale a zero"
+!!! teorema "Osservazione 9.11: limite uguale a zero"
 
     Date due funzioni $f$ e $g$ di variabile naturale asintoticamente positive, si ha
 
     \begin{equation*}
     \label{eq:an-limzero}
-    \lim_{n \rr +\infty} \frac{f(n)}{g(n)} =0^+ ~~\Longleftrightarrow~~ f(n)= o\big(g(n)\big). \tag{10.9}
+    \lim_{n \rr +\infty} \frac{f(n)}{g(n)} =0^+ ~~\Longleftrightarrow~~ f(n)= o\big(g(n)\big). \tag{9.9}
     \end{equation*}
 
 ??? dimostrazione "Dimostrazione"
@@ -783,13 +785,13 @@ Quando il rapporto $\frac{f(n)}{g(n)}$ ha un limite, il suo valore ci dice subit
 
 <a id="box-23-obsSmallOBigO"></a>
 
-!!! teorema "Osservazione 10.12: $o$ implica $\bigO$"
+!!! teorema "Osservazione 9.12: $o$ implica $\bigO$"
 
     Date due funzioni $f$ e $g$ di variabile naturale, si ha
 
     \begin{equation*}
     \label{eq:an-smallo-bigo}
-    f(n)= o\big(g(n)\big) ~~\Longrightarrow~~ f(n)= \bigO\big(g(n)\big). \tag{10.10}
+    f(n)= o\big(g(n)\big) ~~\Longrightarrow~~ f(n)= \bigO\big(g(n)\big). \tag{9.10}
     \end{equation*}
 
 ??? dimostrazione "Dimostrazione"
@@ -810,7 +812,7 @@ Quando il rapporto $\frac{f(n)}{g(n)}$ ha un limite, il suo valore ci dice subit
 
 <a id="box-24-ex-an-bigo-not-smallo"></a>
 
-!!! esempio "Esempio 10.12: una limitazione superiore che non è un $o$"
+!!! esempio "Esempio 9.12: una limitazione superiore che non è un $o$"
 
     - Per dimostrare che
 
@@ -852,13 +854,13 @@ Quando il rapporto $\frac{f(n)}{g(n)}$ ha un limite, il suo valore ci dice subit
 
 <a id="box-25-obsLimInf"></a>
 
-!!! teorema "Osservazione 10.13: limite uguale a $+\infty$"
+!!! teorema "Osservazione 9.13: limite uguale a $+\infty$"
 
     Date due funzioni $f$ e $g$ di variabile naturale asintoticamente positive, si ha
 
     \begin{equation*}
     \label{eq:an-liminf}
-    \lim_{n \rr +\infty} \frac{f(n)}{g(n)} =+\infty ~~\Longleftrightarrow~~ f(n)= \omega\big(g(n)\big). \tag{10.11}
+    \lim_{n \rr +\infty} \frac{f(n)}{g(n)} =+\infty ~~\Longleftrightarrow~~ f(n)= \omega\big(g(n)\big). \tag{9.11}
     \end{equation*}
 
 ??? dimostrazione "Dimostrazione"
@@ -887,13 +889,13 @@ Quando il rapporto $\frac{f(n)}{g(n)}$ ha un limite, il suo valore ci dice subit
 
 <a id="box-26-obsSmallOmegaOmega"></a>
 
-!!! teorema "Osservazione 10.14: $\omega$ implica $\Omega$"
+!!! teorema "Osservazione 9.14: $\omega$ implica $\Omega$"
 
     Date due funzioni $f$ e $g$ di variabile naturale, si ha
 
     \begin{equation*}
     \label{eq:an-smallomega-omega}
-    f(n)= \omega\big(g(n)\big) ~~\Longrightarrow~~ f(n)= \Omega\big(g(n)\big). \tag{10.12}
+    f(n)= \omega\big(g(n)\big) ~~\Longrightarrow~~ f(n)= \Omega\big(g(n)\big). \tag{9.12}
     \end{equation*}
 
 ??? dimostrazione "Dimostrazione"
@@ -914,7 +916,7 @@ Quando il rapporto $\frac{f(n)}{g(n)}$ ha un limite, il suo valore ci dice subit
 
 <a id="box-27-ex-an-omega-not-smallomega"></a>
 
-!!! esempio "Esempio 10.13: una limitazione inferiore che non è un $\omega$"
+!!! esempio "Esempio 9.13: una limitazione inferiore che non è un $\omega$"
 
     - Per dimostrare che
 
@@ -954,17 +956,17 @@ Quando il rapporto $\frac{f(n)}{g(n)}$ ha un limite, il suo valore ci dice subit
 
         e applichiamo $\eqref{eq:an-liminf}$.
 
-### 10.3.2 Limiti e notazioni $\Theta$, $\bigO$ e $\Omega$
+### 9.3.2 Limiti e notazioni $\Theta$, $\bigO$ e $\Omega$
 
 <a id="box-28-obsLimFinite"></a>
 
-!!! teorema "Osservazione 10.15: limite finito positivo"
+!!! teorema "Osservazione 9.15: limite finito positivo"
 
     Date due funzioni $f$ e $g$ di variabile naturale asintoticamente positive, si ha
 
     \begin{equation*}
     \label{eq:an-limfinite}
-    \lim_{n \rr +\infty} \frac{f(n)}{g(n)} = \ell \in \R_{> 0} ~~\Longrightarrow~~ f(n)= \Theta\big(g(n)\big). \tag{10.13}
+    \lim_{n \rr +\infty} \frac{f(n)}{g(n)} = \ell \in \R_{> 0} ~~\Longrightarrow~~ f(n)= \Theta\big(g(n)\big). \tag{9.13}
     \end{equation*}
 
 ??? dimostrazione "Dimostrazione"
@@ -989,7 +991,7 @@ Quando il rapporto $\frac{f(n)}{g(n)}$ ha un limite, il suo valore ci dice subit
     f(n) \neq \Theta\big(g(n)\big) ~~\Longrightarrow~~ \text{il limite di } \frac{f(n)}{g(n)} \text{ non è un numero } \ell \in \R_{> 0}.
     $$
 
-    L'implicazione non vale nell'altro verso. Un controesempio è dato dall'[Esempio 10.2](#box-6-ex-an-tight2):
+    L'implicazione non vale nell'altro verso. Un controesempio è dato dall'[Esempio 9.2](#box-6-ex-an-tight2):
 
     $$
     n^2\; (2 - \sin n) = \Theta(n^2), \qquad\text{ma}\qquad \lim_{n \to +\infty} \frac{n^2\; (2 - \sin n)}{n^2} = \lim_{n \to +\infty} (2 - \sin n) \text{ non esiste}.
@@ -1007,7 +1009,7 @@ Quando il rapporto $\frac{f(n)}{g(n)}$ ha un limite, il suo valore ci dice subit
 
 <a id="box-29-ex-an-alternating"></a>
 
-!!! esempio "Esempio 10.14: limitazione asintotica stretta senza limite"
+!!! esempio "Esempio 9.14: limitazione asintotica stretta senza limite"
 
     Per dimostrare che
 
@@ -1043,7 +1045,7 @@ Quando il rapporto $\frac{f(n)}{g(n)}$ ha un limite, il suo valore ci dice subit
     0 \le\frac{1}{2} \;n^2 \le (2 + (-1)^n) \: n^2 \le \frac{7}{2} \: n^2,\qquad \forall n \ge 1.
     $$
 
-    ![Figura 10](../img/10-notazione-asintotica/fig10.svg){ .fig .ovale loading=lazy style="width:70%" }
+    ![Figura 10](../img/09-notazione-asintotica/fig10.svg){ .fig .ovale loading=lazy style="width:70%" }
 
     D'altra parte,
 
@@ -1055,18 +1057,18 @@ Quando il rapporto $\frac{f(n)}{g(n)}$ ha un limite, il suo valore ci dice subit
 
 <a id="box-30-obsLimBigO"></a>
 
-!!! teorema "Osservazione 10.16: criterio del limite per $\bigO$"
+!!! teorema "Osservazione 9.16: criterio del limite per $\bigO$"
 
     Date due funzioni $f$ e $g$ di variabile naturale asintoticamente positive, si ha
 
     \begin{equation*}
     \label{eq:an-limbigo}
-    \lim_{n \rr +\infty} \frac{f(n)}{g(n)} = \ell \in \R_{> 0} \ \text{ oppure } \ 0^+ ~~\Longrightarrow~~ f(n)= \bigO\big(g(n)\big). \tag{10.14}
+    \lim_{n \rr +\infty} \frac{f(n)}{g(n)} = \ell \in \R_{> 0} \ \text{ oppure } \ 0^+ ~~\Longrightarrow~~ f(n)= \bigO\big(g(n)\big). \tag{9.14}
     \end{equation*}
 
 ??? dimostrazione "Dimostrazione"
 
-    Per le Osservazioni [10.15](#box-28-obsLimFinite), [Osservazione 10.5](#box-7-obsThetaOOmega), [Osservazione 10.11](#box-22-obsLimZero) e [Osservazione 10.12](#box-23-obsSmallOBigO), si ha
+    Per le Osservazioni [9.15](#box-28-obsLimFinite), [Osservazione 9.5](#box-7-obsThetaOOmega), [Osservazione 9.11](#box-22-obsLimZero) e [Osservazione 9.12](#box-23-obsSmallOBigO), si ha
 
     $$
     \lim_{n \rr +\infty} \frac{f(n)}{g(n)} = \ell \in \R_{>0} ~~\Longrightarrow~~ f(n)= \Theta\big(g(n)\big) ~~\Longrightarrow~~ f(n)= \bigO\big(g(n)\big),
@@ -1084,7 +1086,7 @@ Quando il rapporto $\frac{f(n)}{g(n)}$ ha un limite, il suo valore ci dice subit
     f(n) \neq \bigO\big(g(n)\big) ~~\Longrightarrow~~ \text{il limite di } \frac{f(n)}{g(n)} \text{ non è né un numero } \ell \in \R_{>0} \text{ né } 0^+.
     $$
 
-    L'implicazione non vale nell'altro verso. Un controesempio è dato dall'[Esempio 10.4](#box-9-ex-an-upper2):
+    L'implicazione non vale nell'altro verso. Un controesempio è dato dall'[Esempio 9.4](#box-9-ex-an-upper2):
 
     $$
     n^2\;\sin^2 n = \bigO(n^2), \qquad\text{ma}\qquad \lim_{n \to +\infty} \frac{n^2\;\sin^2 n}{n^2} = \lim_{n \to +\infty} \sin^2 n \text{ non esiste}.
@@ -1102,18 +1104,18 @@ Quando il rapporto $\frac{f(n)}{g(n)}$ ha un limite, il suo valore ci dice subit
 
 <a id="box-31-obsLimOmega"></a>
 
-!!! teorema "Osservazione 10.17: criterio del limite per $\Omega$"
+!!! teorema "Osservazione 9.17: criterio del limite per $\Omega$"
 
     Date due funzioni $f$ e $g$ di variabile naturale asintoticamente positive, si ha
 
     \begin{equation*}
     \label{eq:an-limomega}
-    \lim_{n \rr +\infty} \frac{f(n)}{g(n)} = \ell \in \R_{>0} \ \text{ oppure } \ +\infty ~~\Longrightarrow~~ f(n)= \Omega\big(g(n)\big). \tag{10.15}
+    \lim_{n \rr +\infty} \frac{f(n)}{g(n)} = \ell \in \R_{>0} \ \text{ oppure } \ +\infty ~~\Longrightarrow~~ f(n)= \Omega\big(g(n)\big). \tag{9.15}
     \end{equation*}
 
 ??? dimostrazione "Dimostrazione"
 
-    Per le Osservazioni [10.15](#box-28-obsLimFinite), [Osservazione 10.5](#box-7-obsThetaOOmega), [Osservazione 10.13](#box-25-obsLimInf) e [Osservazione 10.14](#box-26-obsSmallOmegaOmega), si ha
+    Per le Osservazioni [9.15](#box-28-obsLimFinite), [Osservazione 9.5](#box-7-obsThetaOOmega), [Osservazione 9.13](#box-25-obsLimInf) e [Osservazione 9.14](#box-26-obsSmallOmegaOmega), si ha
 
     $$
     \lim_{n \rr +\infty} \frac{f(n)}{g(n)} = \ell \in \R_{>0} ~~\Longrightarrow~~ f(n)= \Theta\big(g(n)\big) ~~\Longrightarrow~~ f(n)= \Omega\big(g(n)\big),
@@ -1131,7 +1133,7 @@ Quando il rapporto $\frac{f(n)}{g(n)}$ ha un limite, il suo valore ci dice subit
     f(n) \neq \Omega\big(g(n)\big) ~~\Longrightarrow~~ \text{il limite di } \frac{f(n)}{g(n)} \text{ non è né un numero } \ell \in \R_{>0} \text{ né } +\infty.
     $$
 
-    L'implicazione non vale nell'altro verso. Un controesempio è dato dall'[Esempio 10.14](#box-29-ex-an-alternating): poiché $(2 + (-1)^n) \: n^2 = \Theta(n^2)$, per l'[Osservazione 10.5](#box-7-obsThetaOOmega) si ha
+    L'implicazione non vale nell'altro verso. Un controesempio è dato dall'[Esempio 9.14](#box-29-ex-an-alternating): poiché $(2 + (-1)^n) \: n^2 = \Theta(n^2)$, per l'[Osservazione 9.5](#box-7-obsThetaOOmega) si ha
 
     $$
     (2 + (-1)^n) \: n^2 = \Omega(n^2), \qquad\text{ma}\qquad \lim_{n \to +\infty} \frac{(2 + (-1)^n) \: n^2}{n^2} = \lim_{n \to +\infty} (2 + (-1)^n) \text{ non esiste}.
@@ -1149,7 +1151,7 @@ Quando il rapporto $\frac{f(n)}{g(n)}$ ha un limite, il suo valore ci dice subit
 
 <a id="box-32-ex-an-limits"></a>
 
-!!! esempio "Esempio 10.15: limitazioni asintotiche dai limiti"
+!!! esempio "Esempio 9.15: limitazioni asintotiche dai limiti"
 
     - Si ha
 
@@ -1175,11 +1177,84 @@ Quando il rapporto $\frac{f(n)}{g(n)}$ ha un limite, il suo valore ci dice subit
 
         Allora, per $\eqref{eq:an-liminf}$, si ha $n+3\;n^4=\omega(n^3)$. Inoltre, per $\eqref{eq:an-smallomega-omega}$ o per $\eqref{eq:an-limomega}$, si ha $n+3\;n^4=\Omega(n^3)$.
 
-## 10.4 Proprietà relazionali delle notazioni asintotiche { #sez-sec-an-relational }
+### 9.3.3 Il criterio del limite
 
-<a id="box-33-propRelational"></a>
+Quando il limite del rapporto esiste, le osservazioni precedenti si possono invertire: il valore del limite dice esattamente quali delle cinque notazioni valgono e quali no.
 
-!!! teorema "Proposizione 10.18: proprietà relazionali"
+<a id="box-33-propLimitCriterion"></a>
+
+!!! teorema "Proposizione 9.18: criterio del limite"
+
+    Siano $f$ e $g$ due funzioni di variabile naturale asintoticamente positive tali che il limite
+
+    $$
+    L = \lim_{n \rr +\infty} \frac{f(n)}{g(n)}
+    $$
+
+    esista (uguale a $0^+$, a un numero $\ell \in \R_{>0}$, oppure a $+\infty$). Allora:
+
+    \begin{align*}
+    \label{eq:an-crit-smallo}
+    f(n)= o\big(g(n)\big) &~~\Longleftrightarrow~~ L = 0^+, \tag{9.16}\\
+    \label{eq:an-crit-bigo}
+    f(n)= \bigO\big(g(n)\big) &~~\Longleftrightarrow~~ L = 0^+ \ \text{ oppure } \ L \in \R_{>0}, \tag{9.17}\\
+    \label{eq:an-crit-theta}
+    f(n)= \Theta\big(g(n)\big) &~~\Longleftrightarrow~~ L \in \R_{>0}, \tag{9.18}\\
+    \label{eq:an-crit-omega}
+    f(n)= \Omega\big(g(n)\big) &~~\Longleftrightarrow~~ L \in \R_{>0} \ \text{ oppure } \ L = +\infty, \tag{9.19}\\
+    \label{eq:an-crit-smallomega}
+    f(n)= \omega\big(g(n)\big) &~~\Longleftrightarrow~~ L = +\infty. \tag{9.20}
+    \end{align*}
+
+??? dimostrazione "Dimostrazione"
+
+    Le implicazioni da destra a sinistra sono $\eqref{eq:an-limzero}$, $\eqref{eq:an-limbigo}$, $\eqref{eq:an-limfinite}$, $\eqref{eq:an-limomega}$ e $\eqref{eq:an-liminf}$, e $\eqref{eq:an-crit-smallo}$ e $\eqref{eq:an-crit-smallomega}$ sono $\eqref{eq:an-limzero}$ e $\eqref{eq:an-liminf}$. Per le altre implicazioni osserviamo prima che $f(n)= \bigO\big(g(n)\big)$ e $f(n)= \omega\big(g(n)\big)$ non possono valere insieme. Infatti, se $0 \le f(n) \le c\, g(n)$ per ogni $n \ge n_1'$, la definizione $\eqref{eq:an-smallomega}$ con la stessa costante $c$ dà $n_1''$ tale che $c\, g(n) < f(n)$ per ogni $n \ge n_1''$, e per $n \ge \max\{n_1', n_1''\}$ avremmo $c\, g(n) < f(n) \le c\, g(n)$, il che è impossibile. Allo stesso modo, $f(n)= \Omega\big(g(n)\big)$ e $f(n)= o\big(g(n)\big)$ non possono valere insieme, perché darebbero $c\, g(n) \le f(n) < c\, g(n)$. Poiché il limite esiste, vale esattamente uno dei tre casi $L = 0^+$, $L \in \R_{>0}$ e $L = +\infty$.
+
+    - Se $f(n)= \bigO\big(g(n)\big)$, allora $L \neq +\infty$, perché altrimenti $f(n)= \omega\big(g(n)\big)$ per $\eqref{eq:an-liminf}$. Quindi $L = 0^+$ oppure $L \in \R_{>0}$.
+
+    - Se $f(n)= \Omega\big(g(n)\big)$, allora $L \neq 0^+$, perché altrimenti $f(n)= o\big(g(n)\big)$ per $\eqref{eq:an-limzero}$. Quindi $L \in \R_{>0}$ oppure $L = +\infty$.
+
+    - Se $f(n)= \Theta\big(g(n)\big)$, allora $f(n)= \bigO\big(g(n)\big)$ e $f(n)= \Omega\big(g(n)\big)$ per l'[Osservazione 9.5](#box-7-obsThetaOOmega), e per i due punti precedenti $L \in \R_{>0}$.
+
+    <p class="qed-riga"><span class="qed">□</span></p>
+
+!!! chiave ""
+
+    Per due funzioni asintoticamente positive $f$ e $g$ il cui rapporto ha un limite $L$, il criterio del limite dice:
+
+    - se $L = 0^+$, allora $f(n) = o\big(g(n)\big)$ e $f(n) = \bigO\big(g(n)\big)$, e le altre tre notazioni non valgono;
+
+    - se $L \in \R_{>0}$, allora $f(n) = \Theta\big(g(n)\big)$, $f(n) = \bigO\big(g(n)\big)$ e $f(n) = \Omega\big(g(n)\big)$, mentre $f(n) \neq o\big(g(n)\big)$ e $f(n) \neq \omega\big(g(n)\big)$;
+
+    - se $L = +\infty$, allora $f(n) = \omega\big(g(n)\big)$ e $f(n) = \Omega\big(g(n)\big)$, e le altre tre notazioni non valgono.
+
+    Se il rapporto non ha limite, il criterio non si può applicare, e si usano le definizioni (Esempi [9.2](#box-6-ex-an-tight2) e [Esempio 9.14](#box-29-ex-an-alternating)).
+
+<a id="box-34-ex-an-criterion"></a>
+
+!!! esempio "Esempio 9.16: il criterio del limite"
+
+    - Nel corso di <em>Analisi Matematica 1</em> (capitolo <em>Gerarchie degli infiniti e criterio del rapporto</em>) si dimostra che
+
+        $$
+        \lim_{n \rr +\infty} \frac{\ln n}{n} = 0^+.
+        $$
+
+        Per la [Proposizione 9.18](#box-33-propLimitCriterion), si ha $\ln n = o(n)$ e $\ln n = \bigO(n)$, mentre $\ln n \neq \Theta(n)$, $\ln n \neq \Omega(n)$ e $\ln n \neq \omega(n)$.
+
+    - Nello stesso capitolo di quel corso si dimostra che $\lim_{n \rr +\infty} \frac{n^2}{2^n} = 0^+$, quindi
+
+        $$
+        \lim_{n \rr +\infty} \frac{2^n + n^2}{2^n} = \lim_{n \rr +\infty} \Big( 1 + \underbrace{\frac{n^2}{2^n}}_{\rr\, 0^+} \Big) = 1 \in \R_{>0}.
+        $$
+
+        Per la [Proposizione 9.18](#box-33-propLimitCriterion), si ha $2^n + n^2 = \Theta(2^n)$, $2^n + n^2 = \bigO(2^n)$ e $2^n + n^2 = \Omega(2^n)$, mentre $2^n + n^2 \neq o(2^n)$ e $2^n + n^2 \neq \omega(2^n)$.
+
+## 9.4 Proprietà relazionali delle notazioni asintotiche { #sez-sec-an-relational }
+
+<a id="box-35-propRelational"></a>
+
+!!! teorema "Proposizione 9.19: proprietà relazionali"
 
     Date tre funzioni $f$, $g$ e $h$ di variabile naturale, valgono le seguenti proprietà.
 
@@ -1254,9 +1329,9 @@ Quando il rapporto $\frac{f(n)}{g(n)}$ ha un limite, il suo valore ci dice subit
 
 - La proprietà analoga <strong>non vale</strong> per il confronto asintotico di due funzioni: esistono due funzioni $f$ e $g$ tali che nessuna delle cinque notazioni vale, come mostra l'esempio seguente.
 
-<a id="box-34-ex-an-trichotomy"></a>
+<a id="box-36-ex-an-trichotomy"></a>
 
-!!! esempio "Esempio 10.16: due funzioni che non si possono confrontare"
+!!! esempio "Esempio 9.17: due funzioni che non si possono confrontare"
 
     Consideriamo la funzione asintoticamente positiva
 
@@ -1292,7 +1367,7 @@ Quando il rapporto $\frac{f(n)}{g(n)}$ ha un limite, il suo valore ci dice subit
 
         procediamo per assurdo e supponiamo che esistano $c \in \R_{>0}$ e $n_1 \in \N$ tali che $0 \le c\,n \le n^{1+\sin n}$, cioè $c \le n^{\sin n}$, per ogni $n \ge n_1$. Questo è falso per gli interi $m$ arbitrariamente grandi con $\sin m < -\frac12$ e $\frac{1}{\sqrt m} < c$.
 
-    - Per l'[Osservazione 10.5](#box-7-obsThetaOOmega), ne segue che
+    - Per l'[Osservazione 9.5](#box-7-obsThetaOOmega), ne segue che
 
         $$
         n^{1 + \sin n} \neq \Theta(n).
@@ -1314,9 +1389,9 @@ Quando il rapporto $\frac{f(n)}{g(n)}$ ha un limite, il suo valore ci dice subit
 
     Quindi nessuna delle cinque notazioni vale fra $n^{1+\sin n}$ e $n$. Osserviamo che questo è un fallimento più forte del fallimento della tricotomia: non valgono nemmeno gli analoghi di $a \le b$ o $a \ge b$.
 
-<a id="box-35-ex-an-trichotomy-graph"></a>
+<a id="box-37-ex-an-trichotomy-graph"></a>
 
-!!! esempio "Esempio 10.17: il grafico di $n^{1+\sin n}$"
+!!! esempio "Esempio 9.18: il grafico di $n^{1+\sin n}$"
 
     Questo è il grafico della funzione
 
@@ -1326,58 +1401,19 @@ Quando il rapporto $\frac{f(n)}{g(n)}$ ha un limite, il suo valore ci dice subit
 
     insieme al grafico della funzione $g: \R_{\ge 0} \rr \R$, $g: x \mapsto x$. I valori $f(n)$ stanno alternativamente sopra e sotto la retta $g$, sempre più lontani da essa.
 
-    ![Figura 11](../img/10-notazione-asintotica/fig11.svg){ .fig .ovale loading=lazy style="width:80%" }
+    ![Figura 11](../img/09-notazione-asintotica/fig11.svg){ .fig .ovale loading=lazy style="width:80%" }
 
-## 10.5 Notazione asintotica e ordini di crescita { #sez-sec-an-growth }
-
-Nel capitolo «Crescita asintotica» gli ordini di crescita delle famiglie di funzioni crescenti di variabile naturale sono stati confrontati calcolando limiti di rapporti. Con l'[Osservazione 10.11](#box-22-obsLimZero), ogni limite uguale a $0^+$ diventa una relazione $o$.
-
-<a id="box-36-ex-an-hierarchy"></a>
-
-!!! esempio "Esempio 10.18: la gerarchia degli ordini di crescita"
-
-    Per ogni $\alpha, \beta \in \R_{>0}$ e $a, b \in \R_{>1}$, i limiti
-
-    $$
-    \lim_{n \rr +\infty} \frac{\log_a^{\beta} n}{n^{\alpha}} = 0^+, \qquad
-    \lim_{n \rr +\infty} \frac{n^{\alpha}}{b^{n}} = 0^+, \qquad
-    \lim_{n \rr +\infty} \frac{b^{n}}{n!} = 0^+, \qquad
-    \lim_{n \rr +\infty} \frac{n!}{n^{n}} = 0^+
-    $$
-
-    del capitolo «Crescita asintotica» danno, per $\eqref{eq:an-limzero}$,
-
-    $$
-    \log_a^{\beta} n = o(n^{\alpha}), \qquad n^{\alpha} = o(b^{n}), \qquad b^{n} = o(n!), \qquad n! = o(n^{n}).
-    $$
-
-    Per la transitività di $o$ ([Proposizione 10.18](#box-33-propRelational)), ogni funzione della catena è $o$ di tutte le funzioni che la seguono, per esempio $\log_a^{\beta} n = o(n!)$.
-
-!!! chiave ""
-
-    Date due funzioni $f$ e $g$ di variabile naturale asintoticamente crescenti:
-
-    - se $f(n) = o\big(g(n)\big)$, $f$ ha un ordine di crescita strettamente minore di quello di $g$ ($f$ cresce più lentamente di $g$);
-
-    - se $f(n) = \bigO\big(g(n)\big)$, $f$ ha un ordine di crescita minore o uguale ($f$ cresce al più quanto $g$);
-
-    - se $f(n) = \Theta\big(g(n)\big)$, $f$ ha lo stesso ordine di crescita di $g$ ($f$ cresce come $g$);
-
-    - se $f(n) = \Omega\big(g(n)\big)$, $f$ ha un ordine di crescita maggiore o uguale ($f$ cresce almeno quanto $g$);
-
-    - se $f(n) = \omega\big(g(n)\big)$, $f$ ha un ordine di crescita strettamente maggiore di quello di $g$ ($f$ cresce più velocemente di $g$).
-
-## 10.6 Notazione asintotica nell'analisi degli algoritmi { #sez-sec-an-algorithms }
+## 9.5 Notazione asintotica nell'analisi degli algoritmi { #sez-sec-an-algorithms }
 
 Nei capitoli «Dimensione dell'input» e «Tempo di esecuzione» misuriamo la dimensione $|I|$ dell'input di un algoritmo e contiamo il numero di passi $S(n)$ che l'algoritmo esegue nel caso peggiore, in funzione di un parametro naturale $n$. L'espressione esatta di $S(n)$ dipende dalle convenzioni usate per contare i passi, e il tempo di un passo dipende dal calcolatore. La notazione asintotica conserva solo ciò che non dipende da questi dettagli: l'<strong>ordine di crescita</strong>.
 
 - <strong>I fattori costanti non contano.</strong> Se $f(n) = \Theta\big(g(n)\big)$ e $\lambda \in \R_{>0}$, allora $\lambda\, f(n) = \Theta\big(g(n)\big)$, con le costanti $\lambda c_1$ e $\lambda c_2$ e la stessa soglia. Per esempio, un algoritmo che esegue $4n$ passi e un algoritmo che esegue $n$ passi hanno entrambi un numero di passi $\Theta(n)$.
 
-- <strong>I termini di ordine inferiore non contano.</strong> Lo precisa l'osservazione seguente, che discende dall'[Osservazione 10.7](#box-14-obsSumMax1).
+- <strong>I termini di ordine inferiore non contano.</strong> Lo precisa l'osservazione seguente, che discende dall'[Osservazione 9.7](#box-14-obsSumMax1).
 
-<a id="box-37-obsDropLower"></a>
+<a id="box-38-obsDropLower"></a>
 
-!!! teorema "Osservazione 10.19: trascurare i termini di ordine inferiore"
+!!! teorema "Osservazione 9.20: trascurare i termini di ordine inferiore"
 
     Date due funzioni $f$ e $g$ di variabile naturale asintoticamente non negative, si ha
 
@@ -1395,9 +1431,9 @@ Nei capitoli «Dimensione dell'input» e «Tempo di esecuzione» misuriamo la di
 
     cioè $f(n) + g(n) = \Theta\big(f(n)\big)$ con le costanti $c_1 = 1$ e $c_2 = 1 + c$. <span class="qed">□</span>
 
-<a id="box-38-ex-an-algorithms"></a>
+<a id="box-39-ex-an-algorithms"></a>
 
-!!! esempio "Esempio 10.19: il numero di passi di due algoritmi"
+!!! esempio "Esempio 9.19: il numero di passi di due algoritmi"
 
     Nel capitolo «Tempo di esecuzione» contiamo i passi di due algoritmi su un array di $n$ componenti.
 
@@ -1423,7 +1459,7 @@ Nei capitoli «Dimensione dell'input» e «Tempo di esecuzione» misuriamo la di
 
         Lo stesso risultato segue dal limite $\lim_{n \rr +\infty} \frac{3n^2+9n-8}{2n^2} = \frac{3}{2} \in \R_{>0}$ e da $\eqref{eq:an-limfinite}$. Il numero di passi è <strong>quadratico</strong> in $n$.
 
-    - Poiché $n = o(n^2)$, per array grandi <code>InsertionSort</code> esegue, nel caso peggiore, molti più passi di <code>FindMaximum</code>: per l'[Osservazione 10.11](#box-22-obsLimZero), il rapporto $\frac{4n}{(3n^2+9n-8)/2}$ tende a $0^+$.
+    - Poiché $n = o(n^2)$, per array grandi <code>InsertionSort</code> esegue, nel caso peggiore, molti più passi di <code>FindMaximum</code>: per l'[Osservazione 9.11](#box-22-obsLimZero), il rapporto $\frac{4n}{(3n^2+9n-8)/2}$ tende a $0^+$.
 
 - Le tre notazioni $\bigO$, $\Omega$ e $\Theta$ dicono cose diverse sul numero di passi $S(n)$ nel caso peggiore. Se $S(n) = \bigO\big(g(n)\big)$, allora, per ogni $n \ge n_1$, l'algoritmo esegue al più $c\, g(n)$ passi su <strong>ogni</strong> input con parametro $n$. Se $S(n) = \Omega\big(g(n)\big)$, allora, per ogni $n \ge n_1$, esiste <strong>almeno un</strong> input con parametro $n$ su cui l'algoritmo esegue almeno $c\, g(n)$ passi. L'affermazione $S(n) = \Theta\big(g(n)\big)$ li fornisce entrambi, ed è la più informativa.
 
@@ -1439,7 +1475,7 @@ Nei capitoli «Dimensione dell'input» e «Tempo di esecuzione» misuriamo la di
 
     - $\Theta$ equivale a $\bigO$ e $\Omega$ insieme; $o$ implica $\bigO$ e $\omega$ implica $\Omega$. Nessuna di queste implicazioni si può invertire.
 
-    - Per funzioni asintoticamente positive, decide il limite di $\frac{f(n)}{g(n)}$: $0^+$ dà $o$ (e $\bigO$), un numero $\ell > 0$ dà $\Theta$ (e $\bigO$, $\Omega$), $+\infty$ dà $\omega$ (e $\Omega$). Quando il limite non esiste, come per $2 - \sin n$ o $2 + (-1)^n$, si usano le definizioni.
+    - Criterio del limite: per funzioni asintoticamente positive il cui rapporto $\frac{f(n)}{g(n)}$ ha un limite, decide il limite: $0^+$ dà $o$ e $\bigO$, un numero $\ell > 0$ dà $\Theta$, $\bigO$ e $\Omega$, $+\infty$ dà $\omega$ e $\Omega$, e in ogni caso le altre notazioni non valgono. Quando il limite non esiste, come per $2 - \sin n$ o $2 + (-1)^n$, si usano le definizioni.
 
     - Le notazioni sono transitive; $\Theta$, $\bigO$, $\Omega$ sono riflessive; $\Theta$ è simmetrica; $\bigO$ e $\Omega$, e $o$ e $\omega$, sono a simmetria trasposta. A differenza dei numeri reali, due funzioni possono non essere affatto confrontabili, come $n^{1+\sin n}$ e $n$.
 

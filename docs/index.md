@@ -85,13 +85,13 @@ dispensa: sul sito e nel PDF trovi tutto allo stesso posto.
 
     [:octicons-arrow-right-24: I capitoli](linguaggi/index.md)
 
--   :material-chart-line: **3 · Crescita e notazione asintotica**
+-   :material-chart-line: **3 · Notazione e crescita asintotica**
 
     ---
 
-    Come crescono le funzioni di variabile naturale che contano i passi di un algoritmo: le famiglie di funzioni crescenti (logaritmi, potenze, esponenziali, fattoriale), la gerarchia degli infiniti e il confronto degli ordini di crescita; le notazioni asintotiche Theta, O grande, Omega, o piccolo e omega, le loro proprietà e il loro uso nell'analisi degli algoritmi. Limiti e funzioni di variabile naturale si danno per noti dal corso di Analisi Matematica 1.
+    Come si confrontano le funzioni di variabile naturale che contano i passi di un algoritmo: le notazioni asintotiche Theta, O grande, Omega, o piccolo e omega, le loro proprietà e il criterio del limite; poi le famiglie di funzioni crescenti (logaritmi, potenze, esponenziali, fattoriale), la gerarchia degli infiniti e il confronto degli ordini di crescita scritto con i simboli. Limiti e funzioni di variabile naturale si danno per noti dal corso di Analisi Matematica 1.
 
-    9\. Crescita asintotica · 10\. Notazione asintotica
+    9\. Notazione asintotica · 10\. Crescita asintotica
 
     [:octicons-arrow-right-24: I capitoli](notazione-asintotica/index.md)
 
