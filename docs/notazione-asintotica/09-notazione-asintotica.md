@@ -6,7 +6,7 @@ title: "Notazione asintotica"
 
 <div class="info-capitolo" markdown>
 
-**Parte 3 · Notazione e crescita asintotica · Capitolo 9** · [:material-file-pdf-box: Dispensa, volume 3 (PDF)](../pdf/dispensa-3-notazione-asintotica.pdf) · [:material-pencil: Esercizi](../esercizi/es-09-notazione-asintotica.md)
+**Parte 3 · Notazione e crescita asintotica · Capitolo 9** · [:material-file-pdf-box: Dispensa, volume 3 (PDF)](../pdf/dispensa-3-notazione-asintotica.pdf) · [:material-pencil: Esercizi: Notazione asintotica](../esercizi/es-09-notazione-asintotica.md)
 
 </div>
 
@@ -1480,5 +1480,9 @@ Nei capitoli «Dimensione dell'input» e «Tempo di esecuzione» misuriamo la di
     - Le notazioni sono transitive; $\Theta$, $\bigO$, $\Omega$ sono riflessive; $\Theta$ è simmetrica; $\bigO$ e $\Omega$, e $o$ e $\omega$, sono a simmetria trasposta. A differenza dei numeri reali, due funzioni possono non essere affatto confrontabili, come $n^{1+\sin n}$ e $n$.
 
     - Nell'analisi degli algoritmi, la notazione trascura i fattori costanti e i termini di ordine inferiore e conserva l'ordine di crescita del numero di passi.
+
+---
+
+**Esercizi su questo capitolo:** [:material-pencil: Notazione asintotica](../esercizi/es-09-notazione-asintotica.md)
 
 [^1]: Poiché $\pi$ è irrazionale, i valori $n \bmod \pi$, $n \in \N$, sono densi in $[0,\pi]$. Quindi, per ogni $\varepsilon \in \R_{>0}$ esistono interi $n$ arbitrariamente grandi tali che $|\sin n|<\varepsilon$. Scegliendo $\varepsilon=\frac{\sqrt{c_1}}{2}$, otteniamo $\sin^2 n < \frac{c_1}{4} < c_1$, il che contraddice $c_1 \le \sin^2 n$ per ogni $n$ sufficientemente grande.

@@ -6,7 +6,7 @@ title: "Algoritmi ricorsivi"
 
 <div class="info-capitolo" markdown>
 
-**Parte 5 · Ricorsione · Capitolo 17** · [:material-file-pdf-box: Dispensa, volume 5 (PDF)](../pdf/dispensa-5-ricorsione.pdf) · [:material-pencil: Esercizi](../esercizi/es-17-algoritmi-ricorsivi.md)
+**Parte 5 · Ricorsione · Capitolo 17** · [:material-file-pdf-box: Dispensa, volume 5 (PDF)](../pdf/dispensa-5-ricorsione.pdf) · [:material-pencil: Esercizi: Algoritmi ricorsivi](../esercizi/es-17-algoritmi-ricorsivi.md) · [:material-gesture-tap: App: Merge sort](../laboratorio/merge-sort.md)
 
 </div>
 
@@ -2963,6 +2963,10 @@ I quattro problemi del capitolo coprono le tre forme tipiche di un algoritmo ric
     - Correttezza: sempre per induzione forte sulla dimensione del sottoproblema; le parti non ricorsive (<code>Merge</code>, <code>FindMaxCrossingSubarray</code>, <code>Kadane</code>) con invarianti di ciclo.
 
     - La ricorsione dà un guadagno asintotico solo quando il lavoro del passo di combinazione, sommato su un livello, è piccolo rispetto a quello che fa un algoritmo iterativo (il Merge Sort rispetto agli algoritmi di ordinamento $\Theta(n^2)$). Per la somma e per la ricerca non dà alcun guadagno in tempo e costa memoria; per il sotto-array di somma massima il miglior algoritmo è iterativo.
+
+---
+
+**Esercizi su questo capitolo:** [:material-pencil: Algoritmi ricorsivi](../esercizi/es-17-algoritmi-ricorsivi.md)
 
 [^1]: L'esempio è tratto dal libro di testo di T. H. Cormen, C. E. Leiserson, R. L. Rivest e C. Stein, <em>Introduction to Algorithms</em>, Sezione 4.1.
 

@@ -6,7 +6,7 @@ title: "Esercizi · Introduzione a Python"
 
 <div class="info-capitolo" markdown>
 
-**Esercizi · Capitolo 7** · ogni soluzione si apre con un clic · [:material-book-open-variant: Capitolo 7](../linguaggi/07-introduzione-python.md) · [:material-file-pdf-box: Eserciziario, volume 2 (PDF)](../pdf/esercizi-2-linguaggi-di-programmazione.pdf)
+**Esercizi · Capitolo 7** · ogni soluzione si apre con un clic · [:material-book-open-variant: Capitolo 7: Introduzione a Python](../linguaggi/07-introduzione-python.md) · [:material-file-pdf-box: Eserciziario, volume 2 (PDF)](../pdf/esercizi-2-linguaggi-di-programmazione.pdf)
 
 </div>
 

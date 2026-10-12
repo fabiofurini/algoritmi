@@ -6,7 +6,7 @@ title: "Esercizi · Notazione asintotica"
 
 <div class="info-capitolo" markdown>
 
-**Esercizi · Capitolo 9** · ogni soluzione si apre con un clic · [:material-book-open-variant: Capitolo 9](../notazione-asintotica/09-notazione-asintotica.md) · [:material-file-pdf-box: Eserciziario, volume 3 (PDF)](../pdf/esercizi-3-notazione-asintotica.pdf)
+**Esercizi · Capitolo 9** · ogni soluzione si apre con un clic · [:material-book-open-variant: Capitolo 9: Notazione asintotica](../notazione-asintotica/09-notazione-asintotica.md) · [:material-file-pdf-box: Eserciziario, volume 3 (PDF)](../pdf/esercizi-3-notazione-asintotica.pdf)
 
 </div>
 

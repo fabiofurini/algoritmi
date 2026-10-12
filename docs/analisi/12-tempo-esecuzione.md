@@ -6,7 +6,7 @@ title: "Tempo di esecuzione"
 
 <div class="info-capitolo" markdown>
 
-**Parte 4 · Analisi degli algoritmi · Capitolo 12** · [:material-file-pdf-box: Dispensa, volume 4 (PDF)](../pdf/dispensa-4-analisi.pdf) · [:material-pencil: Esercizi](../esercizi/es-12-tempo-esecuzione.md)
+**Parte 4 · Analisi degli algoritmi · Capitolo 12** · [:material-file-pdf-box: Dispensa, volume 4 (PDF)](../pdf/dispensa-4-analisi.pdf) · [:material-pencil: Esercizi: Tempo di esecuzione](../esercizi/es-12-tempo-esecuzione.md)
 
 </div>
 
@@ -1225,3 +1225,7 @@ Dunque $S(n)=\Theta(|I|^2)$.
     - Se $n$ è il numero di elementi di un array (con elementi di dimensione fissata), allora $|I|=\Theta(n)$ e l'ordine di crescita non cambia: $S(n)=\Theta(n^k)$ dà $T(|I|)=\Theta(|I|^k)$.
 
     - Se $n$ è il <strong>valore</strong> del numero in input, allora $|I|=\Theta(\log_2 n)$, cioè $n=2^{\Theta(|I|)}$: un numero di passi $\Theta(\log_2 n)$ è lineare in $|I|$, mentre un numero di passi $\Theta(\sqrt{n})$ o $\Theta(n)$ è <strong>esponenziale</strong> in $|I|$.
+
+---
+
+**Esercizi su questo capitolo:** [:material-pencil: Tempo di esecuzione](../esercizi/es-12-tempo-esecuzione.md)

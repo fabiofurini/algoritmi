@@ -6,7 +6,7 @@ title: "Equazioni di ricorrenza"
 
 <div class="info-capitolo" markdown>
 
-**Parte 5 · Ricorsione · Capitolo 15** · [:material-file-pdf-box: Dispensa, volume 5 (PDF)](../pdf/dispensa-5-ricorsione.pdf) · [:material-pencil: Esercizi](../esercizi/es-15-ricorrenze.md)
+**Parte 5 · Ricorsione · Capitolo 15** · [:material-file-pdf-box: Dispensa, volume 5 (PDF)](../pdf/dispensa-5-ricorsione.pdf) · [:material-pencil: Esercizi: Equazioni di ricorrenza](../esercizi/es-15-ricorrenze.md)
 
 </div>
 
@@ -1176,3 +1176,7 @@ con $a\ge 1$, $b>1$ costanti e $n$ potenza esatta di $b$.
     - <strong>Metodo dell'albero di ricorsione</strong>: per visualizzare i costi e ottenere un'ipotesi; ideale quando i termini ricorsivi hanno <em>dimensioni diverse</em> (alberi sbilanciati, come $T(n/3)+T(2n/3)+c\,n$). Si calcolano il costo per livello, la profondità, il numero di foglie, e si somma usando la serie geometrica.
 
     - <strong>Master theorem</strong> (capitolo <em>Il Master theorem</em>): ricorrenze in <em>forma standard</em> $a\,T(n/b)+f(n)$; dà la risposta direttamente confrontando $f(n)$ con $n^{\log_b a}$. Non si applica a $T(n-1)+f(n)$ né alle suddivisioni sbilanciate.
+
+---
+
+**Esercizi su questo capitolo:** [:material-pencil: Equazioni di ricorrenza](../esercizi/es-15-ricorrenze.md)

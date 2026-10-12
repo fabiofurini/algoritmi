@@ -6,7 +6,7 @@ title: "Correttezza"
 
 <div class="info-capitolo" markdown>
 
-**Parte 4 · Analisi degli algoritmi · Capitolo 13** · [:material-file-pdf-box: Dispensa, volume 4 (PDF)](../pdf/dispensa-4-analisi.pdf) · [:material-pencil: Esercizi](../esercizi/es-13-correttezza.md)
+**Parte 4 · Analisi degli algoritmi · Capitolo 13** · [:material-file-pdf-box: Dispensa, volume 4 (PDF)](../pdf/dispensa-4-analisi.pdf) · [:material-pencil: Esercizi: Correttezza](../esercizi/es-13-correttezza.md) · [:material-gesture-tap: App: L'invariante di ciclo](../laboratorio/invariante.md)
 
 </div>
 
@@ -747,6 +747,10 @@ title: "Correttezza"
     - I cicli annidati richiedono un invariante per ciascun ciclo (Insertion Sort); un <strong>return</strong> dentro il ciclo è una seconda uscita che va dimostrata corretta (Binary Search).
 
     - Gli algoritmi ricorsivi si dimostrano corretti per induzione sulla dimensione dell'input.
+
+---
+
+**Esercizi su questo capitolo:** [:material-pencil: Correttezza](../esercizi/es-13-correttezza.md)
 
 <!-- laboratorio-interattivo: sezione generata da interattivi.py -->
 

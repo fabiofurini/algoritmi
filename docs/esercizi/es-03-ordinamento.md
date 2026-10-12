@@ -6,7 +6,7 @@ title: "Esercizi · Algoritmi di ordinamento"
 
 <div class="info-capitolo" markdown>
 
-**Esercizi · Capitolo 3** · ogni soluzione si apre con un clic · [:material-book-open-variant: Capitolo 3](../algoritmi-di-base/03-ordinamento.md) · [:material-file-pdf-box: Eserciziario, volume 1 (PDF)](../pdf/esercizi-1-algoritmi-di-base.pdf)
+**Esercizi · Capitolo 3** · ogni soluzione si apre con un clic · [:material-book-open-variant: Capitolo 3: Algoritmi di ordinamento](../algoritmi-di-base/03-ordinamento.md) · [:material-file-pdf-box: Eserciziario, volume 1 (PDF)](../pdf/esercizi-1-algoritmi-di-base.pdf)
 
 </div>
 

@@ -6,7 +6,7 @@ title: "Esercizi · Ricorsione"
 
 <div class="info-capitolo" markdown>
 
-**Esercizi · Capitolo 14** · ogni soluzione si apre con un clic · [:material-book-open-variant: Capitolo 14](../ricorsione/14-ricorsione.md) · [:material-file-pdf-box: Eserciziario, volume 5 (PDF)](../pdf/esercizi-5-ricorsione.pdf)
+**Esercizi · Capitolo 14** · ogni soluzione si apre con un clic · [:material-book-open-variant: Capitolo 14: Ricorsione](../ricorsione/14-ricorsione.md) · [:material-file-pdf-box: Eserciziario, volume 5 (PDF)](../pdf/esercizi-5-ricorsione.pdf)
 
 </div>
 

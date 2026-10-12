@@ -6,7 +6,7 @@ title: "Ricerca lineare e binaria"
 
 <div class="info-capitolo" markdown>
 
-**Parte 1 · Algoritmi di base · Capitolo 4** · [:material-file-pdf-box: Dispensa, volume 1 (PDF)](../pdf/dispensa-1-algoritmi-di-base.pdf) · [:material-pencil: Esercizi](../esercizi/es-04-ricerca.md)
+**Parte 1 · Algoritmi di base · Capitolo 4** · [:material-file-pdf-box: Dispensa, volume 1 (PDF)](../pdf/dispensa-1-algoritmi-di-base.pdf) · [:material-pencil: Esercizi: Ricerca lineare e binaria](../esercizi/es-04-ricerca.md) · [:material-gesture-tap: App: Ricerca lineare e binaria](../laboratorio/ricerca.md)
 
 </div>
 
@@ -535,6 +535,10 @@ title: "Ricerca lineare e binaria"
     - La ricerca binaria funziona solo su array ordinati in modo non decrescente; dimezza l'intervallo di ricerca $a[left..right]$ a ogni iterazione ed esegue al più $\lfloor \log_2 n \rfloor + 1$ iterazioni.
 
     - Nello pseudocodice gli indici vanno da $1$ a $n$, nei notebook Colab (Python, <code>C++</code>, Java) da $0$ a $n-1$: gli indici restituiti differiscono di $1$.
+
+---
+
+**Esercizi su questo capitolo:** [:material-pencil: Ricerca lineare e binaria](../esercizi/es-04-ricerca.md)
 
 <!-- laboratorio-interattivo: sezione generata da interattivi.py -->
 

@@ -6,7 +6,7 @@ title: "Esercizi · Dimensione dell'input"
 
 <div class="info-capitolo" markdown>
 
-**Esercizi · Capitolo 11** · ogni soluzione si apre con un clic · [:material-book-open-variant: Capitolo 11](../analisi/11-dimensione-input.md) · [:material-file-pdf-box: Eserciziario, volume 4 (PDF)](../pdf/esercizi-4-analisi.pdf)
+**Esercizi · Capitolo 11** · ogni soluzione si apre con un clic · [:material-book-open-variant: Capitolo 11: Dimensione dell'input](../analisi/11-dimensione-input.md) · [:material-file-pdf-box: Eserciziario, volume 4 (PDF)](../pdf/esercizi-4-analisi.pdf)
 
 </div>
 

@@ -6,7 +6,7 @@ title: "Il Master theorem"
 
 <div class="info-capitolo" markdown>
 
-**Parte 5 · Ricorsione · Capitolo 16** · [:material-file-pdf-box: Dispensa, volume 5 (PDF)](../pdf/dispensa-5-ricorsione.pdf) · [:material-pencil: Esercizi](../esercizi/es-16-master-theorem.md)
+**Parte 5 · Ricorsione · Capitolo 16** · [:material-file-pdf-box: Dispensa, volume 5 (PDF)](../pdf/dispensa-5-ricorsione.pdf) · [:material-pencil: Esercizi: Il Master theorem](../esercizi/es-16-master-theorem.md) · [:material-gesture-tap: App: Il Master theorem](../laboratorio/master-theorem.md)
 
 </div>
 
@@ -1185,6 +1185,10 @@ Cominciamo con tre ricorrenze, una per ciascun caso, e poi risolviamo le ricorre
     5. Nessuno dei precedenti (un <strong>vuoto</strong>, per esempio $f(n)=n^{\log_b a}/\log n$) $\longrightarrow$ il teorema non si applica: si usi l'albero di ricorsione $T(n)=\Theta(n^{\log_b a})+\sum_{j=0}^{\log_b n-1}a^jf(n/b^j)$ ([Lemma 16.3](#box-21-lemMasterTree)).
 
     Base dei logaritmi: irrilevante in $\log^k n$, essenziale in $n^{\log_b a}$.
+
+---
+
+**Esercizi su questo capitolo:** [:material-pencil: Il Master theorem](../esercizi/es-16-master-theorem.md)
 
 <!-- laboratorio-interattivo: sezione generata da interattivi.py -->
 

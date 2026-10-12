@@ -6,7 +6,7 @@ title: "Esercizi · Crescita asintotica"
 
 <div class="info-capitolo" markdown>
 
-**Esercizi · Capitolo 10** · ogni soluzione si apre con un clic · [:material-book-open-variant: Capitolo 10](../notazione-asintotica/10-crescita-asintotica.md) · [:material-file-pdf-box: Eserciziario, volume 3 (PDF)](../pdf/esercizi-3-notazione-asintotica.pdf)
+**Esercizi · Capitolo 10** · ogni soluzione si apre con un clic · [:material-book-open-variant: Capitolo 10: Crescita asintotica](../notazione-asintotica/10-crescita-asintotica.md) · [:material-file-pdf-box: Eserciziario, volume 3 (PDF)](../pdf/esercizi-3-notazione-asintotica.pdf)
 
 </div>
 

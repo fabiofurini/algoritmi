@@ -6,7 +6,7 @@ title: "Ricorsione"
 
 <div class="info-capitolo" markdown>
 
-**Parte 5 · Ricorsione · Capitolo 14** · [:material-file-pdf-box: Dispensa, volume 5 (PDF)](../pdf/dispensa-5-ricorsione.pdf) · [:material-pencil: Esercizi](../esercizi/es-14-ricorsione.md)
+**Parte 5 · Ricorsione · Capitolo 14** · [:material-file-pdf-box: Dispensa, volume 5 (PDF)](../pdf/dispensa-5-ricorsione.pdf) · [:material-pencil: Esercizi: Ricorsione](../esercizi/es-14-ricorsione.md) · [:material-gesture-tap: App: Alberi delle chiamate ricorsive](../laboratorio/alberi-ricorsione.md)
 
 </div>
 
@@ -1231,6 +1231,10 @@ Il piano del capitolo è il seguente.
     - La ricorsione può essere molto inefficiente quando gli <strong>stessi sottoproblemi</strong> vengono risolti molte volte (<code>Fib</code> ingenuo): questo motiva la <strong>Programmazione Dinamica</strong>.
 
     - Un algoritmo <strong>ricorsivo in coda</strong> (<code>RecursiveGCD</code>) può essere riscritto direttamente come un ciclo.
+
+---
+
+**Esercizi su questo capitolo:** [:material-pencil: Ricorsione](../esercizi/es-14-ricorsione.md)
 
 <!-- laboratorio-interattivo: sezione generata da interattivi.py -->
 

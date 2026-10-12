@@ -6,7 +6,7 @@ title: "Introduzione a C++"
 
 <div class="info-capitolo" markdown>
 
-**Parte 2 · Linguaggi di programmazione · Capitolo 6** · [:material-file-pdf-box: Dispensa, volume 2 (PDF)](../pdf/dispensa-2-linguaggi-di-programmazione.pdf) · [:material-pencil: Esercizi](../esercizi/es-06-introduzione-cpp.md)
+**Parte 2 · Linguaggi di programmazione · Capitolo 6** · [:material-file-pdf-box: Dispensa, volume 2 (PDF)](../pdf/dispensa-2-linguaggi-di-programmazione.pdf) · [:material-pencil: Esercizi: Introduzione a C++](../esercizi/es-06-introduzione-cpp.md)
 
 </div>
 
@@ -1759,3 +1759,7 @@ Gli operatori bit a bit offrono soluzioni brevi e veloci per compiti comuni. Neg
     - Una funzione riceve i suoi parametri per valore (una copia) o per riferimento (<code>&amp;</code>); un array è passato tramite il puntatore al suo primo elemento, insieme alla sua dimensione.
 
     - Gli operatori bit a bit agiscono sulla rappresentazione binaria dei numeri interi: <code>x &lt; &lt; k</code> moltiplica $x$ per $2^k$ e, per $x \ge 0$, <code>x &gt; &gt; k</code> calcola $\lfloor x/2^k \rfloor$.
+
+---
+
+**Esercizi su questo capitolo:** [:material-pencil: Introduzione a C++](../esercizi/es-06-introduzione-cpp.md)

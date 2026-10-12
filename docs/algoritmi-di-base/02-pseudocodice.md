@@ -6,7 +6,7 @@ title: "Pseudocodice"
 
 <div class="info-capitolo" markdown>
 
-**Parte 1 · Algoritmi di base · Capitolo 2** · [:material-file-pdf-box: Dispensa, volume 1 (PDF)](../pdf/dispensa-1-algoritmi-di-base.pdf) · [:material-pencil: Esercizi](../esercizi/es-02-pseudocodice.md)
+**Parte 1 · Algoritmi di base · Capitolo 2** · [:material-file-pdf-box: Dispensa, volume 1 (PDF)](../pdf/dispensa-1-algoritmi-di-base.pdf) · [:material-pencil: Esercizi: Pseudocodice](../esercizi/es-02-pseudocodice.md)
 
 </div>
 
@@ -1904,3 +1904,7 @@ Concludiamo con un riepilogo della notazione usata in queste note, confrontata c
     - Gli array $a[1..n]$, $b[1..m][1..n]$, … sono indicizzati da $1$ nello pseudocodice; gli insiemi memorizzano elementi distinti senza posizioni.
 
     - Un algoritmo si scrive come una <strong>funzione</strong> con il suo input (comprese le precondizioni), il suo output e un'istruzione <strong>return</strong>.
+
+---
+
+**Esercizi su questo capitolo:** [:material-pencil: Pseudocodice](../esercizi/es-02-pseudocodice.md)

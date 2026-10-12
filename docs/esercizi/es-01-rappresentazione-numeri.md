@@ -6,7 +6,7 @@ title: "Esercizi · Rappresentazione dei numeri"
 
 <div class="info-capitolo" markdown>
 
-**Esercizi · Capitolo 1** · ogni soluzione si apre con un clic · [:material-book-open-variant: Capitolo 1](../algoritmi-di-base/01-rappresentazione-numeri.md) · [:material-file-pdf-box: Eserciziario, volume 1 (PDF)](../pdf/esercizi-1-algoritmi-di-base.pdf)
+**Esercizi · Capitolo 1** · ogni soluzione si apre con un clic · [:material-book-open-variant: Capitolo 1: Rappresentazione dei numeri](../algoritmi-di-base/01-rappresentazione-numeri.md) · [:material-file-pdf-box: Eserciziario, volume 1 (PDF)](../pdf/esercizi-1-algoritmi-di-base.pdf)
 
 </div>
 

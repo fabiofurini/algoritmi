@@ -6,7 +6,7 @@ title: "Esercizi · Equazioni di ricorrenza"
 
 <div class="info-capitolo" markdown>
 
-**Esercizi · Capitolo 15** · ogni soluzione si apre con un clic · [:material-book-open-variant: Capitolo 15](../ricorsione/15-ricorrenze.md) · [:material-file-pdf-box: Eserciziario, volume 5 (PDF)](../pdf/esercizi-5-ricorsione.pdf)
+**Esercizi · Capitolo 15** · ogni soluzione si apre con un clic · [:material-book-open-variant: Capitolo 15: Equazioni di ricorrenza](../ricorsione/15-ricorrenze.md) · [:material-file-pdf-box: Eserciziario, volume 5 (PDF)](../pdf/esercizi-5-ricorsione.pdf)
 
 </div>
 

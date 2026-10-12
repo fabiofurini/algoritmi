@@ -6,7 +6,7 @@ title: "Introduzione a Java"
 
 <div class="info-capitolo" markdown>
 
-**Parte 2 · Linguaggi di programmazione · Capitolo 8** · [:material-file-pdf-box: Dispensa, volume 2 (PDF)](../pdf/dispensa-2-linguaggi-di-programmazione.pdf) · [:material-pencil: Esercizi](../esercizi/es-08-introduzione-java.md)
+**Parte 2 · Linguaggi di programmazione · Capitolo 8** · [:material-file-pdf-box: Dispensa, volume 2 (PDF)](../pdf/dispensa-2-linguaggi-di-programmazione.pdf) · [:material-pencil: Esercizi: Introduzione a Java](../esercizi/es-08-introduzione-java.md)
 
 </div>
 
@@ -1363,3 +1363,7 @@ La tabella seguente riassume le principali differenze fra i tre linguaggi di que
     - Gli array di <code>Java</code> si allocano con <code>new</code>, conoscono la loro dimensione <code>a.length</code>, sono indicizzati da $0$ a $n-1$ e sono liberati automaticamente; la classe <code>ArrayList</code> fornisce liste di dimensione variabile.
 
     - I parametri sono passati per valore; un metodo che riceve un array può modificarne gli elementi, e più risultati sono restituiti insieme in un array.
+
+---
+
+**Esercizi su questo capitolo:** [:material-pencil: Introduzione a Java](../esercizi/es-08-introduzione-java.md)

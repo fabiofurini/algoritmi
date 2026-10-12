@@ -6,7 +6,7 @@ title: "Esercizi · Algoritmi numerici"
 
 <div class="info-capitolo" markdown>
 
-**Esercizi · Capitolo 5** · ogni soluzione si apre con un clic · [:material-book-open-variant: Capitolo 5](../algoritmi-di-base/05-algoritmi-numerici.md) · [:material-file-pdf-box: Eserciziario, volume 1 (PDF)](../pdf/esercizi-1-algoritmi-di-base.pdf)
+**Esercizi · Capitolo 5** · ogni soluzione si apre con un clic · [:material-book-open-variant: Capitolo 5: Algoritmi numerici](../algoritmi-di-base/05-algoritmi-numerici.md) · [:material-file-pdf-box: Eserciziario, volume 1 (PDF)](../pdf/esercizi-1-algoritmi-di-base.pdf)
 
 </div>
 

@@ -6,7 +6,7 @@ title: "Esercizi · Algoritmi ricorsivi"
 
 <div class="info-capitolo" markdown>
 
-**Esercizi · Capitolo 17** · ogni soluzione si apre con un clic · [:material-book-open-variant: Capitolo 17](../ricorsione/17-algoritmi-ricorsivi.md) · [:material-file-pdf-box: Eserciziario, volume 5 (PDF)](../pdf/esercizi-5-ricorsione.pdf)
+**Esercizi · Capitolo 17** · ogni soluzione si apre con un clic · [:material-book-open-variant: Capitolo 17: Algoritmi ricorsivi](../ricorsione/17-algoritmi-ricorsivi.md) · [:material-file-pdf-box: Eserciziario, volume 5 (PDF)](../pdf/esercizi-5-ricorsione.pdf)
 
 </div>
 

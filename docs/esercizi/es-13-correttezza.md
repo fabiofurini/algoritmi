@@ -6,7 +6,7 @@ title: "Esercizi · Correttezza"
 
 <div class="info-capitolo" markdown>
 
-**Esercizi · Capitolo 13** · ogni soluzione si apre con un clic · [:material-book-open-variant: Capitolo 13](../analisi/13-correttezza.md) · [:material-file-pdf-box: Eserciziario, volume 4 (PDF)](../pdf/esercizi-4-analisi.pdf)
+**Esercizi · Capitolo 13** · ogni soluzione si apre con un clic · [:material-book-open-variant: Capitolo 13: Correttezza](../analisi/13-correttezza.md) · [:material-file-pdf-box: Eserciziario, volume 4 (PDF)](../pdf/esercizi-4-analisi.pdf)
 
 </div>
 

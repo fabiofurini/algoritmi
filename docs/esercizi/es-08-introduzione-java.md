@@ -6,7 +6,7 @@ title: "Esercizi · Introduzione a Java"
 
 <div class="info-capitolo" markdown>
 
-**Esercizi · Capitolo 8** · ogni soluzione si apre con un clic · [:material-book-open-variant: Capitolo 8](../linguaggi/08-introduzione-java.md) · [:material-file-pdf-box: Eserciziario, volume 2 (PDF)](../pdf/esercizi-2-linguaggi-di-programmazione.pdf)
+**Esercizi · Capitolo 8** · ogni soluzione si apre con un clic · [:material-book-open-variant: Capitolo 8: Introduzione a Java](../linguaggi/08-introduzione-java.md) · [:material-file-pdf-box: Eserciziario, volume 2 (PDF)](../pdf/esercizi-2-linguaggi-di-programmazione.pdf)
 
 </div>
 

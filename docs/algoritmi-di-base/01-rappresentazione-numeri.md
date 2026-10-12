@@ -6,7 +6,7 @@ title: "Rappresentazione dei numeri"
 
 <div class="info-capitolo" markdown>
 
-**Parte 1 · Algoritmi di base · Capitolo 1** · [:material-file-pdf-box: Dispensa, volume 1 (PDF)](../pdf/dispensa-1-algoritmi-di-base.pdf) · [:material-pencil: Esercizi](../esercizi/es-01-rappresentazione-numeri.md)
+**Parte 1 · Algoritmi di base · Capitolo 1** · [:material-file-pdf-box: Dispensa, volume 1 (PDF)](../pdf/dispensa-1-algoritmi-di-base.pdf) · [:material-pencil: Esercizi: Rappresentazione dei numeri](../esercizi/es-01-rappresentazione-numeri.md) · [:material-gesture-tap: App: Rappresentazione dei numeri](../laboratorio/rappresentazione-numeri.md)
 
 </div>
 
@@ -1480,6 +1480,10 @@ L'epsilon macchina misura la <strong>precisione relativa</strong> del formato: l
     - IEEE 754 singola precisione: $1 + 8 + 23$ bit, polarizzazione $127$; doppia precisione: $1 + 11 + 52$ bit, polarizzazione $1023$.
 
     - I bit dell'esponente determinano il campo di variazione, i bit della parte frazionaria la precisione; la maggior parte dei numeri reali (ad esempio $0.1$) è memorizzata con un errore di arrotondamento.
+
+---
+
+**Esercizi su questo capitolo:** [:material-pencil: Rappresentazione dei numeri](../esercizi/es-01-rappresentazione-numeri.md)
 
 <!-- laboratorio-interattivo: sezione generata da interattivi.py -->
 

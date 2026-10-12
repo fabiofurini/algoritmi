@@ -6,7 +6,7 @@ title: "Esercizi · Ricerca lineare e binaria"
 
 <div class="info-capitolo" markdown>
 
-**Esercizi · Capitolo 4** · ogni soluzione si apre con un clic · [:material-book-open-variant: Capitolo 4](../algoritmi-di-base/04-ricerca.md) · [:material-file-pdf-box: Eserciziario, volume 1 (PDF)](../pdf/esercizi-1-algoritmi-di-base.pdf)
+**Esercizi · Capitolo 4** · ogni soluzione si apre con un clic · [:material-book-open-variant: Capitolo 4: Ricerca lineare e binaria](../algoritmi-di-base/04-ricerca.md) · [:material-file-pdf-box: Eserciziario, volume 1 (PDF)](../pdf/esercizi-1-algoritmi-di-base.pdf)
 
 </div>
 

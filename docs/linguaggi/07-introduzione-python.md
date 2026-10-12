@@ -6,7 +6,7 @@ title: "Introduzione a Python"
 
 <div class="info-capitolo" markdown>
 
-**Parte 2 · Linguaggi di programmazione · Capitolo 7** · [:material-file-pdf-box: Dispensa, volume 2 (PDF)](../pdf/dispensa-2-linguaggi-di-programmazione.pdf) · [:material-pencil: Esercizi](../esercizi/es-07-introduzione-python.md)
+**Parte 2 · Linguaggi di programmazione · Capitolo 7** · [:material-file-pdf-box: Dispensa, volume 2 (PDF)](../pdf/dispensa-2-linguaggi-di-programmazione.pdf) · [:material-pencil: Esercizi: Introduzione a Python](../esercizi/es-07-introduzione-python.md)
 
 </div>
 
@@ -1402,3 +1402,7 @@ La tabella seguente riassume le principali differenze fra i due linguaggi incont
     - Le liste di <code>Python</code> sono indicizzate da $0$ a $n-1$, con $n$ = <code>len(a)</code>, mentre gli array dello pseudocodice sono indicizzati da $1$ a $n$; le liste crescono con <code>append</code> e non richiedono gestione della memoria.
 
     - Una funzione modifica la lista di chi chiama quando ne cambia gli elementi, ma non un numero che riceve; più risultati sono restituiti insieme come una tupla.
+
+---
+
+**Esercizi su questo capitolo:** [:material-pencil: Introduzione a Python](../esercizi/es-07-introduzione-python.md)

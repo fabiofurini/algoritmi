@@ -6,7 +6,7 @@ title: "Dimensione dell'input"
 
 <div class="info-capitolo" markdown>
 
-**Parte 4 · Analisi degli algoritmi · Capitolo 11** · [:material-file-pdf-box: Dispensa, volume 4 (PDF)](../pdf/dispensa-4-analisi.pdf) · [:material-pencil: Esercizi](../esercizi/es-11-dimensione-input.md)
+**Parte 4 · Analisi degli algoritmi · Capitolo 11** · [:material-file-pdf-box: Dispensa, volume 4 (PDF)](../pdf/dispensa-4-analisi.pdf) · [:material-pencil: Esercizi: Dimensione dell'input](../esercizi/es-11-dimensione-input.md)
 
 </div>
 
@@ -972,3 +972,7 @@ Quando un numero di passi è limitato da esponenziali con fattori costanti, i fa
     - Un array di $n$ numeri naturali: $|I| = \Omega(n)$ e $|I| = O\big(n(1+\log_2 M)\big)$, con $M$ la componente massima; il limite superiore in generale non è stretto. Se le componenti hanno un numero costante di bit, $|I| = \Theta(n)$.
 
     - Lo stesso numero di passi $S(n)$ può essere polinomiale o esponenziale in $|I|$: il valore di un numero è esponenziale nella sua dimensione dell'input, mentre il numero di componenti di un array è al più la sua dimensione dell'input.
+
+---
+
+**Esercizi su questo capitolo:** [:material-pencil: Dimensione dell'input](../esercizi/es-11-dimensione-input.md)

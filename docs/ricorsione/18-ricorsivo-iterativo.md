@@ -6,7 +6,7 @@ title: "Algoritmi ricorsivi e iterativi a confronto"
 
 <div class="info-capitolo" markdown>
 
-**Parte 5 · Ricorsione · Capitolo 18** · [:material-file-pdf-box: Dispensa, volume 5 (PDF)](../pdf/dispensa-5-ricorsione.pdf) · [:material-pencil: Esercizi](../esercizi/es-18-ricorsivo-iterativo.md)
+**Parte 5 · Ricorsione · Capitolo 18** · [:material-file-pdf-box: Dispensa, volume 5 (PDF)](../pdf/dispensa-5-ricorsione.pdf) · [:material-pencil: Esercizi: Algoritmi ricorsivi e iterativi a confronto](../esercizi/es-18-ricorsivo-iterativo.md)
 
 </div>
 
@@ -1087,3 +1087,7 @@ L'analisi asintotica prevede come cresce il numero di passi con $n$. Verifichiam
     <strong>Considerare sempre lo spazio</strong>: la pila delle chiamate usa una memoria proporzionale alla profondità della ricorsione. La ricorsione in coda può essere eliminata meccanicamente, ottenendo un ciclo con $\Theta(1)$ di memoria aggiuntiva.
 
     <strong>Considerare sempre il miglior algoritmo iterativo</strong>: un algoritmo ricorsivo può migliorare la forza bruta ed essere comunque battuto da un ciclo più astuto (l'algoritmo di Kadane per il sotto-array di somma massima).
+
+---
+
+**Esercizi su questo capitolo:** [:material-pencil: Algoritmi ricorsivi e iterativi a confronto](../esercizi/es-18-ricorsivo-iterativo.md)

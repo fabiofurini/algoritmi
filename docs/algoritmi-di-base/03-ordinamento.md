@@ -6,7 +6,7 @@ title: "Algoritmi di ordinamento"
 
 <div class="info-capitolo" markdown>
 
-**Parte 1 · Algoritmi di base · Capitolo 3** · [:material-file-pdf-box: Dispensa, volume 1 (PDF)](../pdf/dispensa-1-algoritmi-di-base.pdf) · [:material-pencil: Esercizi](../esercizi/es-03-ordinamento.md)
+**Parte 1 · Algoritmi di base · Capitolo 3** · [:material-file-pdf-box: Dispensa, volume 1 (PDF)](../pdf/dispensa-1-algoritmi-di-base.pdf) · [:material-pencil: Esercizi: Algoritmi di ordinamento](../esercizi/es-03-ordinamento.md) · [:material-gesture-tap: App: Ordinamento passo per passo](../laboratorio/ordinamento.md)
 
 </div>
 
@@ -2011,6 +2011,10 @@ Prima di studiare algoritmi specifici, fissiamo le operazioni che essi possono u
     - Insertion Sort si adatta all'input: su un array già ordinato esegue soltanto $n-1$ confronti e nessuno spostamento. È l'unico algoritmo stabile dei tre.
 
     - Exchange Sort e Selection Sort eseguono sempre $\frac{n(n-1)}{2}$ confronti, ma Selection Sort esegue al più $n-1$ scambi, contro i $\frac{n(n-1)}{2}$ scambi di Exchange Sort nel caso peggiore.
+
+---
+
+**Esercizi su questo capitolo:** [:material-pencil: Algoritmi di ordinamento](../esercizi/es-03-ordinamento.md)
 
 <!-- laboratorio-interattivo: sezione generata da interattivi.py -->
 

@@ -6,7 +6,7 @@ title: "Algoritmi numerici"
 
 <div class="info-capitolo" markdown>
 
-**Parte 1 · Algoritmi di base · Capitolo 5** · [:material-file-pdf-box: Dispensa, volume 1 (PDF)](../pdf/dispensa-1-algoritmi-di-base.pdf) · [:material-pencil: Esercizi](../esercizi/es-05-algoritmi-numerici.md)
+**Parte 1 · Algoritmi di base · Capitolo 5** · [:material-file-pdf-box: Dispensa, volume 1 (PDF)](../pdf/dispensa-1-algoritmi-di-base.pdf) · [:material-pencil: Esercizi: Algoritmi numerici](../esercizi/es-05-algoritmi-numerici.md) · [:material-gesture-tap: App: Euclide e crivello di Eratostene](../laboratorio/euclide-crivello.md)
 
 </div>
 
@@ -1625,6 +1625,10 @@ L'osservazione seguente sostituisce la coppia $(n, m)$ con una coppia di numeri 
     - L'algoritmo di Euclide ripete la sostituzione finché il secondo numero è $0$, e restituisce il primo, poiché $\gcd(n, 0) = n$.
 
     - Due numeri sono coprimi se e solo se l'algoritmo di Euclide restituisce $1$.
+
+---
+
+**Esercizi su questo capitolo:** [:material-pencil: Algoritmi numerici](../esercizi/es-05-algoritmi-numerici.md)
 
 <!-- laboratorio-interattivo: sezione generata da interattivi.py -->
 

@@ -6,7 +6,7 @@ title: "Crescita asintotica"
 
 <div class="info-capitolo" markdown>
 
-**Parte 3 · Notazione e crescita asintotica · Capitolo 10** · [:material-file-pdf-box: Dispensa, volume 3 (PDF)](../pdf/dispensa-3-notazione-asintotica.pdf) · [:material-pencil: Esercizi](../esercizi/es-10-crescita-asintotica.md)
+**Parte 3 · Notazione e crescita asintotica · Capitolo 10** · [:material-file-pdf-box: Dispensa, volume 3 (PDF)](../pdf/dispensa-3-notazione-asintotica.pdf) · [:material-pencil: Esercizi: Crescita asintotica](../esercizi/es-10-crescita-asintotica.md) · [:material-gesture-tap: App: Ordini di crescita](../laboratorio/crescita.md)
 
 </div>
 
@@ -849,6 +849,10 @@ Nelle dimostrazioni di questa sottosezione e delle seguenti calcoliamo il limite
     - Un fattore costante nell'esponente di un esponenziale, e una base diversa di un esponenziale, cambiano invece l'ordine di crescita: per esempio $2^{n/2} = o(2^n)$ e $3^n = \omega(2^n)$.
 
     - Una funzione ha un ordine di crescita sub-lineare, lineare o super-lineare se è $o(n)$, $\Theta(n)$ oppure $\omega(n)$; per esempio $\sqrt n$, $5n+3$ e $n \ln n$ sono rispettivamente sub-lineare, lineare e super-lineare.
+
+---
+
+**Esercizi su questo capitolo:** [:material-pencil: Crescita asintotica](../esercizi/es-10-crescita-asintotica.md)
 
 <!-- laboratorio-interattivo: sezione generata da interattivi.py -->
 
