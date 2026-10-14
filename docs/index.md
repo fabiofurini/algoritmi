@@ -7,20 +7,15 @@ hide:
 
 <div class="hero" markdown>
 
-![Lavori in corso: sito e materiale didattico sono ancora in costruzione](img/cantiere.svg){ width="560" }
-
-**Sito in costruzione.** Il materiale è ancora in lavorazione: le slide arriveranno più
-avanti; il laboratorio interattivo è già aperto e crescerà.
-
 # Algoritmi
 
 Materiale didattico ideato e sviluppato da **[Fabio Furini](https://fabiofurini.github.io/)**, professore
 associato al [DIAG](https://www.diag.uniroma1.it/), Sapienza Università di Roma.
 
-**Le dispense del corso, online**, in quattro parti: algoritmi di base (rappresentazione dei numeri,
+**Le dispense del corso, online**, in cinque parti: algoritmi di base (rappresentazione dei numeri,
 pseudocodice, ordinamento, ricerca, algoritmi numerici), linguaggi di programmazione (C++, Python
-e Java), crescita e notazione asintotica, analisi e ricorsione (tempo di esecuzione, correttezza,
-equazioni di ricorrenza, Master theorem), con definizioni, teoremi con le loro dimostrazioni,
+e Java), notazione e crescita asintotica, analisi degli algoritmi (tempo di esecuzione e correttezza)
+e ricorsione (equazioni di ricorrenza, Master theorem e algoritmi ricorsivi), con definizioni, teoremi con le loro dimostrazioni,
 pseudocodice, esempi eseguiti passo per passo, notebook Colab in Python, C++ e Java ed esercizi
 con le soluzioni.
 
@@ -184,3 +179,5 @@ Materiale didattico di **[Fabio Furini](https://fabiofurini.github.io/)** —
 [DIAG](https://www.diag.uniroma1.it/), Sapienza Università di Roma.
 
 *This website is also available in [English](https://fabiofurini.github.io/algorithms/).*
+
+*Ulteriori materiali didattici, incluse le slide delle lezioni, saranno disponibili a breve.*
