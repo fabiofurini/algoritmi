@@ -26,7 +26,7 @@ con le soluzioni.
 
 [Comincia dagli algoritmi di base :material-arrow-right:](algoritmi-di-base/index.md){ .md-button .md-button--primary }
 [Gli esercizi](esercizi/index.md){ .md-button }
-[Prova un grafico interattivo](laboratorio/index.md){ .md-button }
+[Esplora il laboratorio interattivo](laboratorio/index.md){ .md-button }
 [:material-download: Scarica le dispense (PDF)](materiale.md){ .md-button }
 
 </div>
