@@ -6,7 +6,7 @@ title: "Algoritmi ricorsivi"
 
 <div class="info-capitolo" markdown>
 
-**Parte 5 · Ricorsione · Capitolo 17** · [:material-file-pdf-box: Dispensa, volume 5 (PDF)](../pdf/dispensa-5-ricorsione.pdf) · [:material-pencil: Esercizi: Algoritmi ricorsivi](../esercizi/es-17-algoritmi-ricorsivi.md) · [:material-gesture-tap: App: Merge sort](../laboratorio/merge-sort.md)
+**Parte 5 · Ricorsione · Capitolo 17** · [:material-file-pdf-box: Dispensa, volume 5 (PDF)](../pdf/dispensa-5-ricorsione.pdf) · [:material-presentation: Slide 1/2](../pdf/slide-17-algoritmi-ricorsivi-1.pdf) · [:material-presentation: Slide 2/2](../pdf/slide-17-algoritmi-ricorsivi-2.pdf) · [:material-pencil: Esercizi: Algoritmi ricorsivi](../esercizi/es-17-algoritmi-ricorsivi.md) · [:material-gesture-tap: App: Merge sort](../laboratorio/merge-sort.md)
 
 </div>
 
@@ -243,7 +243,7 @@ Tre dei quattro algoritmi seguono il paradigma <strong>divide et impera</strong>
 
 - Se $n=1$, le <span style="color:#e03131">righe</span> [2](#riga-17-algoritmi-ricorsivi-line-rsum-a) e [3](#riga-17-algoritmi-ricorsivi-line-rsum-b) vengono eseguite $1$ volta ciascuna, e quindi $S(1)=2$.
 
-- If $n\ge 2$:
+- Se $n\ge 2$:
 
     - La <span style="color:#e03131">riga</span> [2](#riga-17-algoritmi-ricorsivi-line-rsum-a) viene eseguita $1$ volta
 
@@ -910,7 +910,7 @@ La correttezza del Merge Sort poggia su due fatti: <code>Merge</code> fonde corr
 
 - Se $n=1$, viene eseguita solo la <span style="color:#e03131">riga</span> [2](#riga-17-algoritmi-ricorsivi-line-msort-a): $S(1)=1$.
 
-- If $n\ge 2$:
+- Se $n\ge 2$:
 
     - La <span style="color:#e03131">riga</span> [2](#riga-17-algoritmi-ricorsivi-line-msort-a) viene eseguita $1$ volta
 
@@ -2595,7 +2595,7 @@ L'ultimo problema del capitolo mostra il divide et impera al lavoro su un proble
 
 - Se $n = 1$, vengono eseguite solo le <span style="color:#e03131">righe</span> [2](#riga-17-algoritmi-ricorsivi-line-fms-a)–[3](#riga-17-algoritmi-ricorsivi-line-fms-b): $S(1) = c_1$, una costante.
 
-- If $n \ge 2$:
+- Se $n \ge 2$:
 
     - le <span style="color:#e03131">righe</span> [2](#riga-17-algoritmi-ricorsivi-line-fms-a), [5](#riga-17-algoritmi-ricorsivi-line-fms-c) e [9](#riga-17-algoritmi-ricorsivi-line-fms-g)–[15](#riga-17-algoritmi-ricorsivi-line-fms-k) eseguono un numero costante di passi;
 
@@ -2608,8 +2608,8 @@ L'ultimo problema del capitolo mostra il divide et impera al lavoro su un proble
     $$
     S(n) =
     \begin{cases}
-    c_1 & \text{if } n = 1,\\[2mm]
-    S\big(\lceil n/2 \rceil\big) + S\big(\lfloor n/2 \rfloor\big) + \Theta(n) & \text{if } n \ge 2.
+    c_1 & \text{se } n = 1,\\[2mm]
+    S\big(\lceil n/2 \rceil\big) + S\big(\lfloor n/2 \rfloor\big) + \Theta(n) & \text{se } n \ge 2.
     \end{cases}
     $$
 

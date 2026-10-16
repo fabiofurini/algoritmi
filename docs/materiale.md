@@ -130,4 +130,6 @@ Le dispense, gli eserciziari e le slide in PDF, aggiornati a ogni pubblicazione 
 - :material-presentation: [Capitolo 14 · Ricorsione](pdf/slide-14-ricorsione.pdf)
 - :material-presentation: [Capitolo 15 · Equazioni di ricorrenza](pdf/slide-15-ricorrenze.pdf)
 - :material-presentation: [Capitolo 16 · Il Master theorem](pdf/slide-16-master-theorem.pdf)
+- :material-presentation: [Capitolo 17 · Algoritmi ricorsivi (1/2)](pdf/slide-17-algoritmi-ricorsivi-1.pdf)
+- :material-presentation: [Capitolo 17 · Algoritmi ricorsivi (2/2)](pdf/slide-17-algoritmi-ricorsivi-2.pdf)
 - :material-presentation: [Capitolo 18 · Algoritmi ricorsivi e iterativi a confronto](pdf/slide-18-ricorsivo-iterativo.pdf)
