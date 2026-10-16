@@ -6,7 +6,7 @@ title: "Algoritmi di ordinamento"
 
 <div class="info-capitolo" markdown>
 
-**Parte 1 · Algoritmi di base · Capitolo 3** · [:material-file-pdf-box: Dispensa, volume 1 (PDF)](../pdf/dispensa-1-algoritmi-di-base.pdf) · [:material-pencil: Esercizi: Algoritmi di ordinamento](../esercizi/es-03-ordinamento.md) · [:material-gesture-tap: App: Ordinamento passo per passo](../laboratorio/ordinamento.md)
+**Parte 1 · Algoritmi di base · Capitolo 3** · [:material-file-pdf-box: Dispensa, volume 1 (PDF)](../pdf/dispensa-1-algoritmi-di-base.pdf) · [:material-presentation: Slide](../pdf/slide-03-ordinamento.pdf) · [:material-pencil: Esercizi: Algoritmi di ordinamento](../esercizi/es-03-ordinamento.md) · [:material-gesture-tap: App: Ordinamento passo per passo](../laboratorio/ordinamento.md)
 
 </div>
 

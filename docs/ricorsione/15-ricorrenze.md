@@ -6,7 +6,7 @@ title: "Equazioni di ricorrenza"
 
 <div class="info-capitolo" markdown>
 
-**Parte 5 · Ricorsione · Capitolo 15** · [:material-file-pdf-box: Dispensa, volume 5 (PDF)](../pdf/dispensa-5-ricorsione.pdf) · [:material-pencil: Esercizi: Equazioni di ricorrenza](../esercizi/es-15-ricorrenze.md)
+**Parte 5 · Ricorsione · Capitolo 15** · [:material-file-pdf-box: Dispensa, volume 5 (PDF)](../pdf/dispensa-5-ricorsione.pdf) · [:material-presentation: Slide](../pdf/slide-15-ricorrenze.pdf) · [:material-pencil: Esercizi: Equazioni di ricorrenza](../esercizi/es-15-ricorrenze.md)
 
 </div>
 

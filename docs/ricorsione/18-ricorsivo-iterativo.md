@@ -6,7 +6,7 @@ title: "Algoritmi ricorsivi e iterativi a confronto"
 
 <div class="info-capitolo" markdown>
 
-**Parte 5 · Ricorsione · Capitolo 18** · [:material-file-pdf-box: Dispensa, volume 5 (PDF)](../pdf/dispensa-5-ricorsione.pdf) · [:material-pencil: Esercizi: Algoritmi ricorsivi e iterativi a confronto](../esercizi/es-18-ricorsivo-iterativo.md)
+**Parte 5 · Ricorsione · Capitolo 18** · [:material-file-pdf-box: Dispensa, volume 5 (PDF)](../pdf/dispensa-5-ricorsione.pdf) · [:material-presentation: Slide](../pdf/slide-18-ricorsivo-iterativo.pdf) · [:material-pencil: Esercizi: Algoritmi ricorsivi e iterativi a confronto](../esercizi/es-18-ricorsivo-iterativo.md)
 
 </div>
 

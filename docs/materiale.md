@@ -104,18 +104,30 @@ Le dispense, gli eserciziari e le slide in PDF, aggiornati a ogni pubblicazione 
 
 - :material-presentation: [Capitolo 1 · Rappresentazione dei numeri](pdf/slide-01-rappresentazione-numeri.pdf)
 - :material-presentation: [Capitolo 2 · Pseudocodice](pdf/slide-02-pseudocodice.pdf)
+- :material-presentation: [Capitolo 3 · Algoritmi di ordinamento](pdf/slide-03-ordinamento.pdf)
 - :material-presentation: [Capitolo 4 · Ricerca lineare e binaria](pdf/slide-04-ricerca.pdf)
 - :material-presentation: [Capitolo 5 · Algoritmi numerici](pdf/slide-05-algoritmi-numerici.pdf)
 
 ### Linguaggi di programmazione
 
 - :material-presentation: [Capitolo 6 · Introduzione a C++](pdf/slide-06-introduzione-cpp.pdf)
+- :material-presentation: [Capitolo 7 · Introduzione a Python](pdf/slide-07-introduzione-python.pdf)
+- :material-presentation: [Capitolo 8 · Introduzione a Java](pdf/slide-08-introduzione-java.pdf)
 
 ### Notazione e crescita asintotica
 
+- :material-presentation: [Capitolo 9 · Notazione asintotica](pdf/slide-09-notazione-asintotica.pdf)
 - :material-presentation: [Capitolo 10 · Crescita asintotica](pdf/slide-10-crescita-asintotica.pdf)
 
 ### Analisi degli algoritmi
 
 - :material-presentation: [Capitolo 11 · Dimensione dell'input](pdf/slide-11-dimensione-input.pdf)
 - :material-presentation: [Capitolo 12 · Tempo di esecuzione](pdf/slide-12-tempo-esecuzione.pdf)
+- :material-presentation: [Capitolo 13 · Correttezza](pdf/slide-13-correttezza.pdf)
+
+### Ricorsione
+
+- :material-presentation: [Capitolo 14 · Ricorsione](pdf/slide-14-ricorsione.pdf)
+- :material-presentation: [Capitolo 15 · Equazioni di ricorrenza](pdf/slide-15-ricorrenze.pdf)
+- :material-presentation: [Capitolo 16 · Il Master theorem](pdf/slide-16-master-theorem.pdf)
+- :material-presentation: [Capitolo 18 · Algoritmi ricorsivi e iterativi a confronto](pdf/slide-18-ricorsivo-iterativo.pdf)

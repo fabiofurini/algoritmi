@@ -6,7 +6,7 @@ title: "Notazione asintotica"
 
 <div class="info-capitolo" markdown>
 
-**Parte 3 · Notazione e crescita asintotica · Capitolo 9** · [:material-file-pdf-box: Dispensa, volume 3 (PDF)](../pdf/dispensa-3-notazione-asintotica.pdf) · [:material-pencil: Esercizi: Notazione asintotica](../esercizi/es-09-notazione-asintotica.md)
+**Parte 3 · Notazione e crescita asintotica · Capitolo 9** · [:material-file-pdf-box: Dispensa, volume 3 (PDF)](../pdf/dispensa-3-notazione-asintotica.pdf) · [:material-presentation: Slide](../pdf/slide-09-notazione-asintotica.pdf) · [:material-pencil: Esercizi: Notazione asintotica](../esercizi/es-09-notazione-asintotica.md)
 
 </div>
 

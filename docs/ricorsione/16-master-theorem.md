@@ -6,7 +6,7 @@ title: "Il Master theorem"
 
 <div class="info-capitolo" markdown>
 
-**Parte 5 · Ricorsione · Capitolo 16** · [:material-file-pdf-box: Dispensa, volume 5 (PDF)](../pdf/dispensa-5-ricorsione.pdf) · [:material-pencil: Esercizi: Il Master theorem](../esercizi/es-16-master-theorem.md) · [:material-gesture-tap: App: Il Master theorem](../laboratorio/master-theorem.md)
+**Parte 5 · Ricorsione · Capitolo 16** · [:material-file-pdf-box: Dispensa, volume 5 (PDF)](../pdf/dispensa-5-ricorsione.pdf) · [:material-presentation: Slide](../pdf/slide-16-master-theorem.pdf) · [:material-pencil: Esercizi: Il Master theorem](../esercizi/es-16-master-theorem.md) · [:material-gesture-tap: App: Il Master theorem](../laboratorio/master-theorem.md)
 
 </div>
 

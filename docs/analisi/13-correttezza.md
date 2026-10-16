@@ -6,7 +6,7 @@ title: "Correttezza"
 
 <div class="info-capitolo" markdown>
 
-**Parte 4 · Analisi degli algoritmi · Capitolo 13** · [:material-file-pdf-box: Dispensa, volume 4 (PDF)](../pdf/dispensa-4-analisi.pdf) · [:material-pencil: Esercizi: Correttezza](../esercizi/es-13-correttezza.md) · [:material-gesture-tap: App: L'invariante di ciclo](../laboratorio/invariante.md)
+**Parte 4 · Analisi degli algoritmi · Capitolo 13** · [:material-file-pdf-box: Dispensa, volume 4 (PDF)](../pdf/dispensa-4-analisi.pdf) · [:material-presentation: Slide](../pdf/slide-13-correttezza.pdf) · [:material-pencil: Esercizi: Correttezza](../esercizi/es-13-correttezza.md) · [:material-gesture-tap: App: L'invariante di ciclo](../laboratorio/invariante.md)
 
 </div>
 

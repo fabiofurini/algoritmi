@@ -6,7 +6,7 @@ title: "Ricorsione"
 
 <div class="info-capitolo" markdown>
 
-**Parte 5 · Ricorsione · Capitolo 14** · [:material-file-pdf-box: Dispensa, volume 5 (PDF)](../pdf/dispensa-5-ricorsione.pdf) · [:material-pencil: Esercizi: Ricorsione](../esercizi/es-14-ricorsione.md) · [:material-gesture-tap: App: Alberi delle chiamate ricorsive](../laboratorio/alberi-ricorsione.md)
+**Parte 5 · Ricorsione · Capitolo 14** · [:material-file-pdf-box: Dispensa, volume 5 (PDF)](../pdf/dispensa-5-ricorsione.pdf) · [:material-presentation: Slide](../pdf/slide-14-ricorsione.pdf) · [:material-pencil: Esercizi: Ricorsione](../esercizi/es-14-ricorsione.md) · [:material-gesture-tap: App: Alberi delle chiamate ricorsive](../laboratorio/alberi-ricorsione.md)
 
 </div>
 
@@ -1189,7 +1189,7 @@ Il piano del capitolo è il seguente.
 <td><span class="arithmatex">&#92;(n+1&#92;)</span></td>
 </tr>
 <tr>
-<td><code>Fib</code> (naive)</td>
+<td><code>Fib</code> (ingenuo)</td>
 <td><span class="arithmatex">&#92;(S(n) = S(n-1) + S(n-2) + 2&#92;)</span></td>
 <td><span class="arithmatex">&#92;(4F(n+1)-2 = 2^{&#92;Theta(n)}&#92;)</span></td>
 <td><span class="arithmatex">&#92;(2F(n+1)-1&#92;)</span></td>

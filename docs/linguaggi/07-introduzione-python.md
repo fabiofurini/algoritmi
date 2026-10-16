@@ -6,7 +6,7 @@ title: "Introduzione a Python"
 
 <div class="info-capitolo" markdown>
 
-**Parte 2 · Linguaggi di programmazione · Capitolo 7** · [:material-file-pdf-box: Dispensa, volume 2 (PDF)](../pdf/dispensa-2-linguaggi-di-programmazione.pdf) · [:material-pencil: Esercizi: Introduzione a Python](../esercizi/es-07-introduzione-python.md)
+**Parte 2 · Linguaggi di programmazione · Capitolo 7** · [:material-file-pdf-box: Dispensa, volume 2 (PDF)](../pdf/dispensa-2-linguaggi-di-programmazione.pdf) · [:material-presentation: Slide](../pdf/slide-07-introduzione-python.pdf) · [:material-pencil: Esercizi: Introduzione a Python](../esercizi/es-07-introduzione-python.md)
 
 </div>
 
@@ -1064,8 +1064,8 @@ Mettiamo ora insieme tutti i pezzi: una funzione, un ciclo, un'istruzione condiz
 !!! algoritmo "Algoritmo: FindMaximum"
 
     <div class="pseudocodice" markdown="0">
-    <div class="pc-io"><span class="pc-kw">Input:</span> <span>An array <span class="arithmatex">&#92;(a&#91;1..n&#93;&#92;)</span> of <span class="arithmatex">&#92;(n &#92;ge 1&#92;)</span> integer numbers</span></div>
-    <div class="pc-io"><span class="pc-kw">Output:</span> <span>The maximum value in the array <span class="arithmatex">&#92;(a&#92;)</span></span></div>
+    <div class="pc-io"><span class="pc-kw">Input:</span> <span>Un array <span class="arithmatex">&#92;(a&#91;1..n&#93;&#92;)</span> di <span class="arithmatex">&#92;(n &#92;ge 1&#92;)</span> numeri interi</span></div>
+    <div class="pc-io"><span class="pc-kw">Output:</span> <span>Il valore massimo nell'array <span class="arithmatex">&#92;(a&#92;)</span></span></div>
     <div class="pc-sep"></div>
     <div class="pc-riga pc-vuota"><span class="pc-n"></span><span class="pc-corpo"></span></div>
     <div class="pc-riga"><span class="pc-n">1</span><span class="pc-corpo"><span class="pc-t"><strong>function</strong> FindMaximum(a, n)</span></span></div>
