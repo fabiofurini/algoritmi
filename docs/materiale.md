@@ -4,7 +4,7 @@ title: Materiale scaricabile
 
 # Materiale scaricabile
 
-Le dispense e gli eserciziari in PDF, aggiornati a ogni pubblicazione del sito, con la stessa numerazione di definizioni, teoremi, esempi ed esercizi del sito. Testi e figure sono sotto licenza [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.it).
+Le dispense, gli eserciziari e le slide in PDF, aggiornati a ogni pubblicazione del sito, con la stessa numerazione di definizioni, teoremi, esempi ed esercizi del sito. Testi e figure sono sotto licenza [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.it).
 
 ## Dispense
 
@@ -97,3 +97,25 @@ Le dispense e gli eserciziari in PDF, aggiornati a ogni pubblicazione del sito, 
     [:octicons-download-24: esercizi-5-ricorsione.pdf](pdf/esercizi-5-ricorsione.pdf)
 
 </div>
+
+## Slide
+
+### Algoritmi di base
+
+- :material-presentation: [Capitolo 1 · Rappresentazione dei numeri](pdf/slide-01-rappresentazione-numeri.pdf)
+- :material-presentation: [Capitolo 2 · Pseudocodice](pdf/slide-02-pseudocodice.pdf)
+- :material-presentation: [Capitolo 4 · Ricerca lineare e binaria](pdf/slide-04-ricerca.pdf)
+- :material-presentation: [Capitolo 5 · Algoritmi numerici](pdf/slide-05-algoritmi-numerici.pdf)
+
+### Linguaggi di programmazione
+
+- :material-presentation: [Capitolo 6 · Introduzione a C++](pdf/slide-06-introduzione-cpp.pdf)
+
+### Notazione e crescita asintotica
+
+- :material-presentation: [Capitolo 10 · Crescita asintotica](pdf/slide-10-crescita-asintotica.pdf)
+
+### Analisi degli algoritmi
+
+- :material-presentation: [Capitolo 11 · Dimensione dell'input](pdf/slide-11-dimensione-input.pdf)
+- :material-presentation: [Capitolo 12 · Tempo di esecuzione](pdf/slide-12-tempo-esecuzione.pdf)

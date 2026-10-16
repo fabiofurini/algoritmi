@@ -6,7 +6,7 @@ title: "Ricerca lineare e binaria"
 
 <div class="info-capitolo" markdown>
 
-**Parte 1 · Algoritmi di base · Capitolo 4** · [:material-file-pdf-box: Dispensa, volume 1 (PDF)](../pdf/dispensa-1-algoritmi-di-base.pdf) · [:material-pencil: Esercizi: Ricerca lineare e binaria](../esercizi/es-04-ricerca.md) · [:material-gesture-tap: App: Ricerca lineare e binaria](../laboratorio/ricerca.md)
+**Parte 1 · Algoritmi di base · Capitolo 4** · [:material-file-pdf-box: Dispensa, volume 1 (PDF)](../pdf/dispensa-1-algoritmi-di-base.pdf) · [:material-presentation: Slide](../pdf/slide-04-ricerca.pdf) · [:material-pencil: Esercizi: Ricerca lineare e binaria](../esercizi/es-04-ricerca.md) · [:material-gesture-tap: App: Ricerca lineare e binaria](../laboratorio/ricerca.md)
 
 </div>
 

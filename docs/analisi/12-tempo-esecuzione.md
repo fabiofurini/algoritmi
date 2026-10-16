@@ -6,7 +6,7 @@ title: "Tempo di esecuzione"
 
 <div class="info-capitolo" markdown>
 
-**Parte 4 · Analisi degli algoritmi · Capitolo 12** · [:material-file-pdf-box: Dispensa, volume 4 (PDF)](../pdf/dispensa-4-analisi.pdf) · [:material-pencil: Esercizi: Tempo di esecuzione](../esercizi/es-12-tempo-esecuzione.md)
+**Parte 4 · Analisi degli algoritmi · Capitolo 12** · [:material-file-pdf-box: Dispensa, volume 4 (PDF)](../pdf/dispensa-4-analisi.pdf) · [:material-presentation: Slide](../pdf/slide-12-tempo-esecuzione.pdf) · [:material-pencil: Esercizi: Tempo di esecuzione](../esercizi/es-12-tempo-esecuzione.md)
 
 </div>
 

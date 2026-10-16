@@ -6,7 +6,7 @@ title: "Pseudocodice"
 
 <div class="info-capitolo" markdown>
 
-**Parte 1 · Algoritmi di base · Capitolo 2** · [:material-file-pdf-box: Dispensa, volume 1 (PDF)](../pdf/dispensa-1-algoritmi-di-base.pdf) · [:material-pencil: Esercizi: Pseudocodice](../esercizi/es-02-pseudocodice.md)
+**Parte 1 · Algoritmi di base · Capitolo 2** · [:material-file-pdf-box: Dispensa, volume 1 (PDF)](../pdf/dispensa-1-algoritmi-di-base.pdf) · [:material-presentation: Slide](../pdf/slide-02-pseudocodice.pdf) · [:material-pencil: Esercizi: Pseudocodice](../esercizi/es-02-pseudocodice.md)
 
 </div>
 
@@ -729,7 +729,7 @@ Il ciclo for è un modo compatto di scrivere un particolare ciclo while: la vari
 
     <strong>Esecuzione passo per passo:</strong>
 
-    <strong>Istanza:</strong> $n = 4$ (even numbers: $2, 4, 6, 8$)
+    <strong>Istanza:</strong> $n = 4$ (numeri pari: $2, 4, 6, 8$)
 
     <div class="tabella" markdown="0"><table>
     <tr>

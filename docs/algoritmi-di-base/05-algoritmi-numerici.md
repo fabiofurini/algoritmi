@@ -6,7 +6,7 @@ title: "Algoritmi numerici"
 
 <div class="info-capitolo" markdown>
 
-**Parte 1 · Algoritmi di base · Capitolo 5** · [:material-file-pdf-box: Dispensa, volume 1 (PDF)](../pdf/dispensa-1-algoritmi-di-base.pdf) · [:material-pencil: Esercizi: Algoritmi numerici](../esercizi/es-05-algoritmi-numerici.md) · [:material-gesture-tap: App: Euclide e crivello di Eratostene](../laboratorio/euclide-crivello.md)
+**Parte 1 · Algoritmi di base · Capitolo 5** · [:material-file-pdf-box: Dispensa, volume 1 (PDF)](../pdf/dispensa-1-algoritmi-di-base.pdf) · [:material-presentation: Slide](../pdf/slide-05-algoritmi-numerici.pdf) · [:material-pencil: Esercizi: Algoritmi numerici](../esercizi/es-05-algoritmi-numerici.md) · [:material-gesture-tap: App: Euclide e crivello di Eratostene](../laboratorio/euclide-crivello.md)
 
 </div>
 

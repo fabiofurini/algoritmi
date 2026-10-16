@@ -6,7 +6,7 @@ title: "Rappresentazione dei numeri"
 
 <div class="info-capitolo" markdown>
 
-**Parte 1 · Algoritmi di base · Capitolo 1** · [:material-file-pdf-box: Dispensa, volume 1 (PDF)](../pdf/dispensa-1-algoritmi-di-base.pdf) · [:material-pencil: Esercizi: Rappresentazione dei numeri](../esercizi/es-01-rappresentazione-numeri.md) · [:material-gesture-tap: App: Rappresentazione dei numeri](../laboratorio/rappresentazione-numeri.md)
+**Parte 1 · Algoritmi di base · Capitolo 1** · [:material-file-pdf-box: Dispensa, volume 1 (PDF)](../pdf/dispensa-1-algoritmi-di-base.pdf) · [:material-presentation: Slide](../pdf/slide-01-rappresentazione-numeri.pdf) · [:material-pencil: Esercizi: Rappresentazione dei numeri](../esercizi/es-01-rappresentazione-numeri.md) · [:material-gesture-tap: App: Rappresentazione dei numeri](../laboratorio/rappresentazione-numeri.md)
 
 </div>
 

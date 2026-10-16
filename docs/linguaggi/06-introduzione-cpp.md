@@ -6,7 +6,7 @@ title: "Introduzione a C++"
 
 <div class="info-capitolo" markdown>
 
-**Parte 2 · Linguaggi di programmazione · Capitolo 6** · [:material-file-pdf-box: Dispensa, volume 2 (PDF)](../pdf/dispensa-2-linguaggi-di-programmazione.pdf) · [:material-pencil: Esercizi: Introduzione a C++](../esercizi/es-06-introduzione-cpp.md)
+**Parte 2 · Linguaggi di programmazione · Capitolo 6** · [:material-file-pdf-box: Dispensa, volume 2 (PDF)](../pdf/dispensa-2-linguaggi-di-programmazione.pdf) · [:material-presentation: Slide](../pdf/slide-06-introduzione-cpp.pdf) · [:material-pencil: Esercizi: Introduzione a C++](../esercizi/es-06-introduzione-cpp.md)
 
 </div>
 
@@ -1114,7 +1114,7 @@ Mettiamo ora insieme tutti i pezzi: una funzione, un ciclo, un'istruzione condiz
     <div class="tabella" markdown="0"><table>
     <tr>
     <th><span class="arithmatex">&#92;(i&#92;)</span> (<code>C++</code>)</th>
-    <th><span class="arithmatex">&#92;(i+1&#92;)</span> (pseudo-code)</th>
+    <th><span class="arithmatex">&#92;(i+1&#92;)</span> (pseudocodice)</th>
     <th><code>a[i]</code></th>
     <th><code>a[i] &gt; max</code>?</th>
     <th><code>max</code></th>

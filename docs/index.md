@@ -180,4 +180,4 @@ Materiale didattico di **[Fabio Furini](https://fabiofurini.github.io/)** —
 
 *This website is also available in [English](https://fabiofurini.github.io/algorithms/).*
 
-*Ulteriori materiali didattici, incluse le slide delle lezioni, saranno disponibili a breve.*
+*Le slide delle lezioni, un PDF per capitolo, sono nella pagina [Materiale](materiale.md).*

@@ -6,7 +6,7 @@ title: "Dimensione dell'input"
 
 <div class="info-capitolo" markdown>
 
-**Parte 4 · Analisi degli algoritmi · Capitolo 11** · [:material-file-pdf-box: Dispensa, volume 4 (PDF)](../pdf/dispensa-4-analisi.pdf) · [:material-pencil: Esercizi: Dimensione dell'input](../esercizi/es-11-dimensione-input.md)
+**Parte 4 · Analisi degli algoritmi · Capitolo 11** · [:material-file-pdf-box: Dispensa, volume 4 (PDF)](../pdf/dispensa-4-analisi.pdf) · [:material-presentation: Slide](../pdf/slide-11-dimensione-input.pdf) · [:material-pencil: Esercizi: Dimensione dell'input](../esercizi/es-11-dimensione-input.md)
 
 </div>
 

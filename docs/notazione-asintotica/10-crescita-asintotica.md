@@ -6,7 +6,7 @@ title: "Crescita asintotica"
 
 <div class="info-capitolo" markdown>
 
-**Parte 3 · Notazione e crescita asintotica · Capitolo 10** · [:material-file-pdf-box: Dispensa, volume 3 (PDF)](../pdf/dispensa-3-notazione-asintotica.pdf) · [:material-pencil: Esercizi: Crescita asintotica](../esercizi/es-10-crescita-asintotica.md) · [:material-gesture-tap: App: Ordini di crescita](../laboratorio/crescita.md)
+**Parte 3 · Notazione e crescita asintotica · Capitolo 10** · [:material-file-pdf-box: Dispensa, volume 3 (PDF)](../pdf/dispensa-3-notazione-asintotica.pdf) · [:material-presentation: Slide](../pdf/slide-10-crescita-asintotica.pdf) · [:material-pencil: Esercizi: Crescita asintotica](../esercizi/es-10-crescita-asintotica.md) · [:material-gesture-tap: App: Ordini di crescita](../laboratorio/crescita.md)
 
 </div>
 
