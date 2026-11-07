@@ -133,3 +133,10 @@ Le dispense, gli eserciziari e le slide in PDF, aggiornati a ogni pubblicazione 
 - :material-presentation: [Capitolo 17 · Algoritmi ricorsivi (1/2)](pdf/slide-17-algoritmi-ricorsivi-1.pdf)
 - :material-presentation: [Capitolo 17 · Algoritmi ricorsivi (2/2)](pdf/slide-17-algoritmi-ricorsivi-2.pdf)
 - :material-presentation: [Capitolo 18 · Algoritmi ricorsivi e iterativi a confronto](pdf/slide-18-ricorsivo-iterativo.pdf)
+
+<!-- banca-domande -->
+## Banca delle domande del quiz
+
+Tutte le domande dell'autovalutazione, divise per parte e capitolo, con la risposta corretta e la spiegazione; per le domande generate, che cambiano i numeri a ogni avvio, alcuni esempi.
+
+[:material-format-list-checks: Banca delle domande](quiz/elenco_domande.html){ .md-button }
