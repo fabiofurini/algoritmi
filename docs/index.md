@@ -97,6 +97,7 @@ Il merge sort: guarda il vettore dividersi a metà e le due metà ordinate fonde
 
 </div>
 
+<!-- collana-da-non-perdere -->
 ## Da non perdere
 
 <div class="grid cards" markdown>
@@ -109,13 +110,11 @@ Il merge sort: guarda il vettore dividersi a metà e le due metà ordinate fonde
 
     [:octicons-arrow-right-24: Gli esercizi](esercizi/index.md)
 
--   :material-clipboard-check-outline: **Autovalutazione**
+-   :material-clipboard-check-outline: **Quiz di autovalutazione**
 
     ---
 
-    *Facsimile d'esame*
-
-    Un facsimile nuovo a ogni avvio: 13 domande, 33 punti, con la soluzione e il link alle dispense.
+    Un facsimile d'esame nuovo a ogni avvio: 13 domande, 33 punti, con la soluzione e il link alle dispense. In Materiale c'è anche la banca completa delle domande.
 
     [:octicons-arrow-right-24: Mettiti alla prova](autovalutazione.md)
 
@@ -123,36 +122,36 @@ Il merge sort: guarda il vettore dividersi a metà e le due metà ordinate fonde
 
     ---
 
-    Esegui gli algoritmi un passo alla volta: ordinamento, ricerca, Euclide e crivello,
-    bit dei numeri, crescita delle funzioni, alberi di ricorsione e Master theorem.
+    App che girano nel browser: muovi i parametri e guarda le idee del corso lavorare, un passo alla volta.
 
-    [:octicons-arrow-right-24: I grafici](laboratorio/index.md)
+    [:octicons-arrow-right-24: Il laboratorio](laboratorio/index.md)
 
--   :simple-googlecolab: **Notebook in Python, C++ e Java**
-
-    ---
-
-    Gli algoritmi di ogni capitolo da eseguire in Google Colab, nel linguaggio che preferisci.
-
-    [:octicons-arrow-right-24: I notebook](notebook.md)
-
--   :material-download: **Dispense ed eserciziari in PDF**
+-   :material-download: **Dispense in PDF**
 
     ---
 
-    Cinque volumi di dispense e cinque eserciziari, con la stessa numerazione del sito.
+    Dispense, eserciziari e slide in PDF, con la stessa numerazione del sito.
 
     [:octicons-arrow-right-24: Il materiale](materiale.md)
+
+-   :material-language-python: **Notebook in Colab**
+
+    ---
+
+    Il codice del corso che gira nel browser, senza installare niente.
+
+    [:octicons-arrow-right-24: I notebook](notebook.md)
 
 -   :material-format-list-numbered: **Indice completo**
 
     ---
 
-    Tutti i capitoli con le loro sezioni, in una pagina.
+    Tutti i capitoli con le loro sezioni in una pagina, e come è fatto ogni capitolo.
 
-    [:octicons-arrow-right-24: L’indice](indice.md)
+    [:octicons-arrow-right-24: L'indice](indice.md)
 
 </div>
+<!-- /collana-da-non-perdere -->
 
 ---
 
@@ -205,6 +204,8 @@ Dieci corsi con la stessa impostazione: dispense online e in PDF, esercizi con l
 
 </div>
 <!-- /collana -->
+
+---
 
 Materiale didattico di **[Fabio Furini](https://fabiofurini.github.io/)** —
 [DIAG](https://www.diag.uniroma1.it/), Sapienza Università di Roma.
