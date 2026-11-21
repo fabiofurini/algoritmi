@@ -34,9 +34,9 @@ con le soluzioni.
 <!-- collana-app -->
 ## Provalo subito
 
-Il merge sort: guarda il vettore dividersi a metà e le due metà ordinate fondersi, passo dopo passo.
+Il merge sort durante l'ultima fusione: l'albero delle chiamate, le due metà ordinate L e R e il vettore che si riempie. Premi ▶ per rivederlo dall'inizio, passo dopo passo.
 
-<div class="gi" data-grafico="merge-sort"></div>
+<div class="gi" data-grafico="merge-sort" data-vetrina="-4"></div>
 
 [:material-gesture-tap: Altre app nel laboratorio](laboratorio/index.md){ .md-button }
 <!-- /collana-app -->
