@@ -10,6 +10,24 @@ title: "Introduzione a C++"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    - Da questo modulo, [Capitolo 2 «Pseudocodice»](https://fabiofurini.github.io/algoritmi/algoritmi-di-base/02-pseudocodice/): variabili, istruzioni condizionali, cicli, array e funzioni in pseudocodice.
+
+    - Da questo modulo, [Capitolo 1 «Rappresentazione dei numeri»](https://fabiofurini.github.io/algoritmi/algoritmi-di-base/01-rappresentazione-numeri/): la rappresentazione binaria dei numeri interi, usata dagli operatori bit a bit.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - scrivere, compilare ed eseguire un programma <code>C++</code> con la funzione <code>main</code>, le variabili e l'input-output;
+
+    - tradurre istruzioni condizionali, cicli e array dallo pseudocodice al <code>C++</code>, spostando gli indici di uno;
+
+    - scrivere funzioni con parametri passati per valore e per riferimento;
+
+    - usare gli operatori bit a bit sulla rappresentazione binaria degli interi.
+
 ## Introduzione
 
 Nel capitolo «Pseudocodice» gli algoritmi sono scritti in un linguaggio pensato per le persone: è preciso, ma non viene eseguito da un calcolatore. Per eseguire un algoritmo dobbiamo tradurlo in un <strong>linguaggio di programmazione</strong>. In questo capitolo introduciamo il linguaggio di programmazione <code>C++</code>, che usiamo per implementare gli algoritmi del corso.
@@ -1744,9 +1762,9 @@ Gli operatori bit a bit offrono soluzioni brevi e veloci per compiti comuni. Neg
     cout << "Risultato: " << n << endl;  // Stampa: 13 (binario: 1101)
     ```
 
-!!! chiave ""
+## 6.11 In sintesi
 
-    <strong>Punti chiave del capitolo</strong>
+!!! chiave "In sintesi"
 
     - Un programma <code>C++</code> viene compilato (ad esempio con <code>g++</code>) e la sua esecuzione parte dalla funzione <code>main</code>; ogni istruzione termina con “<code>;</code>”.
 

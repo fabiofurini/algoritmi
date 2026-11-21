@@ -10,6 +10,24 @@ title: "Ricerca lineare e binaria"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    - Da questo modulo, [Capitolo 2 «Pseudocodice»](https://fabiofurini.github.io/algoritmi/algoritmi-di-base/02-pseudocodice/): cicli con <strong>return</strong>, array e funzioni.
+
+    - Da questo modulo, [Capitolo 3 «Algoritmi di ordinamento»](https://fabiofurini.github.io/algoritmi/algoritmi-di-base/03-ordinamento/): array ordinati in modo non decrescente, e il conteggio dei confronti di un algoritmo.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - enunciare il problema della ricerca e l'output $-1$ quando l'elemento manca;
+
+    - eseguire la ricerca lineare e contarne i confronti;
+
+    - eseguire la ricerca binaria su un array ordinato, e limitarne le iterazioni con $\lfloor \log_2 n \rfloor + 1$;
+
+    - passare dagli indici dello pseudocodice a quelli dell'implementazione in <code>C++</code>.
+
 ## 4.1 Il problema della ricerca
 
 - Cercare un valore in una collezione di dati è una delle operazioni più frequenti eseguite da un calcolatore: un nome in una rubrica, un codice in una tabella di prodotti, una parola in un dizionario.
@@ -524,9 +542,9 @@ title: "Ricerca lineare e binaria"
 
     La ricerca binaria richiede che l'array sia ordinato in modo non decrescente. Su un array ordinato di $n$ elementi esegue al più $\lfloor \log_2 n \rfloor + 1$ iterazioni, mentre la ricerca lineare può richiedere $n$ confronti. Se l'array non è ordinato, la ricerca binaria può scartare erroneamente la metà che contiene $m$, e si deve usare la ricerca lineare.
 
-!!! chiave ""
+## 4.4 In sintesi
 
-    <strong>Punti chiave del capitolo</strong>
+!!! chiave "In sintesi"
 
     - Il problema della ricerca richiede un indice $k$ tale che $a[k]=m$, oppure $-1$ se tale indice non esiste.
 

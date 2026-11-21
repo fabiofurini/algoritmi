@@ -10,6 +10,30 @@ title: "Equazioni di ricorrenza"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    - Da questo modulo, [Capitolo 14 «Ricorsione»](https://fabiofurini.github.io/algoritmi/ricorsione/14-ricorsione/): gli algoritmi ricorsivi e il conteggio dei loro passi.
+
+    - Da questo modulo, [Capitolo 9 «Notazione asintotica»](https://fabiofurini.github.io/algoritmi/notazione-asintotica/09-notazione-asintotica/): le notazioni $\Theta$, $\bigO$, $\Omega$.
+
+    - Dal modulo <em>Analisi Matematica 1</em>, il capitolo [«Sommatorie, progressioni geometriche e aritmetiche»](https://fabiofurini.github.io/analisi-matematica-1/numeri/05-sommatorie/): somme aritmetiche e geometriche.
+
+    - Dallo stesso modulo, il capitolo [«Principio di induzione»](https://fabiofurini.github.io/analisi-matematica-1/logica/02-induzione/): le dimostrazioni per induzione, usate dal metodo di sostituzione.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - scrivere la ricorrenza del numero di passi di un algoritmo ricorsivo, in forma standard quando è possibile;
+
+    - risolvere con il metodo di espansione una ricorrenza con un solo termine ricorsivo;
+
+    - dimostrare una stima ipotizzata con il metodo di sostituzione, anche con le parti intere e rafforzando l'ipotesi;
+
+    - ricavare la soluzione con il metodo dell'albero di ricorsione, anche per alberi sbilanciati;
+
+    - scegliere il metodo adatto a una ricorrenza data.
+
 ## Introduzione
 
 Nel capitolo <em>Ricorsione</em> abbiamo contato i passi di un algoritmo ricorsivo riga per riga, e abbiamo osservato che il numero di passi eseguiti da una chiamata dipende dal numero di passi eseguiti dalle sue chiamate ricorsive, che sono chiamate dello <em>stesso</em> algoritmo su un input <em>più piccolo</em>. La quantità che vogliamo calcolare è quindi definita in termini di se stessa: questa è una <strong>equazione di ricorrenza</strong>.
@@ -1165,9 +1189,9 @@ con $a\ge 1$, $b>1$ costanti e $n$ potenza esatta di $b$.
 
     Il <strong>Master theorem</strong>, studiato nel capitolo <em>Il Master theorem</em>, rende precisi questi tre comportamenti. Confronta $f(n)$ con $n^{\log_b a}$ e fornisce direttamente la soluzione di una ricorrenza in forma standard, senza disegnare l'albero di ricorsione.
 
-## 15.6 Riepilogo: quale metodo quando { #sez-sec-recSummary }
+## 15.6 In sintesi { #sez-sec-recSummary }
 
-!!! chiave ""
+!!! chiave "In sintesi"
 
     - <strong>Metodo di espansione</strong>: ricorrenze con un <em>solo</em> termine ricorsivo, per esempio $T(n-1)+f(n)$, $2T(n-1)+1$, $T(n/2)+c$, $2T(n/2)+n$. Fornisce la forma chiusa esatta quando la sommatoria che ne risulta si può calcolare (serie aritmetica o geometrica).
 

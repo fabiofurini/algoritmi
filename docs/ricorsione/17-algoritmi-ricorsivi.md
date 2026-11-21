@@ -10,6 +10,30 @@ title: "Algoritmi ricorsivi"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    - Da questo modulo, [Capitolo 14 «Ricorsione»](https://fabiofurini.github.io/algoritmi/ricorsione/14-ricorsione/): algoritmi ricorsivi, alberi delle chiamate, call stack e dimostrazioni per induzione forte.
+
+    - Da questo modulo, [Capitolo 16 «Il Master theorem»](https://fabiofurini.github.io/algoritmi/ricorsione/16-master-theorem/): il Master theorem.
+
+    - Da questo modulo, [Capitolo 13 «Correttezza»](https://fabiofurini.github.io/algoritmi/analisi/13-correttezza/): le invarianti di ciclo, usate per le parti non ricorsive.
+
+    - Da questo modulo, [Capitolo 3 «Algoritmi di ordinamento»](https://fabiofurini.github.io/algoritmi/algoritmi-di-base/03-ordinamento/): gli algoritmi di ordinamento in $\Theta(n^2)$, confrontati con Merge Sort.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - analizzare un algoritmo ricorsivo con lo schema del capitolo: albero delle chiamate, correttezza, ricorrenza, tempo di esecuzione, memoria aggiuntiva;
+
+    - calcolare la somma di un array con un algoritmo iterativo e con due ricorsivi, e confrontarne la memoria;
+
+    - eseguire Merge Sort e dimostrare che ordina in $\Theta(n \log_2 n)$ passi;
+
+    - eseguire la ricerca binaria ricorsiva e confrontarne lo spazio con quello della versione iterativa;
+
+    - risolvere il problema del sotto-array di somma massima per divide et impera, e confrontarlo con la forza bruta e con l'algoritmo di Kadane.
+
 ## Introduzione
 
 Nei capitoli «Ricorsione», «Equazioni di ricorrenza» e «Il Master theorem» abbiamo imparato come viene eseguito un algoritmo ricorsivo, come se ne descrive il numero di passi con un'equazione di ricorrenza e come si risolve tale equazione. In questo capitolo mettiamo al lavoro questi strumenti su quattro problemi classici sugli array:
@@ -2915,11 +2939,11 @@ L'ultimo problema del capitolo mostra il divide et impera al lavoro su un proble
 
     Un algoritmo ricorsivo divide et impera non è necessariamente il migliore possibile: qui, un semplice algoritmo iterativo che sfrutta la struttura del problema ($M(i)$ dipende solo da $M(i-1)$) è asintoticamente più veloce. Torneremo su questa lezione nel capitolo «Algoritmi ricorsivi contro iterativi».
 
-## 17.5 Riepilogo
+## 17.5 In sintesi
 
 I quattro problemi del capitolo coprono le tre forme tipiche di un algoritmo ricorsivo sugli array: due chiamate sulle metà con lavoro di combinazione costante (somma), due chiamate sulle metà con lavoro di combinazione lineare (Merge Sort, sotto-array di somma massima), una chiamata su una metà (ricerca binaria).
 
-!!! chiave ""
+!!! chiave "In sintesi"
 
     <div class="tabella" markdown="0"><table>
     <tr>
@@ -2959,6 +2983,10 @@ I quattro problemi del capitolo coprono le tre forme tipiche di un algoritmo ric
     <td><span class="arithmatex">&#92;(&#92;Theta(&#92;log&#95;2 n)&#92;)</span></td>
     </tr>
     </table></div>
+
+    - Merge Sort ordina in $\Theta(n\log_2 n)$ passi, contro i $\Theta(n^2)$ passi di Insertion Sort; la ricerca binaria ricorsiva fa $\Theta(\log_2 n)$ chiamate.
+
+    - Sotto-array di somma massima: forza bruta $\Theta(n^2)$, divide et impera $\Theta(n\log_2 n)$, algoritmo iterativo di Kadane $\Theta(n)$.
 
     - Correttezza: sempre per induzione forte sulla dimensione del sottoproblema; le parti non ricorsive (<code>Merge</code>, <code>FindMaxCrossingSubarray</code>, <code>Kadane</code>) con invarianti di ciclo.
 

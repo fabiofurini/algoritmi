@@ -10,6 +10,24 @@ title: "Introduzione a Python"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    - Da questo modulo, [Capitolo 2 «Pseudocodice»](https://fabiofurini.github.io/algoritmi/algoritmi-di-base/02-pseudocodice/): i costrutti dello pseudocodice.
+
+    - Da questo modulo, [Capitolo 6 «Introduzione a C++»](https://fabiofurini.github.io/algoritmi/linguaggi/06-introduzione-cpp/): gli stessi costrutti in un linguaggio compilato, confrontati sezione per sezione.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - scrivere ed eseguire un programma <code>Python</code>, con i blocchi delimitati dall'indentazione;
+
+    - usare variabili senza tipo dichiarato, le due divisioni <code>/</code> e <code>//</code>, e l'input-output;
+
+    - tradurre istruzioni condizionali, cicli e array (come liste) dallo pseudocodice a <code>Python</code>;
+
+    - scrivere funzioni che restituiscono più risultati, e confrontare <code>Python</code> con <code>C++</code>.
+
 ## Introduzione
 
 Nel capitolo «Introduzione a <code>C++</code>» abbiamo tradotto lo pseudocodice dei nostri algoritmi in un linguaggio di programmazione compilato. In questo capitolo introduciamo un secondo linguaggio di programmazione, <code>Python</code>, che è interpretato, ha una sintassi più leggera ed è molto diffuso sia nella didattica sia nel calcolo scientifico.
@@ -1387,9 +1405,9 @@ La tabella seguente riassume le principali differenze fra i due linguaggi incont
 </tr>
 </table></div>
 
-!!! chiave ""
+## 7.12 In sintesi
 
-    <strong>Punti chiave del capitolo</strong>
+!!! chiave "In sintesi"
 
     - Un programma <code>Python</code> è eseguito dall'interprete (<code>python3</code>) dalla prima riga all'ultima; le istruzioni non terminano con “<code>;</code>” e i blocchi sono delimitati da “<code>:</code>” e dall'indentazione.
 

@@ -10,6 +10,28 @@ title: "Correttezza"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    - Da questo modulo, [Capitolo 3 «Algoritmi di ordinamento»](https://fabiofurini.github.io/algoritmi/algoritmi-di-base/03-ordinamento/): Insertion Sort.
+
+    - Da questo modulo, [Capitolo 4 «Ricerca lineare e binaria»](https://fabiofurini.github.io/algoritmi/algoritmi-di-base/04-ricerca/): la ricerca binaria.
+
+    - Da questo modulo, [Capitolo 5 «Algoritmi numerici»](https://fabiofurini.github.io/algoritmi/algoritmi-di-base/05-algoritmi-numerici/): l'algoritmo di Euclide.
+
+    - Dal modulo <em>Analisi Matematica 1</em>, il capitolo [«Principio di induzione»](https://fabiofurini.github.io/analisi-matematica-1/logica/02-induzione/): le dimostrazioni per induzione, usate per gli algoritmi ricorsivi.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - definire quando un algoritmo è corretto, e spiegare perché i test da soli non lo dimostrano;
+
+    - enunciare un'invariante di ciclo e dimostrarne inizializzazione, conservazione e terminazione;
+
+    - dimostrare la correttezza di Find Maximum, Insertion Sort, Binary Search e dell'algoritmo di Euclide;
+
+    - dire come si dimostra per induzione la correttezza di un algoritmo ricorsivo.
+
 ## 13.1 Correttezza di un algoritmo
 
 - I capitoli precedenti hanno misurato quanto costa un algoritmo: la dimensione del suo input e il suo tempo di esecuzione. Prima di chiedersi quanto sia veloce un algoritmo, però, dobbiamo essere sicuri che faccia ciò che promette. Questo capitolo presenta lo strumento standard per dimostrarlo, l'<strong>invariante di ciclo</strong>, e lo applica ad algoritmi già incontrati nei capitoli «Ordinamento», «Ricerca lineare e ricerca binaria» e «Algoritmi numerici»: Find Maximum, Insertion Sort, Binary Search e l'algoritmo di Euclide.
@@ -734,9 +756,9 @@ title: "Correttezza"
 
     La correttezza degli algoritmi ricorsivi si dimostra per induzione sulla dimensione dell'input. Questa tecnica viene applicata insieme allo studio degli algoritmi ricorsivi.
 
-!!! chiave ""
+## 13.7 In sintesi
 
-    <strong>Punti chiave del capitolo</strong>
+!!! chiave "In sintesi"
 
     - Un algoritmo è corretto se, per ogni istanza di input, termina e restituisce l'output corretto; i test possono solo mostrare che un algoritmo è sbagliato.
 

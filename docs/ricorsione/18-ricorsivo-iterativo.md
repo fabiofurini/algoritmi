@@ -10,6 +10,28 @@ title: "Algoritmi ricorsivi e iterativi a confronto"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    - Da questo modulo, [Capitolo 14 «Ricorsione»](https://fabiofurini.github.io/algoritmi/ricorsione/14-ricorsione/): gli algoritmi ricorsivi per fattoriale, Fibonacci, MCD, potenza veloce e Hanoi, e il call stack.
+
+    - Da questo modulo, [Capitolo 17 «Algoritmi ricorsivi»](https://fabiofurini.github.io/algoritmi/ricorsione/17-algoritmi-ricorsivi/): Merge Sort, la ricerca binaria ricorsiva e il problema del sotto-array di somma massima.
+
+    - Da questo modulo, [Capitolo 16 «Il Master theorem»](https://fabiofurini.github.io/algoritmi/ricorsione/16-master-theorem/): il Master theorem.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - elencare i costi nascosti di una chiamata ricorsiva, e trasformare una ricorsione in un ciclo con una pila esplicita;
+
+    - spiegare perché il guadagno asintotico viene dal divide et impera e non dalla ricorsione in sé;
+
+    - riconoscere i sottoproblemi sovrapposti ed eliminarli con la memoizzazione o con un algoritmo iterativo;
+
+    - misurare la memoria della pila delle chiamate, ed eliminare la ricorsione in coda;
+
+    - decidere, con le linee guida del capitolo, quando usare la ricorsione.
+
 ## Introduzione
 
 Nei capitoli precedenti abbiamo studiato diversi algoritmi ricorsivi (capitolo «Ricorsione»: fattoriale, numeri di Fibonacci, MCD ricorsivo, potenza veloce, Torre di Hanoi; capitolo «Algoritmi ricorsivi»: somma di un array, Merge Sort, ricerca binaria ricorsiva, sotto-array di somma massima) e li abbiamo analizzati con le equazioni di ricorrenza e con il Master theorem. In questo capitolo rispondiamo a una domanda molto pratica:
@@ -1087,6 +1109,20 @@ L'analisi asintotica prevede come cresce il numero di passi con $n$. Verifichiam
     <strong>Considerare sempre lo spazio</strong>: la pila delle chiamate usa una memoria proporzionale alla profondità della ricorsione. La ricorsione in coda può essere eliminata meccanicamente, ottenendo un ciclo con $\Theta(1)$ di memoria aggiuntiva.
 
     <strong>Considerare sempre il miglior algoritmo iterativo</strong>: un algoritmo ricorsivo può migliorare la forza bruta ed essere comunque battuto da un ciclo più astuto (l'algoritmo di Kadane per il sotto-array di somma massima).
+
+## 18.9 In sintesi
+
+!!! chiave "In sintesi"
+
+    - Una ricorsione per decremento di uno svolge lo stesso lavoro di un ciclo, con un costo di chiamata e $\Theta(n)$ di memoria sulla pila.
+
+    - Il divide et impera in pochi sottoproblemi indipendenti e bilanciati può essere asintoticamente più veloce (Merge Sort, potenza veloce, Karatsuba), e la stessa scomposizione si può spesso scrivere con un ciclo.
+
+    - Con sottoproblemi sovrapposti una ricorsione ingenua può essere esponenziale (Fibonacci): la memoizzazione o un ciclo bottom-up eliminano le ripetizioni.
+
+    - La pila delle chiamate usa una memoria proporzionale alla profondità della ricorsione; la ricorsione in coda si elimina meccanicamente.
+
+    - Un algoritmo ricorsivo va sempre confrontato con il miglior algoritmo iterativo, che può essere migliore (Kadane).
 
 ---
 

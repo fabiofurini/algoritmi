@@ -10,6 +10,24 @@ title: "Algoritmi numerici"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    - Da questo modulo, [Capitolo 1 «Rappresentazione dei numeri»](https://fabiofurini.github.io/algoritmi/algoritmi-di-base/01-rappresentazione-numeri/): sistemi di numerazione posizionali e cifre di un numero in base $b$.
+
+    - Da questo modulo, [Capitolo 2 «Pseudocodice»](https://fabiofurini.github.io/algoritmi/algoritmi-di-base/02-pseudocodice/): cicli, array e funzioni.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - convertire un numero naturale dalla base dieci alla base $b$ con divisioni ripetute con resto;
+
+    - decidere se un numero è primo provando i divisori fino a $\lfloor\sqrt{n}\rfloor$, e spiegare perché basta;
+
+    - trovare tutti i primi fino a $n$ con il crivello di Eratostene;
+
+    - calcolare il massimo comun divisore con l'algoritmo di Euclide e usarlo per verificare se due numeri sono coprimi.
+
 ## Introduzione
 
 In questo capitolo studiamo quattro algoritmi classici che operano sui numeri naturali:
@@ -1625,6 +1643,18 @@ L'osservazione seguente sostituisce la coppia $(n, m)$ con una coppia di numeri 
     - L'algoritmo di Euclide ripete la sostituzione finché il secondo numero è $0$, e restituisce il primo, poiché $\gcd(n, 0) = n$.
 
     - Due numeri sono coprimi se e solo se l'algoritmo di Euclide restituisce $1$.
+
+## 5.5 In sintesi
+
+!!! chiave "In sintesi"
+
+    - I quattro algoritmi si basano sulla divisione con resto: il cambio di base produce le cifre come resti, dalla meno significativa, con $\lfloor \log_b n \rfloor + 1$ divisioni.
+
+    - I divisori di $n$ vanno a coppie $d$, $n/d$: $n \ge 2$ è primo se e solo se nessun numero di $\{2, \dots, \lfloor\sqrt{n}\rfloor\}$ lo divide.
+
+    - Il crivello non divide: segna i multipli di ogni primo $p$ a partire da $p^2$, e il suo ciclo esterno si ferma a $\lfloor\sqrt{n}\rfloor$.
+
+    - L'algoritmo di Euclide sostituisce $(n, m)$ con $(m, n \bmod m)$ finché $m = 0$; due numeri sono coprimi se e solo se restituisce $1$.
 
 ---
 

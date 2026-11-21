@@ -10,6 +10,24 @@ title: "Il Master theorem"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    - Da questo modulo, [Capitolo 15 «Equazioni di ricorrenza»](https://fabiofurini.github.io/algoritmi/ricorsione/15-ricorrenze/): le ricorrenze in forma standard e il metodo dell'albero di ricorsione.
+
+    - Da questo modulo, [Capitolo 10 «Crescita asintotica»](https://fabiofurini.github.io/algoritmi/notazione-asintotica/10-crescita-asintotica/): il confronto fra potenze, logaritmi e polilogaritmi.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - enunciare il Master theorem e spiegarne i tre casi con l'albero di ricorsione;
+
+    - applicarlo con lo schema in cinque passi, confrontando $f(n)$ con $n^{\log_b a}$ e verificando la condizione di regolarità;
+
+    - riconoscere le ricorrenze a cui non si applica: non in forma standard, lacune fra i casi, regolarità che non vale;
+
+    - seguirne la dimostrazione, prima per le potenze esatte di $b$ e poi con parti intere superiori e inferiori.
+
 ## Introduzione
 
 Nel capitolo <em>Equazioni di ricorrenza</em> abbiamo risolto ricorrenze per espansione, per sostituzione e con gli alberi di ricorsione. Ogni metodo richiede qualche calcolo, e per le ricorrenze divide et impera il calcolo è sempre lo stesso: disegnare l'albero, sommare i costi dei livelli, confrontare la radice con le foglie. Alla fine di quel capitolo abbiamo osservato tre possibili comportamenti: dominano le foglie, tutti i livelli costano uguale, oppure domina la radice.
@@ -1160,7 +1178,17 @@ Cominciamo con tre ricorrenze, una per ciascun caso, e poi risolviamo le ricorre
 
 - Il viceversa è falso: nell'[Esempio 16.17](#box-18-exMasterRegularityFails), $f(n)=\Omega(n^{p+1})$ ma la condizione di regolarità non vale.
 
-## 16.6 Riepilogo
+## 16.6 In sintesi
+
+!!! chiave "In sintesi"
+
+    - Il Master theorem risolve le ricorrenze in forma standard $T(n) = a\,T(n/b) + f(n)$, con $a \ge 1$ e $b > 1$, confrontando $f(n)$ con $n^{\log_b a}$.
+
+    - Caso 1, $f$ polinomialmente più piccola: dominano le foglie e $T(n)=\Theta(n^{\log_b a})$. Caso 2, $f(n)=\Theta(n^{\log_b a}\log^k n)$: contano tutti i livelli e $T(n)=\Theta(n^{\log_b a}\log^{k+1} n)$.
+
+    - Caso 3, $f$ polinomialmente più grande e regolare: domina la radice e $T(n)=\Theta(f(n))$.
+
+    - Il teorema non si applica fuori dalla forma standard (per esempio $T(n-1)+f(n)$), nelle lacune fra i casi e quando la regolarità non vale: allora si usa l'albero di ricorsione.
 
 !!! chiave ""
 

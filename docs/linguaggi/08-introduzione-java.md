@@ -10,6 +10,26 @@ title: "Introduzione a Java"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    - Da questo modulo, [Capitolo 2 «Pseudocodice»](https://fabiofurini.github.io/algoritmi/algoritmi-di-base/02-pseudocodice/): i costrutti dello pseudocodice.
+
+    - Da questo modulo, [Capitolo 6 «Introduzione a C++»](https://fabiofurini.github.io/algoritmi/linguaggi/06-introduzione-cpp/): la sintassi del <code>C++</code>, che <code>Java</code> condivide in gran parte.
+
+    - Da questo modulo, [Capitolo 7 «Introduzione a Python»](https://fabiofurini.github.io/algoritmi/linguaggi/07-introduzione-python/): un linguaggio interpretato, usato nel confronto alla fine del capitolo.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - scrivere un programma <code>Java</code> come una classe con il metodo <code>main</code>, compilarlo con <code>javac</code> ed eseguirlo sulla JVM;
+
+    - dichiarare variabili con il loro tipo e tradurre istruzioni condizionali e cicli dallo pseudocodice;
+
+    - usare gli array, che conoscono la loro lunghezza, e le liste di dimensione variabile <code>ArrayList</code>;
+
+    - scrivere metodi con parametri, e confrontare <code>Java</code> con <code>C++</code> e <code>Python</code>.
+
 ## Introduzione
 
 Nei capitoli «Introduzione a <code>C++</code>» e «Introduzione a <code>Python</code>» abbiamo tradotto lo pseudocodice dei nostri algoritmi in un linguaggio di programmazione compilato e in uno interpretato. In questo capitolo introduciamo un terzo linguaggio di programmazione, <code>Java</code>, che sta a metà strada: i suoi programmi sono compilati in un codice intermedio, che viene poi eseguito da una macchina virtuale. La sua sintassi è molto vicina a quella di <code>C++</code>, ma ogni programma è organizzato in <strong>classi</strong>.
@@ -1350,9 +1370,9 @@ La tabella seguente riassume le principali differenze fra i tre linguaggi di que
 </tr>
 </table></div>
 
-!!! chiave ""
+## 8.12 In sintesi
 
-    <strong>Punti chiave del capitolo</strong>
+!!! chiave "In sintesi"
 
     - Un programma <code>Java</code> è costituito da classi; è compilato in bytecode con <code>javac</code> ed eseguito dalla JVM con <code>java</code>, a partire dal metodo <code>public static void main(String[] args)</code>.
 

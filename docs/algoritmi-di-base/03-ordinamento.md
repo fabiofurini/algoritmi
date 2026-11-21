@@ -10,6 +10,22 @@ title: "Algoritmi di ordinamento"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    - Da questo modulo, [Capitolo 2 «Pseudocodice»](https://fabiofurini.github.io/algoritmi/algoritmi-di-base/02-pseudocodice/): cicli, array indicizzati da $1$, funzioni, e l'esecuzione a mano di uno pseudocodice.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - enunciare il problema dell'ordinamento e i criteri per confrontare gli algoritmi: confronti, spostamenti, memoria e stabilità;
+
+    - eseguire passo per passo Insertion Sort, Exchange Sort e Selection Sort su un piccolo array;
+
+    - contare i confronti fra chiavi e gli spostamenti dei tre algoritmi nel caso migliore e nel caso peggiore;
+
+    - dire quali dei tre algoritmi sono in-place e quali sono stabili, e scegliere fra di essi.
+
 ## Introduzione
 
 L'ordinamento è uno dei compiti più comuni dell'informatica: un elenco ordinato di nomi, di voti o di prezzi è molto più facile da consultare, da confrontare e da leggere di uno non ordinato. In questo capitolo enunciamo con precisione il problema dell'ordinamento, introduciamo i criteri con cui si confrontano gli algoritmi di ordinamento e studiamo tre algoritmi classici che lo risolvono: <strong>Insertion Sort</strong>, <strong>Exchange Sort</strong> e <strong>Selection Sort</strong>.
@@ -2004,7 +2020,11 @@ Prima di studiare algoritmi specifici, fissiamo le operazioni che essi possono u
     </tr>
     </table></div>
 
-!!! chiave ""
+## 3.6 In sintesi
+
+!!! chiave "In sintesi"
+
+    - Un algoritmo di ordinamento basato su confronti si valuta dai confronti e dagli spostamenti di chiavi (caso migliore e peggiore), dalla memoria aggiuntiva e dalla stabilità.
 
     - Insertion Sort, Exchange Sort e Selection Sort sono basati su confronti e in-place, e nel caso peggiore tutti e tre eseguono $\frac{n(n-1)}{2}$ confronti tra chiavi.
 

@@ -10,13 +10,27 @@ title: "Notazione asintotica"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    - Dal modulo <em>Analisi Matematica 1</em>, il capitolo [«Successioni e limiti di successioni»](https://fabiofurini.github.io/analisi-matematica-1/successioni/01-limiti-successioni/): successioni di numeri reali e definizione di limite; le funzioni di variabile naturale di questo capitolo sono successioni.
+
+    - Dallo stesso modulo, il capitolo [«Calcolo dei limiti delle successioni»](https://fabiofurini.github.io/analisi-matematica-1/successioni/02-calcolo-limiti/): le regole per calcolare i limiti delle successioni, usate senza rispiegarle.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - enunciare le definizioni di $\Theta$, $\bigO$ e $\Omega$ e dimostrare una stima trovando le costanti e la soglia;
+
+    - enunciare le definizioni di $o$ e $\omega$ e distinguerle da $\bigO$ e $\Omega$;
+
+    - decidere quali notazioni valgono con il criterio del limite, e usare le definizioni quando il limite non esiste;
+
+    - usare le proprietà relazionali delle notazioni, e trascurare fattori costanti e termini di ordine inferiore in un numero di passi.
+
 ## Introduzione
 
 Il numero di passi eseguiti da un algoritmo è una funzione di un numero naturale: la dimensione del suo input. Due algoritmi che risolvono lo stesso problema si confrontano guardando quanto velocemente crescono queste funzioni al crescere dell'input, trascurando i fattori costanti e i valori su poche piccole istanze. In questo capitolo diamo il linguaggio preciso con cui si esprimono questi confronti: le <strong>notazioni asintotiche</strong> $\Theta$, $\bigO$, $\Omega$, $o$ e $\omega$.
-
-!!! chiave ""
-
-    <strong>Prerequisiti.</strong> Le funzioni di variabile naturale sono le <strong>successioni</strong> del corso di <em>Analisi Matematica 1</em> ([fabiofurini.github.io/analisi-matematica-1/](https://fabiofurini.github.io/analisi-matematica-1/), versione inglese [fabiofurini.github.io/mathematical-analysis-1/](https://fabiofurini.github.io/mathematical-analysis-1/)). I loro limiti, e i teoremi usati per calcolarli, non vengono rispiegati in questo capitolo: usiamo la definizione di limite e le regole di calcolo dei limiti della parte [<em>Limiti di successioni</em>](https://fabiofurini.github.io/analisi-matematica-1/successioni/) di quel corso.
 
 Il capitolo è organizzato così.
 
@@ -1465,9 +1479,9 @@ Nei capitoli «Dimensione dell'input» e «Tempo di esecuzione» misuriamo la di
 
 - Nel capitolo «Tempo di esecuzione» l'ordine di crescita di $S(n)$ viene poi espresso in funzione della dimensione dell'input $|I|$, usando l'ordine di crescita di $|I|$ ottenuto nel capitolo «Dimensione dell'input».
 
-## Riepilogo
+## 9.6 In sintesi
 
-!!! chiave ""
+!!! chiave "In sintesi"
 
     - $f(n) = \Theta\big(g(n)\big)$, $\bigO\big(g(n)\big)$, $\Omega\big(g(n)\big)$: esistono costanti positive ($c_1$ e $c_2$, oppure $c$) e una soglia $n_1$ tali che, per ogni $n \ge n_1$, $f(n)$ sta fra $c_1 g(n)$ e $c_2 g(n)$, sotto $c\, g(n)$, sopra $c\, g(n)$. Per dimostrare queste affermazioni si determinano le costanti.
 

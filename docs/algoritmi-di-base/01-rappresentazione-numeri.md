@@ -10,6 +10,22 @@ title: "Rappresentazione dei numeri"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    - Dal modulo <em>Analisi Matematica 1</em>, il capitolo [«Radicali, potenze, logaritmi e aritmetica modulare»](https://fabiofurini.github.io/analisi-matematica-1/numeri/04-radicali-potenze-logaritmi/): potenze e logaritmi in base $2$ e in base $10$, e la parte intera $\lfloor x \rfloor$.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - scrivere un numero naturale in un sistema di numerazione posizionale in base $b$, in particolare in binario, e rileggerlo;
+
+    - calcolare l'intervallo di rappresentazione con $k$ cifre e il numero minimo di cifre necessario per un numero;
+
+    - rappresentare un numero intero in modulo e segno e in complemento a due, e riconoscere un overflow in una somma;
+
+    - convertire un numero reale nella sua rappresentazione IEEE 754 in singola precisione, e spiegare perché $0.1$ non è rappresentato esattamente.
+
 ## Introduzione
 
 Un algoritmo manipola dati e, prima di poter descrivere come funziona un algoritmo, dobbiamo stabilire come questi dati vengono scritti. Per i numeri questa domanda ha una risposta precisa: un calcolatore memorizza ogni numero come una sequenza finita di simboli, e con un dato numero di simboli si possono scrivere soltanto un numero finito di numeri. Questo semplice fatto ha conseguenze importanti: ogni rappresentazione ha un <strong>intervallo di rappresentazione</strong>, al di fuori del quale i numeri non possono essere memorizzati, e la rappresentazione dei numeri reali è, in generale, solo approssimata.
@@ -1480,6 +1496,18 @@ L'epsilon macchina misura la <strong>precisione relativa</strong> del formato: l
     - IEEE 754 singola precisione: $1 + 8 + 23$ bit, polarizzazione $127$; doppia precisione: $1 + 11 + 52$ bit, polarizzazione $1023$.
 
     - I bit dell'esponente determinano il campo di variazione, i bit della parte frazionaria la precisione; la maggior parte dei numeri reali (ad esempio $0.1$) è memorizzata con un errore di arrotondamento.
+
+## 1.4 In sintesi
+
+!!! chiave "In sintesi"
+
+    - Con $k$ cifre in base $b$ si rappresentano esattamente i numeri naturali di $[0, b^k-1]$; un numero $n \ge 1$ richiede $\lfloor \log_b n\rfloor + 1$ cifre.
+
+    - Il complemento a due con $k$ bit rappresenta gli interi di $[-2^{k-1}, 2^{k-1}-1]$ con un solo zero; un $n$ negativo si scrive come $2^k + n$.
+
+    - In complemento a due la somma è la somma modulo $2^k$; c'è overflow solo quando due operandi dello stesso segno danno un risultato di segno opposto.
+
+    - Un numero in virgola mobile si memorizza come segno, esponente e mantissa (IEEE 754): i bit dell'esponente fissano l'intervallo, quelli della mantissa la precisione, e la maggior parte dei numeri reali viene arrotondata.
 
 ---
 

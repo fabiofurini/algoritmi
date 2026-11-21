@@ -10,6 +10,28 @@ title: "Ricorsione"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    - Da questo modulo, [Capitolo 12 «Tempo di esecuzione»](https://fabiofurini.github.io/algoritmi/analisi/12-tempo-esecuzione/): il conteggio dei passi di uno pseudocodice riga per riga.
+
+    - Da questo modulo, [Capitolo 13 «Correttezza»](https://fabiofurini.github.io/algoritmi/analisi/13-correttezza/): le invarianti di ciclo, che l'induzione generalizza.
+
+    - Dal modulo <em>Analisi Matematica 1</em>, il capitolo [«Principio di induzione»](https://fabiofurini.github.io/analisi-matematica-1/logica/02-induzione/): l'induzione forte.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - definire un algoritmo ricorsivo con casi base e passi ricorsivi, e spiegare perché termina;
+
+    - disegnare l'albero delle chiamate ricorsive e il call stack, e leggerne il numero di chiamate e la memoria;
+
+    - dimostrare per induzione forte la correttezza di un algoritmo ricorsivo;
+
+    - contare con una ricorrenza i passi degli algoritmi per fattoriale, Fibonacci, MCD, potenza veloce e Hanoi;
+
+    - riconoscere la ricorsione in coda, e i sottoproblemi ripetuti dell'algoritmo ingenuo per Fibonacci.
+
 Nei capitoli precedenti ogni algoritmo era <strong>iterativo</strong>: una sequenza di istruzioni e di cicli, di cui abbiamo contato i passi riga per riga (capitolo «Tempo di esecuzione») e di cui abbiamo dimostrato la correttezza con gli invarianti di ciclo (capitolo «Correttezza»). In questo capitolo studiamo un modo diverso di progettare gli algoritmi: un algoritmo può <strong>richiamare se stesso</strong> su istanze più piccole dello stesso problema.
 
 Il piano del capitolo è il seguente.
@@ -1171,7 +1193,7 @@ Il piano del capitolo è il seguente.
 
 - Con $n = 64$ dischi (la leggenda originale) e una mossa al secondo, $2^{64} - 1$ secondi sono più di $5.8 \cdot 10^{11}$ anni.
 
-## 14.9 Riepilogo
+## 14.9 In sintesi
 
 <div class="tabella" markdown="0"><table>
 <tr>
@@ -1218,7 +1240,7 @@ Il piano del capitolo è il seguente.
 </tr>
 </table></div>
 
-!!! chiave ""
+!!! chiave "In sintesi"
 
     - Un <strong>algoritmo ricorsivo</strong> risolve direttamente i <strong>casi base</strong> e riduce ogni altra istanza a istanze <strong>strettamente più piccole</strong> dello stesso problema; questo garantisce la terminazione.
 

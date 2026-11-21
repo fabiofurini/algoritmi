@@ -10,6 +10,28 @@ title: "Crescita asintotica"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    - Da questo modulo, [Capitolo 9 «Notazione asintotica»](https://fabiofurini.github.io/algoritmi/notazione-asintotica/09-notazione-asintotica/): le cinque notazioni asintotiche e il criterio del limite.
+
+    - Dal modulo <em>Analisi Matematica 1</em>, il capitolo [«Calcolo dei limiti delle successioni»](https://fabiofurini.github.io/analisi-matematica-1/successioni/02-calcolo-limiti/): il teorema del confronto e le regole di calcolo dei limiti.
+
+    - Dallo stesso modulo, il capitolo [«Il numero di Nepero»](https://fabiofurini.github.io/analisi-matematica-1/successioni/03-nepero/): il numero $e$ e i limiti legati a esso.
+
+    - Dallo stesso modulo, il capitolo [«Gerarchie degli infiniti e criterio del rapporto»](https://fabiofurini.github.io/analisi-matematica-1/successioni/05-gerarchie-infiniti/): la gerarchia degli infiniti $\log n$, $n^\alpha$, $b^n$, $n!$, $n^n$.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - riconoscere le funzioni di variabile naturale logaritmiche, potenza, esponenziali, fattoriale e potenza della variabile stessa;
+
+    - ordinare due funzioni con la gerarchia degli ordini di crescita e il criterio del limite;
+
+    - dire quando un cambio di base, una traslazione o un cambio di scala dell'argomento cambia l'ordine di crescita;
+
+    - classificare un ordine di crescita come limitato, sub-lineare, lineare o super-lineare.
+
 ## Introduzione
 
 Il numero di passi eseguiti da un algoritmo è una funzione di un numero naturale: la dimensione del suo input. Due algoritmi che risolvono lo stesso problema si confrontano guardando quanto velocemente crescono queste funzioni al crescere dell'input, e non i loro valori su poche piccole istanze. In questo capitolo studiamo le funzioni di variabile naturale che compaiono nell'analisi degli algoritmi e ne confrontiamo gli <strong>ordini di crescita</strong> con le notazioni asintotiche $o$, $\bigO$, $\Theta$, $\Omega$ e $\omega$ introdotte nel capitolo 9 «Notazione asintotica».
@@ -21,10 +43,6 @@ Il capitolo è organizzato così.
 - Nella Sezione [10.2](#sez-gr-sec-limits) richiamiamo i quattro limiti che mettono in ordine queste famiglie (la <strong>gerarchia degli infiniti</strong>).
 
 - Nella Sezione [10.3](#sez-gr-sec-comparison) esprimiamo il confronto fra due ordini di crescita con la notazione asintotica, attraverso il criterio del limite del capitolo 9 «Notazione asintotica». Ricaviamo poi la gerarchia degli ordini di crescita, una classificazione degli ordini di crescita e le proprietà delle funzioni logaritmiche, potenza, polinomiali ed esponenziali che si usano nell'analisi degli algoritmi.
-
-!!! chiave ""
-
-    <strong>Prerequisiti.</strong> Le funzioni di variabile naturale sono le <strong>successioni</strong> del corso di <em>Analisi Matematica 1</em> ([fabiofurini.github.io/analisi-matematica-1/](https://fabiofurini.github.io/analisi-matematica-1/), versione inglese [fabiofurini.github.io/mathematical-analysis-1/](https://fabiofurini.github.io/mathematical-analysis-1/)). I loro limiti, e i teoremi usati per calcolarli, non vengono rispiegati in questo capitolo: li usiamo, e rimandiamo alla parte [<em>Limiti di successioni</em>](https://fabiofurini.github.io/analisi-matematica-1/successioni/) di quel corso, in particolare ai capitoli [<em>Calcolo dei limiti delle successioni</em>](https://fabiofurini.github.io/analisi-matematica-1/successioni/02-calcolo-limiti/) (teorema del confronto), [<em>Il numero di Nepero</em>](https://fabiofurini.github.io/analisi-matematica-1/successioni/03-nepero/) e [<em>Gerarchie degli infiniti e criterio del rapporto</em>](https://fabiofurini.github.io/analisi-matematica-1/successioni/05-gerarchie-infiniti/).
 
 ## 10.1 Famiglie di funzioni crescenti di variabile naturale { #sez-gr-sec-families }
 
@@ -834,9 +852,9 @@ Nelle dimostrazioni di questa sottosezione e delle seguenti calcoliamo il limite
 
 - Per esempio, $2^{n+10} = 1024 \cdot 2^n = \Theta(2^n)$, mentre $2^{2n} = 4^n = \omega(2^n)$: una costante sommata all'esponente è un fattore costante, un fattore costante nell'esponente cambia la base.
 
-!!! chiave ""
+## 10.4 In sintesi
 
-    <strong>Punti chiave del capitolo</strong>
+!!! chiave "In sintesi"
 
     - Le funzioni di variabile naturale usate nell'analisi degli algoritmi sono le funzioni logaritmiche ($\log_a n$), potenza ($n^\alpha$), esponenziali ($b^n$), fattoriale ($n!$) e autopotenza ($n^n$), insieme alle loro somme e ai loro prodotti.
 

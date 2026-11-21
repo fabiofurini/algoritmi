@@ -10,6 +10,26 @@ title: "Tempo di esecuzione"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    - Da questo modulo, [Capitolo 11 «Dimensione dell'input»](https://fabiofurini.github.io/algoritmi/analisi/11-dimensione-input/): la dimensione dell'input $|I|$ di numeri e array.
+
+    - Da questo modulo, [Capitolo 9 «Notazione asintotica»](https://fabiofurini.github.io/algoritmi/notazione-asintotica/09-notazione-asintotica/): le notazioni $\Theta$, $\bigO$, $\Omega$.
+
+    - Da questo modulo, [Capitolo 3 «Algoritmi di ordinamento»](https://fabiofurini.github.io/algoritmi/algoritmi-di-base/03-ordinamento/): Insertion Sort; e, dal [Capitolo 5 «Algoritmi numerici»](https://fabiofurini.github.io/algoritmi/algoritmi-di-base/05-algoritmi-numerici/), il cambio di base e il test di primalità.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - definire il tempo di esecuzione, le operazioni primitive (passi) e il caso peggiore;
+
+    - contare i passi di uno pseudocodice riga per riga, anche quando una riga si esegue un numero di volte che dipende dall'input;
+
+    - esprimere il numero di passi $S(n)$ come tempo di esecuzione $T(|I|)$ della dimensione dell'input;
+
+    - spiegare perché i $\Theta(\sqrt{n})$ passi del test di primalità sono esponenziali in $|I|$.
+
 Nel capitolo «Dimensione dell'input» abbiamo imparato a misurare la dimensione $|I|$ di un'istanza di input $I$, cioè il numero di bit necessari per rappresentarla. In questo capitolo usiamo tale misura per rispondere alla domanda centrale dell'analisi degli algoritmi: <strong>come cresce il tempo richiesto da un algoritmo quando cresce l'input?</strong>
 
 Il piano del capitolo è il seguente.
@@ -1170,7 +1190,7 @@ Dunque $S(n)=\Theta(|I|^2)$.
 
     Di conseguenza, l'ordine di crescita del tempo di esecuzione nel caso peggiore dell'algoritmo <code>PrimalityTest</code> è <strong>esponenziale</strong> nella dimensione dell'input.
 
-## 12.6 Riepilogo { #sez-sec-rt-summary }
+## 12.6 In sintesi { #sez-sec-rt-summary }
 
 - La tabella seguente raccoglie i risultati del capitolo. Per i due algoritmi su array, il tempo di esecuzione è dato sotto l'ipotesi che tutti gli elementi usino un numero costante fissato di bit.
 
@@ -1212,9 +1232,7 @@ Dunque $S(n)=\Theta(|I|^2)$.
 </tr>
 </table></div>
 
-!!! chiave ""
-
-    <strong>Punti chiave.</strong>
+!!! chiave "In sintesi"
 
     - Il tempo di esecuzione si misura in <strong>passi</strong> (operazioni elementari, ciascuna eseguita in tempo costante); contiamo un passo per ogni esecuzione di una riga di pseudocodice.
 

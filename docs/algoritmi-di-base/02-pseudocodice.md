@@ -10,6 +10,22 @@ title: "Pseudocodice"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    - Da questo modulo, [Capitolo 1 «Rappresentazione dei numeri»](https://fabiofurini.github.io/algoritmi/algoritmi-di-base/01-rappresentazione-numeri/): numeri naturali e interi in binario, e l'intervallo di rappresentazione con un numero fissato di bit.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - dichiarare variabili con $:=$, modificarle con $\leftarrow$ e valutare espressioni con le operazioni di base;
+
+    - scrivere ed eseguire a mano istruzioni condizionali e cicli, con <strong>break</strong> e <strong>continue</strong>;
+
+    - usare array a uno, due e più indici, indicizzati da $1$;
+
+    - scrivere un algoritmo come una funzione con il suo input, le precondizioni, l'output e un'istruzione <strong>return</strong>.
+
 ## Introduzione
 
 Nel capitolo precedente abbiamo visto come sono rappresentati i dati di un algoritmo, i numeri. In questo capitolo fissiamo il linguaggio usato in queste note per descrivere gli algoritmi stessi: lo <strong>pseudocodice</strong>. Lo pseudocodice è abbastanza preciso da descrivere senza ambiguità ogni passo di un algoritmo, e abbastanza semplice da poter essere letto senza conoscere alcun linguaggio di programmazione.
@@ -1893,9 +1909,9 @@ Concludiamo con un riepilogo della notazione usata in queste note, confrontata c
 
     <strong>L'importante è essere coerenti e chiari!</strong>
 
-!!! chiave ""
+## 2.9 In sintesi
 
-    <strong>Punti chiave del capitolo.</strong>
+!!! chiave "In sintesi"
 
     - Le variabili si dichiarano con $:=$ e si modificano con $\leftarrow$.
 

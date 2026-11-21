@@ -40,6 +40,7 @@ dispensa: sul sito e nel PDF trovi tutto allo stesso posto.
     - 1.1 Rappresentazione dei numeri naturali
     - 1.2 Rappresentazione dei numeri interi
     - 1.3 Rappresentazione dei numeri reali
+    - 1.4 In sintesi
 2. [Pseudocodice](algoritmi-di-base/02-pseudocodice.md)
     - 2.1 Introduzione allo pseudocodice
     - 2.2 Variabili e assegnamenti
@@ -49,21 +50,25 @@ dispensa: sul sito e nel PDF trovi tutto allo stesso posto.
     - 2.6 Funzioni
     - 2.7 Insiemi
     - 2.8 Convenzioni di stile
+    - 2.9 In sintesi
 3. [Algoritmi di ordinamento](algoritmi-di-base/03-ordinamento.md)
     - 3.1 Il problema dell'ordinamento
     - 3.2 Insertion Sort
     - 3.3 Exchange Sort
     - 3.4 Selection Sort
     - 3.5 Confronto dei tre algoritmi
+    - 3.6 In sintesi
 4. [Ricerca lineare e binaria](algoritmi-di-base/04-ricerca.md)
     - 4.1 Il problema della ricerca
     - 4.2 Ricerca lineare
     - 4.3 Ricerca binaria
+    - 4.4 In sintesi
 5. [Algoritmi numerici](algoritmi-di-base/05-algoritmi-numerici.md)
     - 5.1 Cambio di base
     - 5.2 Test di primalità
     - 5.3 Crivello di Eratostene
     - 5.4 Massimo comun divisore
+    - 5.5 In sintesi
 
 ## [Linguaggi di programmazione](linguaggi/index.md)
 
@@ -78,6 +83,7 @@ dispensa: sul sito e nel PDF trovi tutto allo stesso posto.
     - 6.8 La funzione <code>main</code> e le funzioni definite dall'utente
     - 6.9 Un algoritmo completo: il valore massimo in un array
     - 6.10 Operatori bit a bit
+    - 6.11 In sintesi
 7. [Introduzione a Python](linguaggi/07-introduzione-python.md)
     - 7.1 Caratteristiche principali del linguaggio di programmazione
     - 7.2 Variabili e tipi di dato
@@ -90,6 +96,7 @@ dispensa: sul sito e nel PDF trovi tutto allo stesso posto.
     - 7.9 Un algoritmo completo: il valore massimo in un array
     - 7.10 Operatori bit a bit
     - 7.11 <code>Python</code> e <code>C++</code> a confronto
+    - 7.12 In sintesi
 8. [Introduzione a Java](linguaggi/08-introduzione-java.md)
     - 8.1 Caratteristiche principali del linguaggio di programmazione
     - 8.2 Variabili e tipi di dato
@@ -102,6 +109,7 @@ dispensa: sul sito e nel PDF trovi tutto allo stesso posto.
     - 8.9 Un algoritmo completo: il valore massimo in un array
     - 8.10 Operatori bit a bit
     - 8.11 <code>Java</code>, <code>C++</code> e <code>Python</code> a confronto
+    - 8.12 In sintesi
 
 ## [Notazione e crescita asintotica](notazione-asintotica/index.md)
 
@@ -111,10 +119,12 @@ dispensa: sul sito e nel PDF trovi tutto allo stesso posto.
     - 9.3 Limiti e notazioni asintotiche
     - 9.4 Proprietà relazionali delle notazioni asintotiche
     - 9.5 Notazione asintotica nell'analisi degli algoritmi
+    - 9.6 In sintesi
 10. [Crescita asintotica](notazione-asintotica/10-crescita-asintotica.md)
     - 10.1 Famiglie di funzioni crescenti di variabile naturale
     - 10.2 La gerarchia degli infiniti
     - 10.3 Confronto fra ordini di crescita
+    - 10.4 In sintesi
 
 ## [Analisi degli algoritmi](analisi/index.md)
 
@@ -125,13 +135,14 @@ dispensa: sul sito e nel PDF trovi tutto allo stesso posto.
     - 11.4 Istanza di input costituita da due numeri naturali
     - 11.5 Istanza di input costituita da un array di numeri naturali
     - 11.6 Dimensione dell'input e numero di passi
+    - 11.7 In sintesi
 12. [Tempo di esecuzione](analisi/12-tempo-esecuzione.md)
     - 12.1 Tempo di esecuzione di un algoritmo
     - 12.2 Ricerca del massimo
     - 12.3 Insertion sort
     - 12.4 Cambio di base
     - 12.5 Test di primalità
-    - 12.6 Riepilogo
+    - 12.6 In sintesi
 13. [Correttezza](analisi/13-correttezza.md)
     - 13.1 Correttezza di un algoritmo
     - 13.2 Correttezza di Find Maximum
@@ -139,6 +150,7 @@ dispensa: sul sito e nel PDF trovi tutto allo stesso posto.
     - 13.4 Correttezza di Binary Search
     - 13.5 Correttezza dell'algoritmo di Euclide
     - 13.6 Correttezza degli algoritmi ricorsivi
+    - 13.7 In sintesi
 
 ## [Ricorsione](ricorsione/index.md)
 
@@ -151,27 +163,27 @@ dispensa: sul sito e nel PDF trovi tutto allo stesso posto.
     - 14.6 Massimo comun divisore
     - 14.7 Elevamento a potenza veloce
     - 14.8 Torri di Hanoi
-    - 14.9 Riepilogo
+    - 14.9 In sintesi
 15. [Equazioni di ricorrenza](ricorsione/15-ricorrenze.md)
     - 15.1 Equazioni di ricorrenza
     - 15.2 Il metodo di espansione
     - 15.3 Il metodo di sostituzione
     - 15.4 Il metodo dell'albero di ricorsione
     - 15.5 Verso il Master theorem
-    - 15.6 Riepilogo: quale metodo quando
+    - 15.6 In sintesi
 16. [Il Master theorem](ricorsione/16-master-theorem.md)
     - 16.1 Ricorrenze in forma standard
     - 16.2 Il Master theorem
     - 16.3 Applicare il Master theorem
     - 16.4 Quando il Master theorem non si applica
     - 16.5 Dimostrazione del Master theorem
-    - 16.6 Riepilogo
+    - 16.6 In sintesi
 17. [Algoritmi ricorsivi](ricorsione/17-algoritmi-ricorsivi.md)
     - 17.1 La somma degli elementi di un array
     - 17.2 Merge Sort
     - 17.3 Ricerca binaria ricorsiva
     - 17.4 Il problema del sotto-array di somma massima
-    - 17.5 Riepilogo
+    - 17.5 In sintesi
 18. [Algoritmi ricorsivi e iterativi a confronto](ricorsione/18-ricorsivo-iterativo.md)
     - 18.1 Ricorsione e iterazione
     - 18.2 Confronto in sintesi
@@ -180,3 +192,4 @@ dispensa: sul sito e nel PDF trovi tutto allo stesso posto.
     - 18.5 Spazio
     - 18.7 Esperimento
     - 18.8 Linee guida
+    - 18.9 In sintesi

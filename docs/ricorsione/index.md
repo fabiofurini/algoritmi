@@ -34,7 +34,7 @@
 
     ---
 
-    La somma degli elementi di un array · Merge Sort · Ricerca binaria ricorsiva · Il problema del sotto-array di somma massima · …
+    La somma degli elementi di un array · Merge Sort · Ricerca binaria ricorsiva · Il problema del sotto-array di somma massima
 
     [:octicons-arrow-right-24: Leggi il capitolo](17-algoritmi-ricorsivi.md) · [Esercizi](../esercizi/es-17-algoritmi-ricorsivi.md)
 

@@ -10,6 +10,26 @@ title: "Dimensione dell'input"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    - Da questo modulo, [Capitolo 1 «Rappresentazione dei numeri»](https://fabiofurini.github.io/algoritmi/algoritmi-di-base/01-rappresentazione-numeri/): il numero minimo di bit $\lfloor \log_2 n \rfloor + 1$ di un numero naturale.
+
+    - Da questo modulo, [Capitolo 9 «Notazione asintotica»](https://fabiofurini.github.io/algoritmi/notazione-asintotica/09-notazione-asintotica/): le notazioni $\Theta$, $\bigO$, $\Omega$ e il criterio del limite.
+
+    - Da questo modulo, [Capitolo 10 «Crescita asintotica»](https://fabiofurini.github.io/algoritmi/notazione-asintotica/10-crescita-asintotica/): gli ordini di crescita di logaritmi, potenze ed esponenziali.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - definire la dimensione dell'input $|I|$ come il numero di bit necessari a scrivere l'input in binario;
+
+    - calcolare l'ordine di crescita di $|I|$ per un numero naturale, per due numeri naturali e per un array;
+
+    - dare la stima superiore e la stima inferiore della dimensione di un array, e il caso di elementi di dimensione costante;
+
+    - dire se un numero di passi è polinomiale o esponenziale in $|I|$, a seconda che $n$ sia un valore o un numero di elementi.
+
 ## Introduzione
 
 Per confrontare due algoritmi che risolvono lo stesso problema contiamo quante operazioni eseguono. Questo numero cresce con l'input: ordinare un array di un milione di componenti richiede più tempo che ordinare un array di dieci componenti, e verificare se un numero di venti cifre è primo richiede più tempo che verificarlo per un numero di due cifre. Per rendere preciso questo discorso serve una misura di quanto sia <em>grande</em> un input.
@@ -961,9 +981,9 @@ Quando un numero di passi è limitato da esponenziali con fattori costanti, i fa
 
     Se invece lo stesso ciclo andasse da $1$ al <em>valore</em> di un numero $n$ dato in input, i $\Theta(n)$ passi sarebbero esponenziali nella dimensione dell'input, perché $n$ può arrivare a $2^{|I|}-1$ ([Osservazione 11.12](#box-18-obsValueEntries)).
 
-!!! chiave ""
+## 11.7 In sintesi
 
-    <strong>Punti chiave del capitolo</strong>
+!!! chiave "In sintesi"
 
     - La dimensione dell'input $|I|$ è il numero di bit necessari per scrivere in binario l'istanza di input.
 
