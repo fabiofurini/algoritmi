@@ -16,7 +16,7 @@ Il numero di passi eseguiti da un algoritmo è una funzione di un numero natural
 
 !!! chiave ""
 
-    <strong>Prerequisiti.</strong> Le funzioni di variabile naturale sono le <strong>successioni</strong> del corso di <em>Analisi Matematica 1</em> ([fabiofurini.github.io/analisi-matematica-1/](https://fabiofurini.github.io/analisi-matematica-1/), versione inglese [fabiofurini.github.io/mathematical-analysis-1/](https://fabiofurini.github.io/mathematical-analysis-1/)). I loro limiti, e i teoremi usati per calcolarli, non vengono rispiegati in questo capitolo: usiamo la definizione di limite e le regole di calcolo dei limiti della parte <em>Limiti di successioni</em> di quel corso.
+    <strong>Prerequisiti.</strong> Le funzioni di variabile naturale sono le <strong>successioni</strong> del corso di <em>Analisi Matematica 1</em> ([fabiofurini.github.io/analisi-matematica-1/](https://fabiofurini.github.io/analisi-matematica-1/), versione inglese [fabiofurini.github.io/mathematical-analysis-1/](https://fabiofurini.github.io/mathematical-analysis-1/)). I loro limiti, e i teoremi usati per calcolarli, non vengono rispiegati in questo capitolo: usiamo la definizione di limite e le regole di calcolo dei limiti della parte [<em>Limiti di successioni</em>](https://fabiofurini.github.io/analisi-matematica-1/successioni/) di quel corso.
 
 Il capitolo è organizzato così.
 

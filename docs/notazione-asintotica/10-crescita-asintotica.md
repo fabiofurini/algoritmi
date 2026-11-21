@@ -24,7 +24,7 @@ Il capitolo è organizzato così.
 
 !!! chiave ""
 
-    <strong>Prerequisiti.</strong> Le funzioni di variabile naturale sono le <strong>successioni</strong> del corso di <em>Analisi Matematica 1</em> ([fabiofurini.github.io/analisi-matematica-1/](https://fabiofurini.github.io/analisi-matematica-1/), versione inglese [fabiofurini.github.io/mathematical-analysis-1/](https://fabiofurini.github.io/mathematical-analysis-1/)). I loro limiti, e i teoremi usati per calcolarli, non vengono rispiegati in questo capitolo: li usiamo, e rimandiamo alla parte <em>Limiti di successioni</em> di quel corso, in particolare ai capitoli <em>Calcolo dei limiti delle successioni</em> (teorema del confronto), <em>Il numero di Nepero</em> e <em>Gerarchie degli infiniti e criterio del rapporto</em>.
+    <strong>Prerequisiti.</strong> Le funzioni di variabile naturale sono le <strong>successioni</strong> del corso di <em>Analisi Matematica 1</em> ([fabiofurini.github.io/analisi-matematica-1/](https://fabiofurini.github.io/analisi-matematica-1/), versione inglese [fabiofurini.github.io/mathematical-analysis-1/](https://fabiofurini.github.io/mathematical-analysis-1/)). I loro limiti, e i teoremi usati per calcolarli, non vengono rispiegati in questo capitolo: li usiamo, e rimandiamo alla parte [<em>Limiti di successioni</em>](https://fabiofurini.github.io/analisi-matematica-1/successioni/) di quel corso, in particolare ai capitoli [<em>Calcolo dei limiti delle successioni</em>](https://fabiofurini.github.io/analisi-matematica-1/successioni/02-calcolo-limiti/) (teorema del confronto), [<em>Il numero di Nepero</em>](https://fabiofurini.github.io/analisi-matematica-1/successioni/03-nepero/) e [<em>Gerarchie degli infiniti e criterio del rapporto</em>](https://fabiofurini.github.io/analisi-matematica-1/successioni/05-gerarchie-infiniti/).
 
 ## 10.1 Famiglie di funzioni crescenti di variabile naturale { #sez-gr-sec-families }
 
@@ -185,7 +185,7 @@ Una funzione di variabile naturale è definita su un insieme di numeri naturali 
 
 ## 10.2 La gerarchia degli infiniti { #sez-gr-sec-limits }
 
-Le cinque famiglie della Sezione [10.1](#sez-gr-sec-families) divergono tutte a $\ip$. Per decidere quale diverge più velocemente, calcoliamo il limite del rapporto di due di esse. I limiti di questa sezione sono la <em>gerarchia degli infiniti</em> per le successioni del corso di <em>Analisi Matematica 1</em> (capitolo <em>Gerarchie degli infiniti e criterio del rapporto</em>), dove sono dimostrati; qui li richiamiamo, insieme all'idea delle dimostrazioni, ed estendiamo il primo alle potenze dei logaritmi.
+Le cinque famiglie della Sezione [10.1](#sez-gr-sec-families) divergono tutte a $\ip$. Per decidere quale diverge più velocemente, calcoliamo il limite del rapporto di due di esse. I limiti di questa sezione sono la <em>gerarchia degli infiniti</em> per le successioni del corso di <em>Analisi Matematica 1</em> (capitolo [<em>Gerarchie degli infiniti e criterio del rapporto</em>](https://fabiofurini.github.io/analisi-matematica-1/successioni/05-gerarchie-infiniti/)), dove sono dimostrati; qui li richiamiamo, insieme all'idea delle dimostrazioni, ed estendiamo il primo alle potenze dei logaritmi.
 
 - Dati $a \in \R_{>1}$ e $\beta \in \R_{>0}$, la funzione di variabile naturale asintoticamente crescente
 
