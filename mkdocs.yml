@@ -174,7 +174,7 @@ nav:
       - notazione-asintotica/index.md
       - "9. Notazione asintotica": notazione-asintotica/09-notazione-asintotica.md
       - "10. Crescita asintotica": notazione-asintotica/10-crescita-asintotica.md
-  - Analisi:
+  - Tempo e correttezza:
       - analisi/index.md
       - "11. Dimensione dell'input": analisi/11-dimensione-input.md
       - "12. Tempo di esecuzione": analisi/12-tempo-esecuzione.md
