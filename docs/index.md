@@ -21,9 +21,6 @@ pseudocodice, ordinamento, ricerca, algoritmi numerici), i linguaggi di programm
 Java, la crescita delle funzioni e la notazione asintotica, l'analisi degli algoritmi e la ricorsione
 (tempo di esecuzione, correttezza, equazioni di ricorrenza, Master theorem).
 
-Ogni capitolo ha definizioni, teoremi con dimostrazione, pseudocodice, esempi eseguiti passo per passo,
-notebook Colab in Python, C++ e Java ed esercizi con le soluzioni.
-
 [Comincia :material-arrow-right:](algoritmi-di-base/index.md){ .md-button .md-button--primary }
 [:material-pencil: Esercizi](esercizi/index.md){ .md-button }
 [:material-gesture-tap: Laboratorio](laboratorio/index.md){ .md-button }
