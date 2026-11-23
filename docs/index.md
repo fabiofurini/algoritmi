@@ -16,12 +16,13 @@ hide:
 Materiale didattico ideato e sviluppato da **[Fabio Furini](https://fabiofurini.github.io/)**, professore
 associato al [DIAG](https://www.diag.uniroma1.it/), Sapienza Università di Roma.
 
-**Le dispense del corso, online**, in quattro parti: algoritmi di base (rappresentazione dei numeri,
-pseudocodice, ordinamento, ricerca, algoritmi numerici), linguaggi di programmazione (C++, Python
-e Java), crescita e notazione asintotica, analisi e ricorsione (tempo di esecuzione, correttezza,
-equazioni di ricorrenza, Master theorem), con definizioni, teoremi con le loro dimostrazioni,
-pseudocodice, esempi eseguiti passo per passo, notebook Colab in Python, C++ e Java ed esercizi
-con le soluzioni.
+Il corso presenta gli algoritmi in quattro parti: gli algoritmi di base (rappresentazione dei numeri,
+pseudocodice, ordinamento, ricerca, algoritmi numerici), i linguaggi di programmazione C++, Python e
+Java, la crescita delle funzioni e la notazione asintotica, l'analisi degli algoritmi e la ricorsione
+(tempo di esecuzione, correttezza, equazioni di ricorrenza, Master theorem).
+
+Ogni capitolo ha definizioni, teoremi con dimostrazione, pseudocodice, esempi eseguiti passo per passo,
+notebook Colab in Python, C++ e Java ed esercizi con le soluzioni.
 
 [Comincia :material-arrow-right:](algoritmi-di-base/index.md){ .md-button .md-button--primary }
 [:material-pencil: Esercizi](esercizi/index.md){ .md-button }
