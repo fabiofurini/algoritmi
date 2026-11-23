@@ -135,7 +135,7 @@ Le dispense, gli eserciziari e le slide in PDF, aggiornati a ogni pubblicazione 
 - :material-presentation: [Capitolo 18 · Algoritmi ricorsivi e iterativi a confronto](pdf/slide-18-ricorsivo-iterativo.pdf)
 
 <!-- banca-domande -->
-## Banca delle domande del quiz
+## Banca delle domande
 
 Tutte le domande dell'autovalutazione, divise per parte e capitolo, con la risposta corretta e la spiegazione; per le domande generate, che cambiano i numeri a ogni avvio, alcuni esempi.
 
