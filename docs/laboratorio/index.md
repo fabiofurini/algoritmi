@@ -5,7 +5,7 @@ hide:
 
 # Laboratorio interattivo
 
-Qui gli algoritmi si vedono lavorare. Scegli un'app: si apre a tutta pagina, con **cursori** e pulsanti.
+Ogni app esegue un algoritmo del corso. Scegli un'app: si apre a tutta pagina, con **cursori** e pulsanti.
 Trascina i cursori, oppure premi ▶ per eseguire un passo alla volta e «Esegui» per l'animazione. La notazione
 è quella delle dispense: array \(a[1..n]\) con gli indici da 1, gli stessi nomi di algoritmi e variabili.
 
