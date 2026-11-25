@@ -49,8 +49,6 @@ Il merge sort durante l'ultima fusione: l'albero delle chiamate, le due metà or
 
     La rappresentazione dei numeri e lo pseudocodice, il linguaggio in cui sono scritti tutti gli algoritmi del corso; i primi algoritmi: ordinamento (insertion, exchange e selection sort), ricerca lineare e binaria, algoritmi numerici (cambio di base, test di primalità, crivello di Eratostene, massimo comune divisore). Ogni algoritmo con lo pseudocodice ed esempi eseguiti passo per passo.
 
-    1\. Rappresentazione dei numeri · 2\. Pseudocodice · 3\. Algoritmi di ordinamento · 4\. Ricerca lineare e binaria · 5\. Algoritmi numerici
-
     [:octicons-arrow-right-24: I capitoli](algoritmi-di-base/index.md)
 
 -   :material-console: **2 · Linguaggi di programmazione**
@@ -58,8 +56,6 @@ Il merge sort durante l'ultima fusione: l'albero delle chiamate, le due metà or
     ---
 
     Dallo pseudocodice ai programmi: tre linguaggi di programmazione, C++ (compilato), Python (interpretato) e Java (compilato in bytecode ed eseguito da una macchina virtuale). Per ciascuno: variabili e tipi di dato, input e output, operatori, istruzioni condizionali, cicli, array e liste, funzioni, operatori bit a bit e un algoritmo completo, con il confronto fra i tre linguaggi.
-
-    6\. Introduzione a C++ · 7\. Introduzione a Python · 8\. Introduzione a Java
 
     [:octicons-arrow-right-24: I capitoli](linguaggi/index.md)
 
@@ -69,8 +65,6 @@ Il merge sort durante l'ultima fusione: l'albero delle chiamate, le due metà or
 
     Come si confrontano le funzioni di variabile naturale che contano i passi di un algoritmo: le notazioni asintotiche Theta, O grande, Omega, o piccolo e omega, le loro proprietà e il criterio del limite; poi le famiglie di funzioni crescenti (logaritmi, potenze, esponenziali, fattoriale), la gerarchia degli infiniti e il confronto degli ordini di crescita scritto con i simboli. Limiti e funzioni di variabile naturale si danno per noti dal corso di Analisi Matematica 1.
 
-    9\. Notazione asintotica · 10\. Crescita asintotica
-
     [:octicons-arrow-right-24: I capitoli](notazione-asintotica/index.md)
 
 -   :material-timer-sand: **4 · Analisi degli algoritmi**
@@ -79,8 +73,6 @@ Il merge sort durante l'ultima fusione: l'albero delle chiamate, le due metà or
 
     L'analisi degli algoritmi: la dimensione dell'input, il tempo di esecuzione nel caso migliore, peggiore e medio, e la correttezza dimostrata con le invarianti di ciclo.
 
-    11\. Dimensione dell'input · 12\. Tempo di esecuzione · 13\. Correttezza
-
     [:octicons-arrow-right-24: I capitoli](analisi/index.md)
 
 -   :material-file-tree: **5 · Ricorsione**
@@ -88,8 +80,6 @@ Il merge sort durante l'ultima fusione: l'albero delle chiamate, le due metà or
     ---
 
     La ricorsione: algoritmi ricorsivi classici, equazioni di ricorrenza, il Master theorem, algoritmi ricorsivi (somma di un array, merge sort, ricerca binaria, sotto-array di somma massima) e il confronto fra versioni ricorsive e iterative.
-
-    14\. Ricorsione · 15\. Equazioni di ricorrenza · 16\. Il Master theorem · 17\. Algoritmi ricorsivi · 18\. Algoritmi ricorsivi e iterativi a confronto
 
     [:octicons-arrow-right-24: I capitoli](ricorsione/index.md)
 
